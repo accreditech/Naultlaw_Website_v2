@@ -1,26 +1,163 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
+/* ── Color & typography tokens ─────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background:          #ffffff;
+  --foreground:          #12232c;
+  --primary:             #12232c;
+  --primary-foreground:  #ffffff;
+  --accent:              #c9a96e;
+  --muted:               #f5f2ee;
+  --muted-foreground:    #637074;
+  --border:              #e2ddd7;
+  --destructive:         #c0392b;
+  --card:                #ffffff;
+  --radius:              0.75rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background:         var(--background);
+  --color-foreground:         var(--foreground);
+  --color-primary:            var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent:             var(--accent);
+  --color-muted:              var(--muted);
+  --color-muted-foreground:   var(--muted-foreground);
+  --color-border:             var(--border);
+  --color-destructive:        var(--destructive);
+  --color-card:               var(--card);
+  --font-heading:             var(--font-fraunces);
+  --font-sans:                var(--font-manrope);
+  --radius-sm:    calc(var(--radius) - 0.25rem);
+  --radius-md:    var(--radius);
+  --radius-lg:    calc(var(--radius) + 0.25rem);
+  --radius-xl:    calc(var(--radius) + 0.75rem);
+  --radius-2xl:   calc(var(--radius) + 1.25rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ───────────────────────────────────────────────────────────────── */
+* {
+  border-color: var(--border);
+  outline-color: var(--accent);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading, Georgia, serif);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+/* ── Layout utilities ───────────────────────────────────────────────────── */
+.container-shell {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-inline: 1.25rem;
+}
+@media (min-width: 640px)  { .container-shell { padding-inline: 1.5rem; } }
+@media (min-width: 1024px) { .container-shell { padding-inline: 2rem; } }
+
+.section-padding {
+  padding-block: 4rem;
+}
+@media (min-width: 640px)  { .section-padding { padding-block: 5rem; } }
+@media (min-width: 1024px) { .section-padding { padding-block: 6rem; } }
+
+/* ── Typography utilities ───────────────────────────────────────────────── */
+.eyebrow {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted-foreground);
+}
+
+.display-heading {
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.06;
+}
+
+.editorial-pull {
+  font-family: var(--font-heading, Georgia, serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+  color: color-mix(in srgb, var(--foreground) 80%, transparent);
+}
+@media (min-width: 640px) { .editorial-pull { font-size: 1.375rem; } }
+
+.editorial-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: color-mix(in srgb, var(--foreground) 75%, transparent);
+}
+
+/* ── Surface utilities ──────────────────────────────────────────────────── */
+.surface-card {
+  border-radius: calc(var(--radius) + 0.25rem);
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+}
+
+/* Dark hero/CTA block — used ONLY for hero and closing CTA panel */
+.dark-block {
+  border-radius: calc(var(--radius) + 1rem);
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* ── List utilities ─────────────────────────────────────────────────────── */
+.catalog-rule {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+}
+.catalog-rule:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* ── Navigation ─────────────────────────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--foreground) 68%, transparent);
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent);
+  transition: width 0.2s ease;
+}
+.nav-link:hover { color: var(--foreground); }
+.nav-link:hover::after { width: 100%; }
+
+/* ── Image frame ────────────────────────────────────────────────────────── */
+.photo-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--radius) + 0.75rem);
 }
