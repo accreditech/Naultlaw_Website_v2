@@ -30,7 +30,7 @@ export const siteImages = {
 
   // ── Commercial buildings ───────────────────────────────────────────────────
   /** Default practice area page background (all 8 pages unless overridden) */
-  buildingOffice: "/images/modern_office_bldg.jpg",
+  buildingOffice: "/images/naultlawoffice.jpg",
   /** Commercial leasing page — mixed-use override */
   buildingMixedUse: "/images/modern_commercial_mixed_bldg.jpg",
   /** Business / abstract articles — glass and steel corner */
@@ -48,7 +48,7 @@ export const siteImages = {
   /** Active construction underway — contractors industry page header */
   constructionUnderway: "/images/under_construction_office.jpg",
   /** Aerial development site — strategic case assessment page */
-  constructionAerial: "/images/TN_construction_site_dirt.jpg",
+  constructionAerial: "/images/building_in_progress.jpg",
   /** Construction progress mid-stage */
   constructionProgress: "/images/building_in_progress.jpg",
   /** Wide development overview — construction articles */
@@ -62,7 +62,7 @@ export const siteImages = {
   constructionStage4: "/images/construction_stage_4.jpg",
   constructionStage5: "/images/construction_stage_5.jpg",
   /** Best single construction image — fully finished building */
-  constructionStage6: "/images/construction_stage_6.jpg",
+  constructionStage6: "/images/building_in_progress.jpg",
 
   // ── Location pages ─────────────────────────────────────────────────────────
   locationGallatin: "/images/main_street_usa.jpg",
