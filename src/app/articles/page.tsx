@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { type Metadata } from "next";
 import { PageHero } from "@/components/sections/page-hero";
+import { StructuredDataScript } from "@/components/site/structured-data-script";
 import { resources } from "@/lib/content/resources";
 import { createMetadata } from "@/lib/metadata";
+import { collectionPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = createMetadata({
-  title: "Articles",
+  title: "Guides",
   description:
-    "Substantive articles on Tennessee commercial leasing, TREC defense, real estate disputes, owner disputes, and business law — with specific citations and practical context.",
+    "Substantive guides on Tennessee commercial leasing, TREC defense, real estate disputes, owner disputes, and business law — with specific citations and practical context.",
   path: "/articles",
 });
 
@@ -17,10 +19,23 @@ const categories = ["All", ...Array.from(new Set(resources.map((r) => r.category
 export default function ArticlesPage() {
   return (
     <>
+      <StructuredDataScript
+        data={collectionPageSchema({
+          title: "Guides",
+          description:
+            "Substantive guides on Tennessee commercial leasing, TREC defense, real estate disputes, owner disputes, and business law — with specific citations and practical context.",
+          path: "/articles",
+          items: resources.map((r) => ({
+            name: r.title,
+            path: `/articles/${r.slug}`,
+          })),
+        })}
+      />
+
       <PageHero
-        eyebrow="Articles"
+        eyebrow="Guides"
         title="Substantive writing on the issues this practice handles."
-        summary="Thirteen articles on Tennessee real estate and business law — with specific citations, practical context, and no filler. Read before you call."
+        summary="Thirteen guides on Tennessee real estate and business law — with specific citations, practical context, and no filler. Read before you call."
       />
 
       <section className="section-padding">

@@ -63,7 +63,7 @@ export const siteConfig = {
   broaderServiceCounties: ["Davidson County"],
   secondaryReach: ["Nashville", "Davidson County"],
   primaryCta: {
-    label: "Request a Consultation",
+    label: "Schedule a Consultation",
     href: "/contact",
   },
   secondaryCta: {
@@ -75,9 +75,14 @@ export const siteConfig = {
     href: officePhoneE164 ? `tel:${officePhoneE164}` : "/contact#office-details",
   },
   navItems: [
-    { label: "Practice Areas", href: "/practice-areas" },
+    { label: "Who I Help", href: "/who-i-help" },
+    { label: "How I Help", href: "/practice-areas" },
+    { label: "Guides", href: "/articles" },
     { label: "About", href: "/about" },
-    { label: "Articles", href: "/articles" },
+    {
+      label: "Expert Witness",
+      href: "/practice-areas/expert-witness-real-estate-and-brokerage-matters",
+    },
     { label: "Contact", href: "/contact" },
   ],
   socialShareImageTitle:
@@ -88,6 +93,7 @@ export const siteConfig = {
     "CPA, lender, or insurance professional",
     "Former client or business contact",
     "Online search",
+    "Social media",
     "Other",
   ],
   counties: [

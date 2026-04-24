@@ -1,13 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
+import { type Metadata } from "next";
+import { Phone } from "lucide-react";
 import { ActionLink } from "@/components/site/action-link";
 import { CtaPanel } from "@/components/sections/cta-panel";
+import { StructuredDataScript } from "@/components/site/structured-data-script";
 import { siteConfig } from "@/lib/site-config";
-import { siteImages } from "@/lib/content/images";
+import { siteImages, pageImages, type SiteImageKey } from "@/lib/content/images";
 import { resources } from "@/lib/content/resources";
 import { homepageTestimonials } from "@/lib/content/testimonials";
+import { createMetadata } from "@/lib/metadata";
+import {
+  localBusinessSchema,
+  organizationSchema,
+  personSchema,
+  websiteSchema,
+} from "@/lib/structured-data";
 
-const practiceList = [
+export const metadata: Metadata = createMetadata({
+  title: "Business, Real Estate, and Dispute-Resolution Counsel in Sumner County",
+  description:
+    "Business, real estate, and dispute-resolution counsel for owners, investors, brokers, contractors, and real estate professionals in Sumner County and surrounding counties.",
+  path: "/",
+});
+
+type PracticeCard = {
+  slug: string;
+  label: string;
+  description: string;
+};
+
+const practiceList: PracticeCard[] = [
   {
     slug: "commercial-leasing",
     label: "Commercial Leasing",
@@ -46,12 +69,23 @@ const practiceList = [
   },
 ];
 
+function practiceImageFor(slug: string) {
+  const map = pageImages.practiceAreaCards as Record<string, SiteImageKey>;
+  const key = map[slug] ?? map.default;
+  return siteImages[key];
+}
+
 const featuredTestimonials = homepageTestimonials.slice(0, 3);
 const featuredArticles = resources.slice(0, 3);
 
 export default function HomePage() {
   return (
     <>
+      <StructuredDataScript data={websiteSchema()} />
+      <StructuredDataScript data={organizationSchema()} />
+      <StructuredDataScript data={localBusinessSchema()} />
+      <StructuredDataScript data={personSchema()} />
+
       {/* ── 1. HERO ──────────────────────────────────────────────── */}
       <section className="dark-block relative overflow-hidden section-padding">
         <Image
@@ -77,20 +111,31 @@ export default function HomePage() {
             who handles commercial leasing, TREC defense, owner disputes, and
             real estate litigation — directly, without delegation.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <ActionLink
               href={siteConfig.primaryCta.href}
-              className="bg-white text-primary hover:bg-white/90"
+              className="bg-white text-primary hover:bg-white/90 sm:order-1"
             >
               {siteConfig.primaryCta.label}
             </ActionLink>
-            <ActionLink
-              href="/practice-areas"
-              variant="outline"
-              className="border-white/30 text-primary-foreground hover:border-white/50 hover:bg-white/10"
-            >
-              Practice Areas
-            </ActionLink>
+            {siteConfig.hasPhone ? (
+              <ActionLink
+                href={siteConfig.tertiaryCta.href}
+                variant="outlineGold"
+                className="order-first sm:order-2 border-accent text-accent hover:bg-accent/15"
+              >
+                <Phone className="size-4" aria-hidden="true" />
+                {siteConfig.tertiaryCta.label}
+              </ActionLink>
+            ) : (
+              <ActionLink
+                href="/practice-areas"
+                variant="outline"
+                className="border-white/30 text-primary-foreground hover:border-white/50 hover:bg-white/10 sm:order-2"
+              >
+                Practice Areas
+              </ActionLink>
+            )}
           </div>
 
           {/* Stats strip */}
@@ -123,32 +168,42 @@ export default function HomePage() {
             </p>
           </div>
 
-          <ul className="mt-10 divide-y divide-border">
+          <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {practiceList.map((item) => (
-              <li key={item.slug}>
+              <li key={item.slug} className="flex">
                 <Link
                   href={`/practice-areas/${item.slug}`}
-                  className="catalog-rule group flex items-start gap-6 py-5 no-underline hover:bg-muted/40 transition-colors"
+                  className="surface-card group flex w-full flex-col overflow-hidden no-underline transition-shadow hover:shadow-md"
                 >
-                  <div className="min-w-0 flex-1">
-                    <p className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
+                  <div className="photo-frame relative aspect-[3/2] w-full">
+                    <Image
+                      src={practiceImageFor(item.slug)}
+                      alt=""
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col gap-2 p-6">
+                    <p className="font-heading text-lg leading-snug text-foreground transition-colors group-hover:text-accent">
                       {item.label}
                     </p>
-                    <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                    <p className="text-sm leading-6 text-muted-foreground">
                       {item.description}
                     </p>
+                    <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground transition-colors group-hover:text-accent">
+                      Learn more
+                      <span aria-hidden="true">→</span>
+                    </span>
                   </div>
-                  <span className="mt-0.5 shrink-0 text-muted-foreground/40 group-hover:text-accent transition-colors text-lg leading-none">
-                    →
-                  </span>
                 </Link>
               </li>
             ))}
           </ul>
 
-          <div className="mt-8">
-            <ActionLink href="/practice-areas" variant="outline">
-              All Practice Areas
+          <div className="mt-12 flex justify-center">
+            <ActionLink href="/practice-areas" variant="outlineGold">
+              View All 9 Practice Areas →
             </ActionLink>
           </div>
         </div>
@@ -224,7 +279,7 @@ export default function HomePage() {
         <div className="container-shell">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="eyebrow text-muted-foreground">Articles</p>
+              <p className="eyebrow text-muted-foreground">Guides</p>
               <h2 className="mt-2 font-heading text-3xl tracking-tight text-foreground sm:text-4xl">
                 Read before you call.
               </h2>
@@ -238,7 +293,7 @@ export default function HomePage() {
               variant="ghost"
               className="shrink-0 self-start sm:self-auto"
             >
-              All Articles →
+              All Guides →
             </ActionLink>
           </div>
 
@@ -265,7 +320,9 @@ export default function HomePage() {
       {/* ── 6. CTA PANEL ─────────────────────────────────────────── */}
       <CtaPanel
         title="If any of this sounds like your situation"
-        summary="The intake is structured and short — name, contact, opposing party, brief description. You'll hear back within one business day."
+        summary="The intake is structured and short — name, contact, opposing party, and the basics of your situation. You'll hear back within one business day."
+        secondaryLabel={siteConfig.hasPhone ? siteConfig.tertiaryCta.label : undefined}
+        secondaryHref={siteConfig.hasPhone ? siteConfig.tertiaryCta.href : undefined}
       />
     </>
   );

@@ -86,7 +86,19 @@ export type SiteImageKey = keyof typeof siteImages;
  * Used by templates to look up the correct image without hardcoding.
  */
 export const pageImages = {
-  // Practice areas — slug → image key
+  // Practice areas — homepage card thumbnails (slug → image key)
+  practiceAreaCards: {
+    "commercial-leasing": "buildingMixedUse",
+    "trec-defense-and-realtor-complaints": "buildingBrokerage",
+    "operating-agreements-and-owner-disputes": "officeConference",
+    "real-estate-disputes": "constructionStage6",
+    "business-contract-drafting-and-review": "articleContract",
+    "strategic-case-assessment": "officeDeskClassic",
+    default: "buildingOffice",
+  },
+  // Practice areas — detail-page hero imagery (slug → image key).
+  // Separate from homepage cards so detail pages can keep their own imagery
+  // even when a homepage card is re-themed.
   practiceAreas: {
     "commercial-leasing": "buildingMixedUse",
     "real-estate-disputes": "constructionStage6",
