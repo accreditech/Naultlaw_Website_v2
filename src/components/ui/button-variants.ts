@@ -10,7 +10,7 @@ export const buttonVariants = cva(
         ghost: "text-foreground hover:bg-muted",
         solidGold: "bg-accent text-primary shadow hover:bg-accent/90",
         outlineGold:
-          "border border-accent bg-transparent text-accent hover:bg-accent/10",
+          "border border-accent bg-transparent text-primary hover:bg-accent/10",
       },
       size: {
         default: "h-11 px-6 py-2",
