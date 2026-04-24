@@ -21,9 +21,18 @@ const responsiveTargets = [
 
 const accessibilityTargets = [
   "/",
-  "/contact",
+  "/who-i-help",
   "/about",
+  "/articles",
+  "/articles/when-a-broker-complaint-turns-into-a-records-problem",
+  "/practice-areas",
   "/practice-areas/commercial-leasing",
+  "/contact",
+  "/intake-notice",
+  "/privacy-policy",
+  "/terms-of-use",
+  "/website-disclaimer",
+  "/no-attorney-client-relationship",
 ];
 
 function formatViolations(path, violations) {

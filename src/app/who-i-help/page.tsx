@@ -72,7 +72,7 @@ export default function WhoIHelpPage() {
                   <div className="mt-auto pt-2">
                     <Link
                       href={`/practice-areas`}
-                      className="inline-flex items-center gap-1 text-sm font-semibold text-accent hover:text-accent/80"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-primary/80"
                     >
                       See the work
                       <span aria-hidden="true">→</span>
