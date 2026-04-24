@@ -58,7 +58,7 @@ async function run() {
       .waitFor();
     await page
       .getByRole("banner")
-      .getByRole("link", { name: /Request a Consultation/i })
+      .getByRole("link", { name: /Schedule a Consultation/i })
       .first()
       .waitFor();
     await expectNoVisiblePlaceholder(page, "Homepage");
@@ -66,7 +66,7 @@ async function run() {
     // ── Contact page ────────────────────────────────────────
     await page.goto(`${baseUrl}/contact`, { waitUntil: "networkidle" });
     await page
-      .getByRole("heading", { name: /Request a consultation review/i, level: 1 })
+      .getByRole("heading", { name: /Schedule a consultation review/i, level: 1 })
       .waitFor();
     await page.getByText(/Important Before You Submit/i).waitFor();
     await page.getByRole("textbox", { name: "Full name" }).fill("TEST - DO NOT CONTACT");

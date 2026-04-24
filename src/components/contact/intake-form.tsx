@@ -126,7 +126,7 @@ export function IntakeForm() {
       <div className="border-b border-border px-6 py-6 sm:px-8">
         <p className="eyebrow text-muted-foreground">Stage 1 — Conflict Screen</p>
         <h2 className="mt-3 font-heading text-2xl text-foreground sm:text-3xl">
-          Request a consultation review
+          Schedule a consultation review
         </h2>
         <p className="mt-2 text-sm leading-6 text-muted-foreground">
           {publicDisclosures.contactShortWarning}

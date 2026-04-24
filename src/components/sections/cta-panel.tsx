@@ -1,3 +1,4 @@
+import { Phone } from "lucide-react";
 import { ActionLink } from "@/components/site/action-link";
 import { siteConfig } from "@/lib/site-config";
 
@@ -28,19 +29,19 @@ export function CtaPanel({
           <p className="mt-4 text-base leading-7 text-primary-foreground/72 max-w-xl mx-auto">
             {summary}
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <ActionLink
               href={primaryHref}
-              className="bg-white text-primary hover:bg-white/90"
+              className="bg-white text-primary hover:bg-white/90 sm:order-2"
             >
               {primaryLabel}
             </ActionLink>
             {secondaryLabel && secondaryHref && (
               <ActionLink
                 href={secondaryHref}
-                variant="outline"
-                className="border-white/25 text-primary-foreground hover:border-white/40 hover:bg-white/10"
+                className="order-first border border-accent bg-transparent text-accent hover:bg-accent/15 sm:order-1"
               >
+                <Phone className="size-4" aria-hidden="true" />
                 {secondaryLabel}
               </ActionLink>
             )}

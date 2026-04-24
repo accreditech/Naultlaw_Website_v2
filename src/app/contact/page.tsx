@@ -8,7 +8,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createMetadata({
   title: "Contact",
   description:
-    "Request a consultation review with Stephen Nault — Tennessee real estate and business attorney. Structured intake, conflict screen, response within one business day.",
+    "Schedule a consultation review with Stephen Nault — Tennessee real estate and business attorney. Structured intake, conflict screen, response within one business day.",
   path: "/contact",
 });
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Request a consultation review."
+        title="Schedule a consultation review."
         summary="This is a structured intake — not a general inquiry form. Fill it out completely. You'll hear back within one business day if the matter is a fit."
       />
 

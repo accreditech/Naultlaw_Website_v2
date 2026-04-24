@@ -8,6 +8,9 @@ export const buttonVariants = cva(
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         outline: "border border-border bg-transparent text-foreground hover:bg-muted",
         ghost: "text-foreground hover:bg-muted",
+        solidGold: "bg-accent text-primary shadow hover:bg-accent/90",
+        outlineGold:
+          "border border-accent bg-transparent text-primary hover:bg-accent/10",
       },
       size: {
         default: "h-11 px-6 py-2",

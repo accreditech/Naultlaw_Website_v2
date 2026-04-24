@@ -47,7 +47,7 @@ export default function AboutPage() {
               ))}
 
               <div className="mt-8">
-                <ActionLink href="/contact">Request a Consultation</ActionLink>
+                <ActionLink href="/contact">Schedule a Consultation</ActionLink>
               </div>
             </div>
 

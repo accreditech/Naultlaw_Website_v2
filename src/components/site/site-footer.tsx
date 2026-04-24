@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Phone } from "lucide-react";
+import { ActionLink } from "@/components/site/action-link";
 import { BrandLogo } from "@/components/site/brand-logo";
 import { siteConfig, officeHours } from "@/lib/site-config";
 import { publicDisclosures } from "@/lib/public-disclosures";
@@ -7,7 +9,7 @@ const practiceLinks = [
   { label: "Commercial Leasing", href: "/practice-areas/commercial-leasing" },
   { label: "TREC Defense", href: "/practice-areas/trec-defense-and-realtor-complaints" },
   { label: "Owner Disputes", href: "/practice-areas/operating-agreements-and-owner-disputes" },
-  { label: "Business Contracts", href: "/practice-areas/business-contracts" },
+  { label: "Business Contracts", href: "/practice-areas/business-contract-drafting-and-review" },
   { label: "Real Estate Disputes", href: "/practice-areas/real-estate-disputes" },
   { label: "All Practice Areas", href: "/practice-areas" },
 ];
@@ -36,18 +38,25 @@ export function SiteFooter() {
               <br />
               {siteConfig.officeAddressLines[1]}
             </p>
-            {siteConfig.hasPhone && (
-              <a
-                href={siteConfig.phoneHref}
-                className="mt-3 block text-sm font-medium text-foreground hover:text-accent"
-              >
-                {siteConfig.phoneLabel}
-              </a>
-            )}
+            <div className="mt-6 flex flex-col items-start gap-3">
+              <ActionLink href={siteConfig.primaryCta.href} size="sm">
+                {siteConfig.primaryCta.label}
+              </ActionLink>
+              {siteConfig.hasPhone && (
+                <ActionLink
+                  href={siteConfig.phoneHref}
+                  variant="outlineGold"
+                  size="sm"
+                >
+                  <Phone className="size-4" aria-hidden="true" />
+                  Call {siteConfig.phoneLabel}
+                </ActionLink>
+              )}
+            </div>
             {siteConfig.hasEmail && (
               <a
                 href={siteConfig.emailHref}
-                className="block text-sm font-medium text-foreground hover:text-accent"
+                className="mt-5 block text-sm font-medium text-muted-foreground hover:text-accent"
               >
                 {siteConfig.email}
               </a>
@@ -57,12 +66,12 @@ export function SiteFooter() {
           {/* Practice Areas */}
           <div>
             <p className="eyebrow mb-4">Practice Areas</p>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col">
               {practiceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground"
+                    className="inline-flex min-h-11 items-center text-sm text-muted-foreground hover:text-foreground"
                   >
                     {link.label}
                   </Link>
@@ -86,12 +95,12 @@ export function SiteFooter() {
           {/* Legal */}
           <div>
             <p className="eyebrow mb-4">Legal</p>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col">
               {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground"
+                    className="inline-flex min-h-11 items-center text-sm text-muted-foreground hover:text-foreground"
                   >
                     {link.label}
                   </Link>
