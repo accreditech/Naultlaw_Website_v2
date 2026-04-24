@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local reference — design handoff docs, kept for reference, not committed
+/claude_handoff/
