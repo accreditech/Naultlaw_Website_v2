@@ -53,7 +53,7 @@ async function run() {
     await page.goto(`${baseUrl}/`, { waitUntil: "networkidle" });
     await page
       .getByRole("heading", {
-        name: /When the lease, the deal, or the business relationship goes wrong/i,
+        name: /A practical approach to business and real estate law/i,
       })
       .waitFor();
     await page
@@ -66,7 +66,7 @@ async function run() {
     // ── Contact page ────────────────────────────────────────
     await page.goto(`${baseUrl}/contact`, { waitUntil: "networkidle" });
     await page
-      .getByRole("heading", { name: /Schedule a consultation review/i, level: 1 })
+      .getByRole("heading", { name: /Let's discuss your matter/i, level: 1 })
       .waitFor();
     await page.getByText(/Important Before You Submit/i).waitFor();
     await page.getByRole("textbox", { name: "Full name" }).fill("TEST - DO NOT CONTACT");
@@ -87,7 +87,7 @@ async function run() {
     await page.goto(`${baseUrl}/about`, { waitUntil: "networkidle" });
     await page
       .getByRole("heading", {
-        name: /Tennessee attorney\. Licensed broker since 2012\./i,
+        name: /Lawyer, broker, instructor/i,
         level: 1,
       })
       .waitFor();
@@ -96,7 +96,7 @@ async function run() {
     // ── Practice areas index ────────────────────────────────
     await page.goto(`${baseUrl}/practice-areas`, { waitUntil: "networkidle" });
     await page
-      .getByRole("heading", { name: /What this practice handles/i, level: 1 })
+      .getByRole("heading", { name: /Practice Areas/i, level: 1 })
       .waitFor();
     await expectNoVisiblePlaceholder(page, "Practice areas page");
 
@@ -108,7 +108,7 @@ async function run() {
     // ── Articles index ──────────────────────────────────────
     await page.goto(`${baseUrl}/articles`, { waitUntil: "networkidle" });
     await page
-      .getByRole("heading", { name: /Substantive writing on the issues/i, level: 1 })
+      .getByRole("heading", { name: /Notes from the practice/i, level: 1 })
       .waitFor();
     await expectNoVisiblePlaceholder(page, "Articles page");
 
