@@ -147,8 +147,7 @@ export default function ExpertWitnessPage() {
                 marginBottom: "1.5rem",
               }}
             >
-              An attorney and licensed broker, retained where industry context
-              decides the case.
+              When industry experience is needed for you to win your case.
             </h1>
             <p
               style={{
@@ -158,10 +157,16 @@ export default function ExpertWitnessPage() {
                 marginBottom: "2rem",
               }}
             >
-              Stephen Nault is available as an expert witness and litigation
-              consultant in Tennessee real estate and brokerage disputes — for
-              plaintiff and defense counsel. Case reviews, formal designation,
-              written reports, deposition, and trial testimony.
+              Stephen Nault has over 20 years of real estate experience and is
+              an active managing broker of a real estate firm as well as a
+              Tennessee Real Estate Commission Course Instructor. This
+              includes commercial and residential sales, investments, and
+              property management. He has managed millions of square feet of
+              office space, and at one point oversaw a leasing portfolio of
+              over 120 commercial leases in 30+ countries. When experience
+              matters you need an expert who has experience in both the field
+              and in the courtroom. Expert services include case review,
+              written reports, depositions and trial testimony.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link
@@ -177,7 +182,7 @@ export default function ExpertWitnessPage() {
                   textDecoration: "none",
                 }}
               >
-                Discuss a Matter
+                Schedule a Consultation
               </Link>
               <a
                 href={PHONE_HREF}
@@ -519,7 +524,7 @@ export default function ExpertWitnessPage() {
                   display: "inline-block",
                 }}
               >
-                Discuss a Case
+                Schedule a Consultation
               </Link>
             </div>
           </div>

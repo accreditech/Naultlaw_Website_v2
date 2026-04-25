@@ -28,7 +28,7 @@ export const siteConfig = {
   shortName: "Nault Law",
   firmName: "The Law Office of Stephen Nault",
   attorneyName: attorneyProfile.name,
-  titleTemplate: "%s | Stephen C. Nault, Esq.",
+  titleTemplate: "NaultLaw - %s",
   description:
     "Business, real estate, and dispute-resolution counsel for owners, investors, brokers, contractors, property managers, and real estate professionals in Sumner County and surrounding counties.",
   positioningStatement:

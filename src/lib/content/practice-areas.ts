@@ -6,6 +6,9 @@
   metaDescription: string;
   eyebrow: string;
   intro: string;
+  /** Optional narrative paragraphs rendered below the editorial-pull intro.
+      Use to expand on the intro with stories, examples, or context. */
+  narrative?: string[];
   summary: string;
   whoItIsFor: string[];
   commonProblems: string[];
@@ -27,9 +30,15 @@ export const practiceAreas: PracticeAreaContent[] = [
     metaDescription:
       "Practical commercial leasing counsel for owners, investors, landlords, tenants, brokers, and property managers across Gallatin and the surrounding counties.",
     eyebrow: "Practice Area",
-    intro: "Lease terms should support the business plan, not become the next dispute.",
+    intro:
+      "A commercial lease is often the most important contract a business signs — and the law it operates under is the contract itself. Tennessee courts assume commercial parties are sophisticated and will enforce one-sided terms as written. A great business can be lost on a bad lease.",
+    narrative: [
+      "The leverage hides in the clauses. Early in his career, Mr. Nault saw how one sentence in a small Boston sub shop's lease likely saved the owner from bankruptcy. That term was an exclusivity right to sell \"sub-style sandwiches.\" As a result of this one sentence, the developer paid the owner $500,000 and gave him an early exit before bringing Panera into the same center. The locally owned shop closed months later, but the owner used the buyout to open two new locations. This one sentence was the difference between an early exit to bankruptcy court, and the ability to negotiate a term that saved his entire livelihood.",
+      "In another lease, Mr. Nault represented a landlord who brought rent back to market value during a renewal. The tenant's residential agent missed that the \"base tax year\" for tax pass-throughs should have been reset as well. The industry practice was clear. Their representation however was not. That oversight cost the tenant nearly a million dollars over the remaining lease term.",
+      "That is the nature of commercial leasing. The biggest dollars are often buried in sentences that do not look expensive until it is too late. While most business owners believe they can do it all, the ones that withstand the test of time know, lessons are easier taught than learned. Expertise comes through experience, and you don't have to learn those lessons the hard way.",
+    ],
     summary:
-      "Nault Law advises on letters of intent, lease drafting, amendments, defaults, guaranties, assignment questions, operating covenants, and exit planning for commercial properties.",
+      "Stephen Nault advises on letters of intent, lease drafting, amendments, defaults, guaranties, assignment questions, operating covenants, and exit planning for commercial properties.",
     whoItIsFor: [
       "Owners and investors acquiring, repositioning, or stabilizing income-producing property.",
       "Landlords and tenants negotiating retail, office, industrial, flex, and mixed-use space.",
@@ -70,7 +79,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       },
     ],
     localServiceArea:
-      "Commercial leasing issues arise across Gallatin and the surrounding counties, from retail frontage and medical office space in Sumner County to industrial and flex properties in Wilson, Robertson, and Trousdale Counties. Local deal pace and relationship dynamics matter.",
+      "Based in Sumner County and primarily appearing in the Sumner, Wilson, Trousdale, Robertson, and Davidson County courts, Mr. Nault represents commercial leasing clients across the entire state of Tennessee. In lease work the goal is to keep matters out of court — careful drafting and early review are how that happens.",
     issueTypes: [
       "LOI or new lease review",
       "Default notice or cure dispute",
@@ -82,15 +91,15 @@ export const practiceAreas: PracticeAreaContent[] = [
   },
   {
     slug: "trec-defense-and-realtor-complaints",
-    title: "TREC Defense and Realtor Complaints",
+    title: "TREC Defense and Realtor Representation",
     shortTitle: "TREC Defense",
-    metaTitle: "TREC Defense and Realtor Complaint Counsel in Tennessee",
+    metaTitle: "TREC Defense and Realtor Representation in Tennessee",
     metaDescription:
       "Counsel for brokers and agents responding to TREC complaints, disciplinary questions, brokerage disputes, and risk-sensitive licensing issues.",
     eyebrow: "Practice Area",
     intro: "A licensing complaint needs a disciplined response, not panic and not casual oversharing.",
     summary:
-      "Nault Law helps brokers and agents respond to Tennessee Real Estate Commission complaints, brokerage investigations, transaction disputes, and related risk events that can affect licensing, reputation, and business continuity.",
+      "Stephen Nault helps brokers and agents respond to Tennessee Real Estate Commission complaints, brokerage investigations, transaction disputes, and related risk events that can affect licensing, reputation, and business continuity.",
     whoItIsFor: [
       "Principal brokers, affiliate brokers, and brokerage leaders facing a complaint, inquiry, or transaction-related allegation.",
       "Real estate professionals who need a measured written response before facts become fixed in the record.",
@@ -151,7 +160,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     eyebrow: "Practice Area",
     intro: "Owner conflicts are rarely just legal problems. They are control, information, and continuity problems.",
     summary:
-      "Nault Law advises on operating agreements, governance clean-up, manager authority, buyout pressure, deadlock, fiduciary allegations, and closely held business disputes where preserving leverage matters.",
+      "Stephen Nault advises on operating agreements, governance clean-up, manager authority, buyout pressure, deadlock, fiduciary allegations, and closely held business disputes where preserving leverage matters.",
     whoItIsFor: [
       "LLC members and managers dealing with authority questions, accounting tension, or strategic deadlock.",
       "Businesses that need cleaner operating documents before growth, financing, or ownership changes.",
@@ -212,7 +221,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     eyebrow: "Practice Area",
     intro: "A useful contract should shorten disputes, not silently manufacture them.",
     summary:
-      "Nault Law drafts, reviews, and revises business agreements with attention to leverage, risk allocation, performance standards, dispute clauses, and what the parties will actually do after signing.",
+      "Stephen Nault drafts, reviews, and revises business agreements with attention to leverage, risk allocation, performance standards, dispute clauses, and what the parties will actually do after signing.",
     whoItIsFor: [
       "Business owners entering material vendor, services, sales, or strategic partner agreements.",
       "Real estate operators who need contracts aligned with asset, brokerage, or project realities.",
@@ -269,11 +278,11 @@ export const practiceAreas: PracticeAreaContent[] = [
     shortTitle: "Real Estate Disputes",
     metaTitle: "Real Estate Dispute Counsel in Gallatin and Middle Tennessee",
     metaDescription:
-      "Counsel for owners, investors, landlords, brokers, and managers navigating contract disputes, title issues, neighbor conflicts, and business-facing real estate disputes.",
+      "Counsel for owners, investors, landlords, brokers, and managers navigating contract disputes, title issues, neighbor conflicts, construction disputes, liens, and foreclosure or trustee sales — across both commercial and residential real estate.",
     eyebrow: "Practice Area",
     intro: "Property disputes turn quickly from inconvenience to leverage problems.",
     summary:
-      "Nault Law handles business-facing real estate disputes involving purchase agreements, easements, title-related problems, possession and use conflicts, brokerage issues, and owner-side property disputes.",
+      "Stephen Nault handles commercial and residential real estate disputes involving purchase agreements, easements, title-related problems, possession and use conflicts, brokerage issues, construction disputes, liens, and foreclosure or trustee sales.",
     whoItIsFor: [
       "Investors, owners, and operators dealing with transaction fallout or property-use conflict.",
       "Brokers and property professionals pulled into a dispute surrounding a deal or ongoing management.",
@@ -300,7 +309,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       {
         question: "Do you only handle disputes tied to commercial property?",
         answer:
-          "The focus is business-facing real estate matters, including disputes where the property is tied to ownership structure, brokerage, leasing, or ongoing operations.",
+          "No — the practice covers both commercial and residential real estate disputes. The focus is matters where the property is tied to ownership structure, brokerage, leasing, construction, financing, or ongoing operations.",
       },
       {
         question: "Can you step in after a demand letter or suit has already been filed?",
@@ -388,15 +397,15 @@ export const practiceAreas: PracticeAreaContent[] = [
   },
   {
     slug: "arbitration-and-dispute-resolution",
-    title: "Arbitration and Dispute Resolution",
-    shortTitle: "Arbitration and Dispute Resolution",
-    metaTitle: "Arbitration and Business Dispute Resolution Counsel in Tennessee",
+    title: "Arbitration, Mediation and ADR",
+    shortTitle: "Arbitration, Mediation and ADR",
+    metaTitle: "Arbitration, Mediation and ADR Counsel in Tennessee",
     metaDescription:
       "Counsel for arbitration, negotiated resolution, and business-focused dispute strategy in commercial real estate, owner disputes, and contract matters.",
     eyebrow: "Practice Area",
     intro: "Resolution strategy should match the actual leverage, forum, and business objective.",
     summary:
-      "Nault Law advises on arbitration clauses, demand strategy, pre-hearing positioning, negotiated resolution, and business dispute pathways where a practical resolution matters as much as a legal one.",
+      "Stephen Nault advises on arbitration clauses, demand strategy, pre-hearing positioning, negotiated resolution, and business dispute pathways where a practical resolution matters as much as a legal one.",
     whoItIsFor: [
       "Businesses and owners facing contract clauses that require arbitration or another structured dispute path.",
       "Clients who want a realistic view of settlement leverage before formal proceedings consume time and capital.",

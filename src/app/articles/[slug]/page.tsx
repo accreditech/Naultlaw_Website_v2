@@ -1,13 +1,32 @@
 import { notFound } from "next/navigation";
 import { type Metadata } from "next";
+import Link from "next/link";
 import { PageHero } from "@/components/sections/page-hero";
 import { CtaPanel } from "@/components/sections/cta-panel";
 import { ActionLink } from "@/components/site/action-link";
+import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { DisclosurePanel } from "@/components/site/disclosure-panel";
+import { StructuredDataScript } from "@/components/site/structured-data-script";
 import { resources } from "@/lib/content/resources";
+import { practiceAreas } from "@/lib/content/practice-areas";
 import { publicDisclosures } from "@/lib/public-disclosures";
 import { siteConfig } from "@/lib/site-config";
 import { createMetadata } from "@/lib/metadata";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  faqSchema,
+} from "@/lib/structured-data";
+
+const CATEGORY_PRACTICE_SLUGS: Record<string, string[]> = {
+  "Brokerage Risk": [
+    "trec-defense-and-realtor-complaints",
+    "expert-witness-real-estate-and-brokerage-matters",
+  ],
+  "Owner Disputes": ["operating-agreements-and-owner-disputes"],
+  "Commercial Leasing": ["commercial-leasing"],
+  "Strategic Case Assessment": ["strategic-case-assessment"],
+};
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,8 +50,29 @@ export default async function ArticlePage({ params }: Props) {
   const article = resources.find((r) => r.slug === slug);
   if (!article) notFound();
 
+  // Breadcrumb data shared between nav and schema
+  const crumbs = [
+    { name: "Home", path: "/" },
+    { name: "Articles", path: "/articles" },
+    { name: article.title, path: `/articles/${article.slug}` },
+  ];
+
+  // Related practice areas
+  const relatedSlugs = CATEGORY_PRACTICE_SLUGS[article.category] ?? [];
+  const relatedPracticeAreas = practiceAreas.filter((a) =>
+    relatedSlugs.includes(a.slug)
+  );
+
   return (
     <>
+      <StructuredDataScript data={articleSchema(article)} />
+      {article.faqs.length > 0 && (
+        <StructuredDataScript data={faqSchema(article.faqs)} />
+      )}
+      <StructuredDataScript data={breadcrumbSchema(crumbs)} />
+
+      <Breadcrumbs items={crumbs} />
+
       <PageHero
         eyebrow={article.category}
         title={article.title}
@@ -112,6 +152,31 @@ export default async function ArticlePage({ params }: Props) {
                       </details>
                     ))}
                   </div>
+                </div>
+              )}
+
+              {/* Related practice areas */}
+              {relatedPracticeAreas.length > 0 && (
+                <div className="surface-card p-6">
+                  <p className="eyebrow text-muted-foreground">Related Practice Areas</p>
+                  <ul className="mt-4 flex flex-col gap-3">
+                    {relatedPracticeAreas.map((area) => (
+                      <li key={area.slug}>
+                        <Link
+                          href={`/practice-areas/${area.slug}`}
+                          className="group flex items-center justify-between gap-3 text-sm font-medium text-foreground transition-colors hover:text-accent"
+                        >
+                          {area.shortTitle}
+                          <span
+                            className="shrink-0 text-muted-foreground/40 transition-colors group-hover:text-accent"
+                            aria-hidden="true"
+                          >
+                            →
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
 

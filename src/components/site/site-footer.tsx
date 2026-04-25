@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const PRACTICE_LINKS = [
   { label: "Commercial Leasing", href: "/practice-areas/commercial-leasing" },
-  { label: "TREC Compliance & Complaints", href: "/practice-areas/trec-defense-and-realtor-complaints" },
+  { label: "TREC Defense and Realtor Representation", href: "/practice-areas/trec-defense-and-realtor-complaints" },
   { label: "Owner & Partner Disputes", href: "/practice-areas/operating-agreements-and-owner-disputes" },
   { label: "Real Estate Disputes", href: "/practice-areas/real-estate-disputes" },
   { label: "Business Contracts", href: "/practice-areas/business-contract-drafting-and-review" },
@@ -12,7 +12,7 @@ const PRACTICE_LINKS = [
 const MORE_LINKS = [
   { label: "Strategic Case Assessment", href: "/practice-areas/strategic-case-assessment" },
   { label: "Expert Witness", href: "/expert-witness" },
-  { label: "Arbitration & Dispute Resolution", href: "/practice-areas/arbitration-and-dispute-resolution" },
+  { label: "Arbitration, Mediation and ADR", href: "/practice-areas/arbitration-and-dispute-resolution" },
   { label: "Property Management Disputes", href: "/practice-areas" },
 ];
 

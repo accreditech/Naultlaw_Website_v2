@@ -25,7 +25,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.firmName} | ${siteConfig.officeAddress.addressLocality}, TN`,
+    default: "NaultLaw - Home",
     template: siteConfig.titleTemplate,
   },
   description: siteConfig.description,

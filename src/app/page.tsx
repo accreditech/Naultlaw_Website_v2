@@ -12,13 +12,17 @@ import {
   websiteSchema,
 } from "@/lib/structured-data";
 
-export const metadata: Metadata = createMetadata({
-  title:
-    "Business, Real Estate, and Dispute-Resolution Counsel in Sumner County",
-  description:
-    "Business, real estate, and dispute-resolution counsel for owners, investors, brokers, contractors, and real estate professionals in Sumner County and surrounding counties.",
-  path: "/",
-});
+export const metadata: Metadata = {
+  ...createMetadata({
+    title: "Home",
+    description:
+      "Business, real estate, and dispute-resolution counsel for owners, investors, brokers, contractors, and real estate professionals in Sumner County and surrounding counties.",
+    path: "/",
+  }),
+  // Homepage shares a route segment with the root layout, so the layout's
+  // title.template doesn't auto-apply here. Set the full title directly.
+  title: "NaultLaw - Home",
+};
 
 const FEATURED_PA = [
   {
@@ -31,7 +35,7 @@ const FEATURED_PA = [
   },
   {
     slug: "trec-defense-and-realtor-complaints",
-    label: "TREC Compliance & Complaints",
+    label: "TREC Defense and Realtor Representation",
     eyebrow: "Licensing",
     desc:
       "Representing real estate professionals and their clients — whether a complaint has been filed, an investigation is open, or you want a structured review before one becomes likely.",
@@ -526,9 +530,22 @@ export default function HomePage() {
                     marginBottom: "1.25rem",
                   }}
                 >
-                  Most attorneys advise on real estate. Stephen has been
-                  licensed to sell it.
+                  Where Legal advice meets real-world business and real
+                  estate experience.
                 </h2>
+                <p
+                  style={{
+                    fontSize: ".9375rem",
+                    lineHeight: 1.85,
+                    color: "var(--muted-fg)",
+                    marginBottom: "1.25rem",
+                  }}
+                >
+                  Mr. Nault&apos;s professional life began in commercial real
+                  estate — a decade of work that started in financial analysis
+                  and property management and grew into his own real estate
+                  investment company before he turned to the law.
+                </p>
                 <p
                   style={{
                     fontSize: ".9375rem",
@@ -537,10 +554,12 @@ export default function HomePage() {
                     marginBottom: "1.75rem",
                   }}
                 >
-                  That background changes what gets noticed, what questions get
-                  asked, and what the advice actually accounts for. The
-                  difference between legal analysis and real-world business
-                  judgment matters most when things go sideways.
+                  That experience is the difference. Mr. Nault hasn&apos;t
+                  just read about commercial leases, brokerage operations, and
+                  property management — he&apos;s done the work. A legal
+                  opinion that ignores the business reality is rarely useful.
+                  You need a lawyer who understands your business as much as
+                  you do.
                 </p>
                 {[
                   {
@@ -549,7 +568,7 @@ export default function HomePage() {
                   },
                   {
                     h: "A TREC course instructor.",
-                    b: "Not an outside observer of the licensing system. Someone who teaches it — which changes how licensing complaints get evaluated and answered.",
+                    b: "Not an outside observer of the licensing system. Someone who teaches it.",
                   },
                   {
                     h: "Your matter stays with Stephen.",
@@ -722,8 +741,8 @@ export default function HomePage() {
                 },
                 {
                   n: "02",
-                  h: "Fit call",
-                  b: "A short call to confirm no conflict exists and the matter fits this practice. No billing until that's clear.",
+                  h: "Intro call",
+                  b: "A short call to confirm no conflict exists and we are a good fit for one another. No billing until that's clear.",
                 },
                 {
                   n: "03",

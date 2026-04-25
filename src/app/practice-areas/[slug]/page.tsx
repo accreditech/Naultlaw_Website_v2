@@ -1,15 +1,35 @@
 import { notFound } from "next/navigation";
 import { type Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { PageHero } from "@/components/sections/page-hero";
 import { CtaPanel } from "@/components/sections/cta-panel";
 import { ActionLink } from "@/components/site/action-link";
+import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { DisclosurePanel } from "@/components/site/disclosure-panel";
+import { StructuredDataScript } from "@/components/site/structured-data-script";
 import { practiceAreas, getPracticeArea } from "@/lib/content/practice-areas";
+import { resources } from "@/lib/content/resources";
 import { siteImages, pageImages } from "@/lib/content/images";
 import { publicDisclosures } from "@/lib/public-disclosures";
 import { siteConfig } from "@/lib/site-config";
 import { createMetadata } from "@/lib/metadata";
+import {
+  breadcrumbSchema,
+  faqSchema,
+  serviceSchema,
+} from "@/lib/structured-data";
+
+const PRACTICE_ARTICLE_CATEGORIES: Record<string, string[]> = {
+  "commercial-leasing": ["Commercial Leasing"],
+  "trec-defense-and-realtor-complaints": ["Brokerage Risk"],
+  "operating-agreements-and-owner-disputes": ["Owner Disputes"],
+  "business-contract-drafting-and-review": ["Commercial Leasing", "Owner Disputes"],
+  "real-estate-disputes": ["Brokerage Risk", "Commercial Leasing"],
+  "strategic-case-assessment": ["Strategic Case Assessment"],
+  "arbitration-and-dispute-resolution": ["Strategic Case Assessment"],
+  "expert-witness-real-estate-and-brokerage-matters": ["Brokerage Risk"],
+};
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -39,8 +59,27 @@ export default async function PracticeAreaPage({ params }: Props) {
     pageImages.practiceAreas.default;
   const bgSrc = siteImages[imageKey as keyof typeof siteImages];
 
+  // Breadcrumb data shared between nav and schema
+  const crumbs = [
+    { name: "Home", path: "/" },
+    { name: "Practice Areas", path: "/practice-areas" },
+    { name: area.shortTitle, path: `/practice-areas/${area.slug}` },
+  ];
+
+  // Related articles
+  const relatedCategories = PRACTICE_ARTICLE_CATEGORIES[slug] ?? [];
+  const relatedArticles = resources
+    .filter((r) => relatedCategories.includes(r.category))
+    .slice(0, 3);
+
   return (
     <>
+      <StructuredDataScript data={serviceSchema(area)} />
+      {area.faqs.length > 0 && <StructuredDataScript data={faqSchema(area.faqs)} />}
+      <StructuredDataScript data={breadcrumbSchema(crumbs)} />
+
+      <Breadcrumbs items={crumbs} />
+
       <PageHero
         eyebrow={area.eyebrow}
         title={area.title}
@@ -55,6 +94,15 @@ export default async function PracticeAreaPage({ params }: Props) {
             <div className="flex flex-col gap-10">
               {/* Intro pull */}
               <p className="editorial-pull">{area.intro}</p>
+
+              {/* Optional narrative paragraphs */}
+              {area.narrative && area.narrative.length > 0 && (
+                <div className="flex flex-col gap-5 text-base leading-7 text-foreground/85">
+                  {area.narrative.map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
+              )}
 
               {/* Who it's for */}
               <div>
@@ -212,6 +260,46 @@ export default async function PracticeAreaPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* ── RELATED ARTICLES ──────────────────────────────────────── */}
+      {relatedArticles.length > 0 && (
+        <section className="section-padding bg-muted/40">
+          <div className="container-shell">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="eyebrow text-muted-foreground">Related Reading</p>
+                <h2 className="mt-2 font-heading text-2xl tracking-tight text-foreground sm:text-3xl">
+                  Articles on this topic.
+                </h2>
+              </div>
+              <Link
+                href="/articles"
+                className="shrink-0 self-start text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:self-auto"
+              >
+                All Articles →
+              </Link>
+            </div>
+
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedArticles.map((article) => (
+                <Link
+                  key={article.slug}
+                  href={`/articles/${article.slug}`}
+                  className="surface-card group flex flex-col gap-3 p-6 no-underline transition-shadow hover:shadow-md"
+                >
+                  <p className="eyebrow text-muted-foreground">{article.category}</p>
+                  <h3 className="font-heading text-base leading-snug text-foreground transition-colors group-hover:text-accent">
+                    {article.title}
+                  </h3>
+                  <p className="mt-auto text-sm leading-6 text-muted-foreground line-clamp-3">
+                    {article.excerpt}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CtaPanel />
     </>
