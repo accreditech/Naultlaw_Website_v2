@@ -21,7 +21,7 @@ const responsiveTargets = [
 
 const accessibilityTargets = [
   "/",
-  "/who-i-help",
+  "/expert-witness",
   "/about",
   "/articles",
   "/articles/when-a-broker-complaint-turns-into-a-records-problem",

@@ -1,123 +1,279 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Phone } from "lucide-react";
-import { ActionLink } from "@/components/site/action-link";
-import { BrandLogo } from "@/components/site/brand-logo";
-import { siteConfig, officeHours } from "@/lib/site-config";
-import { publicDisclosures } from "@/lib/public-disclosures";
 
-const practiceLinks = [
+const PRACTICE_LINKS = [
   { label: "Commercial Leasing", href: "/practice-areas/commercial-leasing" },
-  { label: "TREC Defense", href: "/practice-areas/trec-defense-and-realtor-complaints" },
-  { label: "Owner Disputes", href: "/practice-areas/operating-agreements-and-owner-disputes" },
-  { label: "Business Contracts", href: "/practice-areas/business-contract-drafting-and-review" },
+  { label: "TREC Compliance & Complaints", href: "/practice-areas/trec-defense-and-realtor-complaints" },
+  { label: "Owner & Partner Disputes", href: "/practice-areas/operating-agreements-and-owner-disputes" },
   { label: "Real Estate Disputes", href: "/practice-areas/real-estate-disputes" },
-  { label: "All Practice Areas", href: "/practice-areas" },
+  { label: "Business Contracts", href: "/practice-areas/business-contract-drafting-and-review" },
 ];
 
-const legalLinks = [
-  { label: "Website Disclaimer", href: "/website-disclaimer" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms of Use", href: "/terms-of-use" },
-  { label: "No Attorney-Client Relationship", href: "/no-attorney-client-relationship" },
+const MORE_LINKS = [
+  { label: "Strategic Case Assessment", href: "/practice-areas/strategic-case-assessment" },
+  { label: "Expert Witness", href: "/expert-witness" },
+  { label: "Arbitration & Dispute Resolution", href: "/practice-areas/arbitration-and-dispute-resolution" },
+  { label: "Property Management Disputes", href: "/practice-areas" },
 ];
+
+const LEGAL_LINKS = [
+  { label: "Site Terms", href: "/terms-of-use" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Rules of Professional Conduct", href: "/no-attorney-client-relationship" },
+  { label: "Attorney Advertising", href: "/website-disclaimer" },
+];
+
+const OFFICE_PHONE_DISPLAY = "(615) 953-9505";
+const OFFICE_PHONE_HREF = "tel:+16159539505";
 
 export function SiteFooter() {
-  const year = new Date().getFullYear();
-
   return (
-    <footer className="border-t border-border bg-muted/30">
-      <div className="container-shell py-12 lg:py-16">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <BrandLogo />
-            <p className="mt-4 text-sm leading-6 text-muted-foreground">
-              {siteConfig.firmName}
-              <br />
-              {siteConfig.officeAddressLines[0]}
-              <br />
-              {siteConfig.officeAddressLines[1]}
+    <footer
+      style={{
+        background: "var(--primary)",
+        color: "rgba(255,255,255,.75)",
+        paddingBlock: "4.5rem",
+      }}
+    >
+      <div className="shell">
+        <div
+          className="g-4"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.4fr 1fr 1fr 1fr",
+            gap: "3rem",
+            marginBottom: "3rem",
+          }}
+        >
+          {/* Brand column */}
+          <div>
+            <Image
+              src="/brand/logo-white.png"
+              alt="Nault Law"
+              width={220}
+              height={44}
+              style={{ height: 44, width: "auto", marginBottom: 18, opacity: 0.92 }}
+            />
+            <p
+              style={{
+                fontSize: ".875rem",
+                lineHeight: 1.75,
+                color: "rgba(255,255,255,.65)",
+                maxWidth: 260,
+              }}
+            >
+              Practical counsel for business, real estate, strategic
+              consultation, and dispute resolution.
             </p>
-            <div className="mt-6 flex flex-col items-start gap-3">
-              <ActionLink href={siteConfig.primaryCta.href} size="sm">
-                {siteConfig.primaryCta.label}
-              </ActionLink>
-              {siteConfig.hasPhone && (
-                <ActionLink
-                  href={siteConfig.phoneHref}
-                  variant="outlineGold"
-                  size="sm"
-                >
-                  <Phone className="size-4" aria-hidden="true" />
-                  Call {siteConfig.phoneLabel}
-                </ActionLink>
-              )}
-            </div>
-            {siteConfig.hasEmail && (
-              <a
-                href={siteConfig.emailHref}
-                className="mt-5 block text-sm font-medium text-muted-foreground hover:text-accent"
+            <p
+              style={{
+                marginTop: 16,
+                fontSize: ".8125rem",
+                color: "rgba(255,255,255,.65)",
+                lineHeight: 1.7,
+              }}
+            >
+              121 S. Hickory Ave
+              <br />
+              Gallatin, TN 37066
+            </p>
+          </div>
+
+          {/* Practice column */}
+          <div>
+            <p
+              style={{
+                fontSize: ".68rem",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: ".18em",
+                color: "rgba(255,255,255,.65)",
+                marginBottom: 14,
+              }}
+            >
+              Practice
+            </p>
+            {PRACTICE_LINKS.map((p) => (
+              <Link
+                key={p.href}
+                href={p.href}
+                className="footer-col-link"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: ".875rem",
+                  marginBottom: 4,
+                  padding: "8px 0",
+                  color: "rgba(255,255,255,.65)",
+                  minHeight: 40,
+                  textDecoration: "none",
+                }}
               >
-                {siteConfig.email}
-              </a>
-            )}
+                {p.label}
+              </Link>
+            ))}
           </div>
 
-          {/* Practice Areas */}
+          {/* More column */}
           <div>
-            <p className="eyebrow mb-4">Practice Areas</p>
-            <ul className="flex flex-col">
-              {practiceLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="inline-flex min-h-11 items-center text-sm text-muted-foreground hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <p
+              style={{
+                fontSize: ".68rem",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: ".18em",
+                color: "rgba(255,255,255,.65)",
+                marginBottom: 14,
+              }}
+            >
+              More
+            </p>
+            {MORE_LINKS.map((p) => (
+              <Link
+                key={p.href}
+                href={p.href}
+                className="footer-col-link"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: ".875rem",
+                  marginBottom: 4,
+                  padding: "8px 0",
+                  color: "rgba(255,255,255,.65)",
+                  minHeight: 40,
+                  textDecoration: "none",
+                }}
+              >
+                {p.label}
+              </Link>
+            ))}
           </div>
 
-          {/* Office hours */}
+          {/* Contact column */}
           <div>
-            <p className="eyebrow mb-4">Office Hours</p>
-            <ul className="flex flex-col gap-2">
-              {officeHours.map((item) => (
-                <li key={item} className="text-sm text-muted-foreground">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <p className="eyebrow mb-4">Legal</p>
-            <ul className="flex flex-col">
-              {legalLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="inline-flex min-h-11 items-center text-sm text-muted-foreground hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <p
+              style={{
+                fontSize: ".68rem",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: ".18em",
+                color: "rgba(255,255,255,.65)",
+                marginBottom: 14,
+              }}
+            >
+              Contact
+            </p>
+            <Link
+              href="/contact"
+              style={{
+                display: "block",
+                width: "100%",
+                fontFamily: "var(--font-body)",
+                fontSize: ".85rem",
+                fontWeight: 600,
+                padding: "12px 20px",
+                borderRadius: 6,
+                background: "var(--accent)",
+                color: "var(--primary)",
+                marginBottom: 10,
+                textAlign: "center",
+                textDecoration: "none",
+              }}
+            >
+              Schedule a Consultation
+            </Link>
+            <a
+              href={OFFICE_PHONE_HREF}
+              style={{
+                width: "100%",
+                fontFamily: "var(--font-body)",
+                fontSize: ".85rem",
+                fontWeight: 600,
+                padding: "12px 20px",
+                borderRadius: 6,
+                background: "transparent",
+                color: "var(--accent)",
+                border: "1.5px solid var(--accent)",
+                marginBottom: 16,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 8,
+                textDecoration: "none",
+              }}
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Call {OFFICE_PHONE_DISPLAY}
+            </a>
+            <p
+              style={{
+                fontSize: ".75rem",
+                color: "rgba(255,255,255,.65)",
+                lineHeight: 1.75,
+              }}
+            >
+              Monday–Friday
+              <br />
+              By appointment
+              <br />
+              Sumner, Wilson, Robertson,
+              <br />
+              Trousdale &amp; Davidson Counties
+            </p>
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-12 border-t border-border pt-8">
-          <p className="text-xs leading-6 text-muted-foreground">
-            &copy; {year} {siteConfig.firmName}. All rights reserved.
+        <div
+          className="footer-bottom-row"
+          style={{
+            borderTop: "1px solid rgba(255,255,255,.1)",
+            paddingTop: "1.5rem",
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 12,
+            alignItems: "center",
+          }}
+        >
+          <p
+            style={{
+              fontSize: ".75rem",
+              color: "rgba(255,255,255,.55)",
+            }}
+          >
+            © 2025 The Law Office of Stephen Nault. Attorney advertising. No
+            attorney-client relationship is formed by visiting this website.
           </p>
-          <p className="mt-2 text-xs leading-6 text-muted-foreground max-w-3xl">
-            {publicDisclosures.footer}
-          </p>
+          <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap" }}>
+            {LEGAL_LINKS.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="footer-legal-link"
+                style={{
+                  fontSize: ".8125rem",
+                  color: "rgba(255,255,255,.6)",
+                  padding: "8px 0",
+                  minHeight: 32,
+                  textDecoration: "none",
+                }}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

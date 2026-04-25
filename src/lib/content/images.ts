@@ -123,7 +123,7 @@ export const pageImages = {
     "davidson-county": "locationDavidson",
     default: "heroPrimary",
   },
-  // Resources — category → image key
+  // Resources — category → image key (legacy, kept for compatibility)
   resources: {
     "commercial-leasing": "articleContract",
     "trec": "articleArchitecture",
@@ -131,4 +131,21 @@ export const pageImages = {
     "real-estate": "buildingMixedUse",
     default: "workspaceDesk",
   },
+  // Resources — per-slug image override (used by the new article cards).
+  // Mix of with-people / without-people imagery picked to fit each piece.
+  articleSlugs: {
+    "when-a-broker-complaint-turns-into-a-records-problem": "/images/realtorreview.jpg",
+    "commission-disputes-that-carry-more-than-money-risk": "/images/bizconflict.jpg",
+    "when-a-transaction-complaint-may-also-create-civil-exposure": "/images/contractreviewguy.jpg",
+    "deadlock-in-a-closely-held-business-decision-points-before-escalation": "/images/modern_executive_conference.jpg",
+    "when-the-operating-agreement-no-longer-matches-reality": "/images/pen_contract.jpg",
+    "books-records-and-account-access-early-control-red-flags": "/images/workspace_flat_lay.jpg",
+    "early-mistakes-that-make-a-brokerage-complaint-worse": "/images/coupleconcerned.jpg",
+    "what-to-do-when-a-commercial-lease-default-notice-arrives": "/images/concernedcontractor.jpg",
+    "five-commercial-lease-terms-worth-slowing-down-for": "/images/modern_commercial_mixed_bldg.jpg",
+    "what-to-do-first-after-a-trec-complaint-arrives": "/images/elegant_lawyer_desk.jpg",
+    "what-the-tennessee-real-estate-commission-can-and-cannot-do": "/images/main_street_usa.jpg",
+    "owner-dispute-warning-signs-before-the-business-stalls": "/images/Entrepreneurshop.jpg",
+    "what-investigate-and-advise-looks-like-before-suit": "/images/architecrural_corner_steel_brick.jpg",
+  } as Record<string, string>,
 } as const;
