@@ -98,25 +98,50 @@ export const leads = pgTable(
     crmSyncStatus: varchar("crm_sync_status", { length: 40 })
       .notNull()
       .default("pending"),
+    // Required PII (the simplified intake collects these and only these)
     name: varchar("name", { length: 180 }).notNull(),
-    companyName: varchar("company_name", { length: 180 }),
     email: varchar("email", { length: 255 }).notNull(),
     phone: varchar("phone", { length: 40 }).notNull(),
-    county: varchar("county", { length: 120 }).notNull(),
-    opposingParties: varchar("opposing_parties", { length: 255 }).notNull(),
-    practiceArea: varchar("practice_area", { length: 140 }).notNull(),
-    issueType: varchar("issue_type", { length: 160 }).notNull(),
+
+    // Optional fields — were NOT NULL in earlier schema; relaxed because
+    // the simplified intake collects most of these only at Stage Two
+    // (or not at all). Existing rows are unaffected.
+    companyName: varchar("company_name", { length: 180 }),
+    description: text("description"),
+    valueAtStake: varchar("value_at_stake", { length: 80 }),
+    county: varchar("county", { length: 120 }),
+    opposingParties: varchar("opposing_parties", { length: 255 }),
+    practiceArea: varchar("practice_area", { length: 140 }),
+    issueType: varchar("issue_type", { length: 160 }),
     propertyAddress: varchar("property_address", { length: 255 }),
-    pendingMatter: boolean("pending_matter").notNull().default(false),
-    urgencyDeadline: varchar("urgency_deadline", { length: 160 }).notNull(),
-    referralSource: varchar("referral_source", { length: 160 }).notNull(),
+    pendingMatter: boolean("pending_matter"),
+    urgencyDeadline: varchar("urgency_deadline", { length: 160 }),
+    referralSource: varchar("referral_source", { length: 160 }),
+
+    // First-touch attribution + on-site behavior. Captured client-side,
+    // sent with the intake submission, exposed to staff in the BCC email
+    // and synced to CRM under the analytics.* section of the payload.
+    utmSource: varchar("utm_source", { length: 160 }),
+    utmMedium: varchar("utm_medium", { length: 160 }),
+    utmCampaign: varchar("utm_campaign", { length: 200 }),
+    utmTerm: varchar("utm_term", { length: 200 }),
+    utmContent: varchar("utm_content", { length: 200 }),
+    referrerUrl: text("referrer_url"),
+    landingPath: varchar("landing_path", { length: 255 }),
+    journey: jsonb("journey")
+      .$type<Array<{ path: string; ts: string }>>(),
+
+    // Page where the form was submitted from (existing field, kept).
     sourcePath: varchar("source_path", { length: 255 }),
+
+    // Server-collected metadata (not from the form).
     ipHash: varchar("ip_hash", { length: 128 }),
     userAgent: text("user_agent"),
     spamSignals: jsonb("spam_signals")
       .$type<Record<string, unknown>>()
       .notNull()
       .default({}),
+
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -128,6 +153,7 @@ export const leads = pgTable(
     emailIndex: index("leads_email_idx").on(table.email),
     createdAtIndex: index("leads_created_at_idx").on(table.createdAt),
     ipIndex: index("leads_ip_hash_idx").on(table.ipHash),
+    utmSourceIndex: index("leads_utm_source_idx").on(table.utmSource),
   })
 );
 

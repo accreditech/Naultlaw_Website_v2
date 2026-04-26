@@ -123,10 +123,11 @@ export async function POST(request: NextRequest) {
       input: parsed.data,
     });
 
-    const query = new URLSearchParams({
-      lead: leadId,
-      practice: parsed.data.practiceArea,
-    });
+    const queryParams: Record<string, string> = { lead: leadId };
+    if (parsed.data.practiceArea) {
+      queryParams.practice = parsed.data.practiceArea;
+    }
+    const query = new URLSearchParams(queryParams);
 
     return NextResponse.json(
       {
