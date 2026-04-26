@@ -202,11 +202,13 @@ export async function logIntakeFailure({
 export async function syncLeadAndPersist({
   leadId,
   input,
+  source,
 }: {
   leadId: string;
   input: StageOneIntakeInput;
+  source?: { name?: string; form?: string; intakeStage?: string };
 }) {
-  const result = await syncLeadToCrm({ leadId, intake: input });
+  const result = await syncLeadToCrm({ leadId, intake: input, source });
   await persistCrmSyncResult(leadId, result);
   return result;
 }
