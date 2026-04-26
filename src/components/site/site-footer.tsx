@@ -17,10 +17,7 @@ const MORE_LINKS = [
 ];
 
 const LEGAL_LINKS = [
-  { label: "Site Terms", href: "/terms-of-use" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Rules of Professional Conduct", href: "/no-attorney-client-relationship" },
-  { label: "Attorney Advertising", href: "/website-disclaimer" },
+  { label: "Legal", href: "/legal" },
 ];
 
 const OFFICE_PHONE_DISPLAY = "(615) 953-9505";

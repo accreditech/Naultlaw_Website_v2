@@ -64,22 +64,21 @@ async function run() {
     await expectNoVisiblePlaceholder(page, "Homepage");
 
     // ── Contact page ────────────────────────────────────────
+    // V2 simplified intake: fields are Name, Email, Phone, plus optionals.
+    // Submitting without the acknowledgment checkbox should surface the
+    // banner-level required-field error.
     await page.goto(`${baseUrl}/contact`, { waitUntil: "networkidle" });
     await page
       .getByRole("heading", { name: /Let's discuss your matter/i, level: 1 })
       .waitFor();
-    await page.getByText(/Important Before You Submit/i).waitFor();
-    await page.getByRole("textbox", { name: "Full name" }).fill("TEST - DO NOT CONTACT");
-    await page.getByRole("textbox", { name: "Email" }).fill("test@example.com");
-    await page.getByRole("textbox", { name: "Phone" }).fill("615-555-0100");
-    await page.getByRole("textbox", { name: /Opposing party or parties/i }).fill(
-      "Acme Holdings LLC",
-    );
-    await page.getByRole("button", { name: /Submit Consultation Request/i }).click();
+    await page.getByText(/Keep this high-level/i).waitFor();
+    await page.getByRole("textbox", { name: /Full Name or Company Name/i }).fill("TEST - DO NOT CONTACT");
+    await page.getByRole("textbox", { name: /Email Address/i }).fill("test@example.com");
+    await page.getByRole("textbox", { name: "Phone" }).fill("6155550100");
+    await page.getByRole("button", { name: /^Submit$/i }).click();
+    // Acknowledgment is required and unchecked, so the error banner appears.
     await page
-      .getByText(
-        /Please confirm that you understand the intake acknowledgment before submitting\./i,
-      )
+      .getByText(/Please confirm that you understand the intake acknowledgment/i)
       .waitFor();
     await expectNoVisiblePlaceholder(page, "Contact page");
 
@@ -122,10 +121,35 @@ async function run() {
       .waitFor();
     await expectNoVisiblePlaceholder(page, "Article detail page");
 
-    // ── Legal pages ─────────────────────────────────────────
-    await page.goto(`${baseUrl}/website-disclaimer`, { waitUntil: "networkidle" });
-    await page.getByRole("heading", { level: 1, name: /Website Disclaimer/i }).waitFor();
-    await expectNoVisiblePlaceholder(page, "Website disclaimer page");
+    // ── Legal page (consolidated /legal replaces 4 prior pages) ─
+    await page.goto(`${baseUrl}/legal`, { waitUntil: "networkidle" });
+    await page
+      .getByRole("heading", { level: 1, name: /Site terms, privacy/i })
+      .waitFor();
+    // Verify the 4 anchor sections all rendered
+    await page
+      .getByRole("heading", { level: 2, name: /Terms of Use/i })
+      .waitFor();
+    await page
+      .getByRole("heading", { level: 2, name: /Privacy Policy/i })
+      .waitFor();
+    await expectNoVisiblePlaceholder(page, "Legal page");
+
+    // Spot-check a 301 redirect from the old URL still lands somewhere valid
+    const redirectResp = await page.goto(`${baseUrl}/website-disclaimer`, {
+      waitUntil: "networkidle",
+    });
+    const finalUrl = page.url();
+    if (!finalUrl.includes("/legal")) {
+      throw new Error(
+        `Expected /website-disclaimer to redirect to /legal, got ${finalUrl}`
+      );
+    }
+    if (redirectResp && redirectResp.status() >= 400) {
+      throw new Error(
+        `Redirect target /legal returned ${redirectResp.status()}`
+      );
+    }
 
     // ── Unexpected errors ────────────────────────────────────
     assert.equal(
