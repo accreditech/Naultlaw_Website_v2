@@ -829,7 +829,11 @@ export function IntakeForm() {
           Need to reach the office directly? Call{" "}
           <a
             href={siteConfig.phoneHref}
-            style={{ color: "var(--accent-readable)" }}
+            style={{
+              color: "var(--accent-readable)",
+              textDecoration: "underline",
+              textUnderlineOffset: 2,
+            }}
           >
             {siteConfig.phoneLabel}
           </a>
