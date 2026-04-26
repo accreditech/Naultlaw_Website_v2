@@ -68,9 +68,12 @@ function inputStyle(hasError: boolean): React.CSSProperties {
     minHeight: 48,
     border: `1px solid ${hasError ? "#b4462f" : BORDER_DEFAULT}`,
     borderRadius: 6,
-    background: "var(--white)",
+    background: hasError ? "#fcefe9" : "var(--white)",
     color: "var(--fg)",
     outline: "none",
+    boxShadow: hasError ? "0 0 0 4px rgba(180, 70, 47, 0.12)" : "none",
+    scrollMarginTop: 100,
+    transition: "background .2s, border-color .2s, box-shadow .2s",
   };
 }
 
@@ -170,9 +173,36 @@ export function IntakeForm() {
     if (Object.keys(localErrors).length > 0) {
       setErrors(localErrors);
       setSubmitting(false);
+      // Scroll to and focus the FIRST missing field — not the top-of-form
+      // banner. The banner is reference; the field is where action is needed.
+      // Form fields are checked in their visual order so the user lands on
+      // the topmost remaining issue.
+      const fieldOrder = ["name", "email", "phone", "acknowledgment"] as const;
+      const firstMissing = fieldOrder.find((k) => localErrors[k]);
       requestAnimationFrame(() => {
-        const banner = document.getElementById("intake-error-banner");
-        banner?.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (firstMissing) {
+          const scrollTargetId =
+            firstMissing === "acknowledgment"
+              ? "intake-ack-block"
+              : `intake-${firstMissing}`;
+          const focusTargetId =
+            firstMissing === "acknowledgment"
+              ? "intake-ack"
+              : `intake-${firstMissing}`;
+          const target = document.getElementById(scrollTargetId);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+          // Defer focus until the smooth-scroll animation has begun, so the
+          // browser doesn't fight the scroll with focus's instant snap.
+          setTimeout(() => {
+            document.getElementById(focusTargetId)?.focus({ preventScroll: true });
+          }, 350);
+        } else {
+          document
+            .getElementById("intake-error-banner")
+            ?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       });
       return;
     }
@@ -203,9 +233,25 @@ export function IntakeForm() {
             "We could not submit your request right now. Please call the office if the matter is urgent."
         );
         setSubmitting(false);
+        // Scroll to first error field if any, otherwise to the banner.
+        const fieldOrder = ["name", "email", "phone", "acknowledgment"] as const;
+        const firstMissing = fieldOrder.find(
+          (k) => result.fieldErrors?.[k]
+        );
         requestAnimationFrame(() => {
-          const banner = document.getElementById("intake-error-banner");
-          banner?.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (firstMissing) {
+            const scrollTargetId =
+              firstMissing === "acknowledgment"
+                ? "intake-ack-block"
+                : `intake-${firstMissing}`;
+            document
+              .getElementById(scrollTargetId)
+              ?.scrollIntoView({ behavior: "smooth", block: "center" });
+          } else {
+            document
+              .getElementById("intake-error-banner")
+              ?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         });
         return;
       }
@@ -731,13 +777,34 @@ export function IntakeForm() {
 
         {/* Acknowledgment */}
         <div
+          id="intake-ack-block"
           style={{
             marginTop: ".5rem",
             padding: "1rem 1.25rem",
             borderRadius: 8,
-            background: "var(--muted)",
+            background: errors.acknowledgment ? "#fcefe9" : "var(--muted)",
+            border: errors.acknowledgment
+              ? "2px solid #b4462f"
+              : "2px solid transparent",
+            boxShadow: errors.acknowledgment
+              ? "0 0 0 4px rgba(180, 70, 47, 0.12)"
+              : "none",
+            transition: "background .2s, border-color .2s, box-shadow .2s",
+            scrollMarginTop: 100,
           }}
         >
+          {errors.acknowledgment && (
+            <p
+              style={{
+                fontSize: ".875rem",
+                fontWeight: 700,
+                color: "#7a2e1a",
+                marginBottom: 10,
+              }}
+            >
+              ↓ Please check the box below to continue.
+            </p>
+          )}
           <label
             htmlFor="intake-ack"
             style={{
