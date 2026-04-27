@@ -57,6 +57,12 @@ Visitor → /contact → IntakeForm submit
 
 Everything else is optional.
 
+## CRM contract
+
+The shape of the payload posted to the CRM webhook (URL, auth, upsert behavior,
+field-by-field reference) is documented separately in
+[`docs/crm-contract.md`](./crm-contract.md).
+
 ## Hidden tracking fields populated by visitor-tracker
 
 Captured on first session view, stored in `sessionStorage`, attached at submit time:
