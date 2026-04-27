@@ -21,6 +21,9 @@ export function createMetadata({
   keywords = [],
 }: CreateMetadataInput): Metadata {
   const canonical = absoluteUrl(path);
+  // Apply the brand prefix to og:/twitter: titles so social cards match the
+  // browser-tab title pattern ("NaultLaw - Home" instead of just "Home").
+  const socialTitle = `NaultLaw - ${title}`;
 
   return {
     title,
@@ -30,7 +33,7 @@ export function createMetadata({
       canonical,
     },
     openGraph: {
-      title,
+      title: socialTitle,
       description,
       url: canonical,
       siteName: siteConfig.name,
@@ -47,7 +50,7 @@ export function createMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: socialTitle,
       description,
       images: [absoluteUrl("/twitter-image")],
     },

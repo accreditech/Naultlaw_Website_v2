@@ -1,29 +1,73 @@
-import Link from "next/link";
 import { type Metadata } from "next";
-import { PageHero } from "@/components/sections/page-hero";
 import { StructuredDataScript } from "@/components/site/structured-data-script";
+import { ArticlesIndex } from "@/components/sections/articles-index";
 import { resources } from "@/lib/content/resources";
+import { pageImages } from "@/lib/content/images";
 import { createMetadata } from "@/lib/metadata";
 import { collectionPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = createMetadata({
-  title: "Guides",
+  title: "Articles",
   description:
-    "Substantive guides on Tennessee commercial leasing, TREC defense, real estate disputes, owner disputes, and business law — with specific citations and practical context.",
+    "Practical writing on Tennessee commercial leasing, TREC matters, real estate disputes, and the industry issues that sit underneath them.",
   path: "/articles",
 });
 
-// Get unique categories
-const categories = ["All", ...Array.from(new Set(resources.map((r) => r.category)))];
+const READ_TIMES: Record<string, string> = {
+  "when-a-broker-complaint-turns-into-a-records-problem": "9 min",
+  "commission-disputes-that-carry-more-than-money-risk": "8 min",
+  "when-a-transaction-complaint-may-also-create-civil-exposure": "9 min",
+  "deadlock-in-a-closely-held-business-decision-points-before-escalation": "8 min",
+  "when-the-operating-agreement-no-longer-matches-reality": "8 min",
+  "books-records-and-account-access-early-control-red-flags": "8 min",
+  "early-mistakes-that-make-a-brokerage-complaint-worse": "8 min",
+  "what-to-do-when-a-commercial-lease-default-notice-arrives": "7 min",
+  "five-commercial-lease-terms-worth-slowing-down-for": "6 min",
+  "what-to-do-first-after-a-trec-complaint-arrives": "6 min",
+  "what-the-tennessee-real-estate-commission-can-and-cannot-do": "8 min",
+  "owner-dispute-warning-signs-before-the-business-stalls": "6 min",
+  "what-investigate-and-advise-looks-like-before-suit": "7 min",
+};
+
+const DATE_LABELS: Record<string, string> = {
+  "when-a-broker-complaint-turns-into-a-records-problem": "April 2026",
+  "commission-disputes-that-carry-more-than-money-risk": "April 2026",
+  "when-a-transaction-complaint-may-also-create-civil-exposure": "April 2026",
+  "deadlock-in-a-closely-held-business-decision-points-before-escalation": "March 2026",
+  "when-the-operating-agreement-no-longer-matches-reality": "March 2026",
+  "books-records-and-account-access-early-control-red-flags": "March 2026",
+  "early-mistakes-that-make-a-brokerage-complaint-worse": "February 2026",
+  "what-to-do-when-a-commercial-lease-default-notice-arrives": "February 2026",
+  "five-commercial-lease-terms-worth-slowing-down-for": "January 2026",
+  "what-to-do-first-after-a-trec-complaint-arrives": "January 2026",
+  "what-the-tennessee-real-estate-commission-can-and-cannot-do": "December 2025",
+  "owner-dispute-warning-signs-before-the-business-stalls": "December 2025",
+  "what-investigate-and-advise-looks-like-before-suit": "November 2025",
+};
 
 export default function ArticlesPage() {
+  const articles = resources.map((r, i) => ({
+    slug: r.slug,
+    title: r.title,
+    category: r.category,
+    excerpt: r.excerpt,
+    img: pageImages.articleSlugs[r.slug] ?? "/images/workspace_flat_lay.jpg",
+    date: DATE_LABELS[r.slug] ?? "2026",
+    read: READ_TIMES[r.slug] ?? "6 min",
+    featured: i === 0,
+  }));
+  const categories = [
+    "All",
+    ...Array.from(new Set(resources.map((r) => r.category))),
+  ];
+
   return (
     <>
       <StructuredDataScript
         data={collectionPageSchema({
-          title: "Guides",
+          title: "Articles",
           description:
-            "Substantive guides on Tennessee commercial leasing, TREC defense, real estate disputes, owner disputes, and business law — with specific citations and practical context.",
+            "Practical writing on Tennessee commercial leasing, TREC matters, real estate disputes, and the industry issues that sit underneath them.",
           path: "/articles",
           items: resources.map((r) => ({
             name: r.title,
@@ -31,47 +75,7 @@ export default function ArticlesPage() {
           })),
         })}
       />
-
-      <PageHero
-        eyebrow="Guides"
-        title="Substantive writing on the issues this practice handles."
-        summary="Thirteen guides on Tennessee real estate and business law — with specific citations, practical context, and no filler. Read before you call."
-      />
-
-      <section className="section-padding">
-        <div className="container-shell">
-          {/* Category labels */}
-          <div className="flex flex-wrap gap-2 border-b border-border pb-6">
-            {categories.map((cat) => (
-              <span
-                key={cat}
-                className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
-              >
-                {cat}
-              </span>
-            ))}
-          </div>
-
-          {/* Article grid */}
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {resources.map((article) => (
-              <Link
-                key={article.slug}
-                href={`/articles/${article.slug}`}
-                className="surface-card group flex flex-col gap-3 p-6 no-underline transition-shadow hover:shadow-md"
-              >
-                <p className="eyebrow text-muted-foreground">{article.category}</p>
-                <h2 className="font-heading text-lg leading-snug text-foreground group-hover:text-accent transition-colors">
-                  {article.title}
-                </h2>
-                <p className="mt-auto text-sm leading-6 text-muted-foreground line-clamp-3">
-                  {article.excerpt}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ArticlesIndex articles={articles} categories={categories} />
     </>
   );
 }

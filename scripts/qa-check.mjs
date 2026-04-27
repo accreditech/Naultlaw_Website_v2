@@ -21,9 +21,18 @@ const responsiveTargets = [
 
 const accessibilityTargets = [
   "/",
-  "/contact",
+  "/expert-witness",
   "/about",
+  "/articles",
+  "/articles/when-a-broker-complaint-turns-into-a-records-problem",
+  "/practice-areas",
   "/practice-areas/commercial-leasing",
+  "/contact",
+  "/intake-notice",
+  // Consolidated legal page (replaces /terms-of-use, /privacy-policy,
+  // /website-disclaimer, /no-attorney-client-relationship — all of which
+  // 301-redirect here now).
+  "/legal",
 ];
 
 function formatViolations(path, violations) {
@@ -125,20 +134,18 @@ async function run() {
     await page.keyboard.press("Escape");
     await page.getByRole("button", { name: /open menu/i }).waitFor();
 
-    // ── Contact form validation ──────────────────────────────────
+    // ── Contact form validation (V2 simplified intake) ───────────
     await page.goto(`${baseUrl}/contact`, { waitUntil: "domcontentloaded" });
-    await page.getByRole("textbox", { name: /full name/i }).fill("QA Prospect");
-    await page.getByRole("textbox", { name: /email/i }).fill("qa@example.com");
-    await page.getByRole("textbox", { name: /phone/i }).fill("615-555-0100");
-    await page.getByRole("textbox", { name: /opposing party or parties/i }).fill(
-      "Example Counterparty LLC"
-    );
-    await page.getByRole("button", { name: /submit consultation request/i }).click();
+    await page.getByRole("textbox", { name: /full name or company name/i }).fill("QA Prospect");
+    await page.getByRole("textbox", { name: /email address/i }).fill("qa@example.com");
+    await page.getByRole("textbox", { name: /^phone$/i }).fill("6155550100");
+    await page.getByRole("button", { name: /^Submit$/i }).click();
+    // Acknowledgment unchecked → banner-level required-field error appears.
     await page
       .getByText(/please confirm that you understand the intake acknowledgment/i)
       .waitFor();
     const acknowledgmentInvalid = await page
-      .locator("#acknowledgment")
+      .locator("#intake-ack")
       .getAttribute("aria-invalid");
     assert.equal(
       acknowledgmentInvalid,

@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Playfair_Display, Manrope } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Suspense } from "react";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
-import { MobileCtaBar } from "@/components/site/mobile-cta-bar";
+import { MobileBottomBar } from "@/components/site/mobile-bottom-bar";
+import { VisitorTracker } from "@/components/site/visitor-tracker";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-playfair",
   display: "swap",
-  axes: ["SOFT", "WONK"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
 });
 
 const manrope = Manrope({
@@ -24,7 +27,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.firmName} | ${siteConfig.officeAddress.addressLocality}, TN`,
+    default: "NaultLaw - Home",
     template: siteConfig.titleTemplate,
   },
   description: siteConfig.description,
@@ -47,9 +50,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${manrope.variable} h-full`}
+      className={`${playfair.variable} ${manrope.variable} h-full`}
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground antialiased">
+      <body className="flex min-h-full flex-col antialiased">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-primary-foreground focus:outline-none"
@@ -57,14 +60,14 @@ export default function RootLayout({
           Skip to main content
         </a>
         <SiteHeader />
-        <main
-          id="main-content"
-          className="flex-1 pb-[calc(env(safe-area-inset-bottom,0px)+4.5rem)] lg:pb-0"
-        >
+        <main id="main-content" className="flex-1">
           {children}
         </main>
         <SiteFooter />
-        <MobileCtaBar />
+        <MobileBottomBar />
+        <Suspense fallback={null}>
+          <VisitorTracker />
+        </Suspense>
         <Analytics />
         <SpeedInsights />
       </body>

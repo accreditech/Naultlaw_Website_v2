@@ -29,22 +29,41 @@ export async function createLeadRecord({
     throw new Error("DATABASE_URL is not configured.");
   }
 
+  const pendingMatter =
+    input.pendingMatter === "yes"
+      ? true
+      : input.pendingMatter === "no"
+        ? false
+        : null;
+
   const [lead] = await db
     .insert(schema.leads)
     .values({
       name: input.name,
-      companyName: input.companyName || null,
+      companyName: input.companyName ?? null,
       email: input.email.toLowerCase(),
       phone: input.phone,
-      county: input.county,
-      opposingParties: input.opposingParties,
-      practiceArea: input.practiceArea,
-      issueType: input.issueType,
-      propertyAddress: input.propertyAddress || null,
-      pendingMatter: input.pendingMatter === "yes",
-      urgencyDeadline: input.urgencyDeadline,
-      referralSource: input.referralSource,
-      sourcePath: input.sourcePath || null,
+      description: input.description ?? null,
+      valueAtStake: input.valueAtStake ?? null,
+      county: input.county ?? null,
+      opposingParties: input.opposingParties ?? null,
+      practiceArea: input.practiceArea ?? null,
+      issueType: input.issueType ?? null,
+      propertyAddress: input.propertyAddress ?? null,
+      pendingMatter,
+      urgencyDeadline: input.urgencyDeadline ?? null,
+      referralSource: input.referralSource ?? null,
+      // First-touch attribution + on-site behavior
+      utmSource: input.utmSource ?? null,
+      utmMedium: input.utmMedium ?? null,
+      utmCampaign: input.utmCampaign ?? null,
+      utmTerm: input.utmTerm ?? null,
+      utmContent: input.utmContent ?? null,
+      referrerUrl: input.referrerUrl ?? null,
+      landingPath: input.landingPath ?? null,
+      journey: input.journey && input.journey.length > 0 ? input.journey : null,
+      // Server-collected
+      sourcePath: input.sourcePath ?? null,
       ipHash,
       userAgent,
       spamSignals,
@@ -53,6 +72,40 @@ export async function createLeadRecord({
     .returning({ id: schema.leads.id });
 
   return lead.id;
+}
+
+/**
+ * Look up prior leads with the same hashed IP, ordered most-recent first.
+ * Used by the BCC admin email to surface "this prospect (or this device)
+ * has submitted before" signal — without ever exposing the actual IP.
+ */
+export async function findPriorLeadsByIpHash({
+  ipHash,
+  excludeLeadId,
+  limit = 5,
+}: {
+  ipHash: string;
+  excludeLeadId?: string;
+  limit?: number;
+}) {
+  if (!db) return [];
+  if (!ipHash || ipHash === "unknown") return [];
+
+  const rows = await db
+    .select({
+      id: schema.leads.id,
+      name: schema.leads.name,
+      email: schema.leads.email,
+      createdAt: schema.leads.createdAt,
+    })
+    .from(schema.leads)
+    .where(eq(schema.leads.ipHash, ipHash))
+    .orderBy(schema.leads.createdAt)
+    .limit(limit + 1);
+
+  return rows
+    .filter((row) => row.id !== excludeLeadId)
+    .slice(0, limit);
 }
 
 export async function findLeadById(leadId: string) {
@@ -149,11 +202,13 @@ export async function logIntakeFailure({
 export async function syncLeadAndPersist({
   leadId,
   input,
+  source,
 }: {
   leadId: string;
   input: StageOneIntakeInput;
+  source?: { name?: string; form?: string; intakeStage?: string };
 }) {
-  const result = await syncLeadToCrm({ leadId, intake: input });
+  const result = await syncLeadToCrm({ leadId, intake: input, source });
   await persistCrmSyncResult(leadId, result);
   return result;
 }
