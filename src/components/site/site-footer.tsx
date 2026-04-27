@@ -16,10 +16,6 @@ const MORE_LINKS = [
   { label: "Property Management Disputes", href: "/practice-areas" },
 ];
 
-const LEGAL_LINKS = [
-  { label: "Legal", href: "/legal" },
-];
-
 const OFFICE_PHONE_DISPLAY = "(615) 953-9505";
 const OFFICE_PHONE_HREF = "tel:+16159539505";
 
@@ -238,39 +234,42 @@ export function SiteFooter() {
             borderTop: "1px solid rgba(255,255,255,.1)",
             paddingTop: "1.5rem",
             display: "flex",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-            gap: 12,
-            alignItems: "center",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: 8,
           }}
         >
           <p
             style={{
               fontSize: ".75rem",
               color: "rgba(255,255,255,.55)",
+              lineHeight: 1.7,
             }}
           >
             © 2025 The Law Office of Stephen Nault. Attorney advertising. No
-            attorney-client relationship is formed by visiting this website.
+            attorney-client relationship is formed by visiting or submitting
+            information through this website.
           </p>
-          <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap" }}>
-            {LEGAL_LINKS.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="footer-legal-link"
-                style={{
-                  fontSize: ".8125rem",
-                  color: "rgba(255,255,255,.6)",
-                  padding: "8px 0",
-                  minHeight: 32,
-                  textDecoration: "none",
-                }}
-              >
-                {l.label}
-              </Link>
-            ))}
-          </div>
+          <p
+            style={{
+              fontSize: ".75rem",
+              color: "rgba(255,255,255,.55)",
+              lineHeight: 1.7,
+            }}
+          >
+            Website Terms and Conditions can be found{" "}
+            <Link
+              href="/legal"
+              style={{
+                color: "rgba(255,255,255,.85)",
+                textDecoration: "underline",
+                textUnderlineOffset: 2,
+              }}
+            >
+              here
+            </Link>
+            .
+          </p>
         </div>
       </div>
     </footer>
