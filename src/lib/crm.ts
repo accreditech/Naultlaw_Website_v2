@@ -13,34 +13,88 @@ export type CrmSyncResult = {
   payload: Record<string, unknown>;
 };
 
-function optionalValue(value?: string) {
+function optionalValue(value?: string | null) {
   const trimmed = value?.trim() ?? "";
   return trimmed.length > 0 ? trimmed : null;
 }
 
+/**
+ * Build the CRM payload following the contract documented by the CRM team:
+ *
+ *   matter.valueAtStake (string | null)
+ *   analytics.utmSource / utmMedium / utmCampaign / utmTerm / utmContent
+ *   analytics.referrerUrl
+ *   analytics.journey (array of {path, ts}, max 50 entries)
+ *
+ * Unrecognized fields are silently stripped on the CRM side, so over-sending
+ * is safe — but we keep the shape clean and only send fields they support.
+ */
 function buildCrmPayload({
   leadId,
   intake,
+  source,
 }: {
   leadId: string;
   intake: StageOneIntakeInput;
+  source?: { name?: string; form?: string; intakeStage?: string };
 }): Record<string, unknown> {
   const submittedAt = new Date().toISOString();
-  const practiceArea = getPracticeArea(intake.practiceArea);
+  const practiceArea = intake.practiceArea
+    ? getPracticeArea(intake.practiceArea)
+    : null;
   const sourceName =
-    optionalValue(process.env.CRM_SOURCE_NAME) ?? "Website Consultation Intake";
-  const practiceAreaTitle = practiceArea?.title ?? intake.practiceArea;
+    source?.name ??
+    optionalValue(process.env.CRM_SOURCE_NAME) ??
+    "Website Consultation Intake";
+  const formLabel = source?.form ?? "stage-one";
+  const intakeStage = source?.intakeStage ?? "stage-one";
+  const practiceAreaTitle = practiceArea?.title ?? null;
+  const practiceAreaSlug = intake.practiceArea ?? null;
   const companyName = optionalValue(intake.companyName);
   const propertyAddress = optionalValue(intake.propertyAddress);
   const sourcePath = optionalValue(intake.sourcePath) ?? "/contact";
-  const pendingMatter = intake.pendingMatter === "yes";
-  const summaryLine = `${practiceAreaTitle} inquiry from ${intake.name} in ${intake.county}`;
+  const referralSource = optionalValue(intake.referralSource);
+  const issueType = optionalValue(intake.issueType);
+  const opposingParties = optionalValue(intake.opposingParties);
+  const valueAtStake = optionalValue(intake.valueAtStake);
+  const description = optionalValue(intake.description);
+  const pendingMatter =
+    intake.pendingMatter === "yes"
+      ? true
+      : intake.pendingMatter === "no"
+        ? false
+        : null;
+  const urgencyDeadline = optionalValue(intake.urgencyDeadline);
+  const county = optionalValue(intake.county);
+
+  // Summary line — falls back gracefully when fields are missing
+  const summaryParts: string[] = [];
+  if (practiceAreaTitle) summaryParts.push(`${practiceAreaTitle} inquiry`);
+  else summaryParts.push("Website inquiry");
+  summaryParts.push(`from ${intake.name}`);
+  if (county) summaryParts.push(`in ${county}`);
+  const summaryLine = summaryParts.join(" ");
+
+  const internalSummaryParts: string[] = [`${summaryLine}.`];
+  if (issueType) internalSummaryParts.push(`Issue type: ${issueType}.`);
+  if (referralSource) internalSummaryParts.push(`Referral source: ${referralSource}.`);
+  if (urgencyDeadline) internalSummaryParts.push(`Urgency: ${urgencyDeadline}.`);
+  if (valueAtStake) internalSummaryParts.push(`Value at stake: ${valueAtStake}.`);
+  if (description) internalSummaryParts.push(`Description: ${description}`);
+
+  const tags: string[] = ["website-intake", intakeStage];
+  if (practiceAreaSlug) tags.push(practiceAreaSlug);
+  if (county) tags.push(county.toLowerCase().replace(/\s+/g, "-"));
+  if (pendingMatter === true) tags.push("pending-matter");
+  if (pendingMatter === false) tags.push("no-pending-matter");
+  if (valueAtStake) tags.push(`value-${valueAtStake.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`);
+  if (intake.utmSource) tags.push(`utm-${intake.utmSource}`);
 
   return {
     source: {
       name: sourceName,
       channel: "website",
-      form: "stage-one-conflict-screen",
+      form: formLabel,
       leadId,
       submittedAt,
       sourcePath,
@@ -58,21 +112,33 @@ function buildCrmPayload({
       companyName,
       email: intake.email.toLowerCase(),
       phone: intake.phone,
-      county: intake.county,
-      referralSource: intake.referralSource,
+      county,
+      referralSource,
     },
     matter: {
-      practiceAreaSlug: intake.practiceArea,
+      practiceAreaSlug,
       practiceAreaTitle,
-      issueType: intake.issueType,
-      opposingParties: intake.opposingParties,
+      issueType,
+      opposingParties,
       propertyAddress,
       pendingMatter,
-      urgencyDeadline: intake.urgencyDeadline,
+      urgencyDeadline,
+      valueAtStake,
+      description,
+    },
+    analytics: {
+      utmSource: optionalValue(intake.utmSource),
+      utmMedium: optionalValue(intake.utmMedium),
+      utmCampaign: optionalValue(intake.utmCampaign),
+      utmTerm: optionalValue(intake.utmTerm),
+      utmContent: optionalValue(intake.utmContent),
+      referrerUrl: optionalValue(intake.referrerUrl),
+      landingPath: optionalValue(intake.landingPath),
+      journey: Array.isArray(intake.journey) ? intake.journey : [],
     },
     workflow: {
       leadStatus: "new",
-      intakeStage: "stage-one",
+      intakeStage,
       stageTwoStatus: "planned",
       requestedAction: siteConfig.primaryCta.label,
       conflictScreenRequested: true,
@@ -92,35 +158,26 @@ function buildCrmPayload({
       positioningStatement: siteConfig.positioningStatement,
       primaryServiceCounties: siteConfig.serviceCounties,
       secondaryReach: siteConfig.secondaryReach,
-      tags: [
-        "website-intake",
-        "stage-one",
-        intake.practiceArea,
-        intake.county,
-        pendingMatter ? "pending-matter" : "no-pending-matter",
-      ],
+      tags,
     },
     notes: {
       summaryLine,
-      internalSummary:
-        `${summaryLine}. Issue type: ${intake.issueType}. ` +
-        `Referral source: ${intake.referralSource}. ` +
-        `Urgency: ${intake.urgencyDeadline}.`,
+      internalSummary: internalSummaryParts.join(" "),
     },
     screeningInput: {
       name: intake.name,
       companyName,
       email: intake.email.toLowerCase(),
       phone: intake.phone,
-      county: intake.county,
-      opposingParties: intake.opposingParties,
-      practiceArea: intake.practiceArea,
+      county,
+      opposingParties,
+      practiceArea: practiceAreaSlug,
       practiceAreaTitle,
-      issueType: intake.issueType,
+      issueType,
       propertyAddress,
       pendingMatter,
-      urgencyDeadline: intake.urgencyDeadline,
-      referralSource: intake.referralSource,
+      urgencyDeadline,
+      referralSource,
       acknowledgment: intake.acknowledgment,
     },
   };
@@ -129,14 +186,16 @@ function buildCrmPayload({
 export async function syncLeadToCrm({
   leadId,
   intake,
+  source,
 }: {
   leadId: string;
   intake: StageOneIntakeInput;
+  source?: { name?: string; form?: string; intakeStage?: string };
 }): Promise<CrmSyncResult> {
   const endpoint = process.env.CRM_WEBHOOK_URL ?? null;
   const sourceName =
     optionalValue(process.env.CRM_SOURCE_NAME) ?? "Website Consultation Intake";
-  const payload = buildCrmPayload({ leadId, intake });
+  const payload = buildCrmPayload({ leadId, intake, source });
 
   if (!endpoint) {
     return {

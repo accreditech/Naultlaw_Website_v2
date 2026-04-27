@@ -11,6 +11,7 @@ import {
   logIntakeFailure,
   syncLeadAndPersist,
 } from "@/lib/intake-server";
+import { sendIntakeEmail } from "@/lib/intake-email";
 import { checkLeadRateLimit } from "@/lib/rate-limit";
 
 export async function POST(request: NextRequest) {
@@ -123,10 +124,24 @@ export async function POST(request: NextRequest) {
       input: parsed.data,
     });
 
-    const query = new URLSearchParams({
-      lead: leadId,
-      practice: parsed.data.practiceArea,
-    });
+    // Send the client-confirmation + admin-BCC email. We do NOT block the
+    // response on this — if Resend is slow or down, the lead is already
+    // saved to DB and CRM. Email is best-effort; failures are logged.
+    sendIntakeEmail({ leadId, intake: parsed.data, ipHash })
+      .then((result) => {
+        if (result.status === "failed") {
+          console.error("intake email failed", { leadId, error: result.error });
+        }
+      })
+      .catch((e) => {
+        console.error("intake email threw", { leadId, error: String(e) });
+      });
+
+    const queryParams: Record<string, string> = { lead: leadId };
+    if (parsed.data.practiceArea) {
+      queryParams.practice = parsed.data.practiceArea;
+    }
+    const query = new URLSearchParams(queryParams);
 
     return NextResponse.json(
       {

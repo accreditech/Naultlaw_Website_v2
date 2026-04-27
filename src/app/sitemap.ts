@@ -13,10 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, priority: 0.8, changeFrequency: "monthly" },
     { url: `${base}/articles`, priority: 0.8, changeFrequency: "weekly" },
     { url: `${base}/contact`, priority: 0.9, changeFrequency: "monthly" },
-    { url: `${base}/website-disclaimer`, priority: 0.3, changeFrequency: "yearly" },
-    { url: `${base}/privacy-policy`, priority: 0.3, changeFrequency: "yearly" },
-    { url: `${base}/no-attorney-client-relationship`, priority: 0.3, changeFrequency: "yearly" },
-    { url: `${base}/terms-of-use`, priority: 0.3, changeFrequency: "yearly" },
+    // Legal pages consolidated to a single page with anchor sections.
+    { url: `${base}/legal`, priority: 0.3, changeFrequency: "yearly" },
   ];
 
   const practiceAreaRoutes: MetadataRoute.Sitemap = practiceAreas.map((area) => ({

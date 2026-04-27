@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { Playfair_Display, Manrope } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Suspense } from "react";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
 import { MobileBottomBar } from "@/components/site/mobile-bottom-bar";
+import { VisitorTracker } from "@/components/site/visitor-tracker";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
@@ -63,6 +65,9 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <MobileBottomBar />
+        <Suspense fallback={null}>
+          <VisitorTracker />
+        </Suspense>
         <Analytics />
         <SpeedInsights />
       </body>
