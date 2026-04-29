@@ -6,7 +6,7 @@ import { TestimonialCarousel } from "@/components/sections/testimonial-carousel"
 import { homepageTestimonials } from "@/lib/content/testimonials";
 import { createMetadata } from "@/lib/metadata";
 import {
-  localBusinessSchema,
+  localBusinessWithReviewsSchema,
   organizationSchema,
   personSchema,
   websiteSchema,
@@ -114,7 +114,9 @@ export default function HomePage() {
     <>
       <StructuredDataScript data={websiteSchema()} />
       <StructuredDataScript data={organizationSchema()} />
-      <StructuredDataScript data={localBusinessSchema()} />
+      <StructuredDataScript
+        data={localBusinessWithReviewsSchema(homepageTestimonials)}
+      />
       <StructuredDataScript data={personSchema()} />
 
       <main className="fade-in">
@@ -342,7 +344,15 @@ export default function HomePage() {
         </section>
 
         {/* ── TESTIMONIALS ─────────────────────────────────── */}
-        <section className="sec" style={{ background: "var(--primary)" }}>
+        <section
+          className="sec"
+          style={{
+            background: "var(--primary)",
+            // Slightly tighter than the global .sec padding so the dark
+            // testimonial block doesn't dominate the page.
+            paddingBlock: "clamp(3rem, 5vw, 4.5rem)",
+          }}
+        >
           <div className="shell">
             <TestimonialCarousel testimonials={homepageTestimonials} />
           </div>
