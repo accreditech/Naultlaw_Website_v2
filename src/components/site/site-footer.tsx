@@ -246,7 +246,8 @@ export function SiteFooter() {
               lineHeight: 1.7,
             }}
           >
-            © 2025 The Law Office of Stephen Nault. Attorney advertising. No
+            © 2025 The Law Office of Stephen Nault. Attorney advertising.
+            Prior results do not guarantee a similar outcome. No
             attorney-client relationship is formed by visiting or submitting
             information through this website.
           </p>
