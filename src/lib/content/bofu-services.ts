@@ -17,12 +17,14 @@ import { businessFormationChildren } from "@/lib/content/bofu/business-formation
 import { contractServicesChildren } from "@/lib/content/bofu/contract-services-children";
 import { expertWitnessChildren } from "@/lib/content/bofu/expert-witness-children";
 import { realEstateDisputesChildren } from "@/lib/content/bofu/real-estate-disputes-children";
+import { realEstateTransactionsChildren } from "@/lib/content/bofu/real-estate-transactions-children";
 
 export type BofuHubId =
   | "expert-witness"
   | "business-formation"
   | "contract-services"
   | "real-estate-disputes"
+  | "real-estate-transactions"
   | "business-disputes";
 
 export type BofuHub = {
@@ -147,6 +149,36 @@ export const bofuHubs: BofuHub[] = [
     isLitigation: false,
   },
   {
+    id: "real-estate-transactions",
+    slug: "real-estate-transactions",
+    primaryKeyword: "Real Estate Transactions Attorney in Tennessee",
+    title: "Real Estate Transactions Attorney in Tennessee | Nault Law",
+    h1: "Real Estate Transactions Attorney in Tennessee",
+    metaDescription:
+      "Real estate transactions attorney in Tennessee for purchase agreements, commercial leases, owner financing, land contracts, and joint ventures. Call Nault Law.",
+    intro:
+      "Real estate transactions attorney in Tennessee for the deal-side work — purchase agreements, commercial leases, owner financing, land contracts, joint ventures, and contract assignments — done before a dispute starts.",
+    whatThisCovers:
+      "Transactions work is preventive: clean documents, clear allocation of risk, and the leverage points spelled out before money or property changes hands. The goal is a deal that stays a deal, not one that turns into a fight after closing.",
+    whenToCall:
+      "When a contract is on the desk, when a deal is being structured, or when a property change-of-hands needs documents drafted carefully. Earlier engagement creates more options.",
+    primaryCtaLabel: "Schedule a Consultation",
+    childSlugs: [
+      "real-estate-purchase-agreement-attorney-tennessee",
+      "real-estate-contract-attorney-tennessee",
+      "owner-financing-attorney-tennessee",
+      "land-contract-attorney-tennessee",
+      "real-estate-joint-venture-attorney-tennessee",
+      "assignment-of-contract-attorney-tennessee",
+      "commercial-lease-attorney-tennessee",
+      "easement-attorney-tennessee",
+      "title-defect-attorney-tennessee",
+      "construction-contract-attorney-tennessee",
+      "real-estate-attorney-gallatin-tn",
+    ],
+    isLitigation: false,
+  },
+  {
     id: "real-estate-disputes",
     slug: "real-estate-disputes",
     primaryKeyword: "Real Estate Disputes Attorney in Tennessee",
@@ -175,6 +207,7 @@ export const bofuHubs: BofuHub[] = [
       "construction-defect-attorney-tennessee",
       "hoa-dispute-attorney-tennessee",
       "property-condition-disclosure-dispute-attorney-tennessee",
+      "foreclosure-excess-proceeds-attorney-tennessee",
     ],
     isLitigation: true,
   },
@@ -210,6 +243,7 @@ export const bofuServices: BofuService[] = [
   ...expertWitnessChildren,
   ...businessFormationChildren,
   ...contractServicesChildren,
+  ...realEstateTransactionsChildren,
   ...realEstateDisputesChildren,
   ...businessDisputesChildren,
 ];
@@ -222,8 +256,19 @@ export function getBofuService(slug: string): BofuService | undefined {
   return bofuServices.find((svc) => svc.slug === slug);
 }
 
+/**
+ * Returns the children listed under a hub, in the order specified by the
+ * hub's childSlugs array. A child can appear under multiple hubs (e.g.,
+ * commercial-lease lives in contract-services and is also listed under
+ * real-estate-transactions). The child's primary `hub` field stays as the
+ * canonical breadcrumb-source; this function only controls listings.
+ */
 export function getBofuChildren(hubId: BofuHubId): BofuService[] {
-  return bofuServices.filter((svc) => svc.hub === hubId);
+  const hub = bofuHubs.find((h) => h.id === hubId);
+  if (!hub) return [];
+  return hub.childSlugs
+    .map((slug) => bofuServices.find((s) => s.slug === slug))
+    .filter((s): s is BofuService => Boolean(s));
 }
 
 export function allBofuSlugs(): string[] {

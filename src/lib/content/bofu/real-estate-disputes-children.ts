@@ -64,8 +64,8 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "What this covers",
         paragraphs: [
-          "Easement work spans express easements (recorded, often decades old), implied and necessity easements, prescriptive easements (acquired through long use), and statutory utility easements. The disputes typically turn on scope, location, maintenance, and what counts as overuse or expansion beyond the original grant.",
-          "Common case types include shared-driveway disputes between neighbors, commercial-development access concerns, utility-easement scope challenges, and disputes over whether long-running use has matured into a prescriptive right.",
+          "Easement work spans express easements (recorded, often decades old), implied and necessity easements, prescriptive easements (acquired through long use), and statutory utility easements. The work covers both deal-side drafting (granting and reserving easements at sale, subdivision, or development) and dispute-side work (scope, location, maintenance, and overuse claims).",
+          "Common matters include shared-driveway disputes between neighbors, commercial-development access concerns, utility-easement scope challenges, drafting access and utility easements at closing, and disputes over whether long-running use has matured into a prescriptive right.",
         ],
       },
       {
@@ -612,6 +612,56 @@ export const realEstateDisputesChildren: BofuService[] = [
     primaryCtaLabel: "Schedule a Consultation",
     needsSteveReview: [
       "Confirm TRPCDA citation and statutory framing — specifically the statute-of-limitations and exemption language — before publishing.",
+    ],
+  },
+  {
+    slug: "foreclosure-excess-proceeds-attorney-tennessee",
+    hub: "real-estate-disputes",
+    primaryKeyword: "Foreclosure Excess Proceeds Attorney in Tennessee",
+    title: "Foreclosure Excess Proceeds Attorney TN | Nault Law",
+    h1: "Foreclosure Excess Proceeds Attorney in Tennessee",
+    metaDescription:
+      "Foreclosure excess proceeds attorney in Tennessee for former owners and lienholders recovering surplus funds from trustee sales. Call Nault Law.",
+    intro:
+      "Foreclosure excess proceeds attorney in Tennessee for former property owners and junior lienholders recovering surplus funds from trustee sales — claim filing, competing-claim resolution, and court action when the trustee resists.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "When a Tennessee trustee sale brings in more than the secured debt and sale costs, the surplus — sometimes called excess proceeds or surplus funds — is held by the trustee and distributed under a priority order. The work covers identifying that a surplus exists, filing the claim with the trustee or lender, and resolving competing claims from junior lienholders, judgment creditors, the IRS, or other interest-holders.",
+          "Common case types include former-owner claims after a non-judicial trustee sale, junior-lienholder claims for the priority share of surplus, heir claims when the foreclosed owner has died, and contested-priority disputes that escalate to court when the trustee resists or interpleads the funds.",
+        ],
+      },
+      {
+        h2: "When to call",
+        paragraphs: [
+          "Soon after the trustee sale closes — surplus funds are not always announced, and competing claimants typically move quickly. Some foreclosure surplus claims have time limits before the funds escheat or are paid out to other claimants. Early outreach preserves the claim and the leverage.",
+        ],
+      },
+      {
+        h2: "Tennessee specifics",
+        paragraphs: [
+          "Tennessee non-judicial foreclosure proceeds beyond the secured debt and sale costs are distributed under a statutory priority order — junior lienholders by priority, then the former owner. Trustees often interplead disputed surplus into court when claims compete. Specific deadlines and notice requirements apply at each step. [Verify with Steve: current TN excess-proceeds statutory citation, claim deadlines, and trustee interpleader procedure before publishing.]",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [TRIAL_COUNTIES_SENTENCE],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Send the trustee-sale notice, the original deed of trust, any payoff or distribution communications from the trustee, and a short summary of the property and the foreclosure timeline. Fit and conflicts screened within one business day.",
+        ],
+      },
+    ],
+    audience: "Former property owners, junior lienholders, and heirs",
+    serviceArea: "Statewide advice; trial counties for litigation",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+    needsSteveReview: [
+      "TN excess-proceeds statutory citation and claim deadlines: confirm current statute and timing before publishing.",
+      "Trustee-interpleader procedural specifics for TN non-judicial foreclosures.",
     ],
   },
 ];
