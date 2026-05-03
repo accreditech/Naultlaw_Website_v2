@@ -76,8 +76,124 @@ export const bofuHubs: BofuHub[] = [
     ],
     isLitigation: false,
   },
-  // Hubs 2–5 — business-formation, contract-services, real-estate-disputes,
-  // business-disputes — are added after vertical-slice approval.
+  {
+    id: "business-formation",
+    slug: "business-formation",
+    primaryKeyword: "Business Formation Attorney in Tennessee",
+    title: "Business Formation Attorney in Tennessee | Nault Law",
+    h1: "Business Formation Attorney in Tennessee",
+    metaDescription:
+      "Business formation attorney in Tennessee handling LLCs, PLLCs, S-Corp elections, operating agreements, and buy-sell agreements. Statewide. Call Nault Law.",
+    intro:
+      "Business formation attorney in Tennessee handling entity choice, articles, operating documents, and buy-sell terms for owners, partners, and licensed professionals across the state.",
+    whatThisCovers:
+      "Formation work covers entity selection, articles of organization or incorporation, operating agreements or bylaws, registered-agent setup, EIN coordination, and the early governance choices that shape liability and tax posture.",
+    whenToCall:
+      "Most engagements start at one of three points — pre-formation entity choice, partner-change events that require new operating documents, or buy-sell triggers like death, divorce, or sale of the business.",
+    primaryCtaLabel: "Schedule a Consultation",
+    childSlugs: [
+      "llc-formation-attorney-tennessee",
+      "operating-agreement-attorney-tennessee",
+      "pllc-formation-attorney-tennessee",
+      "s-corp-election-attorney-tennessee",
+      "series-llc-attorney-tennessee",
+      "buy-sell-agreement-attorney-tennessee",
+      "corporation-formation-attorney-tennessee",
+      "foreign-llc-qualification-attorney-tennessee",
+      "llc-dissolution-attorney-tennessee",
+      "partnership-agreement-attorney-tennessee",
+      "holding-company-formation-attorney-tennessee",
+      "nonprofit-formation-attorney-tennessee",
+    ],
+    isLitigation: false,
+  },
+  {
+    id: "contract-services",
+    slug: "contract-services",
+    primaryKeyword: "Business Contract Attorney in Tennessee",
+    title: "Business Contract Attorney in Tennessee | Nault Law",
+    h1: "Business Contract Attorney in Tennessee",
+    metaDescription:
+      "Business contract attorney in Tennessee for vendor, independent-contractor, lease, real-estate, and construction agreements. Flat-fee review. Call Nault Law.",
+    intro:
+      "Business contract attorney in Tennessee for owners, agencies, contractors, and real-estate operators who need clean drafting, fast review, or smarter risk allocation before a deal closes.",
+    whatThisCovers:
+      "Most disputes are decided by what the contract said before anyone read it carefully. The work covers drafting from scratch, reviewing what the other side sent, and revising boilerplate that does not fit the actual deal.",
+    whenToCall:
+      "Triggered by an actual document on your desk — a vendor contract, lease, independent-contractor agreement, asset purchase agreement, or letter of intent that needs review before signing.",
+    primaryCtaLabel: "Send a contract for review",
+    childSlugs: [
+      "contract-review-attorney-tennessee",
+      "independent-contractor-agreement-attorney-tennessee",
+      "vendor-agreement-attorney-tennessee",
+      "real-estate-contract-attorney-tennessee",
+      "construction-contract-attorney-tennessee",
+      "commercial-lease-attorney-tennessee",
+      "nda-attorney-tennessee",
+      "master-service-agreement-attorney-tennessee",
+      "asset-purchase-agreement-attorney-tennessee",
+      "letter-of-intent-attorney-tennessee",
+    ],
+    isLitigation: false,
+  },
+  {
+    id: "real-estate-disputes",
+    slug: "real-estate-disputes",
+    primaryKeyword: "Real Estate Disputes Attorney in Tennessee",
+    title: "Real Estate Disputes Attorney in Tennessee | Nault Law",
+    h1: "Real Estate Disputes Attorney in Tennessee",
+    metaDescription:
+      "Real estate disputes attorney in Tennessee for quiet title, easements, mechanics liens, fraud, and disclosure claims. Statewide advice. Call Nault Law.",
+    intro:
+      "Real estate disputes attorney in Tennessee handling quiet title, easements, title defects, fraud, mechanics liens, and property-line claims for owners, contractors, and investors statewide.",
+    whatThisCovers:
+      "Property disputes turn quickly from inconvenience to leverage problems. The work centers on documents, timeline, and the practical value of the property position — sometimes negotiated cleanup, sometimes formal dispute action to set the terms of resolution.",
+    whenToCall:
+      "When deadlines, closings, occupancy, or lender expectations are in play. Early assessment helps preserve evidence, clarify the contract posture, and decide whether pressure should be applied or contained.",
+    primaryCtaLabel: "Schedule a Consultation",
+    childSlugs: [
+      "quiet-title-attorney-tennessee",
+      "easement-attorney-tennessee",
+      "title-defect-attorney-tennessee",
+      "real-estate-fraud-attorney-tennessee",
+      "mechanics-lien-attorney-tennessee",
+      "property-line-dispute-attorney-tennessee",
+      "real-estate-attorney-gallatin-tn",
+      "specific-performance-attorney-tennessee",
+      "earnest-money-dispute-attorney-tennessee",
+      "failure-to-disclose-attorney-tennessee",
+      "construction-defect-attorney-tennessee",
+      "hoa-dispute-attorney-tennessee",
+      "property-condition-disclosure-dispute-attorney-tennessee",
+    ],
+    isLitigation: true,
+  },
+  {
+    id: "business-disputes",
+    slug: "business-disputes",
+    primaryKeyword: "Business Disputes Attorney in Tennessee",
+    title: "Business Disputes Attorney in Tennessee | Nault Law",
+    h1: "Business Disputes Attorney in Tennessee",
+    metaDescription:
+      "Business disputes attorney in Tennessee for partnership breakups, member buyouts, non-competes, and fiduciary-duty claims. Call Nault Law.",
+    intro:
+      "Business disputes attorney in Tennessee for owners, members, and shareholders working through partnership breakups, member buyouts, non-compete enforcement, and fiduciary-duty claims.",
+    whatThisCovers:
+      "Owner conflicts are rarely just legal problems. They are control, information, and continuity problems. Resolution can come through restructuring, buyout, structured negotiation, or formal dispute action — depending on leverage and what the business needs to keep running.",
+    whenToCall:
+      "When records are being withheld, accounts are being moved, or major decisions are being made unilaterally. Early intervention can protect the company and your bargaining position before unilateral acts become facts on the ground.",
+    primaryCtaLabel: "Schedule a Consultation",
+    childSlugs: [
+      "business-partnership-dispute-attorney-tennessee",
+      "non-compete-attorney-tennessee",
+      "eviction-attorney-sumner-county-tn",
+      "llc-member-buyout-attorney-tennessee",
+      "shareholder-dispute-attorney-tennessee",
+      "breach-of-fiduciary-duty-attorney-tennessee",
+      "tortious-interference-attorney-tennessee",
+    ],
+    isLitigation: true,
+  },
 ];
 
 export const bofuServices: BofuService[] = [
