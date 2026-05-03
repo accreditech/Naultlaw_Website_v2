@@ -7,6 +7,7 @@ const PRACTICE_LINKS = [
   { label: "Owner & Partner Disputes", href: "/practice-areas/operating-agreements-and-owner-disputes" },
   { label: "Real Estate Disputes", href: "/practice-areas/real-estate-disputes" },
   { label: "Business Contracts", href: "/practice-areas/business-contract-drafting-and-review" },
+  { label: "All Practice Areas", href: "/services" },
 ];
 
 const MORE_LINKS = [
