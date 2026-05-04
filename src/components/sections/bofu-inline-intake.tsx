@@ -170,7 +170,7 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
       </p>
       <p className="mt-2 text-sm leading-6 text-muted-foreground">
         {intro ??
-          "The intake is structured and short — name, contact, opposing party, brief description. You'll hear back within one business day if the matter is a fit."}
+          "Submitting tells us you'd like us to reach out. Sharing a few details about your matter helps us respond faster — usually within one business day."}
       </p>
 
       <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
