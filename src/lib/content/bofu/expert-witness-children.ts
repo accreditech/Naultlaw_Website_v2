@@ -196,9 +196,6 @@ export const expertWitnessChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Request CV and conflicts check",
-    needsSteveReview: [
-      "Confirm scope: broker valuation context only — not USPAP appraisal. Confirm wording is right.",
-    ],
   },
   {
     slug: "realtor-dispute-expert-witness-tennessee",
@@ -513,6 +510,13 @@ export const expertWitnessChildren: BofuService[] = [
         ],
       },
       {
+        h2: "Scope of opinions",
+        paragraphs: [
+          "Stephen Nault may assist with Tennessee real estate disclosure issues from the perspective of an attorney, managing broker, and real-estate-practice professional, including customary form use, transaction process, and brokerage disclosure practices under the Tennessee Residential Property Condition Disclosure Act (Tenn. Code Ann. §§ 66-5-201 et seq.).",
+          "He is not offered as a state-certified appraiser, home inspector, or guarantor of any legal outcome.",
+        ],
+      },
+      {
         h2: "Qualifications",
         paragraphs: [
           "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020 — current on how disclosure rules are taught. Tennessee bar since 2018.",
@@ -535,9 +539,6 @@ export const expertWitnessChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Request CV and conflicts check",
-    needsSteveReview: [
-      "Confirm TRPCDA citation framing on this page is accurate and not over-stated.",
-    ],
   },
   {
     slug: "real-estate-commission-dispute-expert-witness-tennessee",

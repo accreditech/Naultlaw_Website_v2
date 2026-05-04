@@ -76,13 +76,21 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee owner-financed transactions secured by a deed of trust follow the standard non-judicial-foreclosure framework if the buyer defaults. Document precision matters: the note, deed of trust, and any supporting agreements need to be aligned, properly recorded, and clear on the trustee's role at default.",
+          "Tennessee owner-financed transactions secured by a deed of trust follow the standard nonjudicial-foreclosure framework if the buyer defaults. Document precision matters: the note, deed of trust, and any supporting agreements need to be aligned, properly recorded, and clear on the trustee's role at default.",
+          "Beyond the deal documents, owner-financed residential sales in Tennessee should flag mortgage-licensing rules under Tenn. Code Ann. § 45-13-201, high-cost home-loan rules under Tenn. Code Ann. § 45-20-101 et seq., and usury and home-loan interest-rate limits under Tenn. Code Ann. §§ 47-14-103, 47-14-117, and 47-15-102. Whether each rule applies depends on the seller's status, loan purpose, and property type.",
+        ],
+      },
+      {
+        h2: "Federal Dodd-Frank considerations",
+        paragraphs: [
+          "Federal Dodd-Frank and Reg Z seller-financing rules apply to consumer-purpose credit secured by a dwelling, with limited exclusions for one property by a natural person, estate, or trust, and for three or fewer properties in 12 months (12 C.F.R. § 1026.36).",
+          "The seller's exemption depends on ownership, builder status, amortization, ability-to-repay, and rate-limit conditions specific to the transaction. The engagement flags which exemption (if any) applies and structures the documents accordingly.",
         ],
       },
       {
         h2: "Process and pricing",
         paragraphs: [
-          "Flat-fee drafting for standard seller-financing packages (note + deed of trust + closing instructions). Capped pricing for review of a counterparty's draft. Turnaround typically three to five business days.",
+          "Flat-fee drafting for standard seller-financing packages (note, deed of trust, and closing instructions). Capped pricing for review of a counterparty's draft. Turnaround typically three to five business days.",
         ],
       },
       {
@@ -96,9 +104,6 @@ export const realEstateTransactionsChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "Confirm Dodd-Frank / SAFE Act framing — when these federal disclosure rules actually apply to TN owner-financed residential sales.",
-    ],
   },
   {
     slug: "land-contract-attorney-tennessee",
@@ -223,7 +228,8 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee real-estate purchase contracts are generally assignable absent contract language to the contrary. Disclosure expectations under TN brokerage and licensing rules can apply when the assignor is acting in a manner that resembles brokerage. The drafting needs to keep the assignor's role clear, and where a license or disclosure question is close, the engagement flags it before the assignment closes.",
+          "Tennessee real-estate purchase contracts are generally assignable absent contract language to the contrary. The Tennessee legislature now regulates wholesaling-disclosure obligations, and marketing another's real estate for compensation can still trigger unlicensed-brokerage risk under Tenn. Code Ann. §§ 62-13-102, 62-13-110, and 66-4-401–403; see also Tenn. Comp. R. & Regs. 1260-02-.12.",
+          "The safer approach is to disclose the assignment intent in writing and to market only the contract or equitable interest — not the underlying real property — unless the assignor is properly licensed. The engagement keeps the assignor's role clear and flags the licensing question before the assignment closes.",
         ],
       },
       {
@@ -243,8 +249,5 @@ export const realEstateTransactionsChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Send a contract for review",
-    needsSteveReview: [
-      "Confirm framing on TN brokerage/licensing line for wholesalers — current TREC posture on assignment-as-brokerage.",
-    ],
   },
 ];

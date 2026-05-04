@@ -209,13 +209,14 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Why timing matters",
         paragraphs: [
-          "Mechanics lien rights are governed by tight statutory deadlines. Notices, filings, and enforcement actions all have firm clocks. Missing a deadline can permanently extinguish the right to recover, regardless of how much is owed. [Verify with Steve: current TN mechanics-lien deadline figures before any specific number is published.]",
+          "Mechanics lien rights are governed by tight statutory deadlines under Tenn. Code Ann. §§ 66-11-101 et seq. Prime contractors generally have one year after completion or abandonment to enforce a lien. Remote contractors and suppliers generally must serve a notice of nonpayment within 90 days after each unpaid month and bring the enforcement action within 90 days after the notice of lien.",
+          "Recorded notice, notice-of-completion, demand-to-enforce, and priority rules can shorten or alter these deadlines. Missing a deadline can permanently extinguish the right to recover, regardless of how much is owed.",
         ],
       },
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee mechanics lien law distinguishes between prime contractors and subcontractors/remote claimants and applies different notice and timing requirements to each. Lien claims are filed in the register of deeds and enforced through Chancery Court within statutory time periods.",
+          "Tennessee mechanics lien law distinguishes between prime contractors and subcontractors or remote claimants and applies different notice and timing requirements to each (Tenn. Code Ann. §§ 66-11-106, 66-11-112, 66-11-115, 66-11-145). Lien claims are filed in the register of deeds and enforced through Chancery Court within statutory time periods.",
         ],
       },
       {
@@ -234,9 +235,6 @@ export const realEstateDisputesChildren: BofuService[] = [
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
     secondaryCtaLabel: "Discuss deadlines",
-    needsSteveReview: [
-      "TN mechanics-lien notice/filing deadlines: confirm current statutory periods before publishing.",
-    ],
   },
   {
     slug: "property-line-dispute-attorney-tennessee",
@@ -497,7 +495,8 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee applies separate statutes of limitations and repose to construction claims. Contract terms — notice-and-cure procedures, mandatory pre-suit dispute mechanisms, warranty scope — heavily influence both substantive and procedural posture.",
+          "Tennessee construction-defect timing is generally three years for injury to real property (Tenn. Code Ann. § 28-3-105) and six years for contract claims (Tenn. Code Ann. § 28-3-109), plus a four-year statute of repose from substantial completion for construction or design deficiencies under Tenn. Code Ann. §§ 28-3-202 and 28-3-203. The repose period may extend to five years if the injury occurs in the fourth year.",
+          "Contract terms — notice-and-cure procedures, mandatory pre-suit dispute mechanisms, and warranty scope — heavily influence both substantive and procedural posture. The engagement is scoped to commercial real-estate projects.",
         ],
       },
       {
@@ -515,9 +514,6 @@ export const realEstateDisputesChildren: BofuService[] = [
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "Confirm scope: commercial construction defect only, or include residential? Adjust copy if needed.",
-    ],
   },
   {
     slug: "hoa-dispute-attorney-tennessee",
@@ -592,7 +588,8 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "The Tennessee Residential Property Condition Disclosure Act sets the framework for residential disclosure obligations and exemptions. Common-law fraud and misrepresentation claims overlap and may apply when the disclosure form is alleged to have been completed falsely. [Verify with Steve: specific statutory cite/period before publishing.]",
+          "The Tennessee Residential Property Condition Disclosure Act, codified at Tenn. Code Ann. §§ 66-5-201 et seq., sets the framework for residential disclosure obligations and exemptions. Buyer claims under the act must generally be brought within one year after the buyer receives the disclosure statement or the date of closing or occupancy, whichever occurs first (Tenn. Code Ann. § 66-5-208).",
+          "Common-law fraud and misrepresentation claims overlap and may apply when the disclosure form is alleged to have been completed falsely. Common exemptions include foreclosure or trustee transfers, fiduciary, co-owner, family, court-order, government, and certain new-construction transfers.",
         ],
       },
       {
@@ -610,9 +607,6 @@ export const realEstateDisputesChildren: BofuService[] = [
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "Confirm TRPCDA citation and statutory framing — specifically the statute-of-limitations and exemption language — before publishing.",
-    ],
   },
   {
     slug: "foreclosure-excess-proceeds-attorney-tennessee",
@@ -641,7 +635,8 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee non-judicial foreclosure proceeds beyond the secured debt and sale costs are distributed under a statutory priority order — junior lienholders by priority, then the former owner. Trustees often interplead disputed surplus into court when claims compete. Specific deadlines and notice requirements apply at each step. [Verify with Steve: current TN excess-proceeds statutory citation, claim deadlines, and trustee interpleader procedure before publishing.]",
+          "Tennessee does not have a single nonjudicial-foreclosure surplus statute. Judicial-foreclosure surplus is paid to the debtor or to the creditors entitled by priority under Tenn. Code Ann. § 21-1-803, and disputed trustee-sale surplus is commonly interpleaded into court under Tenn. R. Civ. P. 22.02.",
+          "Court-held surplus may become presumed abandoned after one year under Tenn. Code Ann. § 66-29-105, after which it transfers to the Tennessee Treasury. Unclaimed-property claims to the Treasury generally are not time-barred, but the procedure changes once funds escheat — early action keeps the case in court rather than in the unclaimed-property system.",
         ],
       },
       {
@@ -659,10 +654,6 @@ export const realEstateDisputesChildren: BofuService[] = [
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "TN excess-proceeds statutory citation and claim deadlines: confirm current statute and timing before publishing.",
-      "Trustee-interpleader procedural specifics for TN non-judicial foreclosures.",
-    ],
   },
   {
     slug: "landlord-attorney-tennessee",
@@ -735,9 +726,10 @@ export const realEstateDisputesChildren: BofuService[] = [
         ],
       },
       {
-        h2: "Habitability and mold",
+        h2: "URLTA, habitability, and repair-and-deduct",
         paragraphs: [
-          "Tennessee residential tenants have habitability protections that the lease cannot waive in some respects. Mold and water-intrusion conditions, when severe, can support habitability claims, repair-and-deduct arguments where applicable, and damages claims. The mold-claim attorney page covers the deeper specifics.",
+          "The Uniform Residential Landlord and Tenant Act (URLTA), codified at Tenn. Code Ann. § 66-28-101 et seq., applies in Tennessee counties with population over 75,000 (Tenn. Code Ann. § 66-28-102). URLTA counties have statutory notice, habitability, essential-services, security-deposit, and tenant-remedy rules that are not uniformly available in non-URLTA counties.",
+          "Tennessee provides a limited repair-and-deduct remedy under Tenn. Code Ann. § 66-28-502 for essential services after written notice, not a broad general repair-and-deduct right. The tenant must show the condition was not caused by the tenant or tenant-related persons. Mold and water-intrusion conditions can support habitability and damages claims when the facts and notice line up.",
         ],
       },
       {
@@ -755,9 +747,6 @@ export const realEstateDisputesChildren: BofuService[] = [
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "Confirm framing on TN tenant repair-and-deduct rights — when this remedy is available under URLTA-equivalent provisions.",
-    ],
   },
   {
     slug: "eviction-attorney-tennessee",
@@ -786,7 +775,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee evictions are heard in General Sessions Court in the county where the property sits. Notice and procedural requirements vary by lease type and the basis for the eviction. URLTA applies to many residential leases in larger counties; commercial leases are governed by their terms.",
+          "Tennessee evictions are heard in General Sessions Court in the county where the property sits. Notice and procedural requirements vary by lease type and the basis for the eviction. The Uniform Residential Landlord and Tenant Act (URLTA), codified at Tenn. Code Ann. § 66-28-101 et seq., applies in counties with population over 75,000 (Tenn. Code Ann. § 66-28-102); non-URLTA counties rely more heavily on lease terms, common law, and the detainer statutes. Commercial leases are governed primarily by their terms.",
         ],
       },
       {
@@ -804,9 +793,6 @@ export const realEstateDisputesChildren: BofuService[] = [
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "Confirm URLTA applicability — counties where it applies and the practical consequence for residential evictions.",
-    ],
   },
   {
     slug: "eviction-defense-attorney-tennessee",
@@ -881,7 +867,8 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee residential tenants have habitability protections that mold conditions can violate. Homeowner claims after closing typically proceed under the Tennessee Residential Property Condition Disclosure Act, common-law fraud, or breach-of-contract theories. Commercial-tenant claims are governed primarily by the lease.",
+          "Tennessee does not have a standalone statewide mold doctrine. Mold and water-intrusion claims are typically framed through URLTA habitability and essential-services duties (Tenn. Code Ann. §§ 66-28-304, 66-28-501, and 66-28-502), common-law negligence, contract, nuisance, or TRPCDA disclosure theories (Tenn. Code Ann. §§ 66-5-201 et seq.).",
+          "Mold claims are fact-specific and usually turn on notice, causation, habitability, disclosure, and damages evidence. The viable theory depends on the parties' relationship, the building, the condition's cause, and the medical or environmental evidence available.",
         ],
       },
       {
@@ -899,9 +886,6 @@ export const realEstateDisputesChildren: BofuService[] = [
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "TN-specific mold-claim doctrine and habitability framing — confirm before publishing.",
-    ],
   },
   {
     slug: "eviction-attorney-sumner-county-tn",

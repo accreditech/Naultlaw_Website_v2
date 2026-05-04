@@ -28,7 +28,8 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee LLCs file articles with the Secretary of State and pay an annual report fee that scales with the number of members. Most operating businesses are subject to franchise-and-excise tax with limited exceptions. The right structure depends on liability, tax election, and how the company will actually be run.",
+          "Tennessee LLCs file articles with the Secretary of State and pay an annual report fee of $50 per member, with a $300 minimum and a $3,000 maximum (Tenn. Code Ann. § 67-4-2007). Most operating LLCs are subject to franchise tax at 0.25% of net worth (with a $100 minimum) and excise tax at 6.5% of net earnings under Tenn. Code Ann. § 67-4-2106.",
+          "FONCE, obligated-member, nonprofit, and other exemptions may apply. The right structure depends on liability, tax election, ownership economics, and how the company will actually be run.",
         ],
       },
       {
@@ -48,9 +49,6 @@ export const businessFormationChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "TN annual-report fee structure and current franchise/excise tax baseline — verify before publishing.",
-    ],
   },
   {
     slug: "operating-agreement-attorney-tennessee",
@@ -181,7 +179,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "Timing",
         paragraphs: [
-          "Form 2553 has firm filing deadlines tied to the tax year for which the election is sought. Late elections may require IRS relief procedures. Early planning avoids those.",
+          "Form 2553 is generally due no later than two months and 15 days after the start of the tax year for which the S-Corp election is to take effect (IRC § 1362; IRS Form 2553 instructions). Late relief is commonly requested under Rev. Proc. 2013-30 with reasonable-cause language and the required shareholder and entity statements. Early planning avoids the late-relief route.",
         ],
       },
       {
@@ -195,9 +193,6 @@ export const businessFormationChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "Confirm tax-deadline phrasing — especially the late-election relief reference (Rev. Proc.) — before publishing.",
-    ],
   },
   {
     slug: "series-llc-attorney-tennessee",
@@ -582,8 +577,5 @@ export const businessFormationChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Schedule a Consultation",
-    needsSteveReview: [
-      "Confirm scope: nonprofit formation + initial 501(c)(3) application only? Or include ongoing nonprofit compliance?",
-    ],
   },
 ];
