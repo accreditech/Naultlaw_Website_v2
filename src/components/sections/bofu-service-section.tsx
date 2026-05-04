@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ActionLink } from "@/components/site/action-link";
+import { BofuInlineIntakeForm } from "@/components/sections/bofu-inline-intake";
 import type { BofuService } from "@/lib/content/bofu-services";
 import { siteConfig } from "@/lib/site-config";
 
@@ -19,9 +20,6 @@ type Props = {
 };
 
 export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
-  const ctaHref = `/contact?ref=/services/${service.slug}`;
-  const secondaryLabel = service.secondaryCtaLabel ?? service.primaryCtaLabel;
-
   return (
     <section className="section-padding">
       <div className="container-shell">
@@ -35,7 +33,7 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
               </h1>
               <p className="editorial-pull">{service.intro}</p>
               <div className="mt-2">
-                <ActionLink href={ctaHref}>{service.primaryCtaLabel}</ActionLink>
+                <ActionLink href="#bofu-intake">{service.primaryCtaLabel}</ActionLink>
               </div>
             </header>
 
@@ -55,18 +53,7 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
               </div>
             ))}
 
-            <div className="surface-card p-6 sm:p-8">
-              <p className="font-heading text-xl text-foreground">
-                If this describes your matter
-              </p>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                Conflict-screened intake. The office responds within one business
-                day if the matter is a fit.
-              </p>
-              <div className="mt-5">
-                <ActionLink href={ctaHref}>{secondaryLabel}</ActionLink>
-              </div>
-            </div>
+            <BofuInlineIntakeForm refSlug={service.slug} />
           </div>
 
           {/* ── RIGHT RAIL ───────────────────────────────────── */}
