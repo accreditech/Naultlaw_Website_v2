@@ -41,7 +41,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the title commitment or title-search report identifying the cloud, a short summary of the property history, and any deadlines tied to a pending sale or refinance. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -65,7 +65,7 @@ export const realEstateDisputesChildren: BofuService[] = [
         h2: "What this covers",
         paragraphs: [
           "Easement work spans express easements (recorded, often decades old), implied and necessity easements, prescriptive easements (acquired through long use), and statutory utility easements. The work covers both deal-side drafting (granting and reserving easements at sale, subdivision, or development) and dispute-side work (scope, location, maintenance, and overuse claims).",
-          "Common matters include shared-driveway disputes between neighbors, commercial-development access concerns, utility-easement scope challenges, drafting access and utility easements at closing, and disputes over whether long-running use has matured into a prescriptive right.",
+          "Common matters include shared-driveway disputes between neighbors, commercial-development access concerns, utility-easement scope challenges, drafting access and utility easements as part of a sale, subdivision, development, or negotiated property arrangement, and disputes over whether long-running use has matured into a prescriptive right.",
         ],
       },
       {
@@ -87,7 +87,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the deeds, recorded easements (if any), and a short summary of the dispute or planned use. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -133,7 +133,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the title commitment, the underwriter's exception, and any deadline tied to a pending sale or refinance. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -226,7 +226,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the contract, payment history, and project timeline. Fit and conflicts generally screened within one business day; rush response when a deadline is approaching.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -506,7 +506,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the contract documents, defect documentation, and any inspection or expert reports. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -552,7 +552,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the CC&Rs, bylaws, the notice or assessment at issue, and a short summary of the dispute. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -599,7 +599,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the disclosure form, purchase agreement, inspection report, and a short summary of the dispute. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],

@@ -28,7 +28,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee LLCs file articles with the Secretary of State and pay an annual report fee of $50 per member, with a $300 minimum and a $3,000 maximum (Tenn. Code Ann. § 67-4-2007). Most operating LLCs are subject to franchise tax at 0.25% of net worth (with a $100 minimum) and excise tax at 6.5% of net earnings under Tenn. Code Ann. § 67-4-2106.",
+          "Tennessee LLC filings are handled through the Tennessee Secretary of State, and current filing fees should be confirmed before submission. Many Tennessee LLCs also require franchise-and-excise tax analysis: franchise tax is generally measured under Tenn. Code Ann. § 67-4-2106, and excise tax is imposed under Tenn. Code Ann. § 67-4-2007, subject to exemptions, deductions, and entity-specific treatment.",
           "FONCE, obligated-member, nonprofit, and other exemptions may apply. The right structure depends on liability, tax election, ownership economics, and how the company will actually be run.",
         ],
       },
@@ -89,7 +89,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing operating agreement (if any), a short summary of ownership, and any triggering event. Fit and pricing returned generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -137,7 +137,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the profession, the planned member structure, and any licensing-board correspondence already received. Fit and pricing returned generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],

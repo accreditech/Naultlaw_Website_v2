@@ -40,7 +40,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the contract and a short note on the deal context and the deadline. Pricing and turnaround confirmed generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -88,7 +88,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short description of the contractor relationship, the work scope, and any draft agreement already on the table. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -136,7 +136,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the vendor's draft and a short note on the relationship and the deadline. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -184,7 +184,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing draft (if any), a short note on the property and parties, and the deadline. Pricing and turnaround returned generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -232,7 +232,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing draft, a short note on the project, and any deadline. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -280,7 +280,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease or LOI, a short note on the deal, and the deadline. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -328,7 +328,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the draft (if any) and a short note on the relationship and the information at stake. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -376,7 +376,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing MSA (if any) and a short note on the business model and the typical client engagement. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -424,7 +424,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the LOI or term sheet, a short summary of the business and the assets, and the target closing date. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -472,7 +472,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the LOI (if any) and a short note on the deal and the timing. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],

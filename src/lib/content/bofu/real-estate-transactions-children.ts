@@ -40,7 +40,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the draft (if any), a short note on the property and parties, and the deadline. Pricing and turnaround generally returned within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -192,7 +192,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the term sheet or LOI (if any), a short summary of the property and partners, and the target closing date. Pricing generally returned within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -241,7 +241,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the original purchase contract, a short note on the assignment fee and the assignee, and the closing date. Pricing generally returned within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],

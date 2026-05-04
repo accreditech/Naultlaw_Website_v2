@@ -41,7 +41,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the operating or partnership agreement, a short summary of the conflict, and the recent communications. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -87,7 +87,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the non-compete agreement, the relevant correspondence, and a short summary of the situation. Fit and conflicts generally screened within one business day; rush response when injunctive relief is on the timeline.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -133,7 +133,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the operating agreement, a short summary of the situation, and any recent communications. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -179,7 +179,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the articles, bylaws, any shareholder agreement, and a short summary of the dispute. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -225,7 +225,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the governing documents, a short summary of the conduct at issue, and the relevant communications. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -271,7 +271,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the interfering conduct, the affected contracts or relationships, and any communications already in hand. Fit and conflicts generally screened within one business day.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
