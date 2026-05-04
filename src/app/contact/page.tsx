@@ -271,7 +271,7 @@ export default function ContactPage() {
                 },
                 {
                   l: "Service Area",
-                  v: "Sumner, Wilson, Robertson,\nTrousdale & Davidson Counties",
+                  v: "Sumner, Wilson, Robertson,\nTrousdale, Williamson & Davidson Counties",
                 },
               ].map((c) => (
                 <div key={c.l} style={{ marginBottom: "1.25rem" }}>

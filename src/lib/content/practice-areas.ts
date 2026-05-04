@@ -79,7 +79,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       },
     ],
     localServiceArea:
-      "Based in Sumner County and primarily appearing in the Sumner, Wilson, Trousdale, Robertson, and Davidson County courts, Mr. Nault represents commercial leasing clients across the entire state of Tennessee. In lease work the goal is to keep matters out of court — careful drafting and early review are how that happens.",
+      "Based in Sumner County and primarily appearing in the Sumner, Wilson, Trousdale, Robertson, Williamson, and Davidson County courts, Mr. Nault represents commercial leasing clients across the entire state of Tennessee. In lease work the goal is to keep matters out of court — careful drafting and early review are how that happens.",
     issueTypes: [
       "LOI or new lease review",
       "Default notice or cure dispute",
@@ -201,7 +201,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       },
     ],
     localServiceArea:
-      "Closely held businesses across Gallatin, Sumner County, Wilson County, Robertson County, and Trousdale County often blend operating companies with real estate entities. That overlap changes how owner disputes should be evaluated.",
+      "Closely held businesses across Gallatin, Sumner County, Wilson County, Robertson County, Trousdale County, and Williamson County often blend operating companies with real estate entities. That overlap changes how owner disputes should be evaluated.",
     issueTypes: [
       "Operating agreement review",
       "Member or manager authority dispute",
@@ -385,7 +385,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       },
     ],
     localServiceArea:
-      "For clients in Gallatin, Sumner County, Wilson County, Robertson County, and Trousdale County, early case assessment can be especially useful where local business relationships matter and a poorly timed escalation would create avoidable ripple effects.",
+      "For clients in Gallatin, Sumner County, Wilson County, Robertson County, Trousdale County, and Williamson County, early case assessment can be especially useful where local business relationships matter and a poorly timed escalation would create avoidable ripple effects.",
     issueTypes: [
       "Need early case assessment",
       "Investigate before demand",
@@ -446,7 +446,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       },
     ],
     localServiceArea:
-      "Businesses across Sumner, Wilson, Robertson, and Trousdale Counties often need dispute counsel who understands both the local business environment and the procedural realities of arbitration-driven contracts.",
+      "Businesses across Sumner, Wilson, Robertson, Trousdale, and Williamson Counties often need dispute counsel who understands both the local business environment and the procedural realities of arbitration-driven contracts.",
     issueTypes: [
       "Arbitration clause review",
       "Arbitration demand or response",
