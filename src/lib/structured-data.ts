@@ -4,6 +4,7 @@ import type { IndustryContent } from "@/lib/content/industries";
 import type { LocationContent } from "@/lib/content/locations";
 import type { PracticeAreaContent } from "@/lib/content/practice-areas";
 import type { ResourceContent } from "@/lib/content/resources";
+import type { HomepageTestimonial } from "@/lib/content/testimonials";
 import { absoluteUrl } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site-config";
 
@@ -77,6 +78,52 @@ export function localBusinessSchema() {
     parentOrganization: {
       "@id": schemaIds.organization,
     },
+  };
+}
+
+/**
+ * Homepage variant of `localBusinessSchema` that adds the visible client
+ * reviews and an aggregate rating. Google can render the aggregate rating
+ * as star snippets in search results, which materially improves CTR. We
+ * use a separate function so non-homepage pages don't double-publish the
+ * review block.
+ */
+export function localBusinessWithReviewsSchema(
+  testimonials: readonly HomepageTestimonial[]
+) {
+  const reviewCount = testimonials.length;
+  const avg =
+    reviewCount === 0
+      ? 0
+      : testimonials.reduce((sum, t) => sum + t.rating, 0) / reviewCount;
+  const ratingValue = Math.round(avg * 10) / 10;
+
+  return {
+    ...localBusinessSchema(),
+    ...(reviewCount > 0
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue,
+            bestRating: 5,
+            worstRating: 1,
+            reviewCount,
+          },
+          review: testimonials.map((t) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: t.name },
+            datePublished: t.isoDate,
+            reviewBody: t.quote,
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: t.rating,
+              bestRating: 5,
+              worstRating: 1,
+            },
+            ...(t.source ? { publisher: { "@type": "Organization", name: t.source } } : {}),
+          })),
+        }
+      : {}),
   };
 }
 
