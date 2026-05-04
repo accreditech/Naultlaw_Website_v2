@@ -224,7 +224,7 @@ export function SiteFooter() {
               <br />
               Sumner, Wilson, Robertson,
               <br />
-              Trousdale &amp; Davidson Counties
+              Trousdale, Williamson &amp; Davidson Counties
             </p>
           </div>
         </div>
