@@ -170,7 +170,7 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
       </p>
       <p className="mt-2 text-sm leading-6 text-muted-foreground">
         {intro ??
-          "Submitting tells us you'd like us to reach out. Sharing a few details about your matter helps us respond faster — usually within one business day."}
+          "Submitting tells us you'd like us to reach out. Sharing a few details about your matter helps us respond faster — generally we get back to you within one business day of submission."}
       </p>
 
       <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
@@ -421,7 +421,7 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
             {submitting ? "Sending…" : "Submit"}
           </button>
           <p className="text-xs text-muted-foreground">
-            Response within one business day.
+            Generally we respond within one business day of submission.
           </p>
         </div>
       </form>

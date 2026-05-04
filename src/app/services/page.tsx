@@ -91,8 +91,9 @@ export default function ServicesIndexPage() {
               Not sure which area fits?
             </h2>
             <p className="max-w-2xl text-base leading-7 text-muted-foreground">
-              The intake is conflict-screened and short. The office responds
-              within one business day if the matter is a fit.
+              The intake is conflict-screened and short. The office generally
+              responds within one business day of submission if the matter is a
+              fit.
             </p>
             <ActionLink href="/contact?ref=/services">
               {siteConfig.primaryCta.label}

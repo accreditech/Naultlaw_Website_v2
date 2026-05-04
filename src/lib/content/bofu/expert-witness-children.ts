@@ -41,7 +41,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a brief case description, the parties involved, and the documents central to the title dispute. The office responds with a fit assessment and a conflict-screening result within one business day. Title expert witness CV and prior testimony list are available on request after conflict screening.",
+          "Send a brief case description, the parties involved, and the documents central to the title dispute. The office responds with a fit assessment and a conflict-screening result generally within one business day. Title expert witness CV and prior testimony list are available on request after conflict screening.",
         ],
       },
     ],
@@ -90,7 +90,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short case description, the parties, and the brokerage records central to the dispute. Conflict-screened response within one business day. CV and prior testimony list are available on request once the conflict screen is clear.",
+          "Send a short case description, the parties, and the brokerage records central to the dispute. Conflict-screened response generally within one business day. CV and prior testimony list are available on request once the conflict screen is clear.",
         ],
       },
     ],
@@ -139,7 +139,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the contract, a brief case summary, and the parties involved. Fit and conflict screen returned within one business day. CV and prior testimony list available after conflict screening.",
+          "Send the contract, a brief case summary, and the parties involved. Fit and conflict screen returned generally within one business day. CV and prior testimony list available after conflict screening.",
         ],
       },
     ],
@@ -188,7 +188,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short case description, the property at issue, and any existing valuation reports. Fit and conflicts screened within one business day. CV available on request after conflict screening.",
+          "Send a short case description, the property at issue, and any existing valuation reports. Fit and conflicts screened generally within one business day. CV available on request after conflict screening.",
         ],
       },
     ],
@@ -236,7 +236,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the complaint, a short summary, and the brokerage file. Fit and conflicts screened within one business day; CV and prior testimony list available on request.",
+          "Send the complaint, a short summary, and the brokerage file. Fit and conflicts screened generally within one business day; CV and prior testimony list available on request.",
         ],
       },
     ],
@@ -284,7 +284,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short case description, the TREC complaint or order, and any existing brokerage file. Fit and conflicts screened within one business day; CV available on request after conflict screening.",
+          "Send a short case description, the TREC complaint or order, and any existing brokerage file. Fit and conflicts screened generally within one business day; CV available on request after conflict screening.",
         ],
       },
     ],
@@ -332,7 +332,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the contested BOV, the property at issue, and a brief case description. Fit and conflicts screen within one business day; CV available on request.",
+          "Send the contested BOV, the property at issue, and a brief case description. Fit and conflicts screen generally within one business day; CV available on request.",
         ],
       },
     ],
@@ -380,7 +380,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a brief case description, the parties, and the file central to the dispute. Fit and conflicts screened within one business day; CV available on request after conflict screening.",
+          "Send a brief case description, the parties, and the file central to the dispute. Fit and conflicts screened generally within one business day; CV available on request after conflict screening.",
         ],
       },
     ],
@@ -428,7 +428,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease, a brief case summary, and the parties. Fit and conflicts screened within one business day; CV available on request.",
+          "Send the lease, a brief case summary, and the parties. Fit and conflicts screened generally within one business day; CV available on request.",
         ],
       },
     ],
@@ -476,7 +476,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the management agreement, a brief summary, and the parties. Fit and conflicts screened within one business day; CV available on request.",
+          "Send the management agreement, a brief summary, and the parties. Fit and conflicts screened generally within one business day; CV available on request.",
         ],
       },
     ],
@@ -531,7 +531,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the disclosure forms, a brief case description, and the parties. Fit and conflicts screened within one business day; CV available on request.",
+          "Send the disclosure forms, a brief case description, and the parties. Fit and conflicts screened generally within one business day; CV available on request.",
         ],
       },
     ],
@@ -579,7 +579,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the brokerage agreements, the transaction history, and a brief case summary. Fit and conflicts screened within one business day; CV available on request.",
+          "Send the brokerage agreements, the transaction history, and a brief case summary. Fit and conflicts screened generally within one business day; CV available on request.",
         ],
       },
     ],
@@ -627,7 +627,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a brief case description, the parties, and the brokerage file. Fit and conflicts screened within one business day; CV available on request.",
+          "Send a brief case description, the parties, and the brokerage file. Fit and conflicts screened generally within one business day; CV available on request.",
         ],
       },
     ],

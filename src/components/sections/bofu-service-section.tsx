@@ -53,6 +53,14 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
               </div>
             ))}
 
+            <p className="text-sm leading-6 text-muted-foreground italic">
+              The information on this page is provided for general educational
+              purposes only and is not legal advice. Laws change and facts
+              matter; every situation is nuanced. If you would like the office
+              to evaluate your specific facts, please share the basics below
+              and we will be in touch.
+            </p>
+
             <BofuInlineIntakeForm refSlug={service.slug} />
           </div>
 

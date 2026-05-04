@@ -41,7 +41,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the planned business, the member structure, and any deadlines. The office returns a fit assessment and pricing range within one business day, conflict-screened.",
+          "Send a short summary of the planned business, the member structure, and any deadlines. The office returns a fit assessment and pricing range generally within one business day, conflict-screened.",
         ],
       },
     ],
@@ -89,7 +89,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing operating agreement (if any), a short summary of ownership, and any triggering event. Fit and pricing returned within one business day after conflict screen.",
+          "Send the existing operating agreement (if any), a short summary of ownership, and any triggering event. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -137,7 +137,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the profession, the planned member structure, and any licensing-board correspondence already received. Fit and pricing returned within one business day after conflict screen.",
+          "Send the profession, the planned member structure, and any licensing-board correspondence already received. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -185,7 +185,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the entity formation documents, current operating agreement or bylaws, and the CPA's recommendation. Fit and pricing returned within one business day after conflict screen.",
+          "Send the entity formation documents, current operating agreement or bylaws, and the CPA's recommendation. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -233,7 +233,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a list of the planned series or properties, member ownership, and existing entity documents. Fit and pricing returned within one business day after conflict screen.",
+          "Send a list of the planned series or properties, member ownership, and existing entity documents. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -281,7 +281,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the operating agreement, ownership snapshot, and any pending events. Fit and pricing returned within one business day after conflict screen.",
+          "Send the operating agreement, ownership snapshot, and any pending events. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -329,7 +329,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the business, the founder and stock structure, and the planned tax election. Fit and pricing returned within one business day after conflict screen.",
+          "Send a short summary of the business, the founder and stock structure, and the planned tax election. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -377,7 +377,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the home-state formation documents, the planned Tennessee activity, and any deadlines. Fit and pricing returned within one business day after conflict screen.",
+          "Send the home-state formation documents, the planned Tennessee activity, and any deadlines. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -425,7 +425,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the operating agreement, current member list, and the reason for dissolution. Fit and pricing returned within one business day after conflict screen.",
+          "Send the operating agreement, current member list, and the reason for dissolution. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -473,7 +473,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the partnership and the partners involved. Fit and pricing returned within one business day after conflict screen.",
+          "Send a short summary of the partnership and the partners involved. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -521,7 +521,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a current org chart, ownership summary, and the goals for the structure. Fit and pricing returned within one business day after conflict screen.",
+          "Send a current org chart, ownership summary, and the goals for the structure. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
@@ -569,7 +569,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short description of the planned mission, the founding board, and the planned funding sources. Fit and pricing returned within one business day after conflict screen.",
+          "Send a short description of the planned mission, the founding board, and the planned funding sources. Fit and pricing returned generally within one business day after conflict screen.",
         ],
       },
     ],
