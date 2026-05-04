@@ -367,7 +367,7 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
                 rows={4}
                 value={formData.description}
                 onChange={(e) => update("description", e.target.value)}
-                placeholder="A few sentences about the matter — keep it high-level for now."
+                placeholder="A few sentences about the matter — keep it high-level for now and do not include any confidential information at this stage."
                 className="rounded-lg border border-border bg-background px-3 py-2 text-sm leading-6 text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
               />
             </div>
