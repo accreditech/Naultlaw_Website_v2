@@ -4,6 +4,11 @@ const officePhoneE164 = (process.env.NEXT_PUBLIC_OFFICE_PHONE_E164 ?? "").trim()
 const siteUrl =
   (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.example-law-domain.com").trim() ||
   "https://www.example-law-domain.com";
+/** Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX". Empty disables GA4. */
+const ga4Id = (process.env.NEXT_PUBLIC_GA4_ID ?? "").trim();
+/** Google Search Console verification token (the value from the meta-tag method). Empty disables. */
+const googleSiteVerification =
+  (process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "").trim();
 const officePhoneLabel =
   (process.env.NEXT_PUBLIC_OFFICE_PHONE_LABEL ?? "[Office phone placeholder]").trim() ||
   "[Office phone placeholder]";
@@ -38,6 +43,10 @@ export const siteConfig = {
   hostname: siteHostname,
   shouldIndex: shouldIndexSite,
   isPrelaunch: !shouldIndexSite,
+  ga4Id,
+  hasGa4: Boolean(ga4Id),
+  googleSiteVerification,
+  hasGoogleSiteVerification: Boolean(googleSiteVerification),
   phoneLabel: officePhoneLabel,
   phoneHref: officePhoneE164 ? `tel:${officePhoneE164}` : "",
   hasPhone: Boolean(officePhoneE164),
