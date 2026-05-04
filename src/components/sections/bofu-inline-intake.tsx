@@ -40,6 +40,9 @@ type FormState = {
   urgencyDeadline: string;
   valueAtStake: string;
   bestTime: string;
+  /** Optional context — same fields as the full /contact form. */
+  opposingParties: string;
+  description: string;
   acknowledgment: boolean;
   /** Honeypot — bots fill, humans leave blank. */
   website: string;
@@ -52,6 +55,8 @@ const INITIAL: FormState = {
   urgencyDeadline: "",
   valueAtStake: "",
   bestTime: "",
+  opposingParties: "",
+  description: "",
   acknowledgment: false,
   website: "",
 };
@@ -161,11 +166,11 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
   return (
     <div id="bofu-intake" className="surface-card scroll-mt-24 p-6 sm:p-8">
       <p className="font-heading text-xl text-foreground sm:text-2xl">
-        {heading ?? "Start a fit and conflict screen"}
+        {heading ?? "Schedule a Consultation"}
       </p>
       <p className="mt-2 text-sm leading-6 text-muted-foreground">
         {intro ??
-          "A few quick details to get the conflict screen started. Conflict-screened response within one business day."}
+          "The intake is structured and short — name, contact, opposing party, brief description. You'll hear back within one business day if the matter is a fit."}
       </p>
 
       <form onSubmit={handleSubmit} noValidate className="mt-6 flex flex-col gap-4">
@@ -263,71 +268,108 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
 
         <details className="rounded-lg border border-dashed border-border bg-muted/20 p-4 sm:p-5">
           <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wider text-muted-foreground hover:text-foreground">
-            Optional — speed up the conflict screen
+            Add details — optional
           </summary>
-          <div className="mt-4 grid gap-4 sm:grid-cols-3">
-            <div className="flex flex-col gap-1.5">
-              <label
-                htmlFor={`bofu-urgency-${refSlug}`}
-                className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
-              >
-                Urgency
-              </label>
-              <select
-                id={`bofu-urgency-${refSlug}`}
-                value={formData.urgencyDeadline}
-                onChange={(e) => update("urgencyDeadline", e.target.value)}
-                className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
-              >
-                <option value="">Select…</option>
-                {urgencyOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
+          <div className="mt-4 flex flex-col gap-4">
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="flex flex-col gap-1.5">
+                <label
+                  htmlFor={`bofu-urgency-${refSlug}`}
+                  className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                >
+                  Urgency
+                </label>
+                <select
+                  id={`bofu-urgency-${refSlug}`}
+                  value={formData.urgencyDeadline}
+                  onChange={(e) => update("urgencyDeadline", e.target.value)}
+                  className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
+                >
+                  <option value="">Select…</option>
+                  {urgencyOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label
+                  htmlFor={`bofu-value-${refSlug}`}
+                  className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                >
+                  Value at stake
+                </label>
+                <select
+                  id={`bofu-value-${refSlug}`}
+                  value={formData.valueAtStake}
+                  onChange={(e) => update("valueAtStake", e.target.value)}
+                  className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
+                >
+                  <option value="">Select…</option>
+                  {valueAtStakeOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label
+                  htmlFor={`bofu-besttime-${refSlug}`}
+                  className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                >
+                  Best time to reach you
+                </label>
+                <select
+                  id={`bofu-besttime-${refSlug}`}
+                  value={formData.bestTime}
+                  onChange={(e) => update("bestTime", e.target.value)}
+                  className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
+                >
+                  <option value="">Select…</option>
+                  {bestTimeOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
+
             <div className="flex flex-col gap-1.5">
               <label
-                htmlFor={`bofu-value-${refSlug}`}
+                htmlFor={`bofu-opposing-${refSlug}`}
                 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
               >
-                Value at stake
+                Opposing party
               </label>
-              <select
-                id={`bofu-value-${refSlug}`}
-                value={formData.valueAtStake}
-                onChange={(e) => update("valueAtStake", e.target.value)}
+              <input
+                id={`bofu-opposing-${refSlug}`}
+                type="text"
+                autoComplete="off"
+                value={formData.opposingParties}
+                onChange={(e) => update("opposingParties", e.target.value)}
+                placeholder="Name of any opposing person, business, or counsel"
                 className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
-              >
-                <option value="">Select…</option>
-                {valueAtStakeOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
+              />
             </div>
+
             <div className="flex flex-col gap-1.5">
               <label
-                htmlFor={`bofu-besttime-${refSlug}`}
+                htmlFor={`bofu-description-${refSlug}`}
                 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
               >
-                Best time to reach you
+                Brief description
               </label>
-              <select
-                id={`bofu-besttime-${refSlug}`}
-                value={formData.bestTime}
-                onChange={(e) => update("bestTime", e.target.value)}
-                className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
-              >
-                <option value="">Select…</option>
-                {bestTimeOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
+              <textarea
+                id={`bofu-description-${refSlug}`}
+                rows={4}
+                value={formData.description}
+                onChange={(e) => update("description", e.target.value)}
+                placeholder="A few sentences about the matter — keep it high-level for now."
+                className="rounded-lg border border-border bg-background px-3 py-2 text-sm leading-6 text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
+              />
             </div>
           </div>
         </details>
@@ -379,7 +421,7 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
             {submitting ? "Sending…" : "Submit"}
           </button>
           <p className="text-xs text-muted-foreground">
-            Conflict-screened response within one business day.
+            Response within one business day.
           </p>
         </div>
       </form>
