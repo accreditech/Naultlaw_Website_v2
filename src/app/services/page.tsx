@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = createMetadata({
   title: "Practice Areas",
   description:
-    "Tennessee practice areas — real estate expert witness, business formation, contracts, real estate disputes, and business disputes. Statewide advisory; trial in trial counties. Call Nault Law.",
+    "Tennessee practice areas — expert witness, business formation, contracts, real estate transactions, and disputes. Statewide advisory work. Call Nault Law.",
   path: "/services",
 });
 

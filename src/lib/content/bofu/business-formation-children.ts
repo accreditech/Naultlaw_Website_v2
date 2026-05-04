@@ -562,7 +562,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "Scope of representation",
         paragraphs: [
-          "This engagement covers formation and the initial federal exemption application. Ongoing nonprofit compliance — annual filings, employment matters, and program-specific regulatory work — is generally referred to specialist counsel where it falls outside the day-to-day practice.",
+          "This engagement covers formation and the initial federal exemption application. Ongoing nonprofit compliance — annual filings, employment matters, and program-specific regulatory work — is generally referred to outside counsel where it falls outside the day-to-day practice.",
         ],
       },
       {

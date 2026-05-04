@@ -195,7 +195,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     title: "Mechanics Lien Attorney in Tennessee | Nault Law",
     h1: "Mechanics Lien Attorney in Tennessee",
     metaDescription:
-      "Mechanics lien attorney in Tennessee. Notice, filing, perfection, and enforcement. Tight deadlines — call Nault Law.",
+      "Mechanics lien attorney in Tennessee for contractors and suppliers. Notice, filing, perfection, and enforcement under tight deadlines. Call Nault Law.",
     intro:
       "Mechanics lien attorney in Tennessee for contractors, subcontractors, and suppliers asserting or defending lien claims — notice of nonpayment, lien filing and perfection, enforcement actions, and the tight statutory deadlines that govern every step.",
     sections: [
@@ -569,7 +569,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "property-condition-disclosure-dispute-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Property Condition Disclosure Dispute Attorney in Tennessee",
-    title: "Property Condition Disclosure Dispute Attorney TN | Nault Law",
+    title: "Property Condition Disclosure Attorney TN | Nault Law",
     h1: "Property Condition Disclosure Dispute Attorney in Tennessee",
     metaDescription:
       "Property condition disclosure dispute attorney in Tennessee for buyers and sellers in TRPCDA failure-to-disclose claims. Call Nault Law.",
@@ -786,7 +786,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee evictions are heard in General Sessions Court in the county where the property sits. Notice and procedural requirements vary by lease type and the basis for the eviction. URTLA applies to many residential leases in larger counties; commercial leases are governed by their terms.",
+          "Tennessee evictions are heard in General Sessions Court in the county where the property sits. Notice and procedural requirements vary by lease type and the basis for the eviction. URLTA applies to many residential leases in larger counties; commercial leases are governed by their terms.",
         ],
       },
       {
@@ -805,7 +805,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
     needsSteveReview: [
-      "Confirm URTLA applicability — counties where it applies and the practical consequence for residential evictions.",
+      "Confirm URLTA applicability — counties where it applies and the practical consequence for residential evictions.",
     ],
   },
   {
@@ -835,7 +835,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee eviction cases are heard in General Sessions Court in the county where the property sits. Tenants have specific procedural rights, and depending on the lease type, statutory protections under URTLA and related provisions may apply.",
+          "Tennessee eviction cases are heard in General Sessions Court in the county where the property sits. Tenants have specific procedural rights, and depending on the lease type, statutory protections under URLTA and related provisions may apply.",
         ],
       },
       {

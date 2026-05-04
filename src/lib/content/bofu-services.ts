@@ -76,9 +76,9 @@ export const bofuHubs: BofuHub[] = [
     intro:
       "Real estate expert witness work in Tennessee from an attorney and active managing broker — opinions on title, contract, valuation, brokerage standard of care, and property-management practice for litigators on both sides.",
     whatThisCovers:
-      "Tennessee real estate disputes often turn on industry custom, document analysis, and how the underlying business actually operates. Opinions stay grounded in the record and limited to what the documents and the transaction actually support.",
+      "Tennessee real estate disputes often turn on industry custom, document analysis, and how the underlying business actually operates. Opinions stay grounded in the record and limited to what the documents and the transaction actually support. Engagements range from confidential pre-designation consulting through Rule 26 disclosures, written reports, deposition support, and trial testimony.",
     whenToCall:
-      "Most retentions come at one of three points — pre-designation consulting before the theory is fixed, designation after a complaint is filed, or rebuttal of an opposing expert's report.",
+      "Most retentions come at one of three points — pre-designation consulting before the theory is fixed, designation after a complaint is filed, or rebuttal of an opposing expert's report. Pre-designation work stays confidential under work product; each engagement is scoped at the front with hourly billing and retainers sized to the case. CV and prior testimony list are available on request after the conflict screen is clear.",
     primaryCtaLabel: "Request CV and conflicts check",
     childSlugs: [
       "title-expert-witness-tennessee",
@@ -99,9 +99,9 @@ export const bofuHubs: BofuHub[] = [
     intro:
       "Business formation attorney in Tennessee handling entity choice, articles, operating documents, and buy-sell terms for owners, partners, and licensed professionals across the state.",
     whatThisCovers:
-      "Formation work covers entity selection, articles of organization or incorporation, operating agreements or bylaws, registered-agent setup, EIN coordination, and the early governance choices that shape liability and tax posture.",
+      "Formation work covers entity selection, articles of organization or incorporation, operating agreements or bylaws, registered-agent setup, EIN coordination, and the early governance choices that shape liability and tax posture. The right structure depends on liability, tax election, ownership economics, and how the business will actually be run after launch.",
     whenToCall:
-      "Most engagements start at one of three points — pre-formation entity choice, partner-change events that require new operating documents, or buy-sell triggers like death, divorce, or sale of the business.",
+      "Most engagements start at one of three points — pre-formation entity choice, partner-change events that require new operating documents, or buy-sell triggers like death, divorce, or sale of the business. Flat-fee or capped pricing is available for straightforward formations; more complex structures move to hourly with a sized retainer.",
     primaryCtaLabel: "Schedule a Consultation",
     childSlugs: [
       "llc-formation-attorney-tennessee",
@@ -130,9 +130,9 @@ export const bofuHubs: BofuHub[] = [
     intro:
       "Business contract attorney in Tennessee for owners, agencies, contractors, and real-estate operators who need clean drafting, fast review, or smarter risk allocation before a deal closes.",
     whatThisCovers:
-      "Most disputes are decided by what the contract said before anyone read it carefully. The work covers drafting from scratch, reviewing what the other side sent, and revising boilerplate that does not fit the actual deal.",
+      "Most disputes are decided by what the contract said before anyone read it carefully. The work covers drafting from scratch, reviewing what the other side sent, and revising boilerplate that does not fit the actual deal. Flat-fee review is available for many standard contracts; rush turnaround is available when the deal is on a clock.",
     whenToCall:
-      "Triggered by an actual document on your desk — a vendor contract, lease, independent-contractor agreement, asset purchase agreement, or letter of intent that needs review before signing.",
+      "Triggered by an actual document on your desk — a vendor contract, lease, independent-contractor agreement, asset purchase agreement, or letter of intent that needs review before signing. Engagement runs from a short scoping call through marked-up redlines and a follow-up call to walk through what to push back on.",
     primaryCtaLabel: "Send a contract for review",
     childSlugs: [
       "contract-review-attorney-tennessee",
@@ -155,13 +155,13 @@ export const bofuHubs: BofuHub[] = [
     title: "Real Estate Transactions Attorney in Tennessee | Nault Law",
     h1: "Real Estate Transactions Attorney in Tennessee",
     metaDescription:
-      "Real estate transactions attorney in Tennessee for purchase agreements, commercial leases, owner financing, land contracts, and joint ventures. Call Nault Law.",
+      "Real estate transactions attorney in Tennessee for purchase agreements, commercial leases, owner financing, and joint ventures. Call Nault Law.",
     intro:
       "Real estate transactions attorney in Tennessee for the deal-side work — purchase agreements, commercial leases, owner financing, land contracts, joint ventures, and contract assignments — done before a dispute starts.",
     whatThisCovers:
-      "Transactions work is preventive: clean documents, clear allocation of risk, and the leverage points spelled out before money or property changes hands. The goal is a deal that stays a deal, not one that turns into a fight after closing.",
+      "Transactions work is preventive: clean documents, clear allocation of risk, and the leverage points spelled out before money or property changes hands. The goal is a deal that stays a deal, not one that turns into a fight after closing. The work covers contract drafting and review only — not closing or settlement-agent services, which the office does not handle.",
     whenToCall:
-      "When a contract is on the desk, when a deal is being structured, or when a property change-of-hands needs documents drafted carefully. Earlier engagement creates more options.",
+      "When a contract is on the desk, when a deal is being structured, or when a property change-of-hands needs documents drafted carefully. Earlier engagement creates more options and lower cost; flat-fee or capped pricing is available for many standard transactions.",
     primaryCtaLabel: "Schedule a Consultation",
     childSlugs: [
       "real-estate-purchase-agreement-attorney-tennessee",
@@ -228,9 +228,9 @@ export const bofuHubs: BofuHub[] = [
     intro:
       "Business disputes attorney in Tennessee for owners, members, and shareholders working through partnership breakups, member buyouts, non-compete enforcement, and fiduciary-duty claims.",
     whatThisCovers:
-      "Owner conflicts are rarely just legal problems. They are control, information, and continuity problems. Resolution can come through restructuring, buyout, structured negotiation, or formal dispute action — depending on leverage and what the business needs to keep running.",
+      "Owner conflicts are rarely just legal problems. They are control, information, and continuity problems. Resolution can come through restructuring, buyout, structured negotiation, or formal dispute action — depending on leverage and what the business needs to keep running. The work integrates governance documents, operating reality, and the practical economics of staying in business with the people on the other side.",
     whenToCall:
-      "When records are being withheld, accounts are being moved, or major decisions are being made unilaterally. Early intervention can protect the company and your bargaining position before unilateral acts become facts on the ground.",
+      "When records are being withheld, accounts are being moved, or major decisions are being made unilaterally. Early intervention can protect the company and your bargaining position before unilateral acts become facts on the ground. Hourly billing with retainers sized to the matter; some pre-suit positioning work can be capped.",
     primaryCtaLabel: "Schedule a Consultation",
     childSlugs: [
       "business-partnership-dispute-attorney-tennessee",
