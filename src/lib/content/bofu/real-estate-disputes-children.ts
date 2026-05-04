@@ -664,4 +664,291 @@ export const realEstateDisputesChildren: BofuService[] = [
       "Trustee-interpleader procedural specifics for TN non-judicial foreclosures.",
     ],
   },
+  {
+    slug: "landlord-attorney-tennessee",
+    hub: "real-estate-disputes",
+    primaryKeyword: "Landlord Attorney in Tennessee",
+    title: "Landlord Attorney in Tennessee | Nault Law",
+    h1: "Landlord Attorney in Tennessee",
+    metaDescription:
+      "Landlord attorney in Tennessee for residential and commercial landlords — lease enforcement, default, possession, deposits, and advisory work. Call Nault Law.",
+    intro:
+      "Landlord attorney in Tennessee for residential and commercial landlords — lease drafting, default-and-cure handling, possession, deposit accounting, and the dispute work that protects rent and asset value when a tenancy goes sideways.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "Landlord work spans the full tenancy lifecycle: lease drafting and review, rent and CAM enforcement, default-and-cure handling, possession (eviction) when curing fails, deposit accounting and disputes, post-tenancy damages claims, and lease-amendment and renewal work.",
+          "Both residential and commercial landlords are represented. The right approach depends on lease type, the tenant's conduct, and how quickly possession or rent recovery is needed.",
+        ],
+      },
+      {
+        h2: "Who this is for",
+        paragraphs: [
+          "Residential landlords and small-portfolio owners managing single-family or small multi-family rental property. Commercial landlords with retail, office, or industrial tenants. Property managers and asset managers needing counsel on a specific tenancy or lease.",
+        ],
+      },
+      {
+        h2: "Common matters",
+        paragraphs: [
+          "Nonpayment defaults and detainer-warrant strategy. Lease-violation evictions and notice mechanics. Holdover-tenant cases after lease expiration. CAM and operating-expense disputes. Security-deposit return disputes and statutory accounting requirements. Habitability claims raised as defenses to enforcement.",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [TRIAL_COUNTIES_SENTENCE],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Send the lease, the rent ledger or default communications, and a short summary of the situation. Fit and conflicts screened within one business day.",
+        ],
+      },
+    ],
+    audience: "Residential and commercial landlords and property managers",
+    serviceArea: "Statewide advice; trial counties for litigation",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+  },
+  {
+    slug: "tenant-attorney-tennessee",
+    hub: "real-estate-disputes",
+    primaryKeyword: "Tenant Attorney in Tennessee",
+    title: "Tenant Attorney in Tennessee | Nault Law",
+    h1: "Tenant Attorney in Tennessee",
+    metaDescription:
+      "Tenant attorney in Tennessee for residential and commercial tenants — lease defense, deposit recovery, habitability, and mold claims. Call Nault Law.",
+    intro:
+      "Tenant attorney in Tennessee for residential and commercial tenants — lease review, defense against landlord enforcement, security-deposit recovery, habitability claims, and mold-related claims when the unit is uninhabitable.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "Tenant-side representation covers lease review before signing, response to default or termination notices, eviction defense, security-deposit recovery, habitability claims, and mold-related claims that arise during the tenancy.",
+          "Both residential and commercial tenants are represented. Residential tenants benefit from Tennessee's habitability and security-deposit framework; commercial tenants are governed primarily by the lease itself, and the work focuses on lease language and leverage.",
+        ],
+      },
+      {
+        h2: "Who this is for",
+        paragraphs: [
+          "Residential tenants facing eviction, deposit-withholding, or uninhabitable conditions. Commercial tenants disputing CAM charges, default notices, exclusivity, or assignment rights. Tenants of any kind who need a lease reviewed before signing or before a notice goes out.",
+        ],
+      },
+      {
+        h2: "Habitability and mold",
+        paragraphs: [
+          "Tennessee residential tenants have habitability protections that the lease cannot waive in some respects. Mold and water-intrusion conditions, when severe, can support habitability claims, repair-and-deduct arguments where applicable, and damages claims. The mold-claim attorney page covers the deeper specifics.",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [TRIAL_COUNTIES_SENTENCE],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Send the lease, the notice or communications at issue, and a short summary of the dispute or condition. Fit and conflicts screened within one business day.",
+        ],
+      },
+    ],
+    audience: "Residential and commercial tenants",
+    serviceArea: "Statewide advice; trial counties for litigation",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+    needsSteveReview: [
+      "Confirm framing on TN tenant repair-and-deduct rights — when this remedy is available under URLTA-equivalent provisions.",
+    ],
+  },
+  {
+    slug: "eviction-attorney-tennessee",
+    hub: "real-estate-disputes",
+    primaryKeyword: "Eviction Attorney in Tennessee",
+    title: "Eviction Attorney in Tennessee | Nault Law",
+    h1: "Eviction Attorney in Tennessee",
+    metaDescription:
+      "Eviction attorney in Tennessee representing landlords statewide — detainer warrants, judgments, writs of possession. Call Nault Law.",
+    intro:
+      "Eviction attorney in Tennessee representing landlords and property managers — detainer warrants, judgments, writs of possession, and the procedural steps that protect the rent ledger and the asset while the case moves through General Sessions Court.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "Landlord-side eviction work covers notice preparation, detainer warrant filing, hearing representation in General Sessions Court, judgment collection, and writ-of-possession execution. Both residential and commercial possession matters are handled.",
+          "Common scenarios include nonpayment evictions, lease-violation cases, holdover tenants after lease expiration, and post-foreclosure possession claims.",
+        ],
+      },
+      {
+        h2: "When to call",
+        paragraphs: [
+          "Before the notice goes out, before a detainer hearing, or after a tenant has begun contesting the action. Early review confirms the notice was sufficient and that the lease and ledger actually support the claim.",
+        ],
+      },
+      {
+        h2: "Tennessee specifics",
+        paragraphs: [
+          "Tennessee evictions are heard in General Sessions Court in the county where the property sits. Notice and procedural requirements vary by lease type and the basis for the eviction. URTLA applies to many residential leases in larger counties; commercial leases are governed by their terms.",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [TRIAL_COUNTIES_SENTENCE],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Send the lease, the rent ledger, the notice you sent (if any), and the tenant's response. Fit and conflicts screened within one business day.",
+        ],
+      },
+    ],
+    audience: "Landlords and property managers statewide",
+    serviceArea: "Statewide advice; trial counties for litigation",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+    needsSteveReview: [
+      "Confirm URTLA applicability — counties where it applies and the practical consequence for residential evictions.",
+    ],
+  },
+  {
+    slug: "eviction-defense-attorney-tennessee",
+    hub: "real-estate-disputes",
+    primaryKeyword: "Eviction Defense Attorney in Tennessee",
+    title: "Eviction Defense Attorney in Tennessee | Nault Law",
+    h1: "Eviction Defense Attorney in Tennessee",
+    metaDescription:
+      "Eviction defense attorney in Tennessee representing tenants — detainer-warrant defense, procedural challenges, and habitability defenses. Call Nault Law.",
+    intro:
+      "Eviction defense attorney in Tennessee representing tenants facing detainer-warrant actions — procedural challenges, habitability and notice defenses, payment-plan negotiation, and post-judgment options when the case has already gone against the tenant.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "Eviction defense work runs from the moment a notice or detainer warrant arrives through trial in General Sessions Court and, in some matters, post-judgment relief. The work analyzes the notice, the lease, and the underlying facts for procedural and substantive defenses.",
+          "Common defenses include defective notice, improper service, retaliation claims, habitability and uninhabitability defenses, mold and water-intrusion conditions, payment that was made or tendered, and lease-interpretation defenses to the alleged violation.",
+        ],
+      },
+      {
+        h2: "When to call",
+        paragraphs: [
+          "Immediately on receipt of a notice or detainer warrant. Eviction timelines move quickly — many cases are heard within days of filing. Early outreach preserves defenses and procedural arguments.",
+        ],
+      },
+      {
+        h2: "Tennessee specifics",
+        paragraphs: [
+          "Tennessee eviction cases are heard in General Sessions Court in the county where the property sits. Tenants have specific procedural rights, and depending on the lease type, statutory protections under URTLA and related provisions may apply.",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [TRIAL_COUNTIES_SENTENCE],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Send the lease, the notice or detainer warrant, and a short summary of the facts. Fit and conflicts screened within one business day; same-day response when a hearing is imminent.",
+        ],
+      },
+    ],
+    audience: "Tenants facing detainer-warrant actions or eviction notices",
+    serviceArea: "Statewide advice; trial counties for litigation",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+  },
+  {
+    slug: "mold-claim-attorney-tennessee",
+    hub: "real-estate-disputes",
+    primaryKeyword: "Mold Claim Attorney in Tennessee",
+    title: "Mold Claim Attorney in Tennessee | Nault Law",
+    h1: "Mold Claim Attorney in Tennessee",
+    metaDescription:
+      "Mold claim attorney in Tennessee for tenants, homeowners, and commercial occupants pursuing claims over mold and water-intrusion damage. Call Nault Law.",
+    intro:
+      "Mold claim attorney in Tennessee for tenants in habitability disputes, homeowners with post-purchase mold discoveries, and commercial occupants whose space has become uninhabitable due to water intrusion or active mold growth.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "Mold claim work spans three distinct fact patterns: residential tenant claims against landlords for habitability and damages; homeowner claims against sellers and agents for failure to disclose known mold or water-intrusion history; and commercial-tenant claims against landlords or prior occupants when the space becomes uninhabitable.",
+          "The cases require integration of medical or environmental evidence, contract or lease analysis, and expert testimony on cause and remediation. Successful claims pair the legal theory with the technical evidence.",
+        ],
+      },
+      {
+        h2: "When to call",
+        paragraphs: [
+          "Soon after the mold or water-intrusion condition is discovered. Evidence preservation matters — air-quality testing, photographs, medical records, and notice communications all factor into the claim. Early outreach also frames notice-and-cure obligations under the lease or purchase contract.",
+        ],
+      },
+      {
+        h2: "Tennessee specifics",
+        paragraphs: [
+          "Tennessee residential tenants have habitability protections that mold conditions can violate. Homeowner claims after closing typically proceed under the Tennessee Residential Property Condition Disclosure Act, common-law fraud, or breach-of-contract theories. Commercial-tenant claims are governed primarily by the lease.",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [TRIAL_COUNTIES_SENTENCE],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Send the lease or purchase contract, photographs and inspection reports if available, and a short summary of the discovery and any health impact. Fit and conflicts screened within one business day.",
+        ],
+      },
+    ],
+    audience: "Tenants, homeowners, and commercial occupants with mold claims",
+    serviceArea: "Statewide advice; trial counties for litigation",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+    needsSteveReview: [
+      "TN-specific mold-claim doctrine and habitability framing — confirm before publishing.",
+    ],
+  },
+  {
+    slug: "eviction-attorney-sumner-county-tn",
+    hub: "real-estate-disputes",
+    primaryKeyword: "Eviction Attorney in Sumner County TN",
+    title: "Eviction Attorney in Sumner County TN | Nault Law",
+    h1: "Eviction Attorney in Sumner County TN",
+    metaDescription:
+      "Eviction attorney in Sumner County TN representing landlords and property managers. Detainer warrants, judgments, writs of possession. Call Nault Law.",
+    intro:
+      "Eviction attorney in Sumner County TN representing landlords, property managers, and small portfolio owners — detainer warrants, judgments, writs of possession, and the procedural steps that get possession back without losing time on technicalities.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "Eviction work covers notice preparation, detainer warrant filing, hearing representation in General Sessions Court, judgment collection, and writ-of-possession execution. Both residential and commercial possession matters are handled.",
+          "Common scenarios include nonpayment evictions, lease-violation cases, holdover tenants after lease expiration, and landlord recoveries after a foreclosure or sale that triggers the right to possession.",
+        ],
+      },
+      {
+        h2: "When to call",
+        paragraphs: [
+          "When notice is about to go out, when a detainer hearing is scheduled, or when a tenant is contesting the action. Early review confirms the notice was sufficient and that the underlying lease and ledger support the claim.",
+        ],
+      },
+      {
+        h2: "Sumner County specifics",
+        paragraphs: [
+          "Sumner County eviction matters are typically heard in Sumner County General Sessions Court. Local procedures, scheduling, and judge-by-judge expectations matter to how a hearing actually goes. Hearing preparation is sized to the dispute — many cases resolve quickly when the landlord arrives prepared.",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [
+          "Sumner County trial representation. Statewide advice on lease structure and pre-eviction posture; trial representation in Sumner, Wilson, Robertson, Trousdale, Williamson, and Davidson Counties.",
+        ],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Send the lease, the rent ledger, the notice you sent (if any), and the tenant's response. Fit and conflicts screened within one business day.",
+        ],
+      },
+    ],
+    audience: "Sumner County landlords and property managers",
+    serviceArea: "Sumner County (trial)",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+  },
 ];

@@ -97,54 +97,6 @@ export const businessDisputesChildren: BofuService[] = [
     primaryCtaLabel: "Schedule a Consultation",
   },
   {
-    slug: "eviction-attorney-sumner-county-tn",
-    hub: "business-disputes",
-    primaryKeyword: "Eviction Attorney in Sumner County TN",
-    title: "Eviction Attorney in Sumner County TN | Nault Law",
-    h1: "Eviction Attorney in Sumner County TN",
-    metaDescription:
-      "Eviction attorney in Sumner County TN representing landlords and property managers. Detainer warrants, judgments, writs of possession. Call Nault Law.",
-    intro:
-      "Eviction attorney in Sumner County TN representing landlords, property managers, and small portfolio owners — detainer warrants, judgments, writs of possession, and the procedural steps that get possession back without losing time on technicalities.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Eviction work covers notice preparation, detainer warrant filing, hearing representation in General Sessions Court, judgment collection, and writ-of-possession execution. Both residential and commercial possession matters are handled.",
-          "Common scenarios include nonpayment evictions, lease-violation cases, holdover tenants after lease expiration, and landlord recoveries after a foreclosure or sale that triggers the right to possession.",
-        ],
-      },
-      {
-        h2: "When to call",
-        paragraphs: [
-          "When notice is about to go out, when a detainer hearing is scheduled, or when a tenant is contesting the action. Early review confirms the notice was sufficient and that the underlying lease and ledger support the claim.",
-        ],
-      },
-      {
-        h2: "Sumner County specifics",
-        paragraphs: [
-          "Sumner County eviction matters are typically heard in Sumner County General Sessions Court. Local procedures, scheduling, and judge-by-judge expectations matter to how a hearing actually goes. Hearing preparation is sized to the dispute — many cases resolve quickly when the landlord arrives prepared.",
-        ],
-      },
-      {
-        h2: "Service area",
-        paragraphs: [
-          "Sumner County trial representation. Statewide advice on lease structure and pre-eviction posture; trial representation in Sumner, Wilson, Robertson, Trousdale, Williamson, and Davidson Counties.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the lease, the rent ledger, the notice you sent (if any), and the tenant's response. Fit and conflicts screened within one business day.",
-        ],
-      },
-    ],
-    audience: "Sumner County landlords and property managers",
-    serviceArea: "Sumner County (trial)",
-    isLitigation: true,
-    primaryCtaLabel: "Schedule a Consultation",
-  },
-  {
     slug: "llc-member-buyout-attorney-tennessee",
     hub: "business-disputes",
     primaryKeyword: "LLC Member Buyout Attorney in Tennessee",
