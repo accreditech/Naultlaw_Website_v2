@@ -32,7 +32,7 @@ export const industries: IndustryContent[] = [
     whyEarlyCounsel:
       "The first response matters. Early legal review helps a broker or agent protect the record, avoid unnecessary admissions, and think about both the complaint and any parallel civil exposure together.",
     localAngle:
-      "The brokerage community in Gallatin, Sumner County, Wilson County, Robertson County, and Trousdale County is relationship driven. That makes disciplined, credible counsel even more valuable when a dispute starts affecting business reputation and referrals.",
+      "The brokerage community in Gallatin, Sumner County, Wilson County, Robertson County, Trousdale County, and Williamson County is relationship driven. That makes disciplined, credible counsel even more valuable when a dispute starts affecting business reputation and referrals.",
   },
   {
     slug: "counsel-for-investors-and-landlords",
@@ -55,7 +55,7 @@ export const industries: IndustryContent[] = [
     whyEarlyCounsel:
       "Early review can preserve leverage, improve document quality, and keep a real estate problem from becoming an avoidable business loss.",
     localAngle:
-      "Owners across Sumner, Wilson, Robertson, and Trousdale Counties often manage property through local relationships and practical dealmaking. Counsel should reflect that reality rather than assume a one-size-fits-all playbook.",
+      "Owners across Sumner, Wilson, Robertson, Trousdale, and Williamson Counties often manage property through local relationships and practical dealmaking. Counsel should reflect that reality rather than assume a one-size-fits-all playbook.",
   },
   {
     slug: "counsel-for-property-managers",

@@ -67,6 +67,7 @@ export const siteConfig = {
     "Wilson County",
     "Robertson County",
     "Trousdale County",
+    "Williamson County",
   ],
   broaderServiceCounties: ["Davidson County"],
   secondaryReach: ["Nashville", "Davidson County"],
