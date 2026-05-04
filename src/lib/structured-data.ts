@@ -1,4 +1,5 @@
 import { attorneyProfile } from "@/lib/content/attorney";
+import type { BofuHub, BofuService } from "@/lib/content/bofu-services";
 import type { IndustryContent } from "@/lib/content/industries";
 import type { LocationContent } from "@/lib/content/locations";
 import type { PracticeAreaContent } from "@/lib/content/practice-areas";
@@ -235,6 +236,40 @@ export function industryPageSchema(industry: IndustryContent) {
       audienceType: entry,
     })),
     description: industry.metaDescription,
+  };
+}
+
+export function bofuHubSchema(hub: BofuHub) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${absoluteUrl(`/services/${hub.slug}`)}#bofu-hub`,
+    name: `${hub.h1} | ${siteConfig.attorneyName}`,
+    provider: {
+      "@id": schemaIds.legalService,
+    },
+    serviceType: hub.h1,
+    areaServed: serviceAreas(),
+    description: hub.metaDescription,
+  };
+}
+
+export function bofuServiceSchema(service: BofuService) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${absoluteUrl(`/services/${service.slug}`)}#bofu-service`,
+    name: `${service.h1} | ${siteConfig.attorneyName}`,
+    provider: {
+      "@id": schemaIds.legalService,
+    },
+    serviceType: service.h1,
+    areaServed: serviceAreas(),
+    audience: {
+      "@type": "Audience",
+      audienceType: service.audience,
+    },
+    description: service.metaDescription,
   };
 }
 

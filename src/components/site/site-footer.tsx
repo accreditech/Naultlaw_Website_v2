@@ -7,6 +7,7 @@ const PRACTICE_LINKS = [
   { label: "Owner & Partner Disputes", href: "/practice-areas/operating-agreements-and-owner-disputes" },
   { label: "Real Estate Disputes", href: "/practice-areas/real-estate-disputes" },
   { label: "Business Contracts", href: "/practice-areas/business-contract-drafting-and-review" },
+  { label: "All Practice Areas", href: "/services" },
 ];
 
 const MORE_LINKS = [
@@ -257,7 +258,10 @@ export function SiteFooter() {
               lineHeight: 1.7,
             }}
           >
-            Website Terms and Conditions can be found{" "}
+            Information on this website is provided for general informational
+            purposes only and should not be relied upon as legal advice. Every
+            legal matter is nuanced and fact-specific. Please refer to the
+            website{" "}
             <Link
               href="/legal"
               style={{
@@ -266,9 +270,9 @@ export function SiteFooter() {
                 textUnderlineOffset: 2,
               }}
             >
-              here
-            </Link>
-            .
+              terms and conditions
+            </Link>{" "}
+            before relying on any information here.
           </p>
         </div>
       </div>
