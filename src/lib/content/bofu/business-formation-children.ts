@@ -33,6 +33,26 @@ export const businessFormationChildren: BofuService[] = [
         ],
       },
       {
+        h2: "Single-member vs. multi-member structure",
+        paragraphs: [
+          "The simplest case is a single-member LLC: one owner, one set of decisions, profits and losses pass through to a single Schedule C or 1040 reporting line. Most solo founders, real-estate investors, and consultants land here. Multi-member LLCs add complexity: capital contributions are tracked per member, distributions follow the operating agreement (not necessarily ownership percentages), and tax reporting moves to a partnership return on Form 1065.",
+          "The decision between single and multi-member is usually driven by who owns the business — bringing in a co-founder, a passive investor, or a family member changes both the legal structure and the tax filing. Manager-managed LLCs offer a third variant where members appoint a manager rather than running the LLC themselves; useful for investor-driven structures.",
+        ],
+      },
+      {
+        h2: "When to elect S-Corp tax status",
+        paragraphs: [
+          "S-Corp election is a federal tax decision that LLCs and corporations can both make, typically once revenue reaches a level where self-employment tax savings exceed the cost of running payroll. The election is filed via IRS Form 2553 and generally must be in place no later than two months and 15 days into the tax year for which the election applies (IRC § 1362; see also Rev. Proc. 2013-30 for late-relief procedures). Tennessee S-Corps remain subject to franchise-and-excise tax.",
+          "The legal work supports whichever election the CPA recommends — updating operating agreements or bylaws, confirming reasonable-compensation structure, and locking down the governance posture the election requires. Most owners coordinate the election with their accountant; the legal side ensures the entity documents match.",
+        ],
+      },
+      {
+        h2: "Common formation mistakes",
+        paragraphs: [
+          "The most common mistakes show up later, not at filing: relying on an online operating agreement that does not match how the business actually runs; missing the S-Corp election deadline; failing to register the LLC as a foreign entity in any state where it does business beyond Tennessee; and forgetting to update articles, registered agent, or operating agreement when membership changes. Each of these is fixable but more expensive after the fact than during initial formation.",
+        ],
+      },
+      {
         h2: "Process and timeline",
         paragraphs: [
           "Most formations move from intake call to filed articles within a week. Operating-agreement drafting follows once members have aligned on contributions, governance, distributions, and exit. Flat-fee or capped pricing is available for straightforward single-member and multi-member formations.",
@@ -41,7 +61,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the planned business, the member structure, and any deadlines. The office returns a fit assessment and pricing range generally within one business day, conflict-screened.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -78,6 +98,27 @@ export const businessFormationChildren: BofuService[] = [
         h2: "Common upgrades from template documents",
         paragraphs: [
           "Most online operating agreements miss the items that matter when the business is actually under stress: capital-call mechanics, valuation method for a forced buyout, what happens on a member's divorce or death, and how disputes are resolved without dragging the company into court.",
+        ],
+      },
+      {
+        h2: "Five provisions that matter under stress",
+        paragraphs: [
+          "Generic operating agreements look fine at signing and fail when the business is actually under stress. The five provisions worth getting right are: (1) capital-call mechanics, including what happens when a member cannot or will not contribute additional capital — dilution, default, forced sale, or interest-bearing loan; (2) the valuation method for a forced or voluntary buyout, with a concrete formula or process rather than vague 'fair market value' language; (3) what happens on a member's death, divorce, disability, or bankruptcy, including buyout obligations and timing; (4) deadlock procedures for major decisions, including mediation, buy-sell triggers, or judicial-dissolution thresholds; and (5) transfer restrictions that prevent a member from selling their interest to a third party without the other members' consent.",
+          "Skipping or genericizing any of these is the most expensive choice owners make. The cost of careful drafting now is a fraction of the cost of litigating ambiguity later.",
+        ],
+      },
+      {
+        h2: "Capital contributions and capital accounts",
+        paragraphs: [
+          "Operating agreement work begins with capital — what each member contributes (cash, property, services), how those contributions are valued, and how the resulting capital accounts are tracked over time. Capital accounts matter because most distribution and liquidation provisions reference them.",
+          "An LLC that distributes pro rata to ownership percentages is the simplest case; LLCs with preferred returns, waterfalls, or different economic and voting interests need careful drafting. The agreement should also address whether and how members can withdraw capital during the LLC's life — most agreements restrict this to prevent members from undermining the business by pulling funds at the wrong time.",
+        ],
+      },
+      {
+        h2: "Buy-sell triggers and valuation method",
+        paragraphs: [
+          "The buy-sell mechanics are the most-litigated piece of operating agreements when they come into play. Trigger events typically include death, disability, divorce, voluntary withdrawal, termination of employment (for owner-employees), and bankruptcy. The agreement should specify which of those events creates a buyout right, who has the right to buy (the LLC, the other members, or a designated successor), and how the buyout is valued and paid.",
+          "A common drafting failure is requiring 'fair market value' without specifying a valuation method — that often means an expensive appraisal fight when a buyout is triggered. Better drafting fixes a formula (multiple of EBITDA, book value plus a multiplier, or annually-updated agreed value) so the math is decided upfront rather than at the moment of conflict.",
         ],
       },
       {

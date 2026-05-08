@@ -40,6 +40,16 @@ const nextConfig: NextConfig = {
         destination: "/legal#attorney-advertising",
         permanent: true,
       },
+      // BOFU page consolidated into the more search-aligned PSA page.
+      // /real-estate-contract-attorney-tennessee was cannibalizing
+      // /real-estate-purchase-agreement-attorney-tennessee per the SEO audit;
+      // 301 preserves any external link equity while routing visitors to
+      // the canonical page.
+      {
+        source: "/services/real-estate-contract-attorney-tennessee",
+        destination: "/services/real-estate-purchase-agreement-attorney-tennessee",
+        permanent: true,
+      },
     ];
   },
 };

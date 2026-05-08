@@ -180,6 +180,31 @@ export default async function ArticlePage({ params }: Props) {
                 </div>
               )}
 
+              {/* Focused practice pages — links to BOFU /services/* siblings */}
+              {article.relatedServices && article.relatedServices.length > 0 && (
+                <div className="surface-card p-6">
+                  <p className="eyebrow text-muted-foreground">Focused Practice Pages</p>
+                  <ul className="mt-4 flex flex-col gap-3">
+                    {article.relatedServices.map((rs) => (
+                      <li key={rs.slug}>
+                        <Link
+                          href={`/services/${rs.slug}`}
+                          className="group flex items-center justify-between gap-3 text-sm font-medium text-foreground transition-colors hover:text-accent"
+                        >
+                          {rs.label}
+                          <span
+                            className="shrink-0 text-muted-foreground/40 transition-colors group-hover:text-accent"
+                            aria-hidden="true"
+                          >
+                            →
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {/* Educational disclaimer */}
               <DisclosurePanel
                 title={publicDisclosures.educationalContentNotice.title}

@@ -45,6 +45,14 @@ export function BofuHubSection({ hub, children }: Props) {
             </div>
           )}
 
+          {hub.narrative && hub.narrative.length > 0 && (
+            <div className="flex flex-col gap-5 text-base leading-7 text-foreground/85">
+              {hub.narrative.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
+          )}
+
           {children.length > 0 && (
             <div>
               <h2 className="font-heading text-2xl text-foreground">

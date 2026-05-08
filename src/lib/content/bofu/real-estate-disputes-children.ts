@@ -29,9 +29,24 @@ export const realEstateDisputesChildren: BofuService[] = [
         ],
       },
       {
-        h2: "Tennessee specifics",
+        h2: "Tennessee Chancery Court process",
         paragraphs: [
-          "Tennessee quiet title actions are filed in Chancery Court in the county where the property sits. Service requirements for unknown or missing parties typically involve court-approved publication. The title company will look for a final order with specific findings before clearing the cloud.",
+          "Tennessee quiet-title actions are filed in the Chancery Court of the county where the property sits. The complaint names the plaintiff (the party claiming title), every party with a record interest (mortgagees, lien holders, prior owners, heirs), and any unknown parties who might claim an interest. Service on known defendants follows the standard rules; unknown or missing parties typically require service by publication after a court order finding due-diligence search has been done.",
+          "The case proceeds through pleadings, discovery if contested, and a final order or judgment. Title companies will look for specific findings in the final order — the rightful owner, the disposition of competing claims, and whether any liens or encumbrances survive — before clearing the cloud for the next sale or refinance.",
+        ],
+      },
+      {
+        h2: "Common chain-of-title patterns",
+        paragraphs: [
+          "Several recurring fact patterns drive Tennessee quiet-title actions. Tax-sale parcels often need quiet-title cleanup because the tax-sale deed does not always cut off all prior interests cleanly. Long-vacant property with broken probate history requires identification and notice to all heirs (often unknown or scattered), with publication service for those who cannot be located.",
+          "Properties with unreleased mortgages or judgment liens — sometimes decades old — need a release or judicial finding that the lien has expired or been satisfied. Adverse-possession claims convert long-running open and notorious use into legal title. Scrivener's errors in legal descriptions or recorded instruments require corrective deeds plus, in some cases, judicial confirmation. Each pattern has its own documentary requirements and its own typical title-company expectations for the final order.",
+        ],
+      },
+      {
+        h2: "Cost ranges and timeline",
+        paragraphs: [
+          "Uncontested quiet-title actions in Tennessee — where no defendant appears or contests the action — typically range from $3,500 to $7,500 in legal fees plus filing fees, publication costs, and any title-search expense. Contested actions move to hourly billing and can range significantly depending on discovery and trial requirements.",
+          "Timeline for an uncontested action is generally 90 to 180 days from filing through final order, depending on court calendar and publication-service timing. Title companies generally accept the final order for clearance once it is recorded, allowing the next sale or refinance to proceed without the cloud.",
         ],
       },
       {
@@ -217,6 +232,26 @@ export const realEstateDisputesChildren: BofuService[] = [
         h2: "Tennessee specifics",
         paragraphs: [
           "Tennessee mechanics lien law distinguishes between prime contractors and subcontractors or remote claimants and applies different notice and timing requirements to each (Tenn. Code Ann. §§ 66-11-106, 66-11-112, 66-11-115, 66-11-145). Lien claims are filed in the register of deeds and enforced through Chancery Court within statutory time periods.",
+        ],
+      },
+      {
+        h2: "Prime contractor vs. remote-claimant framework",
+        paragraphs: [
+          "Tennessee mechanics-lien rights divide along a critical line: prime contractors (those with a direct contract with the property owner) have different rights and timelines than remote claimants (subcontractors, suppliers, and others without direct owner contract). Prime contractors generally have one year after completion or abandonment to enforce a lien (Tenn. Code Ann. § 66-11-115). Remote claimants generally must serve a notice of nonpayment within 90 days after each unpaid month (Tenn. Code Ann. § 66-11-145) and bring the enforcement action within 90 days after the notice of lien.",
+          "Recorded notice, notice-of-completion, and demand-to-enforce procedures can shorten or alter these deadlines. The framework matters because skipping a step in the wrong category — or missing a deadline — can permanently extinguish the right to recover, regardless of the amount owed.",
+        ],
+      },
+      {
+        h2: "Step-by-step deadline timeline",
+        paragraphs: [
+          "For remote claimants, the typical sequence is: deliver labor or materials; serve a sworn notice of nonpayment within 90 days after each unpaid month, with required statutory content; record a lien within 90 days of last work or last delivery (with separate timing for residential vs. commercial); serve copies as required; and file a lien-enforcement action within 90 days after the notice of lien is recorded (or one year after completion or abandonment, whichever applies).",
+          "For prime contractors, the timeline is simpler — file the lien within the statutory window, then bring enforcement within one year of completion or abandonment. Each step has its own statutory requirements; the engagement walks through the specific sequence that applies to your role on the project.",
+        ],
+      },
+      {
+        h2: "Lien-bond and discharge proceedings",
+        paragraphs: [
+          "Tennessee allows property owners or general contractors to bond around a recorded lien, transferring the lien from the property to a surety bond. This clears title and lets a property sale or refinance proceed while the underlying claim continues against the bond. Conversely, lien claimants can pursue the bond rather than the property in the enforcement action. The bond procedure has its own statutory requirements and timing; the engagement covers strategic decisions about whether to pursue the property or accept bond substitution.",
         ],
       },
       {

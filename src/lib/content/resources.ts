@@ -14,6 +14,9 @@ export type ResourceContent = {
   commonMistakes: string[];
   faqs: { question: string; answer: string }[];
   body: string[];
+  /** Optional /services/<slug> links surfaced as related practice pages
+      after the article body. Drives internal-link equity to BOFU pages. */
+  relatedServices?: { slug: string; label: string }[];
 };
 
 export const resources: ResourceContent[] = [
@@ -80,6 +83,10 @@ export const resources: ResourceContent[] = [
       "The practical takeaway is narrow but important: in Tennessee broker complaints involving licensed conduct, records are often not a secondary issue. Transaction-file completeness, disclosure history, communications, and trust-money records can change how the complaint is evaluated once the process moves past the initial accusation and into proof.",
       "Educational disclaimer: This article provides general Tennessee educational information only and is not legal advice for any specific complaint, transaction, or dispute.",
       "A practical next step is a focused review of the transaction file, money records, disclosures, and communications with Tennessee counsel so the matter can be evaluated in the right frame: licensing, records, money handling, or some combination of them.",
+    ],
+    relatedServices: [
+      { slug: "trec-complaint-expert-witness-tennessee", label: "TREC Complaint Expert Witness" },
+      { slug: "agent-malpractice-expert-witness-tennessee", label: "Agent Malpractice Expert Witness" },
     ],
   },
   {
@@ -149,6 +156,10 @@ export const resources: ResourceContent[] = [
       "The practical problem with the just a fee fight label is that it can hide overlapping issues too early. A commission disagreement may still be only a compensation dispute between licensed professionals. But it may also be connected to who had authority, whether an agency agreement exists, whether disclosures were made, whether the records and communications support the claimed entitlement, or whether a transaction-facing licensee's conduct created risk beyond the commission number itself. Tennessee's official materials and appellate decisions support a narrow but important conclusion: classification matters early. A commission dispute may be only about money, but it may not be.",
       "Educational disclaimer: This article provides general Tennessee educational information only and is not legal advice for any specific commission dispute, complaint, or transaction.",
       "A practical next step is a focused review of the transaction documents, agency paperwork, communications, and participant roles with counsel so the matter can be evaluated in the right frame: compensation only, transaction-conduct overlap, or both.",
+    ],
+    relatedServices: [
+      { slug: "real-estate-commission-dispute-expert-witness-tennessee", label: "Real Estate Commission Dispute Expert Witness" },
+      { slug: "realtor-dispute-expert-witness-tennessee", label: "Realtor Dispute Expert Witness" },
     ],
   },
   {
@@ -221,6 +232,10 @@ export const resources: ResourceContent[] = [
       "Educational disclaimer: This article provides general Tennessee educational information only and is not legal advice for any specific complaint, transaction, or dispute.",
       "A practical next step is a focused review of the transaction documents, disclosures, communications, money flow, and participant roles with counsel so the matter can be evaluated in the right frame: regulatory, civil, or both.",
     ],
+    relatedServices: [
+      { slug: "trec-complaint-expert-witness-tennessee", label: "TREC Complaint Expert Witness" },
+      { slug: "agent-malpractice-expert-witness-tennessee", label: "Agent Malpractice Expert Witness" },
+    ],
   },
   {
     slug: "deadlock-in-a-closely-held-business-decision-points-before-escalation",
@@ -288,6 +303,11 @@ export const resources: ResourceContent[] = [
       "Educational disclaimer: This article provides general Tennessee educational information only and is not legal advice for any specific LLC, dispute, or transaction.",
       "A practical next step is a focused review of the operating agreement, ownership records, bank and books access, and payment history with Tennessee counsel so the dispute can be evaluated in the right frame: status, authority, money movement, records control, or some combination of them.",
     ],
+    relatedServices: [
+      { slug: "business-partnership-dispute-attorney-tennessee", label: "Business Partnership Dispute Attorney" },
+      { slug: "llc-member-buyout-attorney-tennessee", label: "LLC Member Buyout Attorney" },
+      { slug: "shareholder-dispute-attorney-tennessee", label: "Shareholder Dispute Attorney" },
+    ],
   },
   {
     slug: "when-the-operating-agreement-no-longer-matches-reality",
@@ -353,6 +373,10 @@ export const resources: ResourceContent[] = [
       "The broader business lesson from these Tennessee LLC cases is straightforward: once the operating agreement no longer matches reality, later disputes usually become harder because the fight is no longer just about what the document says. It becomes a fight about status, authority, payments, course of conduct, ratification, and records. The longer the mismatch continues without clear documentary alignment, the more room there is for competing stories about what the LLC really agreed to or how it really operated.",
       "Educational disclaimer: This article provides general Tennessee educational information only and is not legal advice for any specific LLC, operating agreement, or control dispute.",
       "A practical next step is a focused review of the operating agreement, ownership records, payment history, and company books with Tennessee counsel so the mismatch can be evaluated in the correct frame: status, authority, compensation, records, or some combination of them.",
+    ],
+    relatedServices: [
+      { slug: "operating-agreement-attorney-tennessee", label: "Operating Agreement Attorney in Tennessee" },
+      { slug: "llc-member-buyout-attorney-tennessee", label: "LLC Member Buyout Attorney" },
     ],
   },
   {
@@ -420,6 +444,11 @@ export const resources: ResourceContent[] = [
       "Educational disclaimer: This article provides general Tennessee educational information only and is not legal advice for any specific LLC, ownership dispute, or records-access issue.",
       "A practical next step is a focused review of the LLC documents, ownership history, and available financial records with Tennessee counsel so the access issue can be evaluated in the right frame: status, governance, records control, or some combination of the three.",
     ],
+    relatedServices: [
+      { slug: "shareholder-dispute-attorney-tennessee", label: "Shareholder Dispute Attorney" },
+      { slug: "business-partnership-dispute-attorney-tennessee", label: "Business Partnership Dispute Attorney" },
+      { slug: "breach-of-fiduciary-duty-attorney-tennessee", label: "Breach of Fiduciary Duty Attorney" },
+    ],
   },
   {
     slug: "early-mistakes-that-make-a-brokerage-complaint-worse",
@@ -486,6 +515,10 @@ export const resources: ResourceContent[] = [
       "The larger point is straightforward. Early mistakes make a brokerage complaint worse when they blur the purpose of the process, omit the key documents, overstate the available remedies, or ignore the fact that the complaint becomes part of a public regulatory process. A complaint with clear facts, accurate chronology, supporting documents, and realistic expectations is easier to evaluate than a complaint driven mainly by conclusions or frustration.",
       "Educational disclaimer: This article provides general Tennessee educational information only and is not legal advice for any specific complaint, brokerage dispute, or transaction.",
       "A practical next step is a focused review of the transaction documents, communications, and timeline with counsel so the issue can be evaluated in the right framework: regulatory, civil, or both.",
+    ],
+    relatedServices: [
+      { slug: "trec-complaint-expert-witness-tennessee", label: "TREC Complaint Expert Witness" },
+      { slug: "agent-malpractice-expert-witness-tennessee", label: "Agent Malpractice Expert Witness" },
     ],
   },
   {
@@ -555,6 +588,11 @@ export const resources: ResourceContent[] = [
       "Several patterns recur in commercial lease disputes: reading the notice but not the amendments; focusing only on rent while ignoring non-monetary defaults; assuming continued discussion means the notice no longer matters; assuming a payment automatically cures every issue; treating possession risk and money exposure as the same problem; and relying on side conversations that were never documented. Commercial leasing is a specialized area. It is not well served by casual assumptions borrowed from residential-eviction discussions or generic online checklists.",
       "When a commercial lease default notice arrives, the most useful first lens is not panic and not guesswork. It is issue-framing: what default is actually being alleged, what does the lease say about that type of default, what cure or termination structure does the lease use, is the dispute really about money, possession, or both, and what does the written record support or undermine. In Tennessee, commercial lease default disputes are contract-driven and fact-specific.",
     ],
+    relatedServices: [
+      { slug: "commercial-lease-attorney-tennessee", label: "Commercial Lease Attorney in Tennessee" },
+      { slug: "landlord-attorney-tennessee", label: "Landlord Attorney in Tennessee" },
+      { slug: "tenant-attorney-tennessee", label: "Tenant Attorney in Tennessee" },
+    ],
   },
   {
     slug: "five-commercial-lease-terms-worth-slowing-down-for",
@@ -606,6 +644,10 @@ export const resources: ResourceContent[] = [
       "Default provisions deserve special attention because they govern timing, waiver, and how quickly the other side can create pressure. If the notice structure is loose or one-sided, the business may learn too late that a casual email or delayed response changed the posture.",
       "Transfer rights, assignment language, and sublease restrictions also deserve closer review than they often get. A business can perform well under a lease and still run into trouble when it wants to restructure, sell, relocate, or react to a changing occupancy plan.",
       "Operating covenants, CAM language, repair obligations, exclusives, and guaranty terms are where the practical economics of the relationship often live. The point of careful review is not to redline everything into a stalemate. It is to focus attention where the business would actually feel pain if the document were enforced literally.",
+    ],
+    relatedServices: [
+      { slug: "commercial-lease-attorney-tennessee", label: "Commercial Lease Attorney in Tennessee" },
+      { slug: "real-estate-purchase-agreement-attorney-tennessee", label: "Real Estate Purchase Agreement Attorney" },
     ],
   },
   {
@@ -659,6 +701,10 @@ export const resources: ResourceContent[] = [
       "The first practical move is to gather the complaint packet, response deadline, communications, disclosures, brokerage context, and transaction chronology. That work often reveals that the visible issue is only part of the problem, or that the complaint is narrower than it first appeared.",
       "The second move is to decide whether there is parallel commission, civil, E&O, supervision, or reputation risk. A response that looks acceptable from a licensing perspective can still create avoidable trouble in another lane if the broader picture is ignored.",
       "What matters most is a measured, credible response tied to the actual record. That usually means organizing the file before choosing tone, not after.",
+    ],
+    relatedServices: [
+      { slug: "trec-complaint-expert-witness-tennessee", label: "TREC Complaint Expert Witness" },
+      { slug: "agent-malpractice-expert-witness-tennessee", label: "Agent Malpractice Expert Witness" },
     ],
   },
   {
@@ -727,6 +773,10 @@ export const resources: ResourceContent[] = [
       "For public-facing educational purposes, the most useful information is usually practical: who was involved, what role each person or firm played, what documents were signed, what the communication timeline looked like, and what happened to any disputed money or property. A licensing issue, a contract issue, and a reimbursement issue may overlap factually, but they are not the same thing procedurally or institutionally.",
       "The takeaway is that TREC can regulate, investigate, and in appropriate circumstances pursue disciplinary or enforcement action tied to licensed activity and unlicensed activity. It cannot order a private refund of money or property for a complainant, and it does not provide legal advice or private representation. The Recovery Account, where it may apply, is a separate and narrower court-linked mechanism, not the ordinary complaint process.",
     ],
+    relatedServices: [
+      { slug: "trec-complaint-expert-witness-tennessee", label: "TREC Complaint Expert Witness" },
+      { slug: "realtor-dispute-expert-witness-tennessee", label: "Realtor Dispute Expert Witness" },
+    ],
   },
   {
     slug: "owner-dispute-warning-signs-before-the-business-stalls",
@@ -778,6 +828,11 @@ export const resources: ResourceContent[] = [
       "Those signs matter because they usually point to a control problem, not just a personality problem. When an owner dispute touches account access, property decisions, vendor control, leasing, or records, the business can slow down long before anyone files anything formal.",
       "The right early move is often not immediate escalation for its own sake. It is disciplined fact gathering, a clear read of the governing documents, and a practical decision about whether the matter should be negotiated, restructured, or prepared for a harder dispute path.",
       "The longer the issue sits without analysis, the easier it becomes for one side to harden its position and reshape the story. Early clarity can preserve options that disappear later.",
+    ],
+    relatedServices: [
+      { slug: "business-partnership-dispute-attorney-tennessee", label: "Business Partnership Dispute Attorney" },
+      { slug: "shareholder-dispute-attorney-tennessee", label: "Shareholder Dispute Attorney" },
+      { slug: "llc-member-buyout-attorney-tennessee", label: "LLC Member Buyout Attorney" },
     ],
   },
   {
@@ -831,6 +886,11 @@ export const resources: ResourceContent[] = [
       "That is what Investigate and Advise is for. The work is structured to test assumptions, organize the chronology, identify what claims or defenses may actually matter, and evaluate whether the business objective would be served by negotiation, a demand, arbitration planning, or litigation positioning.",
       "This approach is especially useful where there are multiple contracts, entities, properties, or participants, or where the client does not yet know whether the visible problem is the real one. In those matters, premature escalation can spend leverage instead of creating it.",
       "A good early assessment does not pretend to answer everything. It helps the client make the next decision with clearer judgment and less noise.",
+    ],
+    relatedServices: [
+      { slug: "business-disputes", label: "Business Disputes Practice" },
+      { slug: "real-estate-disputes", label: "Real Estate Disputes Practice" },
+      { slug: "expert-witness", label: "Expert Witness Practice" },
     ],
   },
 ];
