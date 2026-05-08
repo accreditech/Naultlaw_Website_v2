@@ -387,9 +387,10 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
             htmlFor={`bofu-ack-${refSlug}`}
             className="text-xs leading-5 text-muted-foreground"
           >
-            I understand this is intake information only — submitting does not
-            create an attorney-client relationship — and I have reviewed and
-            agree to the{" "}
+            I understand this form is intake information only, that submitting
+            it does not create an attorney-client relationship, and that I
+            should not submit confidential information through this form. I
+            have reviewed and agree to the{" "}
             <Link
               href="/legal"
               className="font-medium text-foreground underline-offset-2 hover:underline"

@@ -205,6 +205,35 @@ export default async function PracticeAreaPage({ params }: Props) {
                   </div>
                 </div>
               )}
+
+              {/* Focused practice pages — links to BOFU /services/* siblings */}
+              {area.relatedServices && area.relatedServices.length > 0 && (
+                <div>
+                  <h2 className="font-heading text-2xl text-foreground">
+                    Focused practice pages
+                  </h2>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                    Short, intent-matched intake pages on specific issues within this area:
+                  </p>
+                  <ul className="mt-4 divide-y divide-border">
+                    {area.relatedServices.map((rs) => (
+                      <li key={rs.slug}>
+                        <Link
+                          href={`/services/${rs.slug}`}
+                          className="group flex items-baseline justify-between gap-4 py-3 no-underline"
+                        >
+                          <span className="text-sm font-medium leading-6 text-foreground transition-colors group-hover:text-accent">
+                            {rs.label}
+                          </span>
+                          <span className="shrink-0 text-sm text-muted-foreground transition-colors group-hover:text-accent">
+                            →
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
 
             {/* ── RIGHT COLUMN ────────────────────────────── */}

@@ -51,8 +51,9 @@ export default function ServicesIndexPage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
               Tennessee real estate and business law, organized into five
-              practice-area hubs. Statewide advisory work; trial representation
-              in trial counties.
+              practice-area hubs. Statewide advice; trial representation in
+              Sumner, Wilson, Robertson, Trousdale, Williamson, and Davidson
+              Counties.
             </p>
           </div>
         </section>

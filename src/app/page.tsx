@@ -513,6 +513,159 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── FOCUSED PRACTICE PAGES ─────────────────────────
+            Surfaces the 6 BOFU /services/ hubs from the homepage
+            so they receive direct internal-link equity rather than
+            relying solely on the footer + breadcrumb path. */}
+        <section className="sec" style={{ background: "var(--bg)" }}>
+          <div className="shell">
+            <div style={{ marginBottom: "2.5rem", maxWidth: 720 }}>
+              <p className="eyebrow" style={{ marginBottom: 12 }}>
+                Focused Practice Pages
+              </p>
+              <h2
+                style={{
+                  fontFamily: "var(--font-head)",
+                  fontStyle: "italic",
+                  fontWeight: 500,
+                  fontSize: "clamp(1.6rem,2.5vw,2.2rem)",
+                  letterSpacing: "-0.03em",
+                  lineHeight: 1.12,
+                  marginBottom: "1rem",
+                }}
+              >
+                Specific issues, focused intake.
+              </h2>
+              <p
+                style={{
+                  fontSize: ".95rem",
+                  lineHeight: 1.85,
+                  color: "var(--muted-fg)",
+                }}
+              >
+                Short, intent-matched pages organized by issue. If you know
+                exactly what your matter is, start here.
+              </p>
+            </div>
+            <ul
+              style={{
+                listStyle: "none",
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "1rem",
+                padding: 0,
+                margin: 0,
+              }}
+            >
+              {[
+                {
+                  slug: "expert-witness",
+                  label: "Real Estate Expert Witness",
+                  desc: "Title, contract, valuation, broker standard-of-care, and disclosure expert-witness work for litigators.",
+                },
+                {
+                  slug: "business-formation",
+                  label: "Business Formation",
+                  desc: "LLCs, PLLCs, corporations, S-Corp election, operating and buy-sell agreements.",
+                },
+                {
+                  slug: "contract-services",
+                  label: "Business Contracts",
+                  desc: "Drafting and review for vendor, contractor, lease, real-estate, and major-deal agreements.",
+                },
+                {
+                  slug: "real-estate-transactions",
+                  label: "Real Estate Transactions",
+                  desc: "Purchase agreements, owner financing, land contracts, joint ventures, and assignments.",
+                },
+                {
+                  slug: "real-estate-disputes",
+                  label: "Real Estate Disputes",
+                  desc: "Quiet title, easements, mechanics liens, fraud, disclosure, and landlord/tenant litigation.",
+                },
+                {
+                  slug: "business-disputes",
+                  label: "Business Disputes",
+                  desc: "Partnership and shareholder disputes, non-compete enforcement, fiduciary-duty claims.",
+                },
+              ].map((hub) => (
+                <li key={hub.slug}>
+                  <Link
+                    href={`/services/${hub.slug}`}
+                    className="surface-card"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 8,
+                      padding: "20px 22px",
+                      textDecoration: "none",
+                      background: "var(--white)",
+                      height: "100%",
+                    }}
+                  >
+                    <p
+                      style={{
+                        fontFamily: "var(--font-head)",
+                        fontStyle: "italic",
+                        fontSize: "1.05rem",
+                        fontWeight: 500,
+                        color: "var(--fg)",
+                        lineHeight: 1.25,
+                      }}
+                    >
+                      {hub.label}
+                    </p>
+                    <p
+                      style={{
+                        fontSize: ".825rem",
+                        lineHeight: 1.65,
+                        color: "var(--muted-fg)",
+                        flex: 1,
+                      }}
+                    >
+                      {hub.desc}
+                    </p>
+                    <p
+                      style={{
+                        marginTop: 6,
+                        fontSize: ".8125rem",
+                        fontWeight: 600,
+                        color: "var(--accent-readable)",
+                      }}
+                    >
+                      Browse →
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div
+              style={{
+                marginTop: "2rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Link
+                href="/services"
+                style={{
+                  fontFamily: "var(--font-body)",
+                  fontSize: ".9rem",
+                  fontWeight: 600,
+                  color: "var(--accent-readable)",
+                  padding: "12px 28px",
+                  borderRadius: 6,
+                  background: "transparent",
+                  border: "1.5px solid var(--accent)",
+                  textDecoration: "none",
+                }}
+              >
+                View All Focused Practice Pages →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ── WHY THIS PRACTICE ────────────────────────────── */}
         <section className="sec" style={{ background: "var(--muted)" }}>
           <div className="shell">

@@ -19,6 +19,10 @@
   localServiceArea: string;
   issueTypes: string[];
   featured: boolean;
+  /** Optional /services/<slug> links surfaced as focused-intake options
+      at the bottom of the page. Drives internal-link equity to BOFU pages
+      and gives editorial-page visitors a short path to a focused intake. */
+  relatedServices?: { slug: string; label: string }[];
 };
 
 export const practiceAreas: PracticeAreaContent[] = [
@@ -88,6 +92,11 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Renewal, amendment, or estoppel issue",
     ],
     featured: true,
+    relatedServices: [
+      { slug: "commercial-lease-attorney-tennessee", label: "Commercial Lease Attorney in Tennessee" },
+      { slug: "real-estate-purchase-agreement-attorney-tennessee", label: "Real Estate Purchase Agreement Attorney" },
+      { slug: "landlord-attorney-tennessee", label: "Landlord Attorney in Tennessee" },
+    ],
   },
   {
     slug: "trec-defense-and-realtor-complaints",
@@ -149,6 +158,11 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Transaction file or recordkeeping concern",
     ],
     featured: true,
+    relatedServices: [
+      { slug: "trec-complaint-expert-witness-tennessee", label: "TREC Complaint Expert Witness" },
+      { slug: "agent-malpractice-expert-witness-tennessee", label: "Agent Malpractice Expert Witness" },
+      { slug: "real-estate-broker-standard-of-care-expert-witness-tennessee", label: "Broker Standard of Care Expert Witness" },
+    ],
   },
   {
     slug: "operating-agreements-and-owner-disputes",
@@ -210,6 +224,12 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Real-estate-holding entity dispute",
     ],
     featured: true,
+    relatedServices: [
+      { slug: "operating-agreement-attorney-tennessee", label: "Operating Agreement Attorney in Tennessee" },
+      { slug: "llc-member-buyout-attorney-tennessee", label: "LLC Member Buyout Attorney" },
+      { slug: "business-partnership-dispute-attorney-tennessee", label: "Business Partnership Dispute Attorney" },
+      { slug: "shareholder-dispute-attorney-tennessee", label: "Shareholder Dispute Attorney" },
+    ],
   },
   {
     slug: "business-contract-drafting-and-review",
@@ -271,6 +291,12 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Termination or breach dispute",
     ],
     featured: false,
+    relatedServices: [
+      { slug: "contract-review-attorney-tennessee", label: "Contract Review Attorney in Tennessee" },
+      { slug: "independent-contractor-agreement-attorney-tennessee", label: "Independent Contractor Agreement Attorney" },
+      { slug: "vendor-agreement-attorney-tennessee", label: "Vendor Agreement Attorney in Tennessee" },
+      { slug: "asset-purchase-agreement-attorney-tennessee", label: "Asset Purchase Agreement Attorney" },
+    ],
   },
   {
     slug: "real-estate-disputes",
@@ -332,6 +358,13 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Property-management or owner dispute",
     ],
     featured: true,
+    relatedServices: [
+      { slug: "quiet-title-attorney-tennessee", label: "Quiet Title Attorney in Tennessee" },
+      { slug: "easement-attorney-tennessee", label: "Easement Attorney in Tennessee" },
+      { slug: "mechanics-lien-attorney-tennessee", label: "Mechanics Lien Attorney in Tennessee" },
+      { slug: "title-defect-attorney-tennessee", label: "Title Defect Attorney in Tennessee" },
+      { slug: "real-estate-fraud-attorney-tennessee", label: "Real Estate Fraud Attorney in Tennessee" },
+    ],
   },
   {
     slug: "strategic-case-assessment",
@@ -394,6 +427,11 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Unsure whether to escalate",
     ],
     featured: false,
+    relatedServices: [
+      { slug: "real-estate-disputes", label: "Real Estate Disputes Practice" },
+      { slug: "business-disputes", label: "Business Disputes Practice" },
+      { slug: "expert-witness", label: "Expert Witness Practice" },
+    ],
   },
   {
     slug: "arbitration-and-dispute-resolution",
@@ -455,6 +493,10 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Structured dispute-resolution planning",
     ],
     featured: false,
+    relatedServices: [
+      { slug: "business-disputes", label: "Business Disputes Practice" },
+      { slug: "real-estate-disputes", label: "Real Estate Disputes Practice" },
+    ],
   },
   {
     slug: "expert-witness-real-estate-and-brokerage-matters",
@@ -521,6 +563,13 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Outside counsel referral",
     ],
     featured: true,
+    relatedServices: [
+      { slug: "expert-witness", label: "Expert Witness Practice (all topics)" },
+      { slug: "title-expert-witness-tennessee", label: "Title Expert Witness in Tennessee" },
+      { slug: "real-estate-broker-standard-of-care-expert-witness-tennessee", label: "Broker Standard of Care Expert Witness" },
+      { slug: "agent-malpractice-expert-witness-tennessee", label: "Agent Malpractice Expert Witness" },
+      { slug: "property-valuation-expert-witness-tennessee", label: "Property Valuation Expert Witness" },
+    ],
   },
 ];
 

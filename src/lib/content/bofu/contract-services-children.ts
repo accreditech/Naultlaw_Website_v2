@@ -40,7 +40,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the contract and a short note on the deal context and the deadline. Pricing and turnaround confirmed generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -88,7 +88,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short description of the contractor relationship, the work scope, and any draft agreement already on the table. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -136,60 +136,12 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the vendor's draft and a short note on the relationship and the deadline. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
     audience: "Small businesses signing vendor and SaaS agreements",
     serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Send a contract for review",
-  },
-  {
-    slug: "real-estate-contract-attorney-tennessee",
-    hub: "contract-services",
-    primaryKeyword: "Real Estate Contract Attorney in Tennessee",
-    title: "Real Estate Contract Attorney in Tennessee | Nault Law",
-    h1: "Real Estate Contract Attorney in Tennessee",
-    metaDescription:
-      "Real estate contract attorney in Tennessee. Drafting and review of purchase agreements, options, and lease-to-own deals. Call Nault Law.",
-    intro:
-      "Real estate contract attorney in Tennessee for FSBO buyers and sellers, investors, and operators who need a purchase agreement, option, or lease-to-own contract drafted or reviewed before money or property changes hands.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Real estate contract work covers drafting and reviewing purchase agreements, options to purchase, lease-to-own agreements, assignment-of-contract documents, and the contingency and due-diligence provisions that drive deal certainty.",
-          "This is contract work, not closing work. The office does not act as the closing or settlement agent, does not run title searches as a closing service, does not prepare deeds for closings, and does not disburse closing funds.",
-        ],
-      },
-      {
-        h2: "Who this is for",
-        paragraphs: [
-          "FSBO buyers and sellers without a real-estate agent on the deal. Real-estate investors handling repeat transactions and wanting a real attorney-drafted template instead of a board form. Operators reviewing a counterparty-supplied contract before signing.",
-        ],
-      },
-      {
-        h2: "Common issues addressed",
-        paragraphs: [
-          "Contingency-period mechanics, financing-contingency interaction with earnest money, due-diligence rights, default-and-cure language, assignability, and the seller-disclosure obligations that govern post-closing exposure.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee drafting for standard purchase agreements; capped pricing for counterparty-supplied contract review. Turnaround typically two to four business days; rush available when a deadline is in play.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the existing draft (if any), a short note on the property and parties, and the deadline. Pricing and turnaround returned generally within one business day after conflict screen.",
-        ],
-      },
-    ],
-    audience: "FSBO buyers/sellers, investors, and real-estate operators",
-    serviceArea: "Statewide TN (drafting and review)",
     isLitigation: false,
     primaryCtaLabel: "Send a contract for review",
   },
@@ -232,7 +184,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing draft, a short note on the project, and any deadline. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -280,7 +232,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease or LOI, a short note on the deal, and the deadline. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -328,7 +280,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the draft (if any) and a short note on the relationship and the information at stake. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -376,7 +328,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing MSA (if any) and a short note on the business model and the typical client engagement. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -424,7 +376,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the LOI or term sheet, a short summary of the business and the assets, and the target closing date. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
@@ -472,7 +424,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the LOI (if any) and a short note on the deal and the timing. Pricing and turnaround generally within one business day after conflict screen.",
+          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
         ],
       },
     ],
