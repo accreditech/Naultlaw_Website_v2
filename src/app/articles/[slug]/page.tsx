@@ -98,6 +98,28 @@ export default async function ArticlePage({ params }: Props) {
                 ))}
               </div>
 
+              {/* Related practice areas and services — contextual internal links */}
+              {article.relatedLinks && article.relatedLinks.length > 0 && (
+                <div className="mt-10 border-t border-border/60 pt-6">
+                  <p className="eyebrow text-muted-foreground">Related on this site</p>
+                  <ul className="mt-3 flex flex-col gap-2">
+                    {article.relatedLinks.map((link) => (
+                      <li
+                        key={link.href}
+                        className="text-sm leading-7 text-foreground"
+                      >
+                        <Link
+                          href={link.href}
+                          className="font-medium text-foreground underline decoration-muted-foreground/40 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+                        >
+                          {link.anchor}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {/* Inline CTA */}
               <div className="mt-12 surface-card p-6 sm:p-8">
                 <p className="font-heading text-xl text-foreground">

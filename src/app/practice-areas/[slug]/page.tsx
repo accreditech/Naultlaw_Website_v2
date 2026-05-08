@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { DisclosurePanel } from "@/components/site/disclosure-panel";
 import { StructuredDataScript } from "@/components/site/structured-data-script";
 import { practiceAreas, getPracticeArea } from "@/lib/content/practice-areas";
+import { practiceAreaServiceLinks } from "@/lib/content/practice-area-services";
 import { resources } from "@/lib/content/resources";
 import { siteImages, pageImages } from "@/lib/content/images";
 import { publicDisclosures } from "@/lib/public-disclosures";
@@ -71,6 +72,9 @@ export default async function PracticeAreaPage({ params }: Props) {
   const relatedArticles = resources
     .filter((r) => relatedCategories.includes(r.category))
     .slice(0, 3);
+
+  // Related /services/* pages — internal-link hub-and-spoke for SEO
+  const relatedServices = practiceAreaServiceLinks[slug] ?? [];
 
   return (
     <>
@@ -260,6 +264,45 @@ export default async function PracticeAreaPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* ── RELATED SERVICES ──────────────────────────────────────── */}
+      {relatedServices.length > 0 && (
+        <section className="section-padding border-t border-border/60">
+          <div className="container-shell">
+            <div className="flex flex-col gap-2">
+              <p className="eyebrow text-muted-foreground">In This Practice Area</p>
+              <h2 className="mt-2 font-heading text-2xl tracking-tight text-foreground sm:text-3xl">
+                Specific services in this area.
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground">
+                Direct entry points if you already know the kind of matter you
+                need help with.
+              </p>
+            </div>
+
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+              {relatedServices.map((link) => (
+                <li key={link.slug}>
+                  <Link
+                    href={`/services/${link.slug}`}
+                    className="surface-card group flex items-center justify-between gap-4 p-5 no-underline transition-shadow hover:shadow-md"
+                  >
+                    <span className="text-sm font-medium leading-6 text-foreground transition-colors group-hover:text-accent">
+                      {link.anchor}
+                    </span>
+                    <span
+                      className="shrink-0 text-muted-foreground/40 transition-colors group-hover:text-accent"
+                      aria-hidden="true"
+                    >
+                      →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* ── RELATED ARTICLES ──────────────────────────────────────── */}
       {relatedArticles.length > 0 && (

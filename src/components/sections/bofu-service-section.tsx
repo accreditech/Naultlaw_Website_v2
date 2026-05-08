@@ -2,6 +2,11 @@ import Link from "next/link";
 import { ActionLink } from "@/components/site/action-link";
 import { BofuInlineIntakeForm } from "@/components/sections/bofu-inline-intake";
 import type { BofuService } from "@/lib/content/bofu-services";
+import { getPracticeArea } from "@/lib/content/practice-areas";
+import {
+  getRelatedServices,
+  serviceParentPracticeArea,
+} from "@/lib/content/practice-area-services";
 import { siteConfig } from "@/lib/site-config";
 
 const trialCountyShortNames = [
@@ -20,6 +25,10 @@ type Props = {
 };
 
 export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
+  const parentPaSlug = serviceParentPracticeArea[service.slug];
+  const parentPa = parentPaSlug ? getPracticeArea(parentPaSlug) : undefined;
+  const relatedServices = getRelatedServices(service.slug, 3);
+
   return (
     <section className="section-padding">
       <div className="container-shell">
@@ -32,6 +41,19 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
                 {service.h1}
               </h1>
               <p className="editorial-pull">{service.intro}</p>
+              {parentPa && (
+                <p className="text-sm leading-7 text-muted-foreground">
+                  This page covers a focused service. For the broader editorial
+                  practice area, see{" "}
+                  <Link
+                    href={`/practice-areas/${parentPa.slug}`}
+                    className="font-medium text-foreground underline decoration-muted-foreground/40 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+                  >
+                    {parentPa.shortTitle} in Tennessee
+                  </Link>
+                  .
+                </p>
+              )}
               <div className="mt-2">
                 <ActionLink href="#bofu-intake">{service.primaryCtaLabel}</ActionLink>
               </div>
@@ -52,6 +74,32 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
                 </div>
               </div>
             ))}
+
+            {relatedServices.length > 0 && (
+              <div>
+                <h2 className="font-heading text-2xl text-foreground">
+                  Related services
+                </h2>
+                <ul className="mt-4 flex flex-col gap-2">
+                  {relatedServices.map((link) => (
+                    <li key={link.slug} className="catalog-rule py-2">
+                      <Link
+                        href={`/services/${link.slug}`}
+                        className="text-sm font-medium leading-6 text-foreground transition-colors hover:text-accent"
+                      >
+                        {link.anchor}{" "}
+                        <span
+                          className="text-muted-foreground/60"
+                          aria-hidden="true"
+                        >
+                          →
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             <p className="text-sm leading-6 text-muted-foreground italic">
               The information on this page is provided for general educational
