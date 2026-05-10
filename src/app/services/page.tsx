@@ -50,17 +50,68 @@ export default function ServicesIndexPage() {
               Practice Areas
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
-              Tennessee real estate and business law, organized into five
-              practice-area hubs. Statewide advice; trial representation in
-              Sumner, Wilson, Robertson, Trousdale, Williamson, and Davidson
+              Tennessee real estate and business law, organized into six
+              practice-area hubs. Statewide advisory work; trial representation
+              in Sumner, Wilson, Robertson, Trousdale, Williamson, and Davidson
               Counties.
             </p>
           </div>
         </section>
 
+        <section className="section-padding border-b border-border">
+          <div className="container-shell max-w-4xl">
+            <h2 className="font-heading text-2xl text-foreground sm:text-3xl">
+              How this site is organized
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
+              <p>
+                Naultlaw.com has two parallel ways to read about the firm&rsquo;s
+                work, and both lead to the same intake. The{" "}
+                <Link
+                  href="/practice-areas"
+                  className="text-accent underline-offset-4 hover:underline"
+                >
+                  Practice Areas overview
+                </Link>{" "}
+                pages are the broad editorial view of how Stephen Nault thinks
+                about a category &mdash; the recurring fact patterns, the
+                governing Tennessee statutes and case law, and how the firm
+                approaches a matter from intake through resolution. Those pages
+                are written for readers who are still framing the problem.
+              </p>
+              <p>
+                The pages below are the focused-issue view. Each one targets a
+                single recurring matter type &mdash; LLC formation, mechanics
+                lien enforcement, TREC complaint expert witness work, eviction
+                defense, an operating-agreement amendment, a quiet-title action
+                &mdash; and is written for readers who already know what they
+                need and are deciding whether to schedule a consultation.
+                They&rsquo;re grouped into six hubs so you can browse by category
+                or jump straight to the page that matches your situation.
+              </p>
+              <p>
+                The same intake form appears on every focused-issue page and at{" "}
+                <Link
+                  href="/contact"
+                  className="text-accent underline-offset-4 hover:underline"
+                >
+                  /contact
+                </Link>
+                . Submitting it does not create an attorney-client relationship;
+                it tells the office you&rsquo;d like to be contacted to discuss
+                potential representation. The office generally responds within
+                one business day of submission.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="section-padding">
           <div className="container-shell">
-            <ul className="grid gap-6 sm:grid-cols-2">
+            <h2 className="font-heading text-2xl text-foreground sm:text-3xl">
+              Browse by practice area
+            </h2>
+            <ul className="mt-8 grid gap-6 sm:grid-cols-2">
               {bofuHubs.map((hub) => (
                 <li key={hub.slug} className="flex">
                   <Link
@@ -92,9 +143,8 @@ export default function ServicesIndexPage() {
               Not sure which area fits?
             </h2>
             <p className="max-w-2xl text-base leading-7 text-muted-foreground">
-              The intake is conflict-screened and short. The office generally
-              responds within one business day of submission if the matter is a
-              fit.
+              The intake is short. The office generally responds within one
+              business day of submission.
             </p>
             <ActionLink href="/contact?ref=/services">
               {siteConfig.primaryCta.label}
