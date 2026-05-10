@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Manrope } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 import { Suspense } from "react";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
@@ -40,6 +41,14 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     siteName: siteConfig.firmName,
   },
+  // Google Search Console verification — only emitted when the env var is set.
+  ...(siteConfig.hasGoogleSiteVerification
+    ? {
+        verification: {
+          google: siteConfig.googleSiteVerification,
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({
@@ -70,6 +79,27 @@ export default function RootLayout({
         </Suspense>
         <Analytics />
         <SpeedInsights />
+
+        {/* Google Analytics 4 — only loads when NEXT_PUBLIC_GA4_ID is set in
+            Vercel env vars. Loads after-interactive so it does not block
+            first paint. Coexists with Vercel Analytics (the two count
+            traffic separately). */}
+        {siteConfig.hasGa4 && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.ga4Id}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${siteConfig.ga4Id}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

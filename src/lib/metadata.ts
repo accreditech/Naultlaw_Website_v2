@@ -41,7 +41,7 @@ export function createMetadata({
       type: "website",
       images: [
         {
-          url: absoluteUrl("/opengraph-image"),
+          url: absoluteUrl("/opengraph-image.jpg"),
           width: 1200,
           height: 630,
           alt: siteConfig.socialShareImageTitle,
@@ -52,7 +52,7 @@ export function createMetadata({
       card: "summary_large_image",
       title: socialTitle,
       description,
-      images: [absoluteUrl("/twitter-image")],
+      images: [absoluteUrl("/twitter-image.jpg")],
     },
   };
 }

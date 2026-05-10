@@ -1,9 +1,22 @@
 import { attorneyProfile } from "@/lib/content/attorney";
 
 const officePhoneE164 = (process.env.NEXT_PUBLIC_OFFICE_PHONE_E164 ?? "").trim();
+
+// Production canonical for SEO. If `NEXT_PUBLIC_SITE_URL` is unset OR empty,
+// we fall back to this so canonicals, sitemap, and JSON-LD never resolve to
+// a non-production URL (which Google interprets as the authoritative version
+// and refuses to index the real domain). Preview deploys legitimately set
+// this to their .vercel.app hostname so previews don't get indexed (the
+// hostname check in `shouldIndexSite` below gates robots.txt accordingly).
+const PRODUCTION_SITE_URL = "https://naultlaw.com";
 const siteUrl =
-  (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.example-law-domain.com").trim() ||
-  "https://www.example-law-domain.com";
+  (process.env.NEXT_PUBLIC_SITE_URL ?? PRODUCTION_SITE_URL).trim() ||
+  PRODUCTION_SITE_URL;
+/** Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX". Empty disables GA4. */
+const ga4Id = (process.env.NEXT_PUBLIC_GA4_ID ?? "").trim();
+/** Google Search Console verification token (the value from the meta-tag method). Empty disables. */
+const googleSiteVerification =
+  (process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "").trim();
 const officePhoneLabel =
   (process.env.NEXT_PUBLIC_OFFICE_PHONE_LABEL ?? "[Office phone placeholder]").trim() ||
   "[Office phone placeholder]";
@@ -38,6 +51,10 @@ export const siteConfig = {
   hostname: siteHostname,
   shouldIndex: shouldIndexSite,
   isPrelaunch: !shouldIndexSite,
+  ga4Id,
+  hasGa4: Boolean(ga4Id),
+  googleSiteVerification,
+  hasGoogleSiteVerification: Boolean(googleSiteVerification),
   phoneLabel: officePhoneLabel,
   phoneHref: officePhoneE164 ? `tel:${officePhoneE164}` : "",
   hasPhone: Boolean(officePhoneE164),
