@@ -267,9 +267,8 @@ export default function PracticeAreasPage() {
                   }}
                 >
                   Strategic Case Assessment is a structured review for exactly
-                  that scenario. Share what you know — the intake is
-                  conflict-screened and you&apos;ll hear back within one
-                  business day.
+                  that scenario. Share what you know — you&apos;ll generally
+                  hear back within one business day.
                 </p>
               </div>
               <div

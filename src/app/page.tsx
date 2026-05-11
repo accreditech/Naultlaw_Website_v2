@@ -900,12 +900,12 @@ export default function HomePage() {
                 {
                   n: "01",
                   h: "Submit the intake",
-                  b: "Name, contact, brief situation, opposing party if any. Conflict-screened before detailed review begins.",
+                  b: "Name, contact, brief situation, opposing party if any. The office responds generally within one business day.",
                 },
                 {
                   n: "02",
                   h: "Intro call",
-                  b: "A short call to confirm no conflict exists and we are a good fit for one another. No billing until that's clear.",
+                  b: "A short call to confirm scope and that we're a good fit for one another. No billing until that's clear.",
                 },
                 {
                   n: "03",
@@ -992,8 +992,8 @@ export default function HomePage() {
                     marginBottom: "2rem",
                   }}
                 >
-                  The intake is structured and short. You&apos;ll hear back
-                  within one business day after the conflict check.
+                  The intake is structured and short. You&apos;ll generally
+                  hear back within one business day.
                 </p>
                 <div
                   className="final-cta-row"

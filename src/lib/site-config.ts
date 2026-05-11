@@ -86,7 +86,7 @@ export const siteConfig = {
   },
   secondaryCta: {
     label: "How the intake works",
-    href: "/contact#conflict-screen",
+    href: "/contact",
   },
   tertiaryCta: {
     label: "Call the Office",
@@ -128,5 +128,5 @@ export const siteConfig = {
 export const officeHours = [
   "Monday through Friday",
   "Consultations by appointment",
-  "Stage-one intake is conflict-screened before detailed review",
+  "Initial intake reviewed within one business day",
 ];

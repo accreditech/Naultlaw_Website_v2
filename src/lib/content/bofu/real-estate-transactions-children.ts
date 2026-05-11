@@ -40,7 +40,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -96,7 +96,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the deal — property, parties, sale price, down payment, and proposed terms. Pricing and turnaround generally returned within one business day after conflict screen.",
+          "Send a short summary of the deal — property, parties, sale price, down payment, and proposed terms. Pricing and turnaround generally returned within one business day.",
         ],
       },
     ],
@@ -144,7 +144,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the deal — property, parties, price, down payment, and proposed payment schedule. Pricing and turnaround generally returned within one business day after conflict screen.",
+          "Send a short summary of the deal — property, parties, price, down payment, and proposed payment schedule. Pricing and turnaround generally returned within one business day.",
         ],
       },
     ],
@@ -192,7 +192,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -241,7 +241,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -249,5 +249,59 @@ export const realEstateTransactionsChildren: BofuService[] = [
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Send a contract for review",
+  },
+  {
+    slug: "1031-exchange-attorney-tennessee",
+    hub: "real-estate-transactions",
+    primaryKeyword: "1031 Exchange Attorney in Tennessee",
+    title: "1031 Exchange Attorney in Tennessee | Nault Law",
+    h1: "1031 Exchange Attorney in Tennessee",
+    metaDescription:
+      "1031 exchange attorney in Tennessee for investors deferring gain on real estate — PSA cooperation language, qualified intermediary coordination, and TN deed handling. Call Nault Law.",
+    intro:
+      "1031 exchange attorney in Tennessee for real estate investors deferring capital gain on the sale of investment property — drafting the cooperation language in the purchase agreement, coordinating with the qualified intermediary, tracking the 45-day identification and 180-day exchange deadlines, and making sure the Tennessee deed and transfer-tax mechanics line up with the exchange.",
+    sections: [
+      {
+        h2: "What this covers",
+        paragraphs: [
+          "Section 1031 of the Internal Revenue Code lets investors defer capital gain on the sale of real property held for productive use or investment, provided the sale and replacement-property acquisition are structured as a like-kind exchange. The legal work focuses on the transactional pieces that make or break the deferral: cooperation and assignment language in both the relinquished-property and replacement-property purchase agreements, coordination with the qualified intermediary on assignment of contract rights, attention to the 45-day identification window and the 180-day exchange period, and clean Tennessee deed preparation that reflects the QI's role in the transaction.",
+          "Forward exchanges, reverse exchanges using an exchange accommodation titleholder, and improvement exchanges are all within scope. The work also includes review of the QI's exchange agreement and any LLC structures used to hold replacement property.",
+        ],
+      },
+      {
+        h2: "Who this is for",
+        paragraphs: [
+          "Tennessee real estate investors selling a rental, commercial, or land-investment property and rolling the proceeds into replacement property. Out-of-state investors acquiring Tennessee replacement property as part of an exchange. Operators using LLC or tenancy-in-common structures to hold exchange property. CPAs and qualified intermediaries who need Tennessee transactional counsel to handle the documents and deed work.",
+        ],
+      },
+      {
+        h2: "Tennessee specifics",
+        paragraphs: [
+          "Tennessee has no state income tax on capital gains, so a § 1031 exchange addresses federal deferral only — there is no parallel state-level deferral or recapture analysis like there is in California. What Tennessee does have is a deed-transfer fee at T.C.A. § 67-4-409 and recording mechanics that need to track the QI's role accurately so the deed reflects the actual chain of conveyance. Reverse and improvement exchanges using an EAT also require careful attention to how the parking entity holds and conveys title under Tennessee law.",
+        ],
+      },
+      {
+        h2: "What this is not",
+        paragraphs: [
+          "The office does not act as the qualified intermediary, does not provide tax advice on whether a particular exchange qualifies, and does not opine on basis or recapture calculations. CPA or tax counsel coordination is required on the tax-treatment questions. The role is transactional Tennessee real estate counsel: contracts, deeds, QI coordination, and deadline tracking.",
+        ],
+      },
+      {
+        h2: "Process and pricing",
+        paragraphs: [
+          "Flat-fee or capped pricing for standard forward-exchange document packages (PSA cooperation language, QI agreement review, replacement-property PSA, closing-stage deed coordination). Hourly billing with sized retainer for reverse and improvement exchanges, multi-property exchanges, and any matter involving LLC or TIC structuring at the replacement-property stage.",
+        ],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Use the form below to schedule a consultation. Include the property type, target closing window for the relinquished property, and whether a qualified intermediary has already been selected. Do not include confidential details in the form.",
+        ],
+      },
+    ],
+    audience: "Real estate investors, operators, and QIs running § 1031 exchanges involving Tennessee property",
+    serviceArea: "Statewide TN",
+    isLitigation: false,
+    primaryCtaLabel: "Schedule a Consultation",
   },
 ];

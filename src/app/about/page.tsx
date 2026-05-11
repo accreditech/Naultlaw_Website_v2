@@ -477,8 +477,8 @@ export default function AboutPage() {
               marginBottom: "2rem",
             }}
           >
-            The intake is short and conflict-screened. You&apos;ll hear back
-            within one business day.
+            The intake is short. You&apos;ll generally hear back within one
+            business day.
           </p>
           <Link
             href="/contact"

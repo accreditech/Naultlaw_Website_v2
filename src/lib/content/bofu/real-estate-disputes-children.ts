@@ -56,7 +56,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -102,7 +102,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -148,7 +148,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -194,7 +194,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short fact summary, the closing or transaction documents, and any evidence of the fraud. Fit and conflicts generally screened within one business day; same-day response when active wire fraud is involved.",
+          "Send a short fact summary, the closing or transaction documents, and any evidence of the fraud. Response generally within one business day; same-day response when active wire fraud is involved.",
         ],
       },
     ],
@@ -261,7 +261,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -308,7 +308,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the deeds, any survey, and a short summary of the dispute. Fit and conflicts generally screened within one business day.",
+          "Send the deeds, any survey, and a short summary of the dispute. Response generally within one business day.",
         ],
       },
     ],
@@ -356,7 +356,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the matter and any documents already on the table. Fit and conflicts generally screened within one business day.",
+          "Send a short summary of the matter and any documents already on the table. Response generally within one business day.",
         ],
       },
     ],
@@ -402,7 +402,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the purchase contract, breach communications, and any closing-date materials. Fit and conflicts generally screened within one business day.",
+          "Send the purchase contract, breach communications, and any closing-date materials. Response generally within one business day.",
         ],
       },
     ],
@@ -448,7 +448,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the purchase contract, contingency-related communications, and the escrow holder's correspondence. Fit and conflicts generally screened within one business day.",
+          "Send the purchase contract, contingency-related communications, and the escrow holder's correspondence. Response generally within one business day.",
         ],
       },
     ],
@@ -494,7 +494,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the disclosure forms, listing materials, inspection report, and a short summary of the defect and how it was discovered. Fit and conflicts generally screened within one business day.",
+          "Send the disclosure forms, listing materials, inspection report, and a short summary of the defect and how it was discovered. Response generally within one business day.",
         ],
       },
     ],
@@ -541,7 +541,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -564,7 +564,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "What this covers",
         paragraphs: [
-          "HOA dispute work covers covenant interpretation and enforcement, assessment and lien disputes, architectural and design-review disagreements, fining procedures, and selective-enforcement defenses. Both homeowner-side and association-side engagements are accepted, subject to conflict screening.",
+          "HOA dispute work covers covenant interpretation and enforcement, assessment and lien disputes, architectural and design-review disagreements, fining procedures, and selective-enforcement defenses. Both homeowner-side and association-side engagements are accepted.",
           "Common scenarios include covenant violations alleged against a homeowner, assessment delinquency and lien proceedings, architectural-review denials, and disputes over the scope of board authority under the governing documents.",
         ],
       },
@@ -587,7 +587,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -634,7 +634,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -681,7 +681,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the trustee-sale notice, the original deed of trust, any payoff or distribution communications from the trustee, and a short summary of the property and the foreclosure timeline. Fit and conflicts generally screened within one business day.",
+          "Send the trustee-sale notice, the original deed of trust, any payoff or distribution communications from the trustee, and a short summary of the property and the foreclosure timeline. Response generally within one business day.",
         ],
       },
     ],
@@ -727,7 +727,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease, the rent ledger or default communications, and a short summary of the situation. Fit and conflicts generally screened within one business day.",
+          "Send the lease, the rent ledger or default communications, and a short summary of the situation. Response generally within one business day.",
         ],
       },
     ],
@@ -774,7 +774,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease, the notice or communications at issue, and a short summary of the dispute or condition. Fit and conflicts generally screened within one business day.",
+          "Send the lease, the notice or communications at issue, and a short summary of the dispute or condition. Response generally within one business day.",
         ],
       },
     ],
@@ -820,7 +820,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease, the rent ledger, the notice you sent (if any), and the tenant's response. Fit and conflicts generally screened within one business day.",
+          "Send the lease, the rent ledger, the notice you sent (if any), and the tenant's response. Response generally within one business day.",
         ],
       },
     ],
@@ -866,7 +866,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease, the notice or detainer warrant, and a short summary of the facts. Fit and conflicts generally screened within one business day; same-day response when a hearing is imminent.",
+          "Send the lease, the notice or detainer warrant, and a short summary of the facts. Response generally within one business day; same-day response when a hearing is imminent.",
         ],
       },
     ],
@@ -913,7 +913,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease or purchase contract, photographs and inspection reports if available, and a short summary of the discovery and any health impact. Fit and conflicts generally screened within one business day.",
+          "Send the lease or purchase contract, photographs and inspection reports if available, and a short summary of the discovery and any health impact. Response generally within one business day.",
         ],
       },
     ],
@@ -961,7 +961,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the lease, the rent ledger, the notice you sent (if any), and the tenant's response. Fit and conflicts generally screened within one business day.",
+          "Send the lease, the rent ledger, the notice you sent (if any), and the tenant's response. Response generally within one business day.",
         ],
       },
     ],

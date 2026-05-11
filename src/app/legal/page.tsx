@@ -9,6 +9,11 @@ export const metadata: Metadata = createMetadata({
   description:
     "Site terms, privacy policy, attorney advertising notice, and engagement terms for The Law Office of Stephen Nault.",
   path: "/legal",
+  // /legal is a compliance / housekeeping page, not a ranking target.
+  // noindex keeps it out of search results without trapping link equity:
+  // follow=true means Google still passes equity through any inbound or
+  // outbound links the page carries.
+  robots: { index: false, follow: true },
 });
 
 const LAST_REVIEWED = "April 2026";
