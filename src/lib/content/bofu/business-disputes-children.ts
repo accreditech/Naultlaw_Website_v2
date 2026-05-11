@@ -41,7 +41,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -87,7 +87,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -133,7 +133,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -179,7 +179,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -225,7 +225,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -271,7 +271,7 @@ export const businessDisputesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],

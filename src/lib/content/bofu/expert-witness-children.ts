@@ -23,7 +23,7 @@ export const expertWitnessChildren: BofuService[] = [
         h2: "When attorneys retain me",
         paragraphs: [
           "Most retentions come from one of three triggers: a quiet-title or title-defect case has been filed and the firm needs an expert before the dispositive motion deadline; an opposing expert has produced a report and rebuttal analysis is needed; or the case is pre-designation and the firm needs a confidential read on whether industry custom and document analysis support the theory.",
-          "Pre-designation consulting work can stay confidential under work product. Designation, written reports, and testimony follow once the matter is a fit and conflicts are clear.",
+          "Pre-designation consulting work can stay confidential under work product. Designation, written reports, and testimony follow once the scope is set.",
         ],
       },
       {
@@ -35,13 +35,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Title expert witness retention is scoped at the front: review of the complaint, the key conveyance documents, and a short call to confirm fit and conflicts. From there, written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
+          "Title expert witness retention is scoped at the front: review of the complaint, the key conveyance documents, and a short call to confirm scope. From there, written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -72,7 +72,7 @@ export const expertWitnessChildren: BofuService[] = [
         h2: "When attorneys retain me",
         paragraphs: [
           "Most retentions come from a malpractice or breach-of-duty case where the firm needs an expert before dispositive motion practice, from rebuttal of an opposing expert's report, or from pre-designation consulting where the firm wants a confidential read on whether industry practice supports the theory.",
-          "Pre-designation work can stay confidential under work product. Designation, written reports, and testimony follow once the matter is a fit and conflicts are clear.",
+          "Pre-designation work can stay confidential under work product. Designation, written reports, and testimony follow once the scope is set.",
         ],
       },
       {
@@ -84,13 +84,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Engagements are scoped at the front: review of the complaint, the brokerage file, key communications, and a short call to confirm fit and conflicts. Written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
+          "Engagements are scoped at the front: review of the complaint, the brokerage file, key communications, and a short call to confirm scope. Written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -133,13 +133,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the contract, surrounding correspondence, and a short call to confirm fit and conflicts. Written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
+          "Initial review of the contract, surrounding correspondence, and a short call to confirm scope. Written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -188,7 +188,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -230,13 +230,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Engagement starts with review of the complaint, the brokerage file, and a short call to confirm fit and conflicts. Written report, deposition, and trial testimony follow as needed. Hourly billing with case-sized retainers.",
+          "Engagement starts with review of the complaint, the brokerage file, and a short call to confirm scope. Written report, deposition, and trial testimony follow as needed. Hourly billing with case-sized retainers.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -278,13 +278,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Engagement begins with review of the complaint, brokerage records, and any TREC correspondence, plus a short call to confirm fit and conflicts. Written reports and testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
+          "Engagement begins with review of the complaint, brokerage records, and any TREC correspondence, plus a short call to confirm scope. Written reports and testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -326,13 +326,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the contested BOV, the underlying file, and a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as needed. Hourly billing with case-sized retainers.",
+          "Initial review of the contested BOV, the underlying file, and a short call to confirm scope. Written report, deposition, and testimony follow as needed. Hourly billing with case-sized retainers.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -346,48 +346,56 @@ export const expertWitnessChildren: BofuService[] = [
     hub: "expert-witness",
     primaryKeyword: "Agent Malpractice Expert Witness in Tennessee",
     title: "Agent Malpractice Expert Witness in Tennessee | Nault Law",
-    h1: "Agent Malpractice Expert Witness in Tennessee",
+    h1: "Agent Malpractice Expert Witness in Tennessee for Plaintiff Counsel",
     metaDescription:
-      "Agent malpractice expert witness in Tennessee for plaintiff- and defense-side claims involving real estate agents, brokers, and supervisors. Call Nault Law.",
+      "Agent malpractice expert witness in Tennessee for plaintiff counsel — opinions grounded in TREC rules, the NAR Code of Ethics, and Tennessee REALTORS standards of practice. Call Nault Law.",
     intro:
-      "Agent malpractice expert witness work in Tennessee for plaintiff- and defense-side claims involving real estate agents, brokers, and their supervising principals — opinions framed against TREC rules, brokerage custom, and what a competent Tennessee licensee would have done.",
+      "Agent malpractice expert witness work in Tennessee retained by plaintiff counsel — buyers, sellers, and other consumers harmed by real estate agent, broker, or brokerage conduct. Opinions are grounded in the duties Tennessee licensees actually carry: TREC statute and rule, the National Association of REALTORS® Code of Ethics and Standards of Practice, the Tennessee REALTORS® enforcement framework that adopts it, and the brokerage custom that fills the gap between black-letter rules and how transactions are run.",
     sections: [
       {
         h2: "What this covers",
         paragraphs: [
-          "Agent malpractice cases turn on duty, breach, and what a reasonably competent Tennessee agent would have done in similar circumstances. Expert opinions trace the file from agency formation through closing and after — locating the specific decisions that fall above or below the standard.",
-          "Common claim categories include disclosure and misrepresentation, transaction-handling errors, dual-agency conflicts, deposit and escrow problems, broker-supervision failures, and post-closing issues that trace back to agent conduct.",
+          "Plaintiff-side agent malpractice cases turn on duty, breach, causation, and damages — and the proof problem is almost always duty and breach. Expert opinions identify which duty the agent or broker owed (statutory under T.C.A. § 62-13, fiduciary or facilitator depending on representation status, Code-of-Ethics-based for REALTOR® licensees), where the file shows that duty was breached, and how that breach compares against what a reasonably competent Tennessee licensee would have done.",
+          "Common claim categories include misrepresentation and failure to disclose material facts, mishandled disclosures under the Tennessee Residential Property Condition Disclosure Act, agency-status confusion and undisclosed dual agency, deposit and escrow accounting failures, transaction-handling errors that cost a buyer or seller the deal, broker-supervision failures under T.C.A. § 62-13-312, and post-closing harm that traces back to specific licensee conduct.",
         ],
       },
       {
-        h2: "When attorneys retain me",
+        h2: "Standards used in opinions",
         paragraphs: [
-          "Retentions come from plaintiff counsel preparing a malpractice claim, defense counsel for the agent or E&O carrier, and pre-designation consulting for either side that wants a confidential read on whether the conduct breaches the standard.",
+          "Three overlapping bodies of standards govern Tennessee licensee conduct, and opinions identify exactly which one applies to each piece of conduct at issue. First, Tennessee statute and TREC rule: T.C.A. §§ 62-13-403 through 62-13-405 set the baseline duties for licensees acting as agents or facilitators; § 62-13-312 governs broker supervision; TREC's administrative rules in Chapter 1260-02 fill in the specifics.",
+          "Second, the National Association of REALTORS® Code of Ethics and Standards of Practice — adopted and enforced in Tennessee through Tennessee REALTORS® and local boards — sets a higher ethical floor that the majority of Tennessee licensees are bound by as REALTOR® members. Most cases implicate Articles 1 (protect and promote client interests), 2 (avoid misrepresentation, disclose pertinent facts), 9 (assure parties understand transaction documents), 11 (competency within field of practice), 12 (true picture in advertising and representation), and 16 (no interference with exclusive representation agreements). Each Article has Standards of Practice that interpret and apply it, and opinions cite the specific SOP language at issue.",
+          "Third, brokerage and transaction custom — the things every competent Tennessee licensee does that aren't written down in a statute or Article but that everyone in the industry understands as the floor of competent practice. That gap is where most experienced licensees can spot a breach immediately and where unrepresented or under-resourced parties get hurt.",
+        ],
+      },
+      {
+        h2: "When plaintiff counsel retains me",
+        paragraphs: [
+          "Retentions typically come at one of three points. Pre-suit consulting, where counsel wants a confidential standard-of-care read before deciding whether to file — that work stays under work product. Designation after a complaint is filed, with written report, deposition, and trial testimony to follow. And rebuttal of a defense expert's report, where the question is whether the defense's framing of the standard holds up against the actual statute, Code, and custom.",
         ],
       },
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Active brokerage and property-management practice keeps the opinions current rather than drawn from a decade-old version of the work.",
+          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC-approved course instructor since 2020, including continuing education on Code-of-Ethics and Tennessee licensee duties. REALTOR® member in good standing with current Code of Ethics training. Tennessee bar since 2018. Active brokerage and property-management practice means opinions reflect how the rules and Code are applied in current Tennessee transactions, not the version of the business from a decade ago.",
         ],
       },
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the complaint, brokerage file, and key communications, plus a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
+          "Engagement begins with review of the complaint, the brokerage file, the agency documents, listing and purchase agreements, the property condition disclosure forms, and key communications between the parties and licensees. A short call follows to confirm scope. Written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case; pre-designation consulting is engaged on a separate scope so confidentiality is clear.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely and a CV on request.",
         ],
       },
     ],
-    audience: "Plaintiff and defense counsel in agent malpractice cases",
+    audience: "Plaintiff counsel pursuing real estate agent or brokerage malpractice claims in Tennessee",
     serviceArea: "Statewide TN",
     isLitigation: false,
-    primaryCtaLabel: "Request CV and conflicts check",
+    primaryCtaLabel: "Request CV and consultation",
   },
   {
     slug: "landlord-tenant-expert-witness-tennessee",
@@ -422,13 +430,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the lease, the file, and a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as needed. Hourly billing with retainers sized to the case.",
+          "Initial review of the lease, the file, and a short call to confirm scope. Written report, deposition, and testimony follow as needed. Hourly billing with retainers sized to the case.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -470,13 +478,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the management agreement, owner-statements, and key correspondence, plus a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as the matter requires.",
+          "Initial review of the management agreement, owner-statements, and key correspondence, plus a short call to confirm scope. Written report, deposition, and testimony follow as the matter requires.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -525,13 +533,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the disclosure forms, listing documents, and the inspection record, plus a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as needed.",
+          "Initial review of the disclosure forms, listing documents, and the inspection record, plus a short call to confirm scope. Written report, deposition, and testimony follow as needed.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -573,13 +581,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the brokerage agreements, transaction file, and a short call to confirm fit and conflicts. Written report, deposition, and arbitration or trial testimony follow as the matter requires.",
+          "Initial review of the brokerage agreements, transaction file, and a short call to confirm scope. Written report, deposition, and arbitration or trial testimony follow as the matter requires.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -621,13 +629,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How retention works",
         paragraphs: [
-          "Initial review of the brokerage agreements, transaction file, and key communications, plus a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as the matter requires.",
+          "Initial review of the brokerage agreements, transaction file, and key communications, plus a short call to confirm scope. Written report, deposition, and testimony follow as the matter requires.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],

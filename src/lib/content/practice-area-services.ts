@@ -74,11 +74,7 @@ export const serviceParentPracticeArea: Record<string, string> = {
   "construction-contract-attorney-tennessee":
     "business-contract-drafting-and-review",
   "nda-attorney-tennessee": "business-contract-drafting-and-review",
-  "master-service-agreement-attorney-tennessee":
-    "business-contract-drafting-and-review",
   "asset-purchase-agreement-attorney-tennessee":
-    "business-contract-drafting-and-review",
-  "letter-of-intent-attorney-tennessee":
     "business-contract-drafting-and-review",
   "real-estate-purchase-agreement-attorney-tennessee":
     "business-contract-drafting-and-review",
@@ -89,6 +85,7 @@ export const serviceParentPracticeArea: Record<string, string> = {
     "business-contract-drafting-and-review",
   "assignment-of-contract-attorney-tennessee":
     "business-contract-drafting-and-review",
+  "1031-exchange-attorney-tennessee": "business-contract-drafting-and-review",
   "non-compete-attorney-tennessee": "business-contract-drafting-and-review",
 
   // Operating agreements and owner disputes
@@ -110,8 +107,6 @@ export const serviceParentPracticeArea: Record<string, string> = {
   "llc-dissolution-attorney-tennessee":
     "operating-agreements-and-owner-disputes",
   "partnership-agreement-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "holding-company-formation-attorney-tennessee":
     "operating-agreements-and-owner-disputes",
   "nonprofit-formation-attorney-tennessee":
     "operating-agreements-and-owner-disputes",

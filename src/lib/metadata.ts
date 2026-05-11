@@ -7,6 +7,17 @@ type CreateMetadataInput = {
   description: string;
   path: string;
   keywords?: string[];
+  /**
+   * Robots directive for the page. Defaults to fully indexable.
+   *
+   * Use { index: false, follow: true } on pages that exist for compliance
+   * or housekeeping rather than ranking — they should not consume index
+   * budget but should still pass link equity through to other pages.
+   */
+  robots?: {
+    index: boolean;
+    follow: boolean;
+  };
 };
 
 export function absoluteUrl(path = "/") {
@@ -19,6 +30,7 @@ export function createMetadata({
   description,
   path,
   keywords = [],
+  robots,
 }: CreateMetadataInput): Metadata {
   const canonical = absoluteUrl(path);
   // Apply the brand prefix to og:/twitter: titles so social cards match the
@@ -32,6 +44,7 @@ export function createMetadata({
     alternates: {
       canonical,
     },
+    ...(robots ? { robots } : {}),
     openGraph: {
       title: socialTitle,
       description,

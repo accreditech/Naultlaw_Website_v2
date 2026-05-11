@@ -50,6 +50,24 @@ const nextConfig: NextConfig = {
         destination: "/services/real-estate-purchase-agreement-attorney-tennessee",
         permanent: true,
       },
+      // Borderline-thin BOFU pages removed per Steve's 2026-05-10 audit
+      // review. Each redirects to the most contextually relevant surviving
+      // page so external link equity routes correctly.
+      {
+        source: "/services/master-service-agreement-attorney-tennessee",
+        destination: "/services/contract-services",
+        permanent: true,
+      },
+      {
+        source: "/services/letter-of-intent-attorney-tennessee",
+        destination: "/services/asset-purchase-agreement-attorney-tennessee",
+        permanent: true,
+      },
+      {
+        source: "/services/holding-company-formation-attorney-tennessee",
+        destination: "/services/llc-formation-attorney-tennessee",
+        permanent: true,
+      },
     ];
   },
 };

@@ -140,7 +140,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       {
         question: "Should I send documents and a full narrative right away?",
         answer:
-          "Stage one intake should stay high level. After conflict review and fit assessment, the office can request the documents and timeline needed for a more complete response.",
+          "Stage one intake should stay high level. The office can request the documents and timeline needed for a more complete response after initial review.",
       },
       {
         question: "Can a TREC matter overlap with civil exposure?",

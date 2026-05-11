@@ -381,8 +381,7 @@ export default function ExpertWitnessPage() {
                 }}
               >
                 From a confidential consulting role before designation through
-                formal testimony at trial. Conflict-screened before any
-                detailed review.
+                formal testimony at trial.
               </p>
             </div>
             <div>

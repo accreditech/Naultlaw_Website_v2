@@ -7,7 +7,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createMetadata({
   title: "Contact",
   description:
-    "Schedule a consultation review with Stephen Nault — Tennessee real estate and business attorney. Structured intake, conflict screen, response within one business day.",
+    "Schedule a consultation review with Stephen Nault — Tennessee real estate and business attorney. Structured intake; response generally within one business day.",
   path: "/contact",
 });
 
@@ -71,8 +71,7 @@ export default function ContactPage() {
             }}
           >
             Choose the channel that suits you — call, email, or submit the
-            intake form below. Every matter is conflict-screened before
-            detailed review begins.
+            intake form below.
           </p>
         </div>
       </section>
@@ -260,8 +259,7 @@ export default function ContactPage() {
                 }}
               >
                 Name, contact, opposing party if any, and a brief description.
-                The intake is conflict-screened before detailed review begins.
-                You&apos;ll hear back within one business day.
+                You&apos;ll generally hear back within one business day.
               </p>
               {[
                 { l: "Office", v: "121 S. Hickory Ave\nGallatin, TN 37066" },

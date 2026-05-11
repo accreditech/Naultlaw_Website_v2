@@ -15,8 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, priority: 0.8, changeFrequency: "monthly" },
     { url: `${base}/articles`, priority: 0.8, changeFrequency: "weekly" },
     { url: `${base}/contact`, priority: 0.9, changeFrequency: "monthly" },
-    // Legal pages consolidated to a single page with anchor sections.
-    { url: `${base}/legal`, priority: 0.3, changeFrequency: "yearly" },
+    // /legal is intentionally omitted from the sitemap — it carries a
+    // noindex directive (see src/app/legal/page.tsx). Telling Google to
+    // crawl a page we have asked it not to index is a mixed signal that
+    // wastes crawl budget.
   ];
 
   const practiceAreaRoutes: MetadataRoute.Sitemap = practiceAreas.map((area) => ({

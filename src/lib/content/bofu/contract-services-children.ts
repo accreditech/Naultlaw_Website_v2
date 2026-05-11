@@ -40,7 +40,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -88,7 +88,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -136,7 +136,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -184,7 +184,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -232,7 +232,7 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -280,59 +280,11 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
     audience: "Businesses, founders, and dealmakers using NDAs",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Send a contract for review",
-  },
-  {
-    slug: "master-service-agreement-attorney-tennessee",
-    hub: "contract-services",
-    primaryKeyword: "Master Service Agreement Attorney in Tennessee",
-    title: "Master Service Agreement Attorney in Tennessee | Nault Law",
-    h1: "Master Service Agreement Attorney in Tennessee",
-    metaDescription:
-      "Master service agreement attorney in Tennessee for agencies, consultants, and SaaS vendors structuring recurring engagements. Call Nault Law.",
-    intro:
-      "Master service agreement attorney in Tennessee for agencies, consultants, and recurring-services businesses structuring an MSA-and-statement-of-work model — letting individual engagements move quickly while the master terms stay stable.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "An MSA establishes the standing terms — payment, IP, indemnity, liability, confidentiality, term, termination — that govern every individual project. Statement-of-work documents then describe the specific scope, deliverables, and pricing without renegotiating the master language each time.",
-          "Drafting addresses both sides of the relationship: client-friendly MSAs for vendors selling into corporate clients, and vendor-friendly MSAs for businesses managing many service providers.",
-        ],
-      },
-      {
-        h2: "Who this is for",
-        paragraphs: [
-          "Marketing, design, and consulting agencies running recurring client engagements. Software, SaaS, and technology vendors selling into mid-market clients. Operators with many vendors who want a uniform MSA across the supplier base.",
-        ],
-      },
-      {
-        h2: "Common issues addressed",
-        paragraphs: [
-          "IP ownership and license-back language for work product. Limits of liability calibrated to the actual fees at stake. SOW-amendment mechanics. Termination rights and wind-down obligations. Subcontracting and pass-through obligations.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee or capped pricing for MSA drafting and SOW templates. Turnaround typically three to five business days.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
-        ],
-      },
-    ],
-    audience: "Agencies, consultants, and recurring-services businesses",
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Send a contract for review",
@@ -376,59 +328,11 @@ export const contractServicesChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
     audience: "Small-business sellers and buyers in asset-purchase transactions",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Send a contract for review",
-  },
-  {
-    slug: "letter-of-intent-attorney-tennessee",
-    hub: "contract-services",
-    primaryKeyword: "Letter of Intent Attorney in Tennessee",
-    title: "Letter of Intent Attorney in Tennessee | Nault Law",
-    h1: "Letter of Intent Attorney in Tennessee",
-    metaDescription:
-      "Letter of intent attorney in Tennessee for acquisitions, partnerships, and major-deal LOIs — binding terms, exclusivity, walk-away. Call Nault Law.",
-    intro:
-      "Letter of intent attorney in Tennessee for acquisitions, partnerships, and major-deal LOIs — making sure the binding parts are intentionally binding, the non-binding parts are intentionally non-binding, and exclusivity and walk-away rights are framed clearly before diligence starts.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "LOI work covers drafting and reviewing letters of intent and term sheets across acquisitions, partnerships, joint ventures, major real-estate deals, and significant commercial relationships. The drafting focuses on which provisions are binding (typically confidentiality, exclusivity, and expense allocation) and which are not (typically the deal economics themselves).",
-          "Where the LOI launches a diligence period, the engagement also addresses exclusivity duration, walk-away rights, and the conditions under which either side can break off.",
-        ],
-      },
-      {
-        h2: "Who this is for",
-        paragraphs: [
-          "Acquirers and sellers in small-business or real-estate transactions. Partners and joint-venture parties launching a deal. Operators receiving an LOI from a prospective buyer or partner who want to understand the binding effect before they sign.",
-        ],
-      },
-      {
-        h2: "Common issues addressed",
-        paragraphs: [
-          "Inadvertent binding effect of preliminary terms. Exclusivity scope and duration. Confidentiality coverage during diligence. Expense and break-fee allocation. Conditions and walk-away rights.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee drafting for standard LOIs; capped pricing for review of a counterparty's LOI. Turnaround typically two to three business days.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
-        ],
-      },
-    ],
-    audience: "Acquirers, sellers, and joint-venture parties signing LOIs",
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Send a contract for review",

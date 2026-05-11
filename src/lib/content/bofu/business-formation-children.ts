@@ -61,7 +61,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -130,7 +130,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -178,7 +178,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Use the form below to request a conflicts check and instructions for sending documents securely. Do not include confidential details in the form.",
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
         ],
       },
     ],
@@ -226,7 +226,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the entity formation documents, current operating agreement or bylaws, and the CPA's recommendation. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send the entity formation documents, current operating agreement or bylaws, and the CPA's recommendation. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
@@ -274,7 +274,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a list of the planned series or properties, member ownership, and existing entity documents. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send a list of the planned series or properties, member ownership, and existing entity documents. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
@@ -322,7 +322,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the operating agreement, ownership snapshot, and any pending events. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send the operating agreement, ownership snapshot, and any pending events. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
@@ -370,7 +370,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the business, the founder and stock structure, and the planned tax election. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send a short summary of the business, the founder and stock structure, and the planned tax election. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
@@ -418,7 +418,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the home-state formation documents, the planned Tennessee activity, and any deadlines. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send the home-state formation documents, the planned Tennessee activity, and any deadlines. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
@@ -466,7 +466,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send the operating agreement, current member list, and the reason for dissolution. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send the operating agreement, current member list, and the reason for dissolution. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
@@ -514,59 +514,11 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short summary of the partnership and the partners involved. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send a short summary of the partnership and the partners involved. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
     audience: "General partners, limited partners, and joint-venture participants",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Schedule a Consultation",
-  },
-  {
-    slug: "holding-company-formation-attorney-tennessee",
-    hub: "business-formation",
-    primaryKeyword: "Holding Company Formation Attorney in Tennessee",
-    title: "Holding Company Formation Attorney in TN | Nault Law",
-    h1: "Holding Company Formation Attorney in Tennessee",
-    metaDescription:
-      "Holding company formation attorney in Tennessee for parent-subsidiary structures, asset segregation, and multi-entity ownership planning. Call Nault Law.",
-    intro:
-      "Holding company formation attorney in Tennessee for parent-subsidiary structures, asset segregation, and multi-entity planning — keeping operating risk away from passive assets and aligning ownership with how the business actually runs.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Holding-company work designs and forms the parent entity that owns operating subsidiaries, real estate, IP, or investment interests. The structural choice depends on liability isolation goals, tax treatment, and how distributions and decisions flow between parent and subsidiaries.",
-          "Engagements typically include parent-LLC formation, subsidiary formation or restructuring, intercompany agreements, and the operating-agreement provisions that govern parent-level control and member economics.",
-        ],
-      },
-      {
-        h2: "Who this is for",
-        paragraphs: [
-          "Real-estate investors moving from a single LLC to a parent-and-subsidiary structure. Operating businesses that have grown into multiple revenue lines and want each isolated. Family-owned businesses planning succession through a holding entity.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee tax treatment of multi-entity structures requires CPA coordination on franchise-and-excise tax and consolidated reporting questions. Liability isolation depends on respecting entity formality — separate books, separate signatures, and clean intercompany agreements.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Parent formation moves within one to two weeks. Subsidiary formations or transfers follow according to the asset-by-asset plan. Engagements involving existing operating businesses extend with diligence and consent requirements.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send a current org chart, ownership summary, and the goals for the structure. Fit and pricing returned generally within one business day after conflict screen.",
-        ],
-      },
-    ],
-    audience: "Real-estate investors and multi-revenue-line operators",
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Schedule a Consultation",
@@ -610,7 +562,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "How to start",
         paragraphs: [
-          "Send a short description of the planned mission, the founding board, and the planned funding sources. Fit and pricing returned generally within one business day after conflict screen.",
+          "Send a short description of the planned mission, the founding board, and the planned funding sources. Fit and pricing generally returned within one business day.",
         ],
       },
     ],
