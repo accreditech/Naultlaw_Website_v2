@@ -178,8 +178,8 @@ export const resources: ResourceContent[] = [
         anchor: "Real estate commission dispute expert witness",
       },
       {
-        href: "/services/realtor-dispute-expert-witness-tennessee",
-        anchor: "Realtor dispute expert witness",
+        href: "/services/real-estate-broker-standard-of-care-expert-witness-tennessee",
+        anchor: "Realtor dispute and standard-of-care expert witness",
       },
     ],
   },
@@ -259,8 +259,8 @@ export const resources: ResourceContent[] = [
         anchor: "Tennessee TREC defense and realtor representation",
       },
       {
-        href: "/services/agent-malpractice-expert-witness-tennessee",
-        anchor: "Agent malpractice expert witness",
+        href: "/services/real-estate-broker-standard-of-care-expert-witness-tennessee",
+        anchor: "Agent malpractice and broker standard-of-care expert witness",
       },
       {
         href: "/services/real-estate-disclosure-expert-witness-tennessee",
@@ -585,8 +585,8 @@ export const resources: ResourceContent[] = [
         anchor: "TREC complaint expert witness in Tennessee",
       },
       {
-        href: "/services/agent-malpractice-expert-witness-tennessee",
-        anchor: "Agent malpractice expert witness",
+        href: "/services/real-estate-broker-standard-of-care-expert-witness-tennessee",
+        anchor: "Agent malpractice and broker standard-of-care expert witness",
       },
     ],
   },
