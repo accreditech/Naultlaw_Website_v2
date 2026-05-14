@@ -234,6 +234,15 @@ const nextConfig: NextConfig = {
         destination: "/services/business-disputes",
         permanent: true,
       },
+
+      // Phase 2 FOR_REVIEW resolution: kill the real-estate-transactions
+      // hub (off-architecture; owner-financing migrated to contract-services).
+      // See claude_handoff/seo_audit_trim_phase_2/FOR_REVIEW_RESOLVED.md.
+      {
+        source: "/services/real-estate-transactions",
+        destination: "/services",
+        permanent: true,
+      },
     ];
   },
 };
