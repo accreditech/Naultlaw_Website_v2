@@ -136,6 +136,7 @@ export const bofuHubs: BofuHub[] = [
       "real-estate-contract-attorney-tennessee",
       "construction-contract-attorney-tennessee",
       "commercial-lease-attorney-tennessee",
+      "owner-financing-attorney-tennessee",
     ],
     isLitigation: false,
   },
