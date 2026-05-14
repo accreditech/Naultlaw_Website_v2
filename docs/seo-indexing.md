@@ -1,12 +1,17 @@
-# SEO & Google Indexing Automation
+# SEO & Indexing Automation
 
-Plain-English reference for the indexing pipeline — how new pages on naultlaw.com get into Google's search index without manual clicks.
+Plain-English reference for the indexing pipeline — how new pages on naultlaw.com get into search engines' indexes without manual clicks.
 
 ---
 
 ## TL;DR
 
-A scheduled task on Steve's Windows machine runs every Monday at 9 AM. It pulls the live sitemap from `https://naultlaw.com/sitemap.xml`, then submits every URL in it to Google's Indexing API. Pages added since the last run get pushed automatically. Stuck pages get re-pinged.
+A scheduled task on Steve's Windows machine runs every Monday at 9 AM. It pulls the live sitemap from `https://naultlaw.com/sitemap.xml`, then submits every URL in it to **two** indexing channels:
+
+1. **Google Indexing API** — official, but only fully effective for `JobPosting` and `BroadcastEvent` schemas. The script submits anyway because it's a no-op rather than an error for other pages.
+2. **Bing IndexNow** — works for general pages. Also honored by Yandex, Seznam.cz, Naver, and several AI-search products built on Bing's index.
+
+Pages added since the last run get pushed automatically through both channels. Stuck pages get re-pinged.
 
 No action required from Steve. The system maintains itself.
 
@@ -14,9 +19,11 @@ No action required from Steve. The system maintains itself.
 
 ## Why this exists
 
-Google's natural crawl queue can sit on new URLs for weeks before getting around to them — especially for newer sites. The Indexing API lets us bypass that queue and tell Google "please look at this URL now," which typically results in crawl within hours-to-days instead of weeks.
+Search engines' natural crawl queues can sit on new URLs for weeks before getting around to them — especially for newer sites. Indexing APIs let us bypass those queues and tell the search engine "please look at this URL now," which typically results in crawl within hours-to-days instead of weeks.
 
-After the V2 launch + the bulk `/services/*` SEO pages, we had ~95 pages stuck in "Discovered – currently not indexed" because Google was working through them slowly. The automation pushes Google to actually look at them.
+After the V2 launch + the bulk `/services/*` SEO pages, we had ~95 pages stuck in "Discovered – currently not indexed" because Google was working through them slowly. The automation pushes Google (and now Bing + IndexNow-honoring engines) to actually look at them.
+
+**Why two channels.** Google's Indexing API is officially restricted to `JobPosting` and `BroadcastEvent` schemas. Submitting other URL types is technically permitted (the call is a no-op rather than an error), but the real-world indexing lift is small for service pages and articles. Bing's IndexNow protocol does work for general pages and is also honored by Yandex, Seznam.cz, Naver, and several AI-search products that index Bing's surface. Running both gives us Google coverage if the schemas ever apply, plus actual Bing-side visibility today.
 
 ---
 
@@ -27,26 +34,28 @@ After the V2 launch + the bulk `/services/*` SEO pages, we had ~95 pages stuck i
 | **Google Cloud project** `naultlaw-website` | Steve's Google account, project ID `naultlaw-website` | Hosts the service account and enables 3 APIs (Indexing, Search Console, Site Verification). |
 | **Service account** `naultlaw-indexing-bot@naultlaw-website.iam.gserviceaccount.com` | Same Cloud project | Authenticates the script. Verified `siteOwner` of `sc-domain:naultlaw.com` in Search Console. |
 | **DNS TXT record at GoDaddy** | `naultlaw.com` zone | Grants the service account ownership of the domain in Search Console. Value: `google-site-verification=MOhgZkh6tC6to36IoOGGl7zsvOIgOUe4L63kpAHhKSI`. Don't delete this. |
-| **Service account JSON key** | `C:\Users\admin\.naultlaw-keys\indexing-sa.json` | The credential the script uses. Never goes into git. Treated like a password. |
-| **Submission script** | `C:\Users\admin\.naultlaw-keys\submit-from-sitemap.mjs` | Fetches sitemap, submits every URL to Indexing API, writes a log. |
+| **Service account JSON key** (Google) | `C:\Users\admin\.naultlaw-keys\indexing-sa.json` | The credential the script uses for Google. Never goes into git. Treated like a password. |
+| **IndexNow API key** (Bing + friends) | `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` | 32-char hex string. Never goes into git. Paired with the public verification file below. |
+| **IndexNow verification file** (in repo) | `public/<key>.txt` | Public asset served at `https://naultlaw.com/<key>.txt`. Bing crawls this URL to verify that whoever is submitting URLs controls the domain. The file contains the same 32-char key as the local file above. |
+| **Submission script** | `C:\Users\admin\.naultlaw-keys\submit-from-sitemap.mjs` | Fetches sitemap, submits every URL to Google's Indexing API, then submits the same URL list to Bing's IndexNow endpoint. Writes one log per channel per run. |
 | **Windows scheduled task** "Naultlaw - Indexing Submission" | Steve's machine, Task Scheduler | Runs the script every Monday at 9 AM. |
-| **Log files** | `C:\Users\admin\.naultlaw-keys\logs\submit-*.log` | One log per run. Most recent 20 are kept; older ones auto-delete. |
+| **Log files** | `C:\Users\admin\.naultlaw-keys\logs\google-*.log` and `indexnow-*.log` | One log per channel per run. Most recent 20 of each kind are kept; older ones auto-delete. The pre-2026-05-14 `submit-*.log` filename pattern is also pruned by the same rule. |
 
-**Nothing about this automation lives in this git repo.** It's all on Steve's local machine plus three Google Cloud configurations. That's intentional — the credential file (`indexing-sa.json`) is a secret and we never want it accidentally committed.
+**The script and its credentials never live in this git repo.** Only the public IndexNow verification file (`public/<key>.txt`) is committed — that file is meant to be publicly served. The Google credential JSON, the IndexNow key file, and the script itself all live on Steve's local machine.
 
 ---
 
 ## How a typical week works
 
 1. **Monday 9 AM** — Task Scheduler wakes up and runs the script.
-2. The script reads `indexing-sa.json` to get credentials.
-3. It exchanges those credentials for a one-hour Google OAuth access token.
-4. It fetches `https://naultlaw.com/sitemap.xml` and parses out every `<loc>` URL.
-5. For each URL, it POSTs to `https://indexing.googleapis.com/v3/urlNotifications:publish` with `type: "URL_UPDATED"`.
-6. Successes and failures are logged to `C:\Users\admin\.naultlaw-keys\logs\submit-<timestamp>.log`.
-7. The script exits. Task Scheduler records the result.
+2. The script fetches `https://naultlaw.com/sitemap.xml` and parses out every `<loc>` URL.
+3. **Google channel:** reads `indexing-sa.json`, exchanges it for a one-hour OAuth access token, then POSTs each URL to `https://indexing.googleapis.com/v3/urlNotifications:publish` with `type: "URL_UPDATED"`. ~150ms pause between requests.
+4. Successes and failures are logged to `C:\Users\admin\.naultlaw-keys\logs\google-<timestamp>.log`.
+5. **IndexNow channel:** reads `indexnow-key.txt`, then POSTs the URL list in batches of 500 to `https://api.indexnow.org/indexnow` with the key and `keyLocation` (the public verification URL). One JSON body per batch; 200 OK or 202 Accepted both mean success.
+6. Successes and failures are logged to `C:\Users\admin\.naultlaw-keys\logs\indexnow-<timestamp>.log`.
+7. The script exits. Task Scheduler records the result. Non-zero exit if **either** channel had failures.
 
-Total runtime: roughly 30 seconds for ~100 URLs (~150ms pause between each to avoid rate-limiting).
+Total runtime: roughly 30–45 seconds for ~70 URLs (~150ms pause per Google request + one IndexNow POST per 500 URLs).
 
 ---
 
@@ -114,11 +123,89 @@ Verify:
 
 The Indexing API and Search Console API are both free at our usage levels. If you see a Cloud Console charge, something else got added to the project. Check Billing → Reports to see what's costing money. The only thing this automation should be using is API quota, which is free.
 
+### "IndexNow log says HTTP 422"
+
+422 from the IndexNow endpoint means **key verification failed**. The most common cause is that `https://naultlaw.com/<key>.txt` is not reachable, returns the wrong content, or returns the right content but with extra whitespace / a different encoding than what's in `indexnow-key.txt`.
+
+Verify:
+1. Open `https://naultlaw.com/<key>.txt` in a browser. Should return 200 with **exactly** the 32-char hex key — no HTML, no newline at the end, no BOM.
+2. The key in the browser response must match `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` character-for-character.
+3. If the verification URL is 404, the public asset hasn't deployed yet (or Vercel cached the deploy at a previous commit). Wait for the next deploy to land or trigger a redeploy.
+
+### "IndexNow log says HTTP 403"
+
+Bing has temporarily flagged the host. Wait 24 hours and try again. If it persists, check Bing Webmaster Tools for any manual-actions / spam flags on the domain.
+
+### "IndexNow log says network errors only"
+
+The IndexNow endpoint occasionally returns connection resets under load. The script logs each batch failure separately so transient errors are visible. If every batch fails on a single run, retry by manually triggering the scheduled task — the IndexNow side is idempotent and re-submitting the same URLs is safe.
+
 ---
 
-## If you ever need to recreate this from scratch
+## Bing IndexNow
 
-For example, on a new machine, or if the credentials are compromised and need to be rotated. The full setup playbook:
+The second channel the script runs. Added 2026-05-14 because Google's Indexing API officially restricts to `JobPosting` / `BroadcastEvent` schemas — for the bulk of naultlaw.com's URLs (service pages, articles), Google's API is largely a no-op. IndexNow does work for general pages.
+
+### What IndexNow is
+
+A protocol introduced by Microsoft and adopted by Bing, Yandex, Seznam.cz, Naver, and several AI-search products. A single POST to `https://api.indexnow.org/indexnow` propagates to every IndexNow-honoring engine — you don't need separate per-engine integrations.
+
+The API works like this:
+
+```
+POST https://api.indexnow.org/indexnow
+Content-Type: application/json; charset=utf-8
+
+{
+  "host": "naultlaw.com",
+  "key": "<32-char hex key>",
+  "keyLocation": "https://naultlaw.com/<32-char hex key>.txt",
+  "urlList": ["https://naultlaw.com/...", "..."]
+}
+```
+
+- The `key` is a secret-ish string you generate. It's "secret-ish" because anyone who can read the public verification file could in theory submit URLs for the domain — but the public file IS the verification, so the key is not actually a secret, just a paired identifier.
+- `keyLocation` is the URL of a public file on the domain that contains the same key. Bing fetches this URL to confirm domain ownership before processing submissions.
+- 200 OK and 202 Accepted both mean success. 422 means key verification failed (almost always: the verification URL isn't reachable yet).
+- The protocol allows up to 10,000 URLs per batch. The script uses 500-URL batches to avoid edge-network issues.
+
+### Where the key lives
+
+| File | Location | What it is |
+|---|---|---|
+| Local key file | `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` | 32-char hex string. The script reads this and includes it in the POST body. Not in git. |
+| Public verification file | `public/<key>.txt` in this repo, served at `https://naultlaw.com/<key>.txt` | Same 32-char hex string. Committed to git because it's intentionally public. |
+
+Both files must contain **exactly the same 32-char hex string**, no newline at the end, no whitespace, no BOM. The script's regex check rejects anything else.
+
+### How to rotate the IndexNow key
+
+If the key ever needs to be rotated (security hygiene, or a leak):
+
+1. Generate a new 32-char hex string:
+   ```powershell
+   node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"
+   ```
+2. Save the new key to `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` (replace existing contents, no trailing newline).
+3. Add the new verification file at `public/<newkey>.txt` (same content), open a small PR, merge, deploy.
+4. Once the new verification URL is reachable, the next scheduled run uses the new key automatically.
+5. Old verification file: leave the old `public/<oldkey>.txt` in the repo for a week, then delete in a follow-up PR. (IndexNow doesn't have an "expire this key" call — it stops accepting the old key as soon as the verification URL stops returning it.)
+
+### Recreate-from-scratch playbook (IndexNow side)
+
+If the IndexNow side ever needs to be set up from zero (new machine, lost key, fresh domain):
+
+1. Generate a new key: `node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"`
+2. Save the key to `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` (no trailing newline).
+3. Create `public/<key>.txt` in the repo with the same content. Commit, push, merge, deploy.
+4. Confirm `https://naultlaw.com/<key>.txt` returns 200 with exactly the key.
+5. The submission script automatically picks up the new key on its next run. No script edit needed.
+
+---
+
+## If you ever need to recreate this from scratch (Google side)
+
+For example, on a new machine, or if the Google credentials are compromised and need to be rotated. The full Google-side setup playbook (the IndexNow recreate playbook is in the "Bing IndexNow" section above):
 
 1. **In Google Cloud Console**, create a new project (or use the existing `naultlaw-website` one). Enable these 3 APIs:
    - Web Search Indexing API (`indexing.googleapis.com`)
