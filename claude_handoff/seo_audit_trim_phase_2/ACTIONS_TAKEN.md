@@ -336,4 +336,71 @@ After this PR is merged:
   pages).
 - No deletion of the `/services/real-estate-transactions/` hub — that
   is one of the two FLAG-FOR-REVIEW items, and the briefing explicitly
-  said "Do not auto-delete the hub."
+  said "Do not auto-delete the hub." **(Resolved post-Phase-2 — see
+  next section.)**
+
+## FOR_REVIEW resolution (post-Phase-2)
+
+Steve resolved both Phase 2 FOR_REVIEW items. Decisions applied as
+two additional commits on the same `seo/audit-and-trim-phase-2`
+branch; PR #22 picks them up automatically. Full record in
+[FOR_REVIEW_RESOLVED.md](FOR_REVIEW_RESOLVED.md).
+
+**Item 1: owner-financing-attorney-tennessee → KEEP + MIGRATE.** Moved
+the entry from `src/lib/content/bofu/real-estate-transactions-children.ts`
+to `src/lib/content/bofu/contract-services-children.ts`. Updated the
+entry's `hub` field to `contract-services`. Added the slug to the
+contract-services hub's `childSlugs` in `bofu-services.ts`. The slug
+itself does not change, so no redirect is needed for the page — only
+the hub it appears under changes (breadcrumb routes through
+`/services/contract-services` instead of `/services/real-estate-transactions`).
+
+**Item 2: /services/real-estate-transactions/ hub → DELETE.** Removed
+the entire `real-estate-transactions` hub object from `bofuHubs` in
+`bofu-services.ts`, removed `"real-estate-transactions"` from the
+`BofuHubId` union, removed the `realEstateTransactionsChildren` import
++ spread, and updated the JSDoc comment that referenced it. Deleted
+`src/lib/content/bofu/real-estate-transactions-children.ts`. Added a
+301 redirect `/services/real-estate-transactions → /services` in
+`next.config.ts`. Next.js handles the trailing-slash variant
+(`/services/real-estate-transactions/`) automatically.
+
+**Cross-tree-link cleanup.** None needed. The Phase 5g commit already
+purged every reference to `real-estate-transactions` from
+`practice-area-services.ts`, `resources.ts`, the site footer, and all
+components. A final grep confirms zero remaining references in `src/`
+or `public/` except the redirect entry in `next.config.ts`.
+
+**Phase 2 deletes that redirected to `/services/real-estate-transactions`.**
+The three Phase 2 deletes (`land-contract`, `real-estate-joint-venture`,
+`assignment-of-contract`) had their redirect target as
+`/services/real-estate-transactions`. After this resolution, those
+three redirects now chain: deleted slug → `/services/real-estate-transactions`
+→ `/services`. Two hops instead of one. Acceptable for SEO (Google
+follows 301 chains), but a future cleanup commit could repoint them
+directly to `/services` for one fewer hop. Not done in this commit
+because the briefing scoped this task to the two FOR_REVIEW items only.
+
+**Validation (re-run after FOR_REVIEW resolution):**
+
+- `npx tsc --noEmit` — clean.
+- `npm run build` — clean. `/services/[slug]` reports 3 + 35 = **38
+  prerendered paths** (5 hubs + 33 services, down 1 hub from Phase 2's
+  6 hubs). Service count unchanged (33) since owner-financing migrated
+  within the count.
+- Production preview tested:
+  - `/services` lists exactly 5 hubs; `real-estate-transactions` absent.
+  - `/services/contract-services` lists owner-financing in its child cards.
+  - `/services/owner-financing-attorney-tennessee` returns 200 with
+    breadcrumb routing through contract-services.
+  - `/services/real-estate-transactions` 301 → `/services` (200 final).
+  - `/services/real-estate-transactions/` (trailing slash) 301 →
+    `/services` (200 final).
+  - `/sitemap.xml`: **67 URL entries** (down from 68); the
+    real-estate-transactions hub is absent; owner-financing is present.
+  - No console errors.
+
+**Final post-resolution count:** 6 hubs → 5 hubs; 34 services → 33
+services (owner-financing moved within count); 28 redirects → 29
+redirects (added 1 hub redirect). Combined Phase 1 + Phase 2 + this
+resolution: **72 → 38 live `/services/*` URLs (−47%)**.
