@@ -39,20 +39,8 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
       anchor: "Tennessee commercial lease attorney",
     },
     {
-      slug: "landlord-attorney-tennessee",
-      anchor: "Tennessee landlord attorney",
-    },
-    {
-      slug: "tenant-attorney-tennessee",
-      anchor: "Tennessee commercial tenant attorney",
-    },
-    {
-      slug: "eviction-attorney-tennessee",
-      anchor: "Tennessee eviction attorney",
-    },
-    {
-      slug: "eviction-defense-attorney-tennessee",
-      anchor: "Tennessee eviction defense attorney",
+      slug: "eviction-attorney-sumner-county-tn",
+      anchor: "Eviction attorney in Sumner County TN",
     },
   ],
   "trec-defense-and-realtor-complaints": [
@@ -75,24 +63,8 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
       anchor: "Tennessee operating agreement attorney",
     },
     {
-      slug: "llc-member-buyout-attorney-tennessee",
-      anchor: "LLC member buyout attorney",
-    },
-    {
       slug: "business-partnership-dispute-attorney-tennessee",
-      anchor: "Business partnership dispute attorney",
-    },
-    {
-      slug: "shareholder-dispute-attorney-tennessee",
-      anchor: "Shareholder dispute attorney",
-    },
-    {
-      slug: "breach-of-fiduciary-duty-attorney-tennessee",
-      anchor: "Breach of fiduciary duty attorney",
-    },
-    {
-      slug: "llc-dissolution-attorney-tennessee",
-      anchor: "LLC dissolution attorney",
+      anchor: "Partnership, member-buyout, shareholder, and fiduciary-duty dispute attorney",
     },
   ],
   "real-estate-disputes": [
@@ -105,24 +77,20 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
       anchor: "Tennessee easement attorney",
     },
     {
+      slug: "title-defect-attorney-tennessee",
+      anchor: "Tennessee title defect attorney",
+    },
+    {
       slug: "property-line-dispute-attorney-tennessee",
       anchor: "Property line dispute attorney",
     },
     {
-      slug: "failure-to-disclose-attorney-tennessee",
-      anchor: "Failure-to-disclose attorney",
-    },
-    {
       slug: "real-estate-fraud-attorney-tennessee",
-      anchor: "Real estate fraud attorney",
+      anchor: "Real estate fraud and failure-to-disclose attorney",
     },
     {
-      slug: "specific-performance-attorney-tennessee",
-      anchor: "Specific performance attorney",
-    },
-    {
-      slug: "earnest-money-dispute-attorney-tennessee",
-      anchor: "Earnest money dispute attorney",
+      slug: "mechanics-lien-attorney-tennessee",
+      anchor: "Mechanics lien attorney",
     },
   ],
   "business-contract-drafting-and-review": [
@@ -132,15 +100,11 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
     },
     {
       slug: "real-estate-contract-attorney-tennessee",
-      anchor: "Real estate contract attorney",
+      anchor: "Real estate contract and purchase-agreement attorney",
     },
     {
       slug: "non-compete-attorney-tennessee",
       anchor: "Non-compete attorney",
-    },
-    {
-      slug: "nda-attorney-tennessee",
-      anchor: "NDA attorney",
     },
     {
       slug: "vendor-agreement-attorney-tennessee",
@@ -151,8 +115,8 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
       anchor: "Construction contract attorney",
     },
     {
-      slug: "master-service-agreement-attorney-tennessee",
-      anchor: "Master service agreement attorney",
+      slug: "independent-contractor-agreement-attorney-tennessee",
+      anchor: "Independent contractor agreement attorney",
     },
   ],
   "strategic-case-assessment": [
@@ -168,15 +132,11 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
   "arbitration-and-dispute-resolution": [
     {
       slug: "business-partnership-dispute-attorney-tennessee",
-      anchor: "Business partnership dispute attorney",
+      anchor: "Business partnership, shareholder, and fiduciary-duty dispute attorney",
     },
     {
-      slug: "shareholder-dispute-attorney-tennessee",
-      anchor: "Shareholder dispute attorney",
-    },
-    {
-      slug: "hoa-dispute-attorney-tennessee",
-      anchor: "HOA dispute attorney",
+      slug: "non-compete-attorney-tennessee",
+      anchor: "Non-compete attorney",
     },
   ],
   "expert-witness-real-estate-and-brokerage-matters": [
@@ -213,10 +173,6 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
 export const serviceParentPracticeArea: Record<string, string> = {
   // Commercial leasing — landlord/tenant/eviction matters
   "commercial-lease-attorney-tennessee": "commercial-leasing",
-  "landlord-attorney-tennessee": "commercial-leasing",
-  "tenant-attorney-tennessee": "commercial-leasing",
-  "eviction-attorney-tennessee": "commercial-leasing",
-  "eviction-defense-attorney-tennessee": "commercial-leasing",
   "eviction-attorney-sumner-county-tn": "commercial-leasing",
 
   // Real estate disputes
@@ -227,13 +183,6 @@ export const serviceParentPracticeArea: Record<string, string> = {
   "mechanics-lien-attorney-tennessee": "real-estate-disputes",
   "property-line-dispute-attorney-tennessee": "real-estate-disputes",
   "real-estate-attorney-gallatin-tn": "real-estate-disputes",
-  "specific-performance-attorney-tennessee": "real-estate-disputes",
-  "earnest-money-dispute-attorney-tennessee": "real-estate-disputes",
-  "failure-to-disclose-attorney-tennessee": "real-estate-disputes",
-  "construction-defect-attorney-tennessee": "real-estate-disputes",
-  "hoa-dispute-attorney-tennessee": "real-estate-disputes",
-  "foreclosure-excess-proceeds-attorney-tennessee": "real-estate-disputes",
-  "mold-claim-attorney-tennessee": "real-estate-disputes",
 
   // Business contract drafting and review
   "contract-review-attorney-tennessee": "business-contract-drafting-and-review",
@@ -245,21 +194,7 @@ export const serviceParentPracticeArea: Record<string, string> = {
     "business-contract-drafting-and-review",
   "construction-contract-attorney-tennessee":
     "business-contract-drafting-and-review",
-  "nda-attorney-tennessee": "business-contract-drafting-and-review",
-  "master-service-agreement-attorney-tennessee":
-    "business-contract-drafting-and-review",
-  "asset-purchase-agreement-attorney-tennessee":
-    "business-contract-drafting-and-review",
-  "letter-of-intent-attorney-tennessee":
-    "business-contract-drafting-and-review",
-  "real-estate-purchase-agreement-attorney-tennessee":
-    "business-contract-drafting-and-review",
   "owner-financing-attorney-tennessee":
-    "business-contract-drafting-and-review",
-  "land-contract-attorney-tennessee": "business-contract-drafting-and-review",
-  "real-estate-joint-venture-attorney-tennessee":
-    "business-contract-drafting-and-review",
-  "assignment-of-contract-attorney-tennessee":
     "business-contract-drafting-and-review",
   "non-compete-attorney-tennessee": "business-contract-drafting-and-review",
 
@@ -277,25 +212,7 @@ export const serviceParentPracticeArea: Record<string, string> = {
     "operating-agreements-and-owner-disputes",
   "corporation-formation-attorney-tennessee":
     "operating-agreements-and-owner-disputes",
-  "foreign-llc-qualification-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "llc-dissolution-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "partnership-agreement-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "holding-company-formation-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "nonprofit-formation-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
   "business-partnership-dispute-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "llc-member-buyout-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "shareholder-dispute-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "breach-of-fiduciary-duty-attorney-tennessee":
-    "operating-agreements-and-owner-disputes",
-  "tortious-interference-attorney-tennessee":
     "operating-agreements-and-owner-disputes",
 
   // Expert witness — every expert-witness service rolls up here
