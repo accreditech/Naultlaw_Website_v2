@@ -41,7 +41,9 @@ yarn-error.log*
 next-env.d.ts
 
 # local reference — design handoff docs, kept for reference, not committed
-/claude_handoff/
+/claude_handoff/*
+# SEO audit-and-trim Phase 1: committed for PR review and audit trail
+!/claude_handoff/seo_audit_trim/
 
 # Claude Code internal session state
 /.claude/
