@@ -210,10 +210,6 @@ export const bofuHubs: BofuHub[] = [
     childSlugs: [
       "business-partnership-dispute-attorney-tennessee",
       "non-compete-attorney-tennessee",
-      "llc-member-buyout-attorney-tennessee",
-      "shareholder-dispute-attorney-tennessee",
-      "breach-of-fiduciary-duty-attorney-tennessee",
-      "tortious-interference-attorney-tennessee",
     ],
     isLitigation: true,
   },
