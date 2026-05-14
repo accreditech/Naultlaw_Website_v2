@@ -152,27 +152,28 @@ export const contractServicesChildren: BofuService[] = [
     title: "Real Estate Contract Attorney in Tennessee | Nault Law",
     h1: "Real Estate Contract Attorney in Tennessee",
     metaDescription:
-      "Real estate contract attorney in Tennessee. Drafting and review of purchase agreements, options, and lease-to-own deals. Call Nault Law.",
+      "Real estate contract attorney in Tennessee. Drafting and review of residential and commercial purchase agreements, options, and lease-to-own deals. Call Nault Law.",
     intro:
-      "Real estate contract attorney in Tennessee for FSBO buyers and sellers, investors, and operators who need a purchase agreement, option, or lease-to-own contract drafted or reviewed before money or property changes hands.",
+      "Real estate contract attorney in Tennessee for FSBO buyers and sellers, investors, and operators — drafting and reviewing residential and commercial purchase agreements (PSAs), options, lease-to-own contracts, and assignment-of-contract documents before money or property changes hands.",
     sections: [
       {
         h2: "What this covers",
         paragraphs: [
-          "Real estate contract work covers drafting and reviewing purchase agreements, options to purchase, lease-to-own agreements, assignment-of-contract documents, and the contingency and due-diligence provisions that drive deal certainty.",
+          "Real estate contract work covers drafting and reviewing purchase agreements (PSAs) — both residential and commercial — options to purchase, lease-to-own agreements, assignment-of-contract documents, and the contingency and due-diligence provisions that drive deal certainty.",
+          "For FSBO and investor deals where there is no real-estate agent on the contract, engagement often starts at the offer stage and runs through the contingency-clearing period. Both buyer-side and seller-side engagements are accepted, subject to conflict screen.",
           "This is contract work, not closing work. The office does not act as the closing or settlement agent, does not run title searches as a closing service, does not prepare deeds for closings, and does not disburse closing funds.",
         ],
       },
       {
         h2: "Who this is for",
         paragraphs: [
-          "FSBO buyers and sellers without a real-estate agent on the deal. Real-estate investors handling repeat transactions and wanting a real attorney-drafted template instead of a board form. Operators reviewing a counterparty-supplied contract before signing.",
+          "FSBO buyers and sellers without a real-estate agent on the deal. Real-estate investors handling repeat transactions and wanting a real attorney-drafted template instead of a board form. Commercial buyers and sellers reviewing a counterparty-supplied PSA before signing.",
         ],
       },
       {
         h2: "Common issues addressed",
         paragraphs: [
-          "Contingency-period mechanics, financing-contingency interaction with earnest money, due-diligence rights, default-and-cure language, assignability, and the seller-disclosure obligations that govern post-closing exposure.",
+          "Contingency-period mechanics, financing-contingency interaction with earnest money, due-diligence rights, default-and-cure language, assignability, and the seller-disclosure obligations that govern post-closing exposure. Residential PSAs are also reviewed for TRPCDA disclosure-form interaction (Tenn. Code Ann. §§ 66-5-201 et seq.).",
         ],
       },
       {

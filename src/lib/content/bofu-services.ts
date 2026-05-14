@@ -155,12 +155,8 @@ export const bofuHubs: BofuHub[] = [
       "When a contract is on the desk, when a deal is being structured, or when a property change-of-hands needs documents drafted carefully. Earlier engagement creates more options and lower cost; flat-fee or capped pricing is available for many standard transactions.",
     primaryCtaLabel: "Schedule a Consultation",
     childSlugs: [
-      "real-estate-purchase-agreement-attorney-tennessee",
       "real-estate-contract-attorney-tennessee",
       "owner-financing-attorney-tennessee",
-      "land-contract-attorney-tennessee",
-      "real-estate-joint-venture-attorney-tennessee",
-      "assignment-of-contract-attorney-tennessee",
       "commercial-lease-attorney-tennessee",
       "easement-attorney-tennessee",
       "title-defect-attorney-tennessee",
