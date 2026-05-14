@@ -41,7 +41,9 @@ yarn-error.log*
 next-env.d.ts
 
 # local reference — design handoff docs, kept for reference, not committed
-/claude_handoff/
+/claude_handoff/*
+# Backlink kit: committed for PR review and ongoing maintenance reference.
+!/claude_handoff/backlink_kit/
 
 # Claude Code internal session state
 /.claude/
