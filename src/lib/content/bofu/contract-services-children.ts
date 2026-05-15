@@ -152,27 +152,28 @@ export const contractServicesChildren: BofuService[] = [
     title: "Real Estate Contract Attorney in Tennessee | Nault Law",
     h1: "Real Estate Contract Attorney in Tennessee",
     metaDescription:
-      "Real estate contract attorney in Tennessee. Drafting and review of purchase agreements, options, and lease-to-own deals. Call Nault Law.",
+      "Real estate contract attorney in Tennessee. Drafting and review of residential and commercial purchase agreements, options, and lease-to-own deals. Call Nault Law.",
     intro:
-      "Real estate contract attorney in Tennessee for FSBO buyers and sellers, investors, and operators who need a purchase agreement, option, or lease-to-own contract drafted or reviewed before money or property changes hands.",
+      "Real estate contract attorney in Tennessee for FSBO buyers and sellers, investors, and operators — drafting and reviewing residential and commercial purchase agreements (PSAs), options, lease-to-own contracts, and assignment-of-contract documents before money or property changes hands.",
     sections: [
       {
         h2: "What this covers",
         paragraphs: [
-          "Real estate contract work covers drafting and reviewing purchase agreements, options to purchase, lease-to-own agreements, assignment-of-contract documents, and the contingency and due-diligence provisions that drive deal certainty.",
+          "Real estate contract work covers drafting and reviewing purchase agreements (PSAs) — both residential and commercial — options to purchase, lease-to-own agreements, assignment-of-contract documents, and the contingency and due-diligence provisions that drive deal certainty.",
+          "For FSBO and investor deals where there is no real-estate agent on the contract, engagement often starts at the offer stage and runs through the contingency-clearing period. Both buyer-side and seller-side engagements are accepted, subject to conflict screen.",
           "This is contract work, not closing work. The office does not act as the closing or settlement agent, does not run title searches as a closing service, does not prepare deeds for closings, and does not disburse closing funds.",
         ],
       },
       {
         h2: "Who this is for",
         paragraphs: [
-          "FSBO buyers and sellers without a real-estate agent on the deal. Real-estate investors handling repeat transactions and wanting a real attorney-drafted template instead of a board form. Operators reviewing a counterparty-supplied contract before signing.",
+          "FSBO buyers and sellers without a real-estate agent on the deal. Real-estate investors handling repeat transactions and wanting a real attorney-drafted template instead of a board form. Commercial buyers and sellers reviewing a counterparty-supplied PSA before signing.",
         ],
       },
       {
         h2: "Common issues addressed",
         paragraphs: [
-          "Contingency-period mechanics, financing-contingency interaction with earnest money, due-diligence rights, default-and-cure language, assignability, and the seller-disclosure obligations that govern post-closing exposure.",
+          "Contingency-period mechanics, financing-contingency interaction with earnest money, due-diligence rights, default-and-cure language, assignability, and the seller-disclosure obligations that govern post-closing exposure. Residential PSAs are also reviewed for TRPCDA disclosure-form interaction (Tenn. Code Ann. §§ 66-5-201 et seq.).",
         ],
       },
       {
@@ -290,195 +291,59 @@ export const contractServicesChildren: BofuService[] = [
     primaryCtaLabel: "Send a contract for review",
   },
   {
-    slug: "nda-attorney-tennessee",
+    slug: "owner-financing-attorney-tennessee",
     hub: "contract-services",
-    primaryKeyword: "NDA Attorney in Tennessee",
-    title: "NDA Attorney in Tennessee | Nault Law",
-    h1: "NDA Attorney in Tennessee",
+    primaryKeyword: "Owner Financing Attorney in Tennessee",
+    title: "Owner Financing Attorney in Tennessee | Nault Law",
+    h1: "Owner Financing Attorney in Tennessee",
     metaDescription:
-      "NDA attorney in Tennessee for confidentiality agreements, mutual NDAs, and unilateral NDAs in vendor, employment, and acquisition contexts. Call Nault Law.",
+      "Owner financing attorney in Tennessee for seller-financed real estate sales — promissory notes, deeds of trust, and financing agreements. Call Nault Law.",
     intro:
-      "NDA attorney in Tennessee drafting and reviewing mutual and unilateral non-disclosure agreements — protecting trade secrets, customer lists, financial information, and acquisition-process information without overreaching into language that will not hold up under TN law.",
+      "Owner financing attorney in Tennessee for sellers and buyers structuring seller-financed real estate sales — promissory notes, deeds of trust, and the documents that carry credit risk forward beyond closing.",
     sections: [
       {
         h2: "What this covers",
         paragraphs: [
-          "NDA work covers drafting and reviewing mutual NDAs (vendor-vendor, partner-partner, deal-process) and unilateral NDAs (one party disclosing to another). Drafting addresses what counts as confidential information, exclusions, permitted uses, term, return-of-information, and remedies.",
-          "Where the relationship has employment or contractor overlap, the engagement addresses how the NDA interacts with non-solicit and non-compete provisions in light of Tennessee enforcement standards.",
+          "Owner financing work spans seller-side and buyer-side document drafting and review for transactions where the seller is carrying the paper instead of the buyer using a bank loan. The package typically includes a promissory note, a deed of trust securing the note, and supporting documents.",
+          "Where appropriate, the engagement also addresses default and remedy provisions, prepayment terms, due-on-sale clauses, late-fee and acceleration mechanics, and the federal lending-disclosure questions (Dodd-Frank, SAFE Act) that can apply to certain seller-financed deals.",
         ],
       },
       {
         h2: "Who this is for",
         paragraphs: [
-          "Businesses entering a vendor or partnership conversation that involves confidential information. Sellers in a small-business sale process running diligence with prospective buyers. Founders sharing confidential information with prospective employees, contractors, or investors.",
+          "Sellers carrying the paper on a real estate sale instead of requiring a bank-financed buyer. Buyers using seller financing because conventional financing is not available or not preferred. Investors with multiple seller-financed transactions who need a clean template.",
         ],
       },
       {
-        h2: "Common issues caught",
+        h2: "Tennessee specifics",
         paragraphs: [
-          "Definitions of confidential information that are too broad or too narrow. Term lengths that exceed what TN courts will enforce. Remedies clauses with attorney-fee or liquidated-damages language that may overreach. Survival provisions that clash with related agreements.",
+          "Tennessee owner-financed transactions secured by a deed of trust follow the standard nonjudicial-foreclosure framework if the buyer defaults. Document precision matters: the note, deed of trust, and any supporting agreements need to be aligned, properly recorded, and clear on the trustee's role at default.",
+          "Beyond the deal documents, owner-financed residential sales in Tennessee should flag mortgage-licensing rules under Tenn. Code Ann. § 45-13-201, high-cost home-loan rules under Tenn. Code Ann. § 45-20-101 et seq., and usury and home-loan interest-rate limits under Tenn. Code Ann. §§ 47-14-103, 47-14-117, and 47-15-102. Whether each rule applies depends on the seller's status, loan purpose, and property type.",
         ],
       },
       {
-        h2: "Process and pricing",
+        h2: "Federal Dodd-Frank considerations",
         paragraphs: [
-          "Flat-fee drafting for standard mutual or unilateral NDAs. Flat-fee review for counterparty-supplied NDAs. Turnaround typically one to two business days.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the draft (if any) and a short note on the relationship and the information at stake. Pricing and turnaround generally within one business day after conflict screen.",
-        ],
-      },
-    ],
-    audience: "Businesses, founders, and dealmakers using NDAs",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Send a contract for review",
-  },
-  {
-    slug: "master-service-agreement-attorney-tennessee",
-    hub: "contract-services",
-    primaryKeyword: "Master Service Agreement Attorney in Tennessee",
-    title: "Master Service Agreement Attorney in Tennessee | Nault Law",
-    h1: "Master Service Agreement Attorney in Tennessee",
-    metaDescription:
-      "Master service agreement attorney in Tennessee for agencies, consultants, and SaaS vendors structuring recurring engagements. Call Nault Law.",
-    intro:
-      "Master service agreement attorney in Tennessee for agencies, consultants, and recurring-services businesses structuring an MSA-and-statement-of-work model — letting individual engagements move quickly while the master terms stay stable.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "An MSA establishes the standing terms — payment, IP, indemnity, liability, confidentiality, term, termination — that govern every individual project. Statement-of-work documents then describe the specific scope, deliverables, and pricing without renegotiating the master language each time.",
-          "Drafting addresses both sides of the relationship: client-friendly MSAs for vendors selling into corporate clients, and vendor-friendly MSAs for businesses managing many service providers.",
-        ],
-      },
-      {
-        h2: "Who this is for",
-        paragraphs: [
-          "Marketing, design, and consulting agencies running recurring client engagements. Software, SaaS, and technology vendors selling into mid-market clients. Operators with many vendors who want a uniform MSA across the supplier base.",
-        ],
-      },
-      {
-        h2: "Common issues addressed",
-        paragraphs: [
-          "IP ownership and license-back language for work product. Limits of liability calibrated to the actual fees at stake. SOW-amendment mechanics. Termination rights and wind-down obligations. Subcontracting and pass-through obligations.",
+          "Federal Dodd-Frank and Reg Z seller-financing rules apply to consumer-purpose credit secured by a dwelling, with limited exclusions for one property by a natural person, estate, or trust, and for three or fewer properties in 12 months (12 C.F.R. § 1026.36).",
+          "The seller's exemption depends on ownership, builder status, amortization, ability-to-repay, and rate-limit conditions specific to the transaction. The engagement flags which exemption (if any) applies and structures the documents accordingly.",
         ],
       },
       {
         h2: "Process and pricing",
         paragraphs: [
-          "Flat-fee or capped pricing for MSA drafting and SOW templates. Turnaround typically three to five business days.",
+          "Flat-fee drafting for standard seller-financing packages (note, deed of trust, and closing instructions). Capped pricing for review of a counterparty's draft. Turnaround typically three to five business days.",
         ],
       },
       {
         h2: "How to start",
         paragraphs: [
-          "Send the existing MSA (if any) and a short note on the business model and the typical client engagement. Pricing and turnaround generally within one business day after conflict screen.",
+          "Send a short summary of the deal — property, parties, sale price, down payment, and proposed terms. Pricing and turnaround generally returned within one business day after conflict screen.",
         ],
       },
     ],
-    audience: "Agencies, consultants, and recurring-services businesses",
+    audience: "Sellers carrying paper and buyers using seller financing",
     serviceArea: "Statewide TN",
     isLitigation: false,
-    primaryCtaLabel: "Send a contract for review",
-  },
-  {
-    slug: "asset-purchase-agreement-attorney-tennessee",
-    hub: "contract-services",
-    primaryKeyword: "Asset Purchase Agreement Attorney in Tennessee",
-    title: "Asset Purchase Agreement Attorney in TN | Nault Law",
-    h1: "Asset Purchase Agreement Attorney in Tennessee",
-    metaDescription:
-      "Asset purchase agreement attorney in Tennessee for small business sales — APA drafting, review, and closing-stage negotiation. Call Nault Law.",
-    intro:
-      "Asset purchase agreement attorney in Tennessee for small-business sale and acquisition deals — drafting and reviewing APAs that allocate risk between buyer and seller and surface diligence issues before they become post-closing fights.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "APA work covers drafting and review of the purchase agreement, schedules, and ancillary documents (assignment, bill of sale, non-compete, transition agreement). The drafting focuses on what is and is not included in the asset sale, representations and warranties, indemnification baskets and caps, and the closing mechanics.",
-          "Where the deal is part of a sale of substantially all assets, additional attention goes to bulk-sale considerations, employee transitions, and the assignment of leases and key contracts.",
-        ],
-      },
-      {
-        h2: "Who this is for",
-        paragraphs: [
-          "Sellers exiting a small business through an asset sale. Buyers acquiring an existing business and wanting clean asset transfer with appropriate seller representations. Real-estate operators acquiring or selling a portfolio of assets through an entity-level transaction structured as an APA.",
-        ],
-      },
-      {
-        h2: "Common issues addressed",
-        paragraphs: [
-          "Definition of included and excluded assets. Working-capital adjustments. Reps and warranties scope and survival. Indemnification baskets, caps, and time limits. Non-compete and non-solicit terms tied to the seller's continuation in the market.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Hourly billing with sized retainer. Capped pricing available for straightforward, single-buyer asset sales. Turnaround scales with deal complexity and counterparty responsiveness.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the LOI or term sheet, a short summary of the business and the assets, and the target closing date. Pricing and turnaround generally within one business day after conflict screen.",
-        ],
-      },
-    ],
-    audience: "Small-business sellers and buyers in asset-purchase transactions",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Send a contract for review",
-  },
-  {
-    slug: "letter-of-intent-attorney-tennessee",
-    hub: "contract-services",
-    primaryKeyword: "Letter of Intent Attorney in Tennessee",
-    title: "Letter of Intent Attorney in Tennessee | Nault Law",
-    h1: "Letter of Intent Attorney in Tennessee",
-    metaDescription:
-      "Letter of intent attorney in Tennessee for acquisitions, partnerships, and major-deal LOIs — binding terms, exclusivity, walk-away. Call Nault Law.",
-    intro:
-      "Letter of intent attorney in Tennessee for acquisitions, partnerships, and major-deal LOIs — making sure the binding parts are intentionally binding, the non-binding parts are intentionally non-binding, and exclusivity and walk-away rights are framed clearly before diligence starts.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "LOI work covers drafting and reviewing letters of intent and term sheets across acquisitions, partnerships, joint ventures, major real-estate deals, and significant commercial relationships. The drafting focuses on which provisions are binding (typically confidentiality, exclusivity, and expense allocation) and which are not (typically the deal economics themselves).",
-          "Where the LOI launches a diligence period, the engagement also addresses exclusivity duration, walk-away rights, and the conditions under which either side can break off.",
-        ],
-      },
-      {
-        h2: "Who this is for",
-        paragraphs: [
-          "Acquirers and sellers in small-business or real-estate transactions. Partners and joint-venture parties launching a deal. Operators receiving an LOI from a prospective buyer or partner who want to understand the binding effect before they sign.",
-        ],
-      },
-      {
-        h2: "Common issues addressed",
-        paragraphs: [
-          "Inadvertent binding effect of preliminary terms. Exclusivity scope and duration. Confidentiality coverage during diligence. Expense and break-fee allocation. Conditions and walk-away rights.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee drafting for standard LOIs; capped pricing for review of a counterparty's LOI. Turnaround typically two to three business days.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the LOI (if any) and a short note on the deal and the timing. Pricing and turnaround generally within one business day after conflict screen.",
-        ],
-      },
-    ],
-    audience: "Acquirers, sellers, and joint-venture parties signing LOIs",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Send a contract for review",
+    primaryCtaLabel: "Schedule a Consultation",
   },
 ];

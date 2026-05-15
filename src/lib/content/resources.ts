@@ -424,8 +424,8 @@ export const resources: ResourceContent[] = [
         anchor: "Tennessee operating agreement attorney",
       },
       {
-        href: "/services/llc-member-buyout-attorney-tennessee",
-        anchor: "LLC member buyout attorney",
+        href: "/services/business-partnership-dispute-attorney-tennessee",
+        anchor: "LLC member buyout and partnership dispute attorney",
       },
     ],
   },
@@ -500,12 +500,8 @@ export const resources: ResourceContent[] = [
         anchor: "Tennessee operating agreements and owner disputes",
       },
       {
-        href: "/services/breach-of-fiduciary-duty-attorney-tennessee",
-        anchor: "Breach of fiduciary duty attorney",
-      },
-      {
-        href: "/services/shareholder-dispute-attorney-tennessee",
-        anchor: "Shareholder dispute attorney",
+        href: "/services/business-partnership-dispute-attorney-tennessee",
+        anchor: "Fiduciary duty, shareholder, and partnership dispute attorney",
       },
     ],
   },
@@ -667,8 +663,8 @@ export const resources: ResourceContent[] = [
         anchor: "Tennessee commercial lease attorney",
       },
       {
-        href: "/services/eviction-defense-attorney-tennessee",
-        anchor: "Tennessee eviction defense attorney",
+        href: "/services/eviction-attorney-sumner-county-tn",
+        anchor: "Eviction attorney in Sumner County TN",
       },
     ],
   },
@@ -733,8 +729,8 @@ export const resources: ResourceContent[] = [
         anchor: "Tennessee commercial lease attorney",
       },
       {
-        href: "/services/landlord-attorney-tennessee",
-        anchor: "Tennessee landlord attorney",
+        href: "/services/eviction-attorney-sumner-county-tn",
+        anchor: "Eviction attorney in Sumner County TN",
       },
     ],
   },
@@ -940,11 +936,7 @@ export const resources: ResourceContent[] = [
       },
       {
         href: "/services/business-partnership-dispute-attorney-tennessee",
-        anchor: "Business partnership dispute attorney",
-      },
-      {
-        href: "/services/breach-of-fiduciary-duty-attorney-tennessee",
-        anchor: "Breach of fiduciary duty attorney",
+        anchor: "Business partnership and fiduciary-duty dispute attorney",
       },
     ],
   },

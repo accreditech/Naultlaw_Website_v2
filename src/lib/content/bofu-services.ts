@@ -17,14 +17,12 @@ import { businessFormationChildren } from "@/lib/content/bofu/business-formation
 import { contractServicesChildren } from "@/lib/content/bofu/contract-services-children";
 import { expertWitnessChildren } from "@/lib/content/bofu/expert-witness-children";
 import { realEstateDisputesChildren } from "@/lib/content/bofu/real-estate-disputes-children";
-import { realEstateTransactionsChildren } from "@/lib/content/bofu/real-estate-transactions-children";
 
 export type BofuHubId =
   | "expert-witness"
   | "business-formation"
   | "contract-services"
   | "real-estate-disputes"
-  | "real-estate-transactions"
   | "business-disputes";
 
 export type BofuHub = {
@@ -111,11 +109,6 @@ export const bofuHubs: BofuHub[] = [
       "series-llc-attorney-tennessee",
       "buy-sell-agreement-attorney-tennessee",
       "corporation-formation-attorney-tennessee",
-      "foreign-llc-qualification-attorney-tennessee",
-      "llc-dissolution-attorney-tennessee",
-      "partnership-agreement-attorney-tennessee",
-      "holding-company-formation-attorney-tennessee",
-      "nonprofit-formation-attorney-tennessee",
     ],
     isLitigation: false,
   },
@@ -141,40 +134,7 @@ export const bofuHubs: BofuHub[] = [
       "real-estate-contract-attorney-tennessee",
       "construction-contract-attorney-tennessee",
       "commercial-lease-attorney-tennessee",
-      "nda-attorney-tennessee",
-      "master-service-agreement-attorney-tennessee",
-      "asset-purchase-agreement-attorney-tennessee",
-      "letter-of-intent-attorney-tennessee",
-    ],
-    isLitigation: false,
-  },
-  {
-    id: "real-estate-transactions",
-    slug: "real-estate-transactions",
-    primaryKeyword: "Real Estate Transactions Attorney in Tennessee",
-    title: "Real Estate Transactions Attorney in Tennessee | Nault Law",
-    h1: "Real Estate Transactions Attorney in Tennessee",
-    metaDescription:
-      "Real estate transactions attorney in Tennessee for purchase agreements, commercial leases, owner financing, and joint ventures. Call Nault Law.",
-    intro:
-      "Real estate transactions attorney in Tennessee for the deal-side work — purchase agreements, commercial leases, owner financing, land contracts, joint ventures, and contract assignments — done before a dispute starts.",
-    whatThisCovers:
-      "Transactions work is preventive: clean documents, clear allocation of risk, and the leverage points spelled out before money or property changes hands. The goal is a deal that stays a deal, not one that turns into a fight after closing. The work covers contract drafting and review only — not closing or settlement-agent services, which the office does not handle.",
-    whenToCall:
-      "When a contract is on the desk, when a deal is being structured, or when a property change-of-hands needs documents drafted carefully. Earlier engagement creates more options and lower cost; flat-fee or capped pricing is available for many standard transactions.",
-    primaryCtaLabel: "Schedule a Consultation",
-    childSlugs: [
-      "real-estate-purchase-agreement-attorney-tennessee",
-      "real-estate-contract-attorney-tennessee",
       "owner-financing-attorney-tennessee",
-      "land-contract-attorney-tennessee",
-      "real-estate-joint-venture-attorney-tennessee",
-      "assignment-of-contract-attorney-tennessee",
-      "commercial-lease-attorney-tennessee",
-      "easement-attorney-tennessee",
-      "title-defect-attorney-tennessee",
-      "construction-contract-attorney-tennessee",
-      "real-estate-attorney-gallatin-tn",
     ],
     isLitigation: false,
   },
@@ -201,17 +161,6 @@ export const bofuHubs: BofuHub[] = [
       "mechanics-lien-attorney-tennessee",
       "property-line-dispute-attorney-tennessee",
       "real-estate-attorney-gallatin-tn",
-      "specific-performance-attorney-tennessee",
-      "earnest-money-dispute-attorney-tennessee",
-      "failure-to-disclose-attorney-tennessee",
-      "construction-defect-attorney-tennessee",
-      "hoa-dispute-attorney-tennessee",
-      "foreclosure-excess-proceeds-attorney-tennessee",
-      "landlord-attorney-tennessee",
-      "tenant-attorney-tennessee",
-      "eviction-attorney-tennessee",
-      "eviction-defense-attorney-tennessee",
-      "mold-claim-attorney-tennessee",
       "eviction-attorney-sumner-county-tn",
     ],
     isLitigation: true,
@@ -234,10 +183,6 @@ export const bofuHubs: BofuHub[] = [
     childSlugs: [
       "business-partnership-dispute-attorney-tennessee",
       "non-compete-attorney-tennessee",
-      "llc-member-buyout-attorney-tennessee",
-      "shareholder-dispute-attorney-tennessee",
-      "breach-of-fiduciary-duty-attorney-tennessee",
-      "tortious-interference-attorney-tennessee",
     ],
     isLitigation: true,
   },
@@ -247,7 +192,6 @@ export const bofuServices: BofuService[] = [
   ...expertWitnessChildren,
   ...businessFormationChildren,
   ...contractServicesChildren,
-  ...realEstateTransactionsChildren,
   ...realEstateDisputesChildren,
   ...businessDisputesChildren,
 ];
@@ -262,10 +206,9 @@ export function getBofuService(slug: string): BofuService | undefined {
 
 /**
  * Returns the children listed under a hub, in the order specified by the
- * hub's childSlugs array. A child can appear under multiple hubs (e.g.,
- * commercial-lease lives in contract-services and is also listed under
- * real-estate-transactions). The child's primary `hub` field stays as the
- * canonical breadcrumb-source; this function only controls listings.
+ * hub's childSlugs array. A child can appear under multiple hubs; the
+ * child's primary `hub` field stays as the canonical breadcrumb-source,
+ * and this function only controls listings.
  */
 export function getBofuChildren(hubId: BofuHubId): BofuService[] {
   const hub = bofuHubs.find((h) => h.id === hubId);

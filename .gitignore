@@ -44,6 +44,8 @@ next-env.d.ts
 /claude_handoff/*
 # SEO audit-and-trim Phase 1: committed for PR review and audit trail
 !/claude_handoff/seo_audit_trim/
+# SEO audit-and-trim Phase 2: committed for PR review and audit trail
+!/claude_handoff/seo_audit_trim_phase_2/
 
 # Claude Code internal session state
 /.claude/
