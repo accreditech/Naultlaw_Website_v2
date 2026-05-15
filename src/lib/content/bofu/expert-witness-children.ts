@@ -57,21 +57,22 @@ export const expertWitnessChildren: BofuService[] = [
     title: "Broker Standard of Care Expert Witness TN | Nault Law",
     h1: "Real Estate Broker Standard of Care Expert Witness in Tennessee",
     metaDescription:
-      "Real estate broker standard of care expert witness in Tennessee for agent-malpractice and brokerage-duty disputes. Call Nault Law.",
+      "Real estate broker standard of care expert witness in Tennessee for agent-malpractice, realtor-dispute, and brokerage-duty cases. Call Nault Law.",
     intro:
-      "Real estate broker standard of care expert witness work in Tennessee for plaintiff and defense counsel in agent-malpractice, supervision, and brokerage-duty cases — opinions grounded in TREC rules, brokerage custom, and the practical realities of how transactions are run.",
+      "Real estate broker standard of care expert witness work in Tennessee for plaintiff and defense counsel in agent-malpractice, realtor-dispute, consumer-against-own-agent, and brokerage-duty cases — opinions grounded in TREC rules, brokerage custom, and the practical realities of how transactions are run.",
     sections: [
       {
         h2: "What this covers",
         paragraphs: [
           "Standard of care opinions weigh agent and broker conduct against what a reasonably competent Tennessee licensee would have done under the same circumstances. The work draws on TREC rules, published custom, brokerage policy, and how transactions actually move from offer to closing.",
-          "Common areas of focus include agent disclosure obligations and the Seller's Property Disclosure, earnest money handling and trust accounting, principal-broker supervision of affiliates, dual and designated agency, conflicts of interest, and procuring cause and commission entitlement.",
+          "Common areas of focus include agent disclosure obligations and the Seller's Property Disclosure, earnest money handling and trust accounting, principal-broker supervision of affiliates, dual and designated agency, conflicts of interest, procuring cause and commission entitlement, and cooperation between listing and selling sides during a deal.",
+          "Adjacent case categories analyzed under the same standard-of-care lens include realtor-dispute claims between consumers and a brokerage, agent-malpractice cases (plaintiff-, defense-, and E&O-carrier-side), and consumer-against-own-agent disputes where a buyer or seller pursues claims against the licensee they hired. Common claim types include disclosure and misrepresentation, transaction-handling errors, dual-agency conflicts, deposit and escrow problems, broker-supervision failures, and post-closing issues that trace back to agent conduct.",
         ],
       },
       {
         h2: "When attorneys retain me",
         paragraphs: [
-          "Most retentions come from a malpractice or breach-of-duty case where the firm needs an expert before dispositive motion practice, from rebuttal of an opposing expert's report, or from pre-designation consulting where the firm wants a confidential read on whether industry practice supports the theory.",
+          "Most retentions come from a malpractice or breach-of-duty case where the firm needs an expert before dispositive motion practice, from rebuttal of an opposing expert's report, or from pre-designation consulting where the firm wants a confidential read on whether industry practice supports the theory. Plaintiff counsel, defense counsel, E&O carriers, and consumer-side counsel pursuing claims against the client's own agent all retain in this category.",
           "Pre-designation work can stay confidential under work product. Designation, written reports, and testimony follow once the matter is a fit and conflicts are clear.",
         ],
       },
@@ -164,6 +165,7 @@ export const expertWitnessChildren: BofuService[] = [
         paragraphs: [
           "Property valuation expert witness work centers on industry context: how a broker would assess value, how comparable properties are typically chosen and weighted, and how Tennessee market dynamics actually move price. The opinions are framed as broker analysis, not formal appraisal.",
           "Cases include real-estate damages and lost-value claims, divorce equitable-distribution disputes involving real property, probate-estate valuation disputes, and partition actions where the parties contest the property's market value.",
+          "Broker opinion of value (BOV) and broker price opinion (BPO) disputes are a recurring sub-category. Those cases turn on methodology — comparable selection, adjustments, market-condition treatment, and the broker's basis for the conclusion — and the opinion explains what a competent Tennessee broker should have done. Common contexts include lender litigation involving REO, foreclosure, or loss-mitigation BPOs, divorce cases where a BOV was used in equitable distribution, partition actions, and transactions where a broker's value opinion is now at issue.",
         ],
       },
       {
@@ -176,7 +178,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "When attorneys retain me",
         paragraphs: [
-          "Most retentions are pre-designation consulting to test the valuation theory, rebuttal of an opposing expert's valuation, or designation as a broker-context expert to support a damages or distribution claim.",
+          "Most retentions are pre-designation consulting to test the valuation theory, rebuttal of an opposing expert's valuation or BOV, or designation as a broker-context expert to support a damages or distribution claim. BOV-specific retentions also come when the original BOV-author broker is unavailable or non-responsive.",
         ],
       },
       {
@@ -193,54 +195,6 @@ export const expertWitnessChildren: BofuService[] = [
       },
     ],
     audience: "Litigators, divorce attorneys, probate attorneys",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Request CV and conflicts check",
-  },
-  {
-    slug: "realtor-dispute-expert-witness-tennessee",
-    hub: "expert-witness",
-    primaryKeyword: "Realtor Dispute Expert Witness in Tennessee",
-    title: "Realtor Dispute Expert Witness in Tennessee | Nault Law",
-    h1: "Realtor Dispute Expert Witness in Tennessee",
-    metaDescription:
-      "Realtor dispute expert witness in Tennessee for buyer, seller, and brokerage claims involving agent conduct and transaction practice. Call Nault Law.",
-    intro:
-      "Realtor dispute expert witness work in Tennessee for buyer-, seller-, and brokerage-side claims — opinions on agent conduct, transaction practice, and the custom-and-practice expectations that govern Tennessee real-estate professionals.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Realtor dispute work centers on agent conduct measured against what a reasonably competent Tennessee REALTOR would have done. The cases run from buyer/seller complaints to broker-versus-broker conflicts to firm-internal disputes between affiliates and supervising brokers.",
-          "Typical issues include disclosure failures, transaction-handling errors, dual-agency conflicts, communication breakdowns, deposit handling, and cooperation between listing and selling sides during a deal.",
-        ],
-      },
-      {
-        h2: "When attorneys retain me",
-        paragraphs: [
-          "Common triggers are a filed claim where the firm needs an expert by the dispositive-motion deadline, rebuttal of an opposing expert's report, or pre-designation consulting where the firm wants a confidential industry read before the theory hardens.",
-        ],
-      },
-      {
-        h2: "Qualifications",
-        paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage, leasing, and property-management practice — current with how files actually move today.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Engagement starts with review of the complaint, the brokerage file, and a short call to confirm fit and conflicts. Written report, deposition, and trial testimony follow as needed. Hourly billing with case-sized retainers.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the complaint, a short summary, and the brokerage file. Fit and conflicts screened generally within one business day; CV and prior testimony list available on request.",
-        ],
-      },
-    ],
-    audience: "Plaintiff and defense counsel in realtor-conduct cases",
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Request CV and conflicts check",
@@ -289,102 +243,6 @@ export const expertWitnessChildren: BofuService[] = [
       },
     ],
     audience: "Counsel for licensees, complainants, and brokerage parties",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Request CV and conflicts check",
-  },
-  {
-    slug: "broker-opinion-of-value-expert-witness-tennessee",
-    hub: "expert-witness",
-    primaryKeyword: "Broker Opinion of Value Expert Witness in Tennessee",
-    title: "Broker Opinion of Value Expert Witness TN | Nault Law",
-    h1: "Broker Opinion of Value Expert Witness in Tennessee",
-    metaDescription:
-      "Broker opinion of value expert witness in Tennessee for BPO and broker-prepared valuation disputes in litigation and lender matters. Call Nault Law.",
-    intro:
-      "Broker opinion of value expert witness work in Tennessee for litigation, lender, and matrimonial matters where the BPO or BOV at issue was prepared by a real-estate broker and the question is whether the methodology and result hold up.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Broker opinion of value (BOV) and broker price opinion (BPO) disputes turn on methodology — comparable selection, adjustments, market-condition treatment, and the broker's basis for the conclusion. The opinion explains what a competent Tennessee broker should have done.",
-          "Common case types include lender litigation involving REO, foreclosure, or loss-mitigation BPOs, divorce cases where a BOV was used in equitable distribution, partition actions, and real-estate transactions where a broker's value opinion is now at issue.",
-        ],
-      },
-      {
-        h2: "When attorneys retain me",
-        paragraphs: [
-          "Retentions typically come pre-designation to test the BOV theory, in rebuttal of an opposing broker or appraiser's report, or in cases where the original BOV-author broker is unavailable or non-responsive.",
-        ],
-      },
-      {
-        h2: "Qualifications",
-        paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Hands-on experience preparing and reviewing BPOs and BOVs across commercial and residential property types.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Initial review of the contested BOV, the underlying file, and a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as needed. Hourly billing with case-sized retainers.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the contested BOV, the property at issue, and a brief case description. Fit and conflicts screen generally within one business day; CV available on request.",
-        ],
-      },
-    ],
-    audience: "Counsel in lender, divorce, and partition disputes involving BOVs",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Request CV and conflicts check",
-  },
-  {
-    slug: "agent-malpractice-expert-witness-tennessee",
-    hub: "expert-witness",
-    primaryKeyword: "Agent Malpractice Expert Witness in Tennessee",
-    title: "Agent Malpractice Expert Witness in Tennessee | Nault Law",
-    h1: "Agent Malpractice Expert Witness in Tennessee",
-    metaDescription:
-      "Agent malpractice expert witness in Tennessee for plaintiff- and defense-side claims involving real estate agents, brokers, and supervisors. Call Nault Law.",
-    intro:
-      "Agent malpractice expert witness work in Tennessee for plaintiff- and defense-side claims involving real estate agents, brokers, and their supervising principals — opinions framed against TREC rules, brokerage custom, and what a competent Tennessee licensee would have done.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Agent malpractice cases turn on duty, breach, and what a reasonably competent Tennessee agent would have done in similar circumstances. Expert opinions trace the file from agency formation through closing and after — locating the specific decisions that fall above or below the standard.",
-          "Common claim categories include disclosure and misrepresentation, transaction-handling errors, dual-agency conflicts, deposit and escrow problems, broker-supervision failures, and post-closing issues that trace back to agent conduct.",
-        ],
-      },
-      {
-        h2: "When attorneys retain me",
-        paragraphs: [
-          "Retentions come from plaintiff counsel preparing a malpractice claim, defense counsel for the agent or E&O carrier, and pre-designation consulting for either side that wants a confidential read on whether the conduct breaches the standard.",
-        ],
-      },
-      {
-        h2: "Qualifications",
-        paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Active brokerage and property-management practice keeps the opinions current rather than drawn from a decade-old version of the work.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Initial review of the complaint, brokerage file, and key communications, plus a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send a brief case description, the parties, and the file central to the dispute. Fit and conflicts screened generally within one business day; CV available on request after conflict screening.",
-        ],
-      },
-    ],
-    audience: "Plaintiff and defense counsel in agent malpractice cases",
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Request CV and conflicts check",
@@ -584,54 +442,6 @@ export const expertWitnessChildren: BofuService[] = [
       },
     ],
     audience: "Broker, agent, and brokerage counsel in commission disputes",
-    serviceArea: "Statewide TN",
-    isLitigation: false,
-    primaryCtaLabel: "Request CV and conflicts check",
-  },
-  {
-    slug: "consumer-real-estate-agent-dispute-expert-witness-tennessee",
-    hub: "expert-witness",
-    primaryKeyword: "Consumer Real Estate Agent Dispute Expert Witness in Tennessee",
-    title: "Consumer Agent Dispute Expert Witness TN | Nault Law",
-    h1: "Consumer Real Estate Agent Dispute Expert Witness in Tennessee",
-    metaDescription:
-      "Consumer real estate agent dispute expert witness in Tennessee for buyers and sellers with claims against their own agent or brokerage. Call Nault Law.",
-    intro:
-      "Consumer real estate agent dispute expert witness work in Tennessee for buyers and sellers with claims against their own agent, broker, or brokerage — opinions on duty, breach, and what a reasonably competent Tennessee licensee would have done.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Consumer-side disputes look at what the agent owed the client and whether that duty was met. The work addresses agency formation, scope of representation, the disclosures and explanations a competent agent would have provided, and how the transaction was actually handled.",
-          "Common case types include buyer claims about missed inspections, undisclosed defects, deal-handling errors, dual-agency conflicts, deposit issues, and post-closing problems that trace back to agent conduct.",
-        ],
-      },
-      {
-        h2: "When attorneys retain me",
-        paragraphs: [
-          "Retentions come from plaintiff counsel preparing the claim, mediation or arbitration filings where industry context matters, and pre-designation consulting where the firm wants a confidential read on whether the conduct breaches the standard.",
-        ],
-      },
-      {
-        h2: "Qualifications",
-        paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage practice across residential and commercial transactions.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Initial review of the brokerage agreements, transaction file, and key communications, plus a short call to confirm fit and conflicts. Written report, deposition, and testimony follow as the matter requires.",
-        ],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send a brief case description, the parties, and the brokerage file. Fit and conflicts screened generally within one business day; CV available on request.",
-        ],
-      },
-    ],
-    audience: "Consumer-side counsel for buyers and sellers",
     serviceArea: "Statewide TN",
     isLitigation: false,
     primaryCtaLabel: "Request CV and conflicts check",

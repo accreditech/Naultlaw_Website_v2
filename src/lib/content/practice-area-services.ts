@@ -61,24 +61,12 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
       anchor: "TREC complaint expert witness in Tennessee",
     },
     {
-      slug: "realtor-dispute-expert-witness-tennessee",
-      anchor: "Realtor dispute expert witness",
-    },
-    {
       slug: "real-estate-broker-standard-of-care-expert-witness-tennessee",
-      anchor: "Broker standard-of-care expert witness",
-    },
-    {
-      slug: "agent-malpractice-expert-witness-tennessee",
-      anchor: "Agent malpractice expert witness",
+      anchor: "Broker standard-of-care, agent-malpractice, and realtor-dispute expert witness",
     },
     {
       slug: "real-estate-disclosure-expert-witness-tennessee",
       anchor: "Real estate disclosure expert witness",
-    },
-    {
-      slug: "consumer-real-estate-agent-dispute-expert-witness-tennessee",
-      anchor: "Consumer-vs-agent dispute expert witness",
     },
   ],
   "operating-agreements-and-owner-disputes": [
@@ -198,7 +186,7 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
     },
     {
       slug: "real-estate-broker-standard-of-care-expert-witness-tennessee",
-      anchor: "Broker standard-of-care expert witness",
+      anchor: "Broker standard-of-care, agent-malpractice, and realtor-dispute expert witness",
     },
     {
       slug: "real-estate-contract-expert-witness-tennessee",
@@ -206,19 +194,11 @@ export const practiceAreaServiceLinks: Record<string, ServiceLink[]> = {
     },
     {
       slug: "property-valuation-expert-witness-tennessee",
-      anchor: "Property valuation expert witness",
-    },
-    {
-      slug: "realtor-dispute-expert-witness-tennessee",
-      anchor: "Realtor dispute expert witness",
+      anchor: "Property valuation and BOV expert witness",
     },
     {
       slug: "trec-complaint-expert-witness-tennessee",
       anchor: "TREC complaint expert witness",
-    },
-    {
-      slug: "agent-malpractice-expert-witness-tennessee",
-      anchor: "Agent malpractice expert witness",
     },
   ],
 };
@@ -252,8 +232,6 @@ export const serviceParentPracticeArea: Record<string, string> = {
   "failure-to-disclose-attorney-tennessee": "real-estate-disputes",
   "construction-defect-attorney-tennessee": "real-estate-disputes",
   "hoa-dispute-attorney-tennessee": "real-estate-disputes",
-  "property-condition-disclosure-dispute-attorney-tennessee":
-    "real-estate-disputes",
   "foreclosure-excess-proceeds-attorney-tennessee": "real-estate-disputes",
   "mold-claim-attorney-tennessee": "real-estate-disputes",
 
@@ -329,13 +307,7 @@ export const serviceParentPracticeArea: Record<string, string> = {
     "expert-witness-real-estate-and-brokerage-matters",
   "property-valuation-expert-witness-tennessee":
     "expert-witness-real-estate-and-brokerage-matters",
-  "realtor-dispute-expert-witness-tennessee":
-    "expert-witness-real-estate-and-brokerage-matters",
   "trec-complaint-expert-witness-tennessee":
-    "expert-witness-real-estate-and-brokerage-matters",
-  "broker-opinion-of-value-expert-witness-tennessee":
-    "expert-witness-real-estate-and-brokerage-matters",
-  "agent-malpractice-expert-witness-tennessee":
     "expert-witness-real-estate-and-brokerage-matters",
   "landlord-tenant-expert-witness-tennessee":
     "expert-witness-real-estate-and-brokerage-matters",
@@ -344,8 +316,6 @@ export const serviceParentPracticeArea: Record<string, string> = {
   "real-estate-disclosure-expert-witness-tennessee":
     "expert-witness-real-estate-and-brokerage-matters",
   "real-estate-commission-dispute-expert-witness-tennessee":
-    "expert-witness-real-estate-and-brokerage-matters",
-  "consumer-real-estate-agent-dispute-expert-witness-tennessee":
     "expert-witness-real-estate-and-brokerage-matters",
 };
 

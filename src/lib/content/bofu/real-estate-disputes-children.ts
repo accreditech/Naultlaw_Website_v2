@@ -429,15 +429,16 @@ export const realEstateDisputesChildren: BofuService[] = [
     title: "Failure to Disclose Attorney in Tennessee | Nault Law",
     h1: "Failure to Disclose Attorney in Tennessee",
     metaDescription:
-      "Failure to disclose attorney in Tennessee for buyers with claims against sellers over material defects withheld at sale. Call Nault Law.",
+      "Failure to disclose attorney in Tennessee for buyers with TRPCDA and common-law claims over material defects withheld at sale. Call Nault Law.",
     intro:
-      "Failure to disclose attorney in Tennessee for buyers with post-closing claims against sellers and agents over material defects, structural issues, and conditions that should have been disclosed before the sale closed.",
+      "Failure to disclose attorney in Tennessee for buyers with post-closing claims against sellers and agents — Tennessee Residential Property Condition Disclosure Act (TRPCDA) actions, common-law fraud and misrepresentation, and disputes over what the disclosure form said and did not say.",
     sections: [
       {
         h2: "What this covers",
         paragraphs: [
           "Failure-to-disclose claims trace back through the seller's representations, the listing materials, the inspection record, and the disclosure forms required by Tennessee law. The analysis is whether the condition was known, whether it was material, and whether it should have been disclosed.",
           "Common defects in these cases include foundation and structural issues, undisclosed water intrusion or mold history, septic and well problems, prior insurance claims, and material zoning or use restrictions.",
+          "The work covers buyer-side claims for non-disclosure or false disclosure, seller-side defenses (including as-is and exempted-transaction defenses), and litigation strategy where the dispute escalates beyond pre-suit negotiation.",
         ],
       },
       {
@@ -449,7 +450,8 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Tennessee specifics",
         paragraphs: [
-          "Tennessee residential sales are generally subject to the Tennessee Residential Property Condition Disclosure Act, which requires sellers to disclose known material defects. Common-law fraud and misrepresentation claims also apply where the disclosure was made falsely.",
+          "Tennessee residential sales are generally subject to the Tennessee Residential Property Condition Disclosure Act, codified at Tenn. Code Ann. §§ 66-5-201 et seq., which requires sellers to provide a disclosure form covering material conditions and known defects. Buyer claims under the act must generally be brought within one year after the buyer receives the disclosure statement or the date of closing or occupancy, whichever occurs first (Tenn. Code Ann. § 66-5-208).",
+          "Common-law fraud and misrepresentation claims overlap and may apply when the disclosure form is alleged to have been completed falsely. Common TRPCDA exemptions include foreclosure or trustee transfers, fiduciary, co-owner, family, court-order, government, and certain new-construction transfers.",
         ],
       },
       {
@@ -463,7 +465,7 @@ export const realEstateDisputesChildren: BofuService[] = [
         ],
       },
     ],
-    audience: "Post-closing buyers with disclosure-based claims",
+    audience: "Residential buyers and sellers in TRPCDA and failure-to-disclose disputes",
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
@@ -557,53 +559,6 @@ export const realEstateDisputesChildren: BofuService[] = [
       },
     ],
     audience: "Homeowners and homeowner associations in covenant disputes",
-    serviceArea: "Statewide advice; trial counties for litigation",
-    isLitigation: true,
-    primaryCtaLabel: "Schedule a Consultation",
-  },
-  {
-    slug: "property-condition-disclosure-dispute-attorney-tennessee",
-    hub: "real-estate-disputes",
-    primaryKeyword: "Property Condition Disclosure Dispute Attorney in Tennessee",
-    title: "Property Condition Disclosure Attorney TN | Nault Law",
-    h1: "Property Condition Disclosure Dispute Attorney in Tennessee",
-    metaDescription:
-      "Property condition disclosure dispute attorney in Tennessee for buyers and sellers in TRPCDA failure-to-disclose claims. Call Nault Law.",
-    intro:
-      "Property condition disclosure dispute attorney in Tennessee for buyers and sellers in claims under the Tennessee Residential Property Condition Disclosure Act — failure-to-disclose claims, exemption defenses, and disputes over what the disclosure form said and did not say.",
-    sections: [
-      {
-        h2: "What this covers",
-        paragraphs: [
-          "Tennessee residential sales are generally governed by the Residential Property Condition Disclosure Act, which requires sellers to provide a disclosure form covering material conditions and known defects. Disputes turn on what was known, what was checked or left blank, and what the seller's actual obligation was.",
-          "The work covers buyer-side claims for non-disclosure or false disclosure, seller-side defenses (including the as-is and exempted-transaction defenses), and litigation strategy where the dispute escalates beyond pre-suit negotiation.",
-        ],
-      },
-      {
-        h2: "When to call",
-        paragraphs: [
-          "Soon after the disputed condition is discovered. Statute-of-limitations rules and contract-warranty interactions matter; early documentation preserves both the claim and the leverage.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "The Tennessee Residential Property Condition Disclosure Act, codified at Tenn. Code Ann. §§ 66-5-201 et seq., sets the framework for residential disclosure obligations and exemptions. Buyer claims under the act must generally be brought within one year after the buyer receives the disclosure statement or the date of closing or occupancy, whichever occurs first (Tenn. Code Ann. § 66-5-208).",
-          "Common-law fraud and misrepresentation claims overlap and may apply when the disclosure form is alleged to have been completed falsely. Common exemptions include foreclosure or trustee transfers, fiduciary, co-owner, family, court-order, government, and certain new-construction transfers.",
-        ],
-      },
-      {
-        h2: "Service area",
-        paragraphs: [TRIAL_COUNTIES_SENTENCE],
-      },
-      {
-        h2: "How to start",
-        paragraphs: [
-          "Send the disclosure form, purchase agreement, inspection report, and a short summary of the dispute. Fit and conflicts generally screened within one business day.",
-        ],
-      },
-    ],
-    audience: "Residential buyers and sellers in TRPCDA disputes",
     serviceArea: "Statewide advice; trial counties for litigation",
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",

@@ -206,7 +206,6 @@ export const bofuHubs: BofuHub[] = [
       "failure-to-disclose-attorney-tennessee",
       "construction-defect-attorney-tennessee",
       "hoa-dispute-attorney-tennessee",
-      "property-condition-disclosure-dispute-attorney-tennessee",
       "foreclosure-excess-proceeds-attorney-tennessee",
       "landlord-attorney-tennessee",
       "tenant-attorney-tennessee",
