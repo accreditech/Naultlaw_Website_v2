@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { type Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
+import { StructuredDataScript } from "@/components/site/structured-data-script";
+import {
+  localBusinessSchema,
+  organizationSchema,
+  personSchema,
+} from "@/lib/structured-data";
 
 export const metadata: Metadata = createMetadata({
   title: "About Stephen Nault",
@@ -93,7 +99,15 @@ const AccentDot = () => (
 
 export default function AboutPage() {
   return (
-    <main className="fade-in">
+    <>
+      {/* Person entity for bare-brand "Stephen Nault" disambiguation. The
+          organization + legal-service nodes are rendered alongside it so the
+          Person's `worksFor` / org `@id` references resolve on this page. */}
+      <StructuredDataScript data={organizationSchema()} />
+      <StructuredDataScript data={localBusinessSchema()} />
+      <StructuredDataScript data={personSchema()} />
+
+      <main className="fade-in">
       {/* Hero */}
       <section
         style={{
@@ -498,6 +512,7 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

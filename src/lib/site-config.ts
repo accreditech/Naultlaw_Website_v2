@@ -8,10 +8,38 @@ const officePhoneE164 = (process.env.NEXT_PUBLIC_OFFICE_PHONE_E164 ?? "").trim()
 // and refuses to index the real domain). Preview deploys legitimately set
 // this to their .vercel.app hostname so previews don't get indexed (the
 // hostname check in `shouldIndexSite` below gates robots.txt accordingly).
-const PRODUCTION_SITE_URL = "https://naultlaw.com";
-const siteUrl =
+//
+// `www` is the canonical host (the Google Business Profile / Knowledge Panel
+// link and ~95% of organic homepage clicks already land on the www form), so
+// we consolidate every emitted URL onto it. `forceWwwApex` below defensively
+// rewrites the bare apex to www even if `NEXT_PUBLIC_SITE_URL` is set to the
+// non-www form, so the canonical never splits regardless of env drift.
+const PRODUCTION_SITE_URL = "https://www.naultlaw.com";
+
+/**
+ * Rewrites the bare apex `naultlaw.com` to the canonical `www.naultlaw.com`.
+ * Leaves any other host (preview `*.vercel.app`, localhost) untouched so
+ * previews keep their own hostname. Falls back to the raw input if the URL
+ * can't be parsed.
+ */
+function forceWwwApex(rawUrl: string): string {
+  try {
+    const parsed = new URL(rawUrl);
+    if (parsed.hostname === "naultlaw.com") {
+      parsed.hostname = "www.naultlaw.com";
+    }
+    // Drop the trailing slash `URL.toString()` adds to a bare host so
+    // `siteConfig.url` keeps the no-slash form the rest of the app expects.
+    return parsed.toString().replace(/\/$/, "");
+  } catch {
+    return rawUrl;
+  }
+}
+
+const siteUrl = forceWwwApex(
   (process.env.NEXT_PUBLIC_SITE_URL ?? PRODUCTION_SITE_URL).trim() ||
-  PRODUCTION_SITE_URL;
+    PRODUCTION_SITE_URL
+);
 /** Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX". Empty disables GA4. */
 const ga4Id = (process.env.NEXT_PUBLIC_GA4_ID ?? "").trim();
 /** Google Search Console verification token (the value from the meta-tag method). Empty disables. */
@@ -58,6 +86,11 @@ export const siteConfig = {
   phoneLabel: officePhoneLabel,
   phoneHref: officePhoneE164 ? `tel:${officePhoneE164}` : "",
   hasPhone: Boolean(officePhoneE164),
+  // Canonical telephone for structured data (JSON-LD). Normalized E.164 form
+  // shared by the Person, Organization, and LegalService nodes so Google's
+  // local entity-resolution sees one consistent number. Distinct from
+  // `phoneHref` (tel: links want no separators) and `phoneLabel` (UI display).
+  schemaTelephone: "+1-615-953-9505",
   email: intakeEmail,
   emailHref: validEmail ? `mailto:${intakeEmail}` : "",
   hasEmail: validEmail,
