@@ -4,7 +4,6 @@ import type { IndustryContent } from "@/lib/content/industries";
 import type { LocationContent } from "@/lib/content/locations";
 import type { PracticeAreaContent } from "@/lib/content/practice-areas";
 import type { ResourceContent } from "@/lib/content/resources";
-import type { HomepageTestimonial } from "@/lib/content/testimonials";
 import { absoluteUrl } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site-config";
 
@@ -69,63 +68,36 @@ export function localBusinessSchema() {
     url: siteConfig.url,
     telephone: siteConfig.schemaTelephone,
     ...(siteConfig.hasEmail ? { email: siteConfig.email } : {}),
-    ...(siteConfig.headshotUrl ? { image: siteConfig.headshotUrl } : {}),
+    // Office photo (a definite repo asset) as the LocalBusiness image —
+    // recommended for the type and resolves to the non-www apex via absoluteUrl.
+    image: absoluteUrl("/images/naultlawoffice.jpg"),
     address: {
       "@type": "PostalAddress",
       ...siteConfig.officeAddress,
     },
-    areaServed: serviceAreas(),
+    // Statewide Tennessee for non-litigation work; trial representation is
+    // concentrated in these counties. Modeled as the State plus the specific
+    // trial-county AdministrativeAreas.
+    areaServed: [
+      { "@type": "State", name: "Tennessee" },
+      { "@type": "AdministrativeArea", name: "Sumner County" },
+      { "@type": "AdministrativeArea", name: "Davidson County" },
+      { "@type": "AdministrativeArea", name: "Wilson County" },
+      { "@type": "AdministrativeArea", name: "Macon County" },
+      { "@type": "AdministrativeArea", name: "Trousdale County" },
+    ],
     parentOrganization: {
       "@id": schemaIds.organization,
     },
   };
 }
 
-/**
- * Homepage variant of `localBusinessSchema` that adds the visible client
- * reviews and an aggregate rating. Google can render the aggregate rating
- * as star snippets in search results, which materially improves CTR. We
- * use a separate function so non-homepage pages don't double-publish the
- * review block.
- */
-export function localBusinessWithReviewsSchema(
-  testimonials: readonly HomepageTestimonial[]
-) {
-  const reviewCount = testimonials.length;
-  const avg =
-    reviewCount === 0
-      ? 0
-      : testimonials.reduce((sum, t) => sum + t.rating, 0) / reviewCount;
-  const ratingValue = Math.round(avg * 10) / 10;
-
-  return {
-    ...localBusinessSchema(),
-    ...(reviewCount > 0
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue,
-            bestRating: 5,
-            worstRating: 1,
-            reviewCount,
-          },
-          review: testimonials.map((t) => ({
-            "@type": "Review",
-            author: { "@type": "Person", name: t.name },
-            datePublished: t.isoDate,
-            reviewBody: t.quote,
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: t.rating,
-              bestRating: 5,
-              worstRating: 1,
-            },
-            ...(t.source ? { publisher: { "@type": "Organization", name: t.source } } : {}),
-          })),
-        }
-      : {}),
-  };
-}
+// Note: the firm intentionally does NOT emit self-serving review /
+// aggregateRating markup on its own site. Google's review-snippet policy
+// prohibits a business publishing reviews about itself on its own pages for
+// LocalBusiness / Organization types. The genuine client reviews live on the
+// Google Business Profile (linked via Person.sameAs) and render as visible
+// page content via <TestimonialCarousel>, but are not marked up as schema.
 
 export function personSchema() {
   return {

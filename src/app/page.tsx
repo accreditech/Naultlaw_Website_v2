@@ -6,7 +6,7 @@ import { TestimonialCarousel } from "@/components/sections/testimonial-carousel"
 import { homepageTestimonials } from "@/lib/content/testimonials";
 import { createMetadata } from "@/lib/metadata";
 import {
-  localBusinessWithReviewsSchema,
+  localBusinessSchema,
   organizationSchema,
   personSchema,
   websiteSchema,
@@ -114,9 +114,7 @@ export default function HomePage() {
     <>
       <StructuredDataScript data={websiteSchema()} />
       <StructuredDataScript data={organizationSchema()} />
-      <StructuredDataScript
-        data={localBusinessWithReviewsSchema(homepageTestimonials)}
-      />
+      <StructuredDataScript data={localBusinessSchema()} />
       <StructuredDataScript data={personSchema()} />
 
       <main className="fade-in">
