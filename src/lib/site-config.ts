@@ -58,6 +58,11 @@ export const siteConfig = {
   phoneLabel: officePhoneLabel,
   phoneHref: officePhoneE164 ? `tel:${officePhoneE164}` : "",
   hasPhone: Boolean(officePhoneE164),
+  // Canonical telephone for structured data (JSON-LD). Normalized E.164 form
+  // shared by the Person, Organization, and LegalService nodes so Google's
+  // local entity-resolution sees one consistent number. Distinct from
+  // `phoneHref` (tel: links want no separators) and `phoneLabel` (UI display).
+  schemaTelephone: "+1-615-953-9505",
   email: intakeEmail,
   emailHref: validEmail ? `mailto:${intakeEmail}` : "",
   hasEmail: validEmail,
