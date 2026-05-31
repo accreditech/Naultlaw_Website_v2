@@ -31,7 +31,7 @@ export const attorneyProfile = {
     "https://lawyers.law.cornell.edu/lawyer/stephen-charles-nault-1722952",
     "https://www.linkedin.com/in/scnault",
     "https://www.facebook.com/naultlaw/",
-    "https://www.google.com/maps?cid=11655502378060972764",
+    "https://maps.google.com/?cid=11655502378060972764",
     "https://www.yelp.com/biz/the-law-office-of-stephen-nault-gallatin",
     "https://www.martindale.com/attorney/stephen-nault-300334134/",
     "https://www.avvo.com/attorneys/37066-tn-stephen-nault-4987301.html",
