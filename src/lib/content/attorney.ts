@@ -20,17 +20,20 @@ export const attorneyProfile = {
   headshotPath: "/images/stephen-nault-headshot.jpg",
   // Authoritative external profiles. Google reads `sameAs` to merge these
   // signals into one entity. Two confirmed-live real-estate-agent profiles
-  // (Homes.com, Realtor.com) and the TBA member-directory + Justia URLs are
-  // intentionally deferred to a follow-up PR pending confirmation.
+  // (Homes.com, Realtor.com) and a future Justia URL are intentionally
+  // deferred to a follow-up PR pending confirmation.
   sameAs: [
     "https://www.tbpr.org/attorneys/036562",
     "https://www.tncourts.gov/programs/mediation/find-mediator/stephen-nault",
+    "https://www.tba.org/?pg=groupsdirectory&dirAction=memberDetails&dirMemberid=2072721",
+    "https://lawyers.law.cornell.edu/lawyer/stephen-charles-nault-1722952",
     "https://www.linkedin.com/in/scnault",
     "https://www.facebook.com/naultlaw/",
     "https://www.google.com/maps?cid=11655502378060972764",
     "https://www.yelp.com/biz/the-law-office-of-stephen-nault-gallatin",
     "https://www.martindale.com/attorney/stephen-nault-300334134/",
     "https://www.avvo.com/attorneys/37066-tn-stephen-nault-4987301.html",
+    "https://www.freeadvice.com/legal/lawyer/us/tn/gallatin/stephen-charles-nault/",
     "https://www.nextdoor.com/pages/stephen-nault-esq-gallatin-tn/",
     "https://www.mapquest.com/us/tennessee/the-law-office-of-stephen-nault-464187479",
   ],
