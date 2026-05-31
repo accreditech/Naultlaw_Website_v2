@@ -49,7 +49,7 @@ export function organizationSchema() {
     name: siteConfig.firmName,
     url: siteConfig.url,
     ...(siteConfig.hasEmail ? { email: siteConfig.email } : {}),
-    telephone: siteConfig.schemaTelephone,
+    ...(siteConfig.hasPhone ? { telephone: siteConfig.phoneLabel } : {}),
     areaServed: serviceAreas(),
     founder: {
       "@type": "Person",
@@ -67,7 +67,7 @@ export function localBusinessSchema() {
     name: siteConfig.firmName,
     description: siteConfig.description,
     url: siteConfig.url,
-    telephone: siteConfig.schemaTelephone,
+    ...(siteConfig.hasPhone ? { telephone: siteConfig.phoneLabel } : {}),
     ...(siteConfig.hasEmail ? { email: siteConfig.email } : {}),
     ...(siteConfig.headshotUrl ? { image: siteConfig.headshotUrl } : {}),
     address: {
@@ -132,19 +132,8 @@ export function personSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": schemaIds.attorney,
-    // Full legal name + parts so Google can resolve the entity precisely and
-    // separate it from same-named individuals in other states / professions.
-    name: attorneyProfile.legalName,
-    givenName: attorneyProfile.firstName,
-    familyName: attorneyProfile.lastName,
-    additionalName: attorneyProfile.additionalName,
+    name: siteConfig.attorneyName,
     jobTitle: "Attorney",
-    image: absoluteUrl(attorneyProfile.headshotPath),
-    // Individual's email (steve@) + the firm's shared E.164 phone. The phone
-    // matches the Organization / LegalService nodes for NAP consistency; the
-    // email is person-specific.
-    email: attorneyProfile.email,
-    telephone: siteConfig.schemaTelephone,
     worksFor: {
       "@id": schemaIds.legalService,
     },
@@ -157,34 +146,11 @@ export function personSchema() {
       "@type": "EducationalOrganization",
       name: school,
     })),
-    memberOf: [
-      { "@type": "Organization", name: "Tennessee Bar Association" },
-    ],
-    // The Tennessee bar admission carries the BPR identifier + recognizing
-    // authority (the strongest single disambiguation signal); the federal
-    // admission is preserved from the prior `admissions`-derived list.
-    hasCredential: [
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "license",
-        name: "Tennessee Bar Admission",
-        recognizedBy: {
-          "@type": "Organization",
-          name: "Tennessee Supreme Court",
-        },
-        identifier: attorneyProfile.bprNumber,
-        dateCreated: attorneyProfile.barAdmissionYear,
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "license",
-        name: "U.S. District Court, Middle District of Tennessee admission",
-        recognizedBy: {
-          "@type": "Organization",
-          name: "United States District Court for the Middle District of Tennessee",
-        },
-      },
-    ],
+    hasCredential: attorneyProfile.admissions.map((admission) => ({
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "Legal admission",
+      name: admission,
+    })),
     knowsAbout: [
       "Commercial leasing",
       "Tennessee Real Estate Commission matters",
@@ -194,7 +160,6 @@ export function personSchema() {
       "Strategic case assessment",
       "Expert witness support in real-estate-oriented matters",
     ],
-    sameAs: attorneyProfile.sameAs,
   };
 }
 
