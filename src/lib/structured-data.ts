@@ -49,7 +49,7 @@ export function organizationSchema() {
     name: siteConfig.firmName,
     url: siteConfig.url,
     ...(siteConfig.hasEmail ? { email: siteConfig.email } : {}),
-    ...(siteConfig.hasPhone ? { telephone: siteConfig.phoneLabel } : {}),
+    telephone: siteConfig.schemaTelephone,
     areaServed: serviceAreas(),
     founder: {
       "@type": "Person",
@@ -67,7 +67,7 @@ export function localBusinessSchema() {
     name: siteConfig.firmName,
     description: siteConfig.description,
     url: siteConfig.url,
-    ...(siteConfig.hasPhone ? { telephone: siteConfig.phoneLabel } : {}),
+    telephone: siteConfig.schemaTelephone,
     ...(siteConfig.hasEmail ? { email: siteConfig.email } : {}),
     ...(siteConfig.headshotUrl ? { image: siteConfig.headshotUrl } : {}),
     address: {
@@ -140,8 +140,11 @@ export function personSchema() {
     additionalName: attorneyProfile.additionalName,
     jobTitle: "Attorney",
     image: absoluteUrl(attorneyProfile.headshotPath),
-    ...(siteConfig.hasEmail ? { email: siteConfig.email } : {}),
-    ...(siteConfig.hasPhone ? { telephone: siteConfig.phoneLabel } : {}),
+    // Individual's email (steve@) + the firm's shared E.164 phone. The phone
+    // matches the Organization / LegalService nodes for NAP consistency; the
+    // email is person-specific.
+    email: attorneyProfile.email,
+    telephone: siteConfig.schemaTelephone,
     worksFor: {
       "@id": schemaIds.legalService,
     },

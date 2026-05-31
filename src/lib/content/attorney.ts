@@ -11,6 +11,10 @@ export const attorneyProfile = {
   // admission. Both feed the `hasCredential` node in the Person schema.
   bprNumber: "BPR #036562",
   barAdmissionYear: "2018",
+  // Individual email for the Person node. Distinct from the firm's intake
+  // address (admin@) on the Organization / LegalService nodes — a person and
+  // a firm are different entities and legitimately carry different contacts.
+  email: "steve@naultlaw.com",
   // Headshot lives in /public; absoluteUrl() turns this into the canonical
   // https://www.naultlaw.com/... form for the Person schema `image`.
   headshotPath: "/images/stephen-nault-headshot.jpg",
