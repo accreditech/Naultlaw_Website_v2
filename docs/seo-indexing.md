@@ -1,29 +1,56 @@
 # SEO & Indexing Automation
 
-Plain-English reference for the indexing pipeline — how new pages on naultlaw.com get into search engines' indexes without manual clicks.
+Plain-English reference for the indexing pipeline — how new pages on
+naultlaw.com get into search engines' indexes without manual clicks.
 
 ---
 
 ## TL;DR
 
-A scheduled task on Steve's Windows machine runs every Monday at 9 AM. It pulls the live sitemap from `https://naultlaw.com/sitemap.xml`, then submits every URL in it to **two** indexing channels:
+Two in-repo, machine-independent triggers POST naultlaw.com URLs to the
+**IndexNow** protocol (Bing + Yandex + Seznam.cz + Naver + several
+AI-search products that index Bing's surface). One POST fans out to
+every IndexNow-honoring engine.
 
-1. **Google Indexing API** — official, but only fully effective for `JobPosting` and `BroadcastEvent` schemas. The script submits anyway because it's a no-op rather than an error for other pages.
-2. **Bing IndexNow** — works for general pages. Also honored by Yandex, Seznam.cz, Naver, and several AI-search products built on Bing's index.
+1. **On every production deploy** — a GitHub Action diffs the commit
+   range, waits ~90 s for the Vercel deploy to land, and submits only
+   the URLs whose underlying files changed.
+2. **Every Monday at 14:00 UTC** — a Vercel Cron hits the same endpoint
+   in "full sitemap" mode as a safety-net. Picks up anything the deploy
+   trigger missed (force-push, first push on a fresh branch, transient
+   submission failure).
 
-Pages added since the last run get pushed automatically through both channels. Stuck pages get re-pinged.
+Both call the **same authenticated route handler at `/api/indexnow`**,
+which uses the **shared sitemap data module** so the URL list a
+crawler sees in `sitemap.xml` is byte-equal to what gets POSTed to
+IndexNow.
 
-No action required from Steve. The system maintains itself.
+**Google Indexing API has been retired for general pages.** Google's
+own docs restrict that API to `JobPosting` and `BroadcastEvent` content;
+calling it for service pages or articles is a no-op at best and a
+"misuse" flag at worst (per Google's published policy). The legitimate
+Google signal for general pages is the **sitemap with accurate
+per-URL `<lastmod>`** — which this codebase now produces (see the
+"Sitemap accuracy" section below).
+
+The Windows-side scheduled task that previously ran on Steve's PC
+("Naultlaw – Indexing Submission") is **retired**; the in-repo
+automation supersedes it. See "Retirement steps" below.
 
 ---
 
 ## Why this exists
 
-Search engines' natural crawl queues can sit on new URLs for weeks before getting around to them — especially for newer sites. Indexing APIs let us bypass those queues and tell the search engine "please look at this URL now," which typically results in crawl within hours-to-days instead of weeks.
+Search engines' natural crawl queues can sit on new URLs for weeks
+before getting around to them, especially for newer sites. IndexNow lets
+us bypass that queue and tell the engine "please look at this URL now."
 
-After the V2 launch + the bulk `/services/*` SEO pages, we had ~95 pages stuck in "Discovered – currently not indexed" because Google was working through them slowly. The automation pushes Google (and now Bing + IndexNow-honoring engines) to actually look at them.
-
-**Why two channels.** Google's Indexing API is officially restricted to `JobPosting` and `BroadcastEvent` schemas. Submitting other URL types is technically permitted (the call is a no-op rather than an error), but the real-world indexing lift is small for service pages and articles. Bing's IndexNow protocol does work for general pages and is also honored by Yandex, Seznam.cz, Naver, and several AI-search products that index Bing's surface. Running both gives us Google coverage if the schemas ever apply, plus actual Bing-side visibility today.
+For Google, there is no equivalent valid lever for general pages. The
+Google Indexing API call we used to fire was effectively a no-op for
+service pages and articles (Google ignores them) and is now formally
+retired here. The sitemap with accurate `<lastmod>` is the supported
+crawl-prioritization signal Google honors; we generate it correctly
+(see "Sitemap accuracy" below).
 
 ---
 
@@ -31,48 +58,122 @@ After the V2 launch + the bulk `/services/*` SEO pages, we had ~95 pages stuck i
 
 | Piece | Where | What it does |
 |---|---|---|
-| **Google Cloud project** `naultlaw-website` | Steve's Google account, project ID `naultlaw-website` | Hosts the service account and enables 3 APIs (Indexing, Search Console, Site Verification). |
-| **Service account** `naultlaw-indexing-bot@naultlaw-website.iam.gserviceaccount.com` | Same Cloud project | Authenticates the script. Verified `siteOwner` of `sc-domain:naultlaw.com` in Search Console. |
-| **DNS TXT record at GoDaddy** | `naultlaw.com` zone | Grants the service account ownership of the domain in Search Console. Value: `google-site-verification=MOhgZkh6tC6to36IoOGGl7zsvOIgOUe4L63kpAHhKSI`. Don't delete this. |
-| **Service account JSON key** (Google) | `C:\Users\admin\.naultlaw-keys\indexing-sa.json` | The credential the script uses for Google. Never goes into git. Treated like a password. |
-| **IndexNow API key** (Bing + friends) | `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` | 32-char hex string. Never goes into git. Paired with the public verification file below. |
-| **IndexNow verification file** (in repo) | `public/<key>.txt` | Public asset served at `https://naultlaw.com/<key>.txt`. Bing crawls this URL to verify that whoever is submitting URLs controls the domain. The file contains the same 32-char key as the local file above. |
-| **Submission script** | `C:\Users\admin\.naultlaw-keys\submit-from-sitemap.mjs` | Fetches sitemap, submits every URL to Google's Indexing API, then submits the same URL list to Bing's IndexNow endpoint. Writes one log per channel per run. |
-| **Windows scheduled task** "Naultlaw - Indexing Submission" | Steve's machine, Task Scheduler | Runs the script every Monday at 9 AM. |
-| **Log files** | `C:\Users\admin\.naultlaw-keys\logs\google-*.log` and `indexnow-*.log` | One log per channel per run. Most recent 20 of each kind are kept; older ones auto-delete. The pre-2026-05-14 `submit-*.log` filename pattern is also pruned by the same rule. |
+| **IndexNow key (32-char hex)** | `f276f972f0843e20930e6069796ea8fc` — hardcoded in `src/lib/indexnow.ts` AND served from `public/f276f972f0843e20930e6069796ea8fc.txt` | The shared identifier; the public file is the ownership proof Bing fetches before processing submissions. |
+| **Submission helper** | `src/lib/indexnow.ts` | Pure function that POSTs `{host, key, keyLocation, urlList}` to `https://api.indexnow.org/indexnow`. Batches at 500 URLs/request (well under IndexNow's 10,000 ceiling). Validates every URL is `https://naultlaw.com/...` before submission. |
+| **API route handler** | `src/app/api/indexnow/route.ts` | `GET` = submit full sitemap (cron path); `POST` with `{urls:[…]}` body = submit caller-supplied list (Action path). Both gated by `Authorization: Bearer $CRON_SECRET`. |
+| **Shared sitemap data module** | `src/lib/sitemap-data.ts` | Single source of truth for the URL list + per-URL `<lastmod>`. Used by both `app/sitemap.ts` (XML output) and `app/api/indexnow/route.ts` (POST body). |
+| **Per-URL `<lastmod>` manifest** | `src/lib/generated/content-mtimes.json` | Map of repo-relative file path → ISO timestamp of the most recent commit that touched it. Generated by `scripts/generate-content-mtimes.mjs` and committed; regenerated by the `prebuild` npm hook on every Vercel build. |
+| **Vercel Cron** | `vercel.json` | Hits `GET /api/indexnow` weekly (`0 14 * * 1` = 14:00 UTC Monday). Vercel sends `Authorization: Bearer $CRON_SECRET` automatically. |
+| **GitHub Action** | `.github/workflows/indexnow-on-deploy.yml` + `.github/workflows/indexnow-compute-urls.mjs` | On push to `master`: diff the commit range, map changed files → URLs, sleep 90 s (for the Vercel deploy to land), POST to `/api/indexnow`. |
+| **`CRON_SECRET` env var** | Vercel **Production** scope + GitHub **repo secret** with the same name | Shared secret. Must be set in both places to the same value. |
 
-**The script and its credentials never live in this git repo.** Only the public IndexNow verification file (`public/<key>.txt`) is committed — that file is meant to be publicly served. The Google credential JSON, the IndexNow key file, and the script itself all live on Steve's local machine.
+### Notable: nothing lives on Steve's PC anymore
+
+The prior architecture (a `submit-from-sitemap.mjs` script in
+`C:\Users\admin\.naultlaw-keys\` triggered by a Windows scheduled
+task) is fully replaced by the in-repo automation. See **Retirement
+steps** below for how to disable it.
+
+The Google service-account JSON, the IndexNow key file under
+`%USERPROFILE%\.naultlaw-keys`, and the verify-and-add.mjs domain-
+verification helper can all be kept on disk as artifacts (they cost
+nothing); they are simply no longer wired into anything live.
 
 ---
 
 ## How a typical week works
 
-1. **Monday 9 AM** — Task Scheduler wakes up and runs the script.
-2. The script fetches `https://naultlaw.com/sitemap.xml` and parses out every `<loc>` URL.
-3. **Google channel:** reads `indexing-sa.json`, exchanges it for a one-hour OAuth access token, then POSTs each URL to `https://indexing.googleapis.com/v3/urlNotifications:publish` with `type: "URL_UPDATED"`. ~150ms pause between requests.
-4. Successes and failures are logged to `C:\Users\admin\.naultlaw-keys\logs\google-<timestamp>.log`.
-5. **IndexNow channel:** reads `indexnow-key.txt`, then POSTs the URL list in batches of 500 to `https://api.indexnow.org/indexnow` with the key and `keyLocation` (the public verification URL). One JSON body per batch; 200 OK or 202 Accepted both mean success.
-6. Successes and failures are logged to `C:\Users\admin\.naultlaw-keys\logs\indexnow-<timestamp>.log`.
-7. The script exits. Task Scheduler records the result. Non-zero exit if **either** channel had failures.
+1. **Continuous (push-to-master).** Steve merges a PR → GitHub Actions
+   fires `IndexNow on production deploy`. It diffs `master`'s previous
+   commit vs the new commit using a small Node helper
+   (`.github/workflows/indexnow-compute-urls.mjs`), maps changed files
+   to absolute URLs (e.g., editing
+   `src/lib/content/resources.ts` → submit every `/articles/<slug>`),
+   sleeps 90 s, then POSTs the URL list to
+   `https://naultlaw.com/api/indexnow` with the bearer token.
+2. **Monday at 14:00 UTC.** Vercel Cron hits
+   `GET https://naultlaw.com/api/indexnow`. The route handler builds the
+   full sitemap URL list via `buildSitemapUrls()` and submits the lot.
+   This is the safety net for force-pushes, first commits on a fresh
+   branch, deploy-trigger failures, and IndexNow-side transient errors.
+3. **Logs and result inspection.** Both triggers' responses are JSON
+   and surface in:
+   - **GitHub Actions logs** (push-trigger): each run lists the URLs it
+     resolved and the IndexNow batch result.
+   - **Vercel Function logs** (cron-trigger): the route handler
+     `console.log()`s `[indexnow] sitemap-mode submission { … }` with
+     the per-batch status. Find it in the Vercel dashboard →
+     `naultlaw-website` → Logs → filter by function `/api/indexnow`.
+   - **Bing Webmaster Tools → IndexNow stats** (downstream verification
+     of what Bing actually received).
 
-Total runtime: roughly 30–45 seconds for ~70 URLs (~150ms pause per Google request + one IndexNow POST per 500 URLs).
+A successful IndexNow batch returns HTTP `200 OK` or `202 Accepted`.
+Both mean "URLs accepted." A 4xx means a real problem — see
+**Troubleshooting** below.
 
 ---
 
 ## What happens when you publish a new article or page
 
-You don't have to do anything. The next Monday's run picks it up automatically because:
+You don't have to do anything. The deploy-trigger Action handles it:
 
-1. New articles/pages in the V2 codebase appear in `src/lib/content/resources.ts` (or wherever).
-2. After deploy, `https://naultlaw.com/sitemap.xml` regenerates and includes the new URL.
-3. Monday morning, the script pulls the updated sitemap and submits the new URL.
-4. Google typically crawls it within 24-48 hours.
+1. PR with the new article in `src/lib/content/resources.ts` merges to
+   `master`.
+2. Vercel deploys.
+3. The Action fires, resolves `/articles/<new-slug>` as a changed URL,
+   waits for the deploy, POSTs to `/api/indexnow`.
+4. Bing typically crawls within a few hours.
 
-If you want a brand-new page indexed immediately (e.g., you just published a hot article and don't want to wait until Monday), you can manually trigger the task:
+If you ever want to force a full resubmission ahead of Monday's cron
+(e.g., immediately after a large content sweep), you can manually
+trigger it with `curl` from any machine that has the `CRON_SECRET`:
 
-- Open Task Scheduler → find "Naultlaw - Indexing Submission" → right-click → **Run**.
+```bash
+curl -sS -X GET -H "Authorization: Bearer $CRON_SECRET" \
+  https://naultlaw.com/api/indexnow | jq .
+```
 
-It'll run within seconds, do its thing, and update the log.
+The response body is a JSON summary listing total URLs, batch count,
+and per-batch HTTP status. You can run it as many times as you want —
+IndexNow submissions are idempotent.
+
+---
+
+## Sitemap accuracy (the legitimate Google signal)
+
+Google's documented advice is that `<lastmod>` must reflect **real
+content change time**. A sitemap that emits the same build timestamp
+for every URL is ignored by Google as a prioritization signal — it
+implicitly tells Google "I don't actually know when these changed."
+
+This codebase derives `<lastmod>` from **git commit history**, not from
+build clock or file system mtime:
+
+1. `scripts/generate-content-mtimes.mjs` runs as the npm `prebuild`
+   hook. For each file in `TRACKED_PATHS` (page templates + content
+   files), it runs `git log -1 --format=%aI -- <path>` and records the
+   ISO timestamp.
+2. The output is `src/lib/generated/content-mtimes.json`, which is
+   **also committed** so the manifest is never empty on the first
+   build after a shallow clone.
+3. `src/lib/sitemap-data.ts` reads the manifest and computes each URL's
+   `<lastmod>` as the **most recent** ISO across every file that
+   contributes to that URL. Dynamic-route URLs (e.g., `/articles/<slug>`)
+   take the most recent of the template page + the content file.
+
+To regenerate the manifest manually:
+
+```bash
+npm run generate:content-mtimes
+```
+
+If the prebuild ever fails on Vercel (e.g., git history is unreachable
+in the build container), the script preserves whatever's already on
+disk rather than overwriting with an empty manifest — `sitemap.ts`
+keeps working off the last committed baseline.
+
+The sitemap is referenced from `robots.txt` automatically (see
+`src/app/robots.ts`); no separate registration is required.
 
 ---
 
@@ -80,77 +181,114 @@ It'll run within seconds, do its thing, and update the log.
 
 | Action | How |
 |---|---|
-| **See when it next runs** | Task Scheduler → "Task Scheduler Library" → click "Naultlaw - Indexing Submission" → bottom pane → Triggers tab. |
-| **See when it last ran and the result** | Same task → History tab. Or read the most recent log file. |
-| **Run it manually right now** | Right-click the task → **Run**. |
-| **Read the latest log** | Open `C:\Users\admin\.naultlaw-keys\logs\` and open the file with the most recent timestamp. Successes/failures are listed in plain English. |
-| **Change the schedule** (e.g., daily) | Right-click the task → Properties → Triggers tab → Edit. |
-| **Pause the automation** | Right-click → **Disable**. The task stays defined but stops firing. |
-| **Re-enable** | Right-click → **Enable**. |
-| **Delete the automation entirely** | Right-click → **Delete**. |
+| **See when the cron last ran and what it did** | Vercel dashboard → `naultlaw-website` → Logs → filter `/api/indexnow`. Each run prints a structured JSON summary. |
+| **See when the deploy-trigger last ran** | GitHub → repo → Actions tab → workflow `IndexNow on production deploy`. The most recent run shows the resolved URLs and the IndexNow response. |
+| **Run a full-sitemap submission RIGHT NOW** | `curl -sS -X GET -H "Authorization: Bearer $CRON_SECRET" https://naultlaw.com/api/indexnow` — works from any shell with the secret. |
+| **Run a one-off submission of specific URLs** | `curl -sS -X POST -H "Authorization: Bearer $CRON_SECRET" -H 'Content-Type: application/json' --data '{"urls":["https://naultlaw.com/articles/foo"]}' https://naultlaw.com/api/indexnow` |
+| **Disable the cron temporarily** | Edit `vercel.json` → remove the `crons` array → redeploy. (Vercel does not have an in-dashboard cron-disable toggle on Hobby; the config IS the toggle.) |
+| **Disable the deploy-trigger temporarily** | GitHub → repo → Actions tab → workflow `IndexNow on production deploy` → … menu → `Disable workflow`. |
+| **Rotate the CRON_SECRET** | Generate a new high-entropy string. Update **both** Vercel (Production scope env var `CRON_SECRET`) AND GitHub (repo secret `CRON_SECRET`) before either changes. Test by redeploying and watching the next Action run + the next cron fire. |
 
 ---
 
 ## Troubleshooting
 
-### "I think a page should be indexed but Search Console says it isn't"
+### "The Action run failed with HTTP 401 from /api/indexnow"
 
-Reality check first:
-- Open the most recent log in `C:\Users\admin\.naultlaw-keys\logs\` and search for the URL. If it was submitted successfully on the last run, the submission side is doing its job.
-- Submission ≠ indexing. Google can still decline to index a page (typically because of thin content, duplicates, or low authority signals). Submission just guarantees Google has *seen* the URL.
+The `CRON_SECRET` value in GitHub (repo secret) does not match the
+`CRON_SECRET` env var in Vercel Production. Update both to the same
+value.
 
-If the URL isn't in the most recent log:
-- Confirm it's in the sitemap: open `https://naultlaw.com/sitemap.xml` in a browser, search for the URL. If it's not there, the issue is upstream (sitemap generation, not indexing).
-- If it IS in the sitemap but not in the log, the script may have skipped or failed on that URL. Open the log and look for `✗` next to the URL.
+### "The Action run failed with HTTP 500 'CRON_SECRET is not configured on the server'"
 
-### "The scheduled task ran but the log says X failed"
+`CRON_SECRET` is not set in Vercel Production. Add it: Vercel
+dashboard → `naultlaw-website` → Settings → Environment Variables →
+add `CRON_SECRET` (Production scope) → redeploy.
 
-Open the log. The failure reasons are listed at the bottom. Common ones:
+### "IndexNow returned HTTP 422"
 
-- **403 Permission denied** — service account lost its property ownership. Usually means the DNS TXT record at GoDaddy got removed or modified. Verify the record is still present (see "DNS TXT record" in the table above).
-- **Network error** — temporary; the next run will retry.
-- **429 Quota exceeded** — Google's Indexing API has a default quota of 200 requests/day. We're submitting ~100, so this shouldn't happen. If it does, file a quota increase via Cloud Console.
-
-### "The task didn't run on Monday"
-
-Most common cause: the machine was powered off or asleep at 9 AM. The task is configured with `StartWhenAvailable`, so it will fire as soon as the machine wakes up — but if the machine stayed off all day, it won't run until the next time it boots.
+Key verification failed. The public verification URL
+(`https://naultlaw.com/f276f972f0843e20930e6069796ea8fc.txt`) is not
+reachable, returns the wrong content, or has trailing whitespace.
 
 Verify:
-- Task Scheduler → History tab on the task shows attempted runs and their outcomes.
-- Or check `Get-ScheduledTaskInfo -TaskName "Naultlaw - Indexing Submission"` in PowerShell.
 
-### "Google Cloud is showing a charge"
+1. Open the URL in a browser. Should return 200 with exactly the 32-char
+   hex key — no HTML, no trailing newline, no BOM.
+2. The body must byte-equal `f276f972f0843e20930e6069796ea8fc`.
+3. If the URL 404s, the latest deploy did not include
+   `public/<key>.txt`. Check the file is still present in the repo and
+   redeploy.
 
-The Indexing API and Search Console API are both free at our usage levels. If you see a Cloud Console charge, something else got added to the project. Check Billing → Reports to see what's costing money. The only thing this automation should be using is API quota, which is free.
+### "IndexNow returned HTTP 403"
 
-### "IndexNow log says HTTP 422"
+Bing has temporarily flagged the host. Wait 24 hours and check Bing
+Webmaster Tools for manual-actions/spam flags.
 
-422 from the IndexNow endpoint means **key verification failed**. The most common cause is that `https://naultlaw.com/<key>.txt` is not reachable, returns the wrong content, or returns the right content but with extra whitespace / a different encoding than what's in `indexnow-key.txt`.
+### "GitHub Action says 'No usable parent SHA'"
 
-Verify:
-1. Open `https://naultlaw.com/<key>.txt` in a browser. Should return 200 with **exactly** the 32-char hex key — no HTML, no newline at the end, no BOM.
-2. The key in the browser response must match `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` character-for-character.
-3. If the verification URL is 404, the public asset hasn't deployed yet (or Vercel cached the deploy at a previous commit). Wait for the next deploy to land or trigger a redeploy.
+First push on a new branch, or a force-push that rewrote master. The
+Action submits nothing; the weekly cron will resubmit the full sitemap
+on the next Monday tick. No action required unless you can't wait —
+then trigger a manual full-sitemap `curl` (see the table above).
 
-### "IndexNow log says HTTP 403"
+### "Sitemap lastmod looks wrong (every URL has the same date)"
 
-Bing has temporarily flagged the host. Wait 24 hours and try again. If it persists, check Bing Webmaster Tools for any manual-actions / spam flags on the domain.
+The prebuild manifest didn't regenerate. Run:
 
-### "IndexNow log says network errors only"
+```bash
+npm run generate:content-mtimes
+```
 
-The IndexNow endpoint occasionally returns connection resets under load. The script logs each batch failure separately so transient errors are visible. If every batch fails on a single run, retry by manually triggering the scheduled task — the IndexNow side is idempotent and re-submitting the same URLs is safe.
+Check the output. If `git log` returned nothing for every file, you're
+inside a shallow clone without history — re-clone with full depth or
+fetch the missing history. On Vercel this is rarely the issue (their
+default checkout has enough depth for `git log -1`).
+
+### "I want to roll back to the old external-script architecture"
+
+Re-enable the Windows scheduled task; remove the `crons` array from
+`vercel.json`; disable the GitHub Action workflow. The in-repo
+`/api/indexnow` route can stay — it's idempotent and harmless. (Note
+the Google Indexing API call in the old external script should still
+be removed even if you re-enable everything else — it's officially
+restricted to `JobPosting`/`BroadcastEvent` and Google warns against
+its misuse.)
 
 ---
 
-## Bing IndexNow
+## Retirement steps (Windows scheduled task + Google Indexing API)
 
-The second channel the script runs. Added 2026-05-14 because Google's Indexing API officially restricts to `JobPosting` / `BroadcastEvent` schemas — for the bulk of naultlaw.com's URLs (service pages, articles), Google's API is largely a no-op. IndexNow does work for general pages.
+Run these once after the new in-repo automation is verified live (the
+first GitHub Action run succeeds with HTTP 200 from `/api/indexnow`,
+AND the first Vercel cron fires Monday and succeeds):
 
-### What IndexNow is
+1. **Disable the Windows scheduled task.**
+   - PowerShell (as the user that owns the task): `Disable-ScheduledTask -TaskName "Naultlaw - Indexing Submission"`.
+   - Or in Task Scheduler GUI: right-click the task → **Disable**. (Leave it disabled rather than deleting it for a month, so it can be re-enabled trivially if a rollback is ever needed.)
 
-A protocol introduced by Microsoft and adopted by Bing, Yandex, Seznam.cz, Naver, and several AI-search products. A single POST to `https://api.indexnow.org/indexnow` propagates to every IndexNow-honoring engine — you don't need separate per-engine integrations.
+2. **Disable the Google Indexing API submitter inside
+   `C:\Users\admin\.naultlaw-keys\submit-from-sitemap.mjs`.**
+   The Google API call is the part to remove (or `return` early from)
+   per Google's own restriction to `JobPosting` / `BroadcastEvent`
+   content. The IndexNow side of that script can stay enabled as a
+   third belt-and-suspenders trigger, but it's redundant with the
+   in-repo Vercel Cron + GitHub Action.
 
-The API works like this:
+3. **Optional: revoke the Google service-account credential.**
+   In Google Cloud Console → IAM & Admin → Service Accounts → click
+   `naultlaw-indexing-bot@naultlaw-website.iam.gserviceaccount.com`
+   → Keys tab → delete the JSON key. The DNS TXT record at GoDaddy
+   stays — it is also Search Console's domain-property verification,
+   which we still rely on independently of any submission API.
+
+4. **Optional: delete the service-account JSON file** at
+   `C:\Users\admin\.naultlaw-keys\indexing-sa.json` (after revoking
+   the key in Cloud Console, the file is dead bytes anyway).
+
+---
+
+## Bing IndexNow protocol details (for reference)
 
 ```
 POST https://api.indexnow.org/indexnow
@@ -158,97 +296,37 @@ Content-Type: application/json; charset=utf-8
 
 {
   "host": "naultlaw.com",
-  "key": "<32-char hex key>",
-  "keyLocation": "https://naultlaw.com/<32-char hex key>.txt",
-  "urlList": ["https://naultlaw.com/...", "..."]
+  "key": "f276f972f0843e20930e6069796ea8fc",
+  "keyLocation": "https://naultlaw.com/f276f972f0843e20930e6069796ea8fc.txt",
+  "urlList": ["https://naultlaw.com/articles/foo", "..."]
 }
 ```
 
-- The `key` is a secret-ish string you generate. It's "secret-ish" because anyone who can read the public verification file could in theory submit URLs for the domain — but the public file IS the verification, so the key is not actually a secret, just a paired identifier.
-- `keyLocation` is the URL of a public file on the domain that contains the same key. Bing fetches this URL to confirm domain ownership before processing submissions.
-- 200 OK and 202 Accepted both mean success. 422 means key verification failed (almost always: the verification URL isn't reachable yet).
-- The protocol allows up to 10,000 URLs per batch. The script uses 500-URL batches to avoid edge-network issues.
+- `key` is "secret-ish" — anyone who can read the public verification
+  file knows it. Treat it as a paired identifier, not a credential.
+- 200 OK and 202 Accepted both mean success. 422 = key verification
+  failed. 403 = host flagged. 4xx with a body = malformed request.
+- Protocol limit: 10,000 URLs per request. We batch at 500 to avoid
+  edge-network surprises.
+- One POST fans out to Bing, Yandex, Seznam.cz, Naver, and several
+  AI-search products built on Bing's index. You do not need per-engine
+  integrations.
 
-### Where the key lives
-
-| File | Location | What it is |
-|---|---|---|
-| Local key file | `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` | 32-char hex string. The script reads this and includes it in the POST body. Not in git. |
-| Public verification file | `public/<key>.txt` in this repo, served at `https://naultlaw.com/<key>.txt` | Same 32-char hex string. Committed to git because it's intentionally public. |
-
-Both files must contain **exactly the same 32-char hex string**, no newline at the end, no whitespace, no BOM. The script's regex check rejects anything else.
-
-### How to rotate the IndexNow key
+### Rotating the IndexNow key
 
 If the key ever needs to be rotated (security hygiene, or a leak):
 
 1. Generate a new 32-char hex string:
-   ```powershell
+   ```bash
    node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"
    ```
-2. Save the new key to `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` (replace existing contents, no trailing newline).
-3. Add the new verification file at `public/<newkey>.txt` (same content), open a small PR, merge, deploy.
-4. Once the new verification URL is reachable, the next scheduled run uses the new key automatically.
-5. Old verification file: leave the old `public/<oldkey>.txt` in the repo for a week, then delete in a follow-up PR. (IndexNow doesn't have an "expire this key" call — it stops accepting the old key as soon as the verification URL stops returning it.)
-
-### Recreate-from-scratch playbook (IndexNow side)
-
-If the IndexNow side ever needs to be set up from zero (new machine, lost key, fresh domain):
-
-1. Generate a new key: `node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"`
-2. Save the key to `C:\Users\admin\.naultlaw-keys\indexnow-key.txt` (no trailing newline).
-3. Create `public/<key>.txt` in the repo with the same content. Commit, push, merge, deploy.
-4. Confirm `https://naultlaw.com/<key>.txt` returns 200 with exactly the key.
-5. The submission script automatically picks up the new key on its next run. No script edit needed.
-
----
-
-## If you ever need to recreate this from scratch (Google side)
-
-For example, on a new machine, or if the Google credentials are compromised and need to be rotated. The full Google-side setup playbook (the IndexNow recreate playbook is in the "Bing IndexNow" section above):
-
-1. **In Google Cloud Console**, create a new project (or use the existing `naultlaw-website` one). Enable these 3 APIs:
-   - Web Search Indexing API (`indexing.googleapis.com`)
-   - Google Search Console API (`searchconsole.googleapis.com`)
-   - Site Verification API (`siteverification.googleapis.com`)
-
-2. **Create a service account** in IAM & Admin → Service Accounts. No special roles needed.
-
-3. **Generate a JSON key** for the service account. Download it.
-   - If your Cloud organization has the "Disable Service Account Key Creation" policy enforced, you'll need to override it at the project level: IAM & Admin → Organization Policies → find `iam.disableServiceAccountKeyCreation` → MANAGE POLICY → Override parent's policy → Enforcement: Off. (You may need to grant yourself "Organization Policy Administrator" at the org level first.)
-   - Save the JSON key file to `C:\Users\admin\.naultlaw-keys\indexing-sa.json` (or wherever — just don't put it in this repo or in OneDrive/Drive sync).
-
-4. **Verify domain ownership for the service account.** Run `node verify-and-add.mjs token` (still in `C:\Users\admin\.naultlaw-keys\`) to get a DNS TXT record value. Add that value as a new TXT record at the root (`@`) of `naultlaw.com` at GoDaddy. Wait ~30 seconds for DNS propagation. Run `node verify-and-add.mjs verify` to confirm and register the property in Search Console.
-
-5. **Copy `submit-from-sitemap.mjs`** into the same folder.
-
-6. **Register the Windows scheduled task** via PowerShell:
-   ```powershell
-   $action = New-ScheduledTaskAction -Execute "C:\Program Files\nodejs\node.exe" -Argument "C:\Users\admin\.naultlaw-keys\submit-from-sitemap.mjs"
-   $trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Monday -At 9am
-   $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 5) -ExecutionTimeLimit (New-TimeSpan -Minutes 30)
-   Register-ScheduledTask -TaskName "Naultlaw - Indexing Submission" -Action $action -Trigger $trigger -Settings $settings -Force
-   ```
-
-7. **Trigger it manually once** to verify it works:
-   ```powershell
-   Start-ScheduledTask -TaskName "Naultlaw - Indexing Submission"
-   ```
-   Then check `C:\Users\admin\.naultlaw-keys\logs\` for a fresh log file with "97 succeeded, 0 failed" or similar.
-
----
-
-## Rotating the service account key
-
-Service account keys don't auto-expire, but if you ever want to rotate (good security hygiene to do once a year):
-
-1. In Cloud Console → IAM & Admin → Service Accounts → click `naultlaw-indexing-bot` → Keys tab.
-2. Add a new key (JSON). Download it.
-3. Replace the contents of `C:\Users\admin\.naultlaw-keys\indexing-sa.json` with the new key.
-4. Manually trigger the scheduled task to confirm the new key works.
-5. Back in Cloud Console → Keys tab, delete the OLD key.
-
-Don't delete the old key before verifying the new one — leave both active for the test run.
+2. In ONE PR: (a) update the constant `INDEXNOW_KEY` in
+   `src/lib/indexnow.ts`, (b) add the new file
+   `public/<newkey>.txt` containing exactly the new key (32 bytes, no
+   newline), (c) remove the OLD `public/<oldkey>.txt` file.
+3. Merge, deploy, verify `https://naultlaw.com/<newkey>.txt` is
+   reachable.
+4. The next Vercel Cron / Action run uses the new key automatically.
 
 ---
 
@@ -257,5 +335,3 @@ Don't delete the old key before verifying the new one — leave both active for 
 - [`docs/intake-pipeline.md`](./intake-pipeline.md) — what happens when a visitor submits the contact form
 - [`docs/crm-contract.md`](./crm-contract.md) — the webhook contract between the website and the CRM
 - [`docs/admin-guide.md`](./admin-guide.md) — overall plain-English admin reference
-
-For the actual SEO content strategy (what `/services/*` pages exist, which keywords they target, internal linking), see whatever notes or briefs the SEO/audit work produced — that's separate from this automation, which just handles the mechanical "tell Google these URLs exist" step.
