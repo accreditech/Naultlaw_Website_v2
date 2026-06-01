@@ -179,6 +179,30 @@ export default function AboutPage() {
               31 mediator — shapes how matters are analyzed from intake
               through resolution.
             </p>
+            {/* Verifiable entity anchor — matches the BPR credential in the
+                Person JSON-LD and links to the public TBPR record. */}
+            <p
+              style={{
+                marginTop: "1.75rem",
+                fontSize: ".8rem",
+                letterSpacing: ".02em",
+                color: "rgba(255,255,255,.55)",
+              }}
+            >
+              Licensed in Tennessee ·{" "}
+              <a
+                href="https://www.tbpr.org/attorneys/036562"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "rgba(255,255,255,.85)",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "2px",
+                }}
+              >
+                Tennessee BPR #036562
+              </a>
+            </p>
           </div>
           <div
             style={{
