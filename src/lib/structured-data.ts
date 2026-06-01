@@ -6,6 +6,20 @@ import type { PracticeAreaContent } from "@/lib/content/practice-areas";
 import type { ResourceContent } from "@/lib/content/resources";
 import { absoluteUrl } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site-config";
+import contentMtimes from "@/lib/generated/content-mtimes.json";
+
+// The 13 articles all live in src/lib/content/resources.ts, so git can only
+// attribute dates at the file level (not per article). datePublished is that
+// file's first commit (the article collection's launch); dateModified comes
+// from the prebuild-generated git manifest (the same source the sitemap uses
+// for <lastmod>), so it stays accurate as articles are edited. Both are real
+// git facts, never fabricated; if the manifest lacks the key we fall back to
+// the publish date (one reliable date used for both).
+const ARTICLES_DATE_PUBLISHED = "2026-04-20";
+const ARTICLES_DATE_MODIFIED =
+  (contentMtimes as Record<string, string>)[
+    "src/lib/content/resources.ts"
+  ] ?? ARTICLES_DATE_PUBLISHED;
 
 const schemaIds = {
   website: absoluteUrl("/#website"),
@@ -47,6 +61,12 @@ export function organizationSchema() {
     "@id": schemaIds.organization,
     name: siteConfig.firmName,
     url: siteConfig.url,
+    // Brand mark, so the Organization is a valid Article `publisher` with a
+    // logo. Resolves to the non-www apex via absoluteUrl.
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl("/icon.png"),
+    },
     ...(siteConfig.hasEmail ? { email: siteConfig.email } : {}),
     telephone: siteConfig.schemaTelephone,
     areaServed: serviceAreas(),
@@ -331,12 +351,20 @@ export function articleSchema(resource: ResourceContent) {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
-    "@id": `${absoluteUrl(`/resources/${resource.slug}`)}#article`,
+    // Articles render at /articles/<slug> (the old /resources/<slug> path now
+    // 301s here), so the @id and url must use the live canonical path.
+    "@id": `${absoluteUrl(`/articles/${resource.slug}`)}#article`,
     headline: resource.title,
     description: resource.metaDescription,
-    url: absoluteUrl(`/resources/${resource.slug}`),
+    url: absoluteUrl(`/articles/${resource.slug}`),
+    datePublished: ARTICLES_DATE_PUBLISHED,
+    dateModified: ARTICLES_DATE_MODIFIED,
     articleSection: resource.category,
     keywords: resource.takeaways,
+    // Authorship tied to the single site-wide Person entity (Stephen Charles
+    // Nault, @id .../#attorney); publisher is the firm Organization (which
+    // now carries a logo). No per-article image asset exists, so `image` is
+    // intentionally omitted rather than pointing at a generic site image.
     author: {
       "@id": schemaIds.attorney,
     },
