@@ -1,6 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    // Serve AVIF first (≈25% smaller than WebP), WebP as fallback. Directly
+    // reduces the homepage LCP image (a full-bleed hero) and every other
+    // next/image asset. Encodes on demand and is cached at the Vercel edge.
+    formats: ["image/avif", "image/webp"],
+    // Next 16 requires every `quality` used by next/image to be allowlisted
+    // (it 400s otherwise). 75 is the default; 60 is used for the gradient-
+    // overlaid LCP hero where the reduction is invisible.
+    qualities: [60, 75],
+  },
   async redirects() {
     return [
       {
