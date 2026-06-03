@@ -28,7 +28,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "NaultLaw - Home",
+    default: "Business & Real Estate Attorney in Gallatin, TN | Nault Law",
     template: siteConfig.titleTemplate,
   },
   description: siteConfig.description,

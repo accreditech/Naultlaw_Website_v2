@@ -33,9 +33,10 @@ export function createMetadata({
   robots,
 }: CreateMetadataInput): Metadata {
   const canonical = absoluteUrl(path);
-  // Apply the brand prefix to og:/twitter: titles so social cards match the
-  // browser-tab title pattern ("NaultLaw - Home" instead of just "Home").
-  const socialTitle = `NaultLaw - ${title}`;
+  // Append the brand suffix to og:/twitter: titles so social cards match the
+  // browser-tab title pattern the layout template applies ("Topic | Nault
+  // Law" rather than a bare topic).
+  const socialTitle = `${title} | Nault Law`;
 
   return {
     title,

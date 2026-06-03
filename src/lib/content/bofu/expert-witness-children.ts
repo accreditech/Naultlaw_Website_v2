@@ -5,7 +5,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "title-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Title Expert Witness in Tennessee",
-    title: "Title Expert Witness in Tennessee | Nault Law",
+    title: "Title Expert Witness in Tennessee",
     h1: "Title Expert Witness in Tennessee",
     metaDescription:
       "Title expert witness in Tennessee for chain-of-title, defect, and conveyance disputes. CV and prior testimony available. Statewide. Call Nault Law.",
@@ -54,7 +54,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "real-estate-broker-standard-of-care-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Real Estate Broker Standard of Care Expert Witness in Tennessee",
-    title: "Broker Standard of Care Expert Witness TN | Nault Law",
+    title: "Broker Standard of Care Expert Witness TN",
     h1: "Real Estate Broker Standard of Care Expert Witness in Tennessee",
     metaDescription:
       "Real estate broker standard of care expert witness in Tennessee for agent-malpractice and brokerage-duty disputes. Call Nault Law.",
@@ -103,7 +103,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "real-estate-contract-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Real Estate Contract Expert Witness in Tennessee",
-    title: "Real Estate Contract Expert Witness in Tennessee | Nault Law",
+    title: "Real Estate Contract Expert Witness in Tennessee",
     h1: "Real Estate Contract Expert Witness in Tennessee",
     metaDescription:
       "Real estate contract expert witness in Tennessee for purchase agreement, lease, and option-to-purchase disputes. Call Nault Law.",
@@ -152,7 +152,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "property-valuation-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Property Valuation Expert Witness in Tennessee",
-    title: "Property Valuation Expert Witness in Tennessee | Nault Law",
+    title: "Property Valuation Expert Witness in Tennessee",
     h1: "Property Valuation Expert Witness in Tennessee",
     metaDescription:
       "Property valuation expert witness in Tennessee for real-estate, divorce, probate, and partition disputes. Call Nault Law.",
@@ -201,7 +201,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "realtor-dispute-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Realtor Dispute Expert Witness in Tennessee",
-    title: "Realtor Dispute Expert Witness in Tennessee | Nault Law",
+    title: "Realtor Dispute Expert Witness in Tennessee",
     h1: "Realtor Dispute Expert Witness in Tennessee",
     metaDescription:
       "Realtor dispute expert witness in Tennessee for buyer, seller, and brokerage claims involving agent conduct and transaction practice. Call Nault Law.",
@@ -249,7 +249,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "trec-complaint-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "TREC Complaint Expert Witness in Tennessee",
-    title: "TREC Complaint Expert Witness in Tennessee | Nault Law",
+    title: "TREC Complaint Expert Witness in Tennessee",
     h1: "TREC Complaint Expert Witness in Tennessee",
     metaDescription:
       "TREC complaint expert witness in Tennessee for licensees and brokerage parties on disciplinary, supervision, and conduct issues. Call Nault Law.",
@@ -297,7 +297,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "broker-opinion-of-value-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Broker Opinion of Value Expert Witness in Tennessee",
-    title: "Broker Opinion of Value Expert Witness TN | Nault Law",
+    title: "Broker Opinion of Value Expert Witness TN",
     h1: "Broker Opinion of Value Expert Witness in Tennessee",
     metaDescription:
       "Broker opinion of value expert witness in Tennessee for BPO and broker-prepared valuation disputes in litigation and lender matters. Call Nault Law.",
@@ -345,10 +345,10 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "agent-malpractice-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Agent Malpractice Expert Witness in Tennessee",
-    title: "Agent Malpractice Expert Witness in Tennessee | Nault Law",
+    title: "Agent Malpractice Expert Witness in Tennessee",
     h1: "Agent Malpractice Expert Witness in Tennessee for Plaintiff Counsel",
     metaDescription:
-      "Agent malpractice expert witness in Tennessee for plaintiff counsel — opinions grounded in TREC rules, the NAR Code of Ethics, and Tennessee REALTORS standards of practice. Call Nault Law.",
+      "Agent malpractice expert witness in Tennessee for plaintiff counsel — opinions grounded in TREC rules and REALTOR standards of practice. Call Nault Law.",
     intro:
       "Agent malpractice expert witness work in Tennessee retained by plaintiff counsel — buyers, sellers, and other consumers harmed by real estate agent, broker, or brokerage conduct. Opinions are grounded in the duties Tennessee licensees actually carry: TREC statute and rule, the National Association of REALTORS® Code of Ethics and Standards of Practice, the Tennessee REALTORS® enforcement framework that adopts it, and the brokerage custom that fills the gap between black-letter rules and how transactions are run.",
     sections: [
@@ -401,7 +401,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "landlord-tenant-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Landlord Tenant Expert Witness in Tennessee",
-    title: "Landlord Tenant Expert Witness in Tennessee | Nault Law",
+    title: "Landlord Tenant Expert Witness in Tennessee",
     h1: "Landlord Tenant Expert Witness in Tennessee",
     metaDescription:
       "Landlord tenant expert witness in Tennessee for commercial and residential disputes on lease, possession, and management practice. Call Nault Law.",
@@ -449,7 +449,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "property-management-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Property Management Expert Witness in Tennessee",
-    title: "Property Management Expert Witness in Tennessee | Nault Law",
+    title: "Property Management Expert Witness in Tennessee",
     h1: "Property Management Expert Witness in Tennessee",
     metaDescription:
       "Property management expert witness in Tennessee on trust accounting, vendor management, owner disputes, and habitability disputes. Call Nault Law.",
@@ -497,7 +497,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "real-estate-disclosure-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Real Estate Disclosure Expert Witness in Tennessee",
-    title: "Real Estate Disclosure Expert Witness TN | Nault Law",
+    title: "Real Estate Disclosure Expert Witness TN",
     h1: "Real Estate Disclosure Expert Witness in Tennessee",
     metaDescription:
       "Real estate disclosure expert witness in Tennessee for failure-to-disclose, seller-disclosure, and material-defect cases. Call Nault Law.",
@@ -552,7 +552,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "real-estate-commission-dispute-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Real Estate Commission Dispute Expert Witness in Tennessee",
-    title: "Real Estate Commission Dispute Expert Witness TN | Nault Law",
+    title: "Real Estate Commission Dispute Expert Witness TN",
     h1: "Real Estate Commission Dispute Expert Witness in Tennessee",
     metaDescription:
       "Real estate commission dispute expert witness in Tennessee on procuring cause, brokerage agreements, and entitlement claims. Call Nault Law.",
@@ -600,7 +600,7 @@ export const expertWitnessChildren: BofuService[] = [
     slug: "consumer-real-estate-agent-dispute-expert-witness-tennessee",
     hub: "expert-witness",
     primaryKeyword: "Consumer Real Estate Agent Dispute Expert Witness in Tennessee",
-    title: "Consumer Agent Dispute Expert Witness TN | Nault Law",
+    title: "Consumer Agent Dispute Expert Witness TN",
     h1: "Consumer Real Estate Agent Dispute Expert Witness in Tennessee",
     metaDescription:
       "Consumer real estate agent dispute expert witness in Tennessee for buyers and sellers with claims against their own agent or brokerage. Call Nault Law.",

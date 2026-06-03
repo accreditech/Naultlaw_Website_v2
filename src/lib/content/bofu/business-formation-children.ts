@@ -5,7 +5,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "llc-formation-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "LLC Formation Attorney in Tennessee",
-    title: "LLC Formation Attorney in Tennessee | Nault Law",
+    title: "LLC Formation Attorney in Tennessee",
     h1: "LLC Formation Attorney in Tennessee",
     metaDescription:
       "LLC formation attorney in Tennessee handling articles, EIN, operating agreement, and registered-agent setup. Statewide service. Call Nault Law.",
@@ -74,7 +74,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "operating-agreement-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "Operating Agreement Attorney in Tennessee",
-    title: "Operating Agreement Attorney in Tennessee | Nault Law",
+    title: "Operating Agreement Attorney in Tennessee",
     h1: "Operating Agreement Attorney in Tennessee",
     metaDescription:
       "Operating agreement attorney in Tennessee for multi-member, single-member, and manager-managed LLCs with buy-sell terms. Call Nault Law.",
@@ -143,7 +143,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "pllc-formation-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "PLLC Formation Attorney in Tennessee",
-    title: "PLLC Formation Attorney in Tennessee | Nault Law",
+    title: "PLLC Formation Attorney in Tennessee",
     h1: "PLLC Formation Attorney in Tennessee",
     metaDescription:
       "PLLC formation attorney in Tennessee for licensed professionals — doctors, dentists, CPAs, architects, and more. Statewide. Call Nault Law.",
@@ -191,7 +191,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "s-corp-election-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "S-Corp Election Attorney in Tennessee",
-    title: "S-Corp Election Attorney in Tennessee | Nault Law",
+    title: "S-Corp Election Attorney in Tennessee",
     h1: "S-Corp Election Attorney in Tennessee",
     metaDescription:
       "S-Corp election attorney in Tennessee for existing LLCs and corporations seeking S-Corp tax treatment. Statewide. Call Nault Law.",
@@ -239,7 +239,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "series-llc-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "Series LLC Attorney in Tennessee",
-    title: "Series LLC Attorney in Tennessee | Nault Law",
+    title: "Series LLC Attorney in Tennessee",
     h1: "Series LLC Attorney in Tennessee",
     metaDescription:
       "Series LLC attorney in Tennessee for real-estate investors and holding companies running multi-property portfolios. Call Nault Law.",
@@ -287,7 +287,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "buy-sell-agreement-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "Buy-Sell Agreement Attorney in Tennessee",
-    title: "Buy-Sell Agreement Attorney in Tennessee | Nault Law",
+    title: "Buy-Sell Agreement Attorney in Tennessee",
     h1: "Buy-Sell Agreement Attorney in Tennessee",
     metaDescription:
       "Buy-sell agreement attorney in Tennessee for multi-member LLCs and partnerships planning member exits, deaths, or sales. Call Nault Law.",
@@ -335,7 +335,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "corporation-formation-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "Corporation Formation Attorney in Tennessee",
-    title: "Corporation Formation Attorney in Tennessee | Nault Law",
+    title: "Corporation Formation Attorney in Tennessee",
     h1: "Corporation Formation Attorney in Tennessee",
     metaDescription:
       "Corporation formation attorney in Tennessee for founders choosing C-Corp or S-Corp structure. Bylaws, stock, and governance. Call Nault Law.",
@@ -383,7 +383,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "foreign-llc-qualification-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "Foreign LLC Qualification Attorney in Tennessee",
-    title: "Foreign LLC Qualification Attorney in Tennessee | Nault Law",
+    title: "Foreign LLC Qualification Attorney in Tennessee",
     h1: "Foreign LLC Qualification Attorney in Tennessee",
     metaDescription:
       "Foreign LLC qualification attorney in Tennessee for out-of-state LLCs registering for certificate of authority and registered agent. Call Nault Law.",
@@ -431,7 +431,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "llc-dissolution-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "LLC Dissolution Attorney in Tennessee",
-    title: "LLC Dissolution Attorney in Tennessee | Nault Law",
+    title: "LLC Dissolution Attorney in Tennessee",
     h1: "LLC Dissolution Attorney in Tennessee",
     metaDescription:
       "LLC dissolution attorney in Tennessee for member-vote, deadlock, and judicial dissolution — winding up and articles of dissolution. Call Nault Law.",
@@ -479,7 +479,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "partnership-agreement-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "Partnership Agreement Attorney in Tennessee",
-    title: "Partnership Agreement Attorney in Tennessee | Nault Law",
+    title: "Partnership Agreement Attorney in Tennessee",
     h1: "Partnership Agreement Attorney in Tennessee",
     metaDescription:
       "Partnership agreement attorney in Tennessee for general partnerships and limited partnerships — capital, governance, and exit terms. Call Nault Law.",
@@ -527,7 +527,7 @@ export const businessFormationChildren: BofuService[] = [
     slug: "nonprofit-formation-attorney-tennessee",
     hub: "business-formation",
     primaryKeyword: "Nonprofit Formation Attorney in Tennessee",
-    title: "Nonprofit Formation Attorney in Tennessee | Nault Law",
+    title: "Nonprofit Formation Attorney in Tennessee",
     h1: "Nonprofit Formation Attorney in Tennessee",
     metaDescription:
       "Nonprofit formation attorney in Tennessee for 501(c)(3) and other tax-exempt entities — articles, bylaws, and IRS application support. Call Nault Law.",

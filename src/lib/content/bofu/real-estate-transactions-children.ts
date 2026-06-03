@@ -5,7 +5,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
     slug: "real-estate-purchase-agreement-attorney-tennessee",
     hub: "real-estate-transactions",
     primaryKeyword: "Real Estate Purchase Agreement Attorney in Tennessee",
-    title: "Real Estate Purchase Agreement Attorney TN | Nault Law",
+    title: "Real Estate Purchase Agreement Attorney TN",
     h1: "Real Estate Purchase Agreement Attorney in Tennessee",
     metaDescription:
       "Real estate purchase agreement attorney in Tennessee for residential, commercial, and FSBO purchase agreements — drafting and review. Call Nault Law.",
@@ -53,7 +53,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
     slug: "owner-financing-attorney-tennessee",
     hub: "real-estate-transactions",
     primaryKeyword: "Owner Financing Attorney in Tennessee",
-    title: "Owner Financing Attorney in Tennessee | Nault Law",
+    title: "Owner Financing Attorney in Tennessee",
     h1: "Owner Financing Attorney in Tennessee",
     metaDescription:
       "Owner financing attorney in Tennessee for seller-financed real estate sales — promissory notes, deeds of trust, and financing agreements. Call Nault Law.",
@@ -109,7 +109,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
     slug: "land-contract-attorney-tennessee",
     hub: "real-estate-transactions",
     primaryKeyword: "Land Contract Attorney in Tennessee",
-    title: "Land Contract Attorney in Tennessee | Nault Law",
+    title: "Land Contract Attorney in Tennessee",
     h1: "Land Contract Attorney in Tennessee",
     metaDescription:
       "Land contract attorney in Tennessee for installment land sales, contract-for-deed agreements, and seller-financed transfers. Call Nault Law.",
@@ -157,7 +157,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
     slug: "real-estate-joint-venture-attorney-tennessee",
     hub: "real-estate-transactions",
     primaryKeyword: "Real Estate Joint Venture Attorney in Tennessee",
-    title: "Real Estate Joint Venture Attorney in Tennessee | Nault Law",
+    title: "Real Estate Joint Venture Attorney in Tennessee",
     h1: "Real Estate Joint Venture Attorney in Tennessee",
     metaDescription:
       "Real estate joint venture attorney in Tennessee for multi-party deals, capital-partner structures, and project-specific JV agreements. Call Nault Law.",
@@ -205,7 +205,7 @@ export const realEstateTransactionsChildren: BofuService[] = [
     slug: "assignment-of-contract-attorney-tennessee",
     hub: "real-estate-transactions",
     primaryKeyword: "Assignment of Contract Attorney in Tennessee",
-    title: "Assignment of Contract Attorney in Tennessee | Nault Law",
+    title: "Assignment of Contract Attorney in Tennessee",
     h1: "Assignment of Contract Attorney in Tennessee",
     metaDescription:
       "Assignment of contract attorney in Tennessee for real-estate wholesalers, investors, and parties assigning purchase agreements. Call Nault Law.",
@@ -254,10 +254,10 @@ export const realEstateTransactionsChildren: BofuService[] = [
     slug: "1031-exchange-attorney-tennessee",
     hub: "real-estate-transactions",
     primaryKeyword: "1031 Exchange Attorney in Tennessee",
-    title: "1031 Exchange Attorney in Tennessee | Nault Law",
+    title: "1031 Exchange Attorney in Tennessee",
     h1: "1031 Exchange Attorney in Tennessee",
     metaDescription:
-      "1031 exchange attorney in Tennessee for investors deferring gain on real estate — PSA cooperation language, qualified intermediary coordination, and TN deed handling. Call Nault Law.",
+      "1031 exchange attorney in Tennessee for investors deferring gain — PSA cooperation language, qualified-intermediary coordination, and TN deeds. Call Nault Law.",
     intro:
       "1031 exchange attorney in Tennessee for real estate investors deferring capital gain on the sale of investment property — drafting the cooperation language in the purchase agreement, coordinating with the qualified intermediary, tracking the 45-day identification and 180-day exchange deadlines, and making sure the Tennessee deed and transfer-tax mechanics line up with the exchange.",
     sections: [
