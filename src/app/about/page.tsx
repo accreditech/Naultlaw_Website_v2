@@ -38,9 +38,9 @@ const TIMELINE = [
     d: "Day-to-day operational responsibility for brokerage compliance, affiliate supervision, and trust accounting.",
   },
   {
-    y: "2023",
-    t: "Rule 31 Listed Mediator",
-    d: "Completed the Tennessee Supreme Court's civil mediator training and listed for general civil matters.",
+    y: "2025",
+    t: "Rule 31 Listed Mediator (Family)",
+    d: "Listed by the Tennessee AOC as a Rule 31 Family Mediator, serving Sumner and surrounding counties.",
   },
 ];
 
