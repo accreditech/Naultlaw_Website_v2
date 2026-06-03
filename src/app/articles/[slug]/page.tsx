@@ -15,7 +15,6 @@ import { createMetadata } from "@/lib/metadata";
 import {
   articleSchema,
   breadcrumbSchema,
-  faqSchema,
 } from "@/lib/structured-data";
 
 const CATEGORY_PRACTICE_SLUGS: Record<string, string[]> = {
@@ -66,9 +65,6 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <>
       <StructuredDataScript data={articleSchema(article)} />
-      {article.faqs.length > 0 && (
-        <StructuredDataScript data={faqSchema(article.faqs)} />
-      )}
       <StructuredDataScript data={breadcrumbSchema(crumbs)} />
 
       <Breadcrumbs items={crumbs} />

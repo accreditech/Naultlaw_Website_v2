@@ -16,7 +16,6 @@ import { siteConfig } from "@/lib/site-config";
 import { createMetadata } from "@/lib/metadata";
 import {
   breadcrumbSchema,
-  faqSchema,
   serviceSchema,
 } from "@/lib/structured-data";
 
@@ -75,7 +74,6 @@ export default async function PracticeAreaPage({ params }: Props) {
   return (
     <>
       <StructuredDataScript data={serviceSchema(area)} />
-      {area.faqs.length > 0 && <StructuredDataScript data={faqSchema(area.faqs)} />}
       <StructuredDataScript data={breadcrumbSchema(crumbs)} />
 
       <Breadcrumbs items={crumbs} />
