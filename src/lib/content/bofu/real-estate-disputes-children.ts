@@ -792,25 +792,28 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Eviction attorney in Tennessee representing landlords statewide — detainer warrants, judgments, writs of possession. Call Nault Law.",
     intro:
-      "Eviction attorney in Tennessee representing landlords and property managers — detainer warrants, judgments, writs of possession, and the procedural steps that protect the rent ledger and the asset while the case moves through General Sessions Court.",
+      "I represent Tennessee landlords and property managers in evictions — the detainer warrant, the General Sessions hearing, the judgment, and the writ of possession that actually gets the unit back. The goal is to move a possession case cleanly and protect the rent ledger and the property, not to turn it into a brawl.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "What a landlord-side eviction actually involves",
         paragraphs: [
-          "Landlord-side eviction work covers notice preparation, detainer warrant filing, hearing representation in General Sessions Court, judgment collection, and writ-of-possession execution. Both residential and commercial possession matters are handled.",
-          "Common scenarios include nonpayment evictions, lease-violation cases, holdover tenants after lease expiration, and post-foreclosure possession claims.",
+          "On the landlord side, an eviction runs from the notice, to a detainer warrant filed in General Sessions Court, to the hearing, and — if it goes that far — to judgment, collection, and a writ of possession. I handle residential and commercial possession both.",
+          "Most of what comes through the door is one of a few situations: nonpayment, a lease violation, a holdover tenant who stayed past the term, or a possession claim after a foreclosure. They look similar from the outside, but the notice, the proof, and the timeline are not the same — and that difference is usually what decides the case.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "The notice and the ledger decide most of these before the hearing",
         paragraphs: [
-          "Before the notice goes out, before a detainer hearing, or after a tenant has begun contesting the action. Early review confirms the notice was sufficient and that the lease and ledger actually support the claim.",
+          "The two things I look at first are the notice and the rent ledger. A defective or wrongly served notice can sink an otherwise good case, and a ledger that does not actually tie out gives the tenant room to argue. Getting both right before anything is filed is where the time is best spent.",
+          "That is also why earlier is better. Once a tenant starts contesting the action — or a hearing is only days out — the options narrow. I would rather confirm the notice was sufficient and that the lease and ledger support the claim while there is still room to fix a problem than find it at the podium.",
         ],
       },
       {
-        h2: "Tennessee specifics",
+        h2: "How Tennessee eviction law works — and why the county matters",
         paragraphs: [
-          "Tennessee evictions are heard in General Sessions Court in the county where the property sits. Notice and procedural requirements vary by lease type and the basis for the eviction. The Uniform Residential Landlord and Tenant Act (URLTA), codified at Tenn. Code Ann. § 66-28-101 et seq., applies in counties with population over 75,000 (Tenn. Code Ann. § 66-28-102); non-URLTA counties rely more heavily on lease terms, common law, and the detainer statutes. Commercial leases are governed primarily by their terms.",
+          "Tennessee evictions are heard in General Sessions Court in the county where the property sits, and the rules are not uniform across the state. The Uniform Residential Landlord and Tenant Act — URLTA, codified at Tenn. Code Ann. § 66-28-101 and following — applies only in counties with a population over 75,000 (Tenn. Code Ann. § 66-28-102).",
+          "In plain terms, the same residential situation can be governed by URLTA in one county and by the lease, the common law, and the detainer statutes in the next county over. Commercial leases are a separate track, governed mostly by their own terms. Which set of rules controls is the first thing that shapes how I handle the notice and the hearing.",
+          "Every eviction turns on its own facts — the lease, the notice, the ledger, and which county's rules apply. The law here is general; your situation is specific. If you are a landlord or manager dealing with a tenant who will not pay or will not leave, send the basics and I will tell you how I read it.",
         ],
       },
       {

@@ -10,52 +10,51 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "LLC formation attorney in Tennessee handling articles, EIN, operating agreement, and registered-agent setup. Statewide service. Call Nault Law.",
     intro:
-      "LLC formation attorney in Tennessee for owners forming a single-member, multi-member, or manager-managed company — articles, operating agreement, EIN, registered-agent setup, and the early governance choices that protect liability.",
+      "I form Tennessee LLCs for owners who want the structure done right the first time — not a fill-in-the-blank filing that holds up only until the business is under real stress. The articles and registered agent are the easy part. The operating agreement, the tax-election questions, and the early governance choices are what actually protect your liability, and that is where I spend the time.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "What forming an LLC actually buys you",
         paragraphs: [
-          "Formation work includes entity-choice analysis, drafting and filing articles of organization with the Tennessee Secretary of State, registered-agent designation, EIN coordination, operating-agreement drafting, and member-admission paperwork.",
-          "Where appropriate, the engagement also addresses S-Corp election questions, banking and licensing follow-through, and the franchise-and-excise tax baseline new owners need to understand before the first year closes.",
+          "Filing articles of organization with the Tennessee Secretary of State creates the entity. By itself, that is not much protection. The liability shield people form an LLC for depends on running the company like a real company — a separate bank account, a registered agent that actually receives service, and an operating agreement that lines up with how decisions get made and money moves.",
+          "So the work I do is the entity-choice call, the articles and registered-agent setup, EIN coordination, and the operating agreement — plus the franchise-and-excise tax baseline every new Tennessee owner should understand before the first year closes. I would rather you spend a little more at formation than pay to untangle a thin LLC later.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Single-member or multi-member: who owns it drives everything",
         paragraphs: [
-          "Single-member owners who want a clean LLC foundation rather than an online-form blank. Multi-member partners who want governance and exit terms set before money or property goes in. Real-estate investors and small-business owners who plan to scale or add affiliates over time.",
+          "The simplest case is one owner. A single-member LLC passes its profit and loss straight through to your personal return — usually a Schedule C — and most solo founders, consultants, and small real-estate investors belong here.",
+          "Add a second owner and the structure changes in ways that matter. Capital contributions get tracked per member, distributions follow the operating agreement rather than raw ownership percentages, and the tax filing moves to a partnership return on Form 1065. A manager-managed LLC is a third option, where the members appoint a manager instead of running things day to day — common when one person operates the business and the others are passive money.",
+          "The practical issue is not the form; it is who owns the company and how they expect to be treated. Bringing in a co-founder, a passive investor, or a family member changes both the legal structure and the tax filing, and those terms are far cheaper to settle before the money or the property goes in than after.",
         ],
       },
       {
-        h2: "Tennessee specifics",
+        h2: "The Tennessee franchise-and-excise tax most owners don't see coming",
         paragraphs: [
-          "Tennessee LLC filings are handled through the Tennessee Secretary of State, and current filing fees should be confirmed before submission. Many Tennessee LLCs also require franchise-and-excise tax analysis: franchise tax is generally measured under Tenn. Code Ann. § 67-4-2106, and excise tax is imposed under Tenn. Code Ann. § 67-4-2007, subject to exemptions, deductions, and entity-specific treatment.",
-          "FONCE, obligated-member, nonprofit, and other exemptions may apply. The right structure depends on liability, tax election, ownership economics, and how the company will actually be run.",
+          "Tennessee taxes most LLCs in a way a lot of new owners are not expecting. Franchise tax is generally measured under Tenn. Code Ann. § 67-4-2106, and excise tax is imposed under Tenn. Code Ann. § 67-4-2007. In plain terms: the state taxes the entity on a net-worth measure and on its net earnings, separate from anything owed on the owner's personal return.",
+          "There are real exemptions — FONCE (the family-owned non-corporate entity exemption), the obligated-member exemption, nonprofit treatment, and others — and whether one fits depends on who owns the LLC, what it holds, and how it earns. This is one of the first things I look at, because the right entity and tax posture is hard to bolt on after the fact. I coordinate the tax-election side with your CPA; the legal side makes sure the documents match the plan.",
         ],
       },
       {
-        h2: "Single-member vs. multi-member structure",
+        h2: "When electing S-Corp status is worth the payroll",
         paragraphs: [
-          "The simplest case is a single-member LLC: one owner, one set of decisions, profits and losses pass through to a single Schedule C or 1040 reporting line. Most solo founders, real-estate investors, and consultants land here. Multi-member LLCs add complexity: capital contributions are tracked per member, distributions follow the operating agreement (not necessarily ownership percentages), and tax reporting moves to a partnership return on Form 1065.",
-          "The decision between single and multi-member is usually driven by who owns the business — bringing in a co-founder, a passive investor, or a family member changes both the legal structure and the tax filing. Manager-managed LLCs offer a third variant where members appoint a manager rather than running the LLC themselves; useful for investor-driven structures.",
+          "S-Corp is a federal tax election, not a separate kind of company — an LLC can make it. It usually starts to make sense once the business earns enough that the self-employment-tax savings beat the cost and hassle of running real payroll.",
+          "The election goes in on IRS Form 2553, and the timing is unforgiving: it generally has to be in place no later than two months and 15 days into the tax year it applies to (IRC § 1362), though there is a late-relief path under Rev. Proc. 2013-30 when the deadline slips. Missing that window is common, which is why I raise the timing early rather than at filing. And electing S-Corp does not get a Tennessee LLC out of franchise-and-excise tax.",
+          "Most owners make the election call with their accountant. My job is to make the entity documents support it — the operating agreement or bylaws, a defensible reasonable-compensation structure, and the governance the election assumes.",
         ],
       },
       {
-        h2: "When to elect S-Corp tax status",
+        h2: "Where formations go wrong — usually a year or two later",
         paragraphs: [
-          "S-Corp election is a federal tax decision that LLCs and corporations can both make, typically once revenue reaches a level where self-employment tax savings exceed the cost of running payroll. The election is filed via IRS Form 2553 and generally must be in place no later than two months and 15 days into the tax year for which the election applies (IRC § 1362; see also Rev. Proc. 2013-30 for late-relief procedures). Tennessee S-Corps remain subject to franchise-and-excise tax.",
-          "The legal work supports whichever election the CPA recommends — updating operating agreements or bylaws, confirming reasonable-compensation structure, and locking down the governance posture the election requires. Most owners coordinate the election with their accountant; the legal side ensures the entity documents match.",
+          "The problems I get called to clean up almost never show at filing. They surface later: an online operating agreement that does not match how the business actually runs; a missed S-Corp election deadline; an LLC doing business in another state that never registered as a foreign entity there; or articles, registered agent, and operating agreement that nobody updated when the membership changed.",
+          "Every one of these is fixable. Each is also more expensive and more disruptive to fix after the fact than to get right at the start. That is the whole argument for doing formation deliberately instead of treating it as a form to submit.",
         ],
       },
       {
-        h2: "Common formation mistakes",
+        h2: "How I run a formation, and what it costs",
         paragraphs: [
-          "The most common mistakes show up later, not at filing: relying on an online operating agreement that does not match how the business actually runs; missing the S-Corp election deadline; failing to register the LLC as a foreign entity in any state where it does business beyond Tennessee; and forgetting to update articles, registered agent, or operating agreement when membership changes. Each of these is fixable but more expensive after the fact than during initial formation.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Most formations move from intake call to filed articles within a week. Operating-agreement drafting follows once members have aligned on contributions, governance, distributions, and exit. Flat-fee or capped pricing is available for straightforward single-member and multi-member formations.",
+          "Most formations move from the first call to filed articles within about a week. The operating agreement follows once the members have actually agreed on contributions, governance, distributions, and exit — I do not draft that part in a vacuum.",
+          "For straightforward single-member and multi-member formations, I offer flat-fee or capped pricing, so the cost is clear going in. Where a matter is more involved than that, I will say so before the work starts.",
+          "None of this is one-size-fits-all. The right structure for a given LLC depends on its owners, the tax election, what the company will hold, and how it will actually be run — which is a conversation about specifics, not a template. If you are forming or cleaning up a Tennessee LLC, reach out and we can work through it.",
         ],
       },
       {
