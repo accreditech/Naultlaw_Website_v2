@@ -30,7 +30,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "commercial-leasing",
     title: "Commercial Leasing",
     shortTitle: "Commercial Leasing",
-    metaTitle: "Commercial Leasing Counsel in Gallatin and Sumner County",
+    metaTitle: "Commercial Lease Counsel in Gallatin, TN",
     metaDescription:
       "Practical commercial leasing counsel for owners, investors, landlords, tenants, brokers, and property managers across Gallatin and the surrounding counties.",
     eyebrow: "Practice Area",
@@ -102,7 +102,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "trec-defense-and-realtor-complaints",
     title: "TREC Defense and Realtor Representation",
     shortTitle: "TREC Defense",
-    metaTitle: "TREC Defense and Realtor Representation in Tennessee",
+    metaTitle: "TREC Defense & Realtor Representation, TN",
     metaDescription:
       "Counsel for brokers and agents responding to TREC complaints, disciplinary questions, brokerage disputes, and risk-sensitive licensing issues.",
     eyebrow: "Practice Area",
@@ -168,7 +168,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "operating-agreements-and-owner-disputes",
     title: "Operating Agreements and Owner Disputes",
     shortTitle: "Owner Disputes",
-    metaTitle: "Operating Agreements and Owner Disputes Counsel in Tennessee",
+    metaTitle: "Operating Agreement & Owner Dispute Counsel, TN",
     metaDescription:
       "Counsel for LLC members, shareholders, managers, and closely held business owners dealing with governance friction, deadlock, and control disputes.",
     eyebrow: "Practice Area",
@@ -235,9 +235,9 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "business-contract-drafting-and-review",
     title: "Business Contract Drafting and Review",
     shortTitle: "Business Contracts",
-    metaTitle: "Business Contract Drafting and Review in Gallatin",
+    metaTitle: "Business Contract Drafting & Review, TN",
     metaDescription:
-      "Contract drafting and review for business owners, investors, contractors, and real estate professionals who need practical risk allocation and cleaner deal execution.",
+      "Contract drafting and review for business owners, investors, contractors, and real estate professionals — practical risk allocation and cleaner deals.",
     eyebrow: "Practice Area",
     intro: "A useful contract should shorten disputes, not silently manufacture them.",
     summary:
@@ -302,9 +302,9 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "real-estate-disputes",
     title: "Real Estate Disputes",
     shortTitle: "Real Estate Disputes",
-    metaTitle: "Real Estate Dispute Counsel in Gallatin and Middle Tennessee",
+    metaTitle: "Real Estate Dispute Counsel in Middle TN",
     metaDescription:
-      "Counsel for owners, investors, landlords, brokers, and managers navigating contract disputes, title issues, neighbor conflicts, construction disputes, liens, and foreclosure or trustee sales — across both commercial and residential real estate.",
+      "Counsel for owners, investors, landlords, and brokers in real estate disputes — contracts, title, liens, construction, and foreclosure or trustee sales.",
     eyebrow: "Practice Area",
     intro: "Property disputes turn quickly from inconvenience to leverage problems.",
     summary:
@@ -370,9 +370,9 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "strategic-case-assessment",
     title: "Strategic Case Assessment / Investigate and Advise",
     shortTitle: "Strategic Case Assessment",
-    metaTitle: "Strategic Case Assessment for Business and Real Estate Disputes",
+    metaTitle: "Strategic Case Assessment for TN Disputes",
     metaDescription:
-      "Early dispute assessment, fact investigation, document review, and strategic advice for business owners and real estate professionals before filing or formal escalation.",
+      "Early dispute assessment, fact investigation, and document review for business owners and real estate professionals before filing or formal escalation.",
     eyebrow: "Structured Consultation Path",
     intro:
       "Investigate and Advise is built for clients who need a grounded read on claims, defenses, leverage, and next-step options before deciding how hard to push.",
@@ -437,7 +437,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "arbitration-and-dispute-resolution",
     title: "Arbitration, Mediation and ADR",
     shortTitle: "Arbitration, Mediation and ADR",
-    metaTitle: "Arbitration, Mediation and ADR Counsel in Tennessee",
+    metaTitle: "Arbitration, Mediation & ADR Counsel, TN",
     metaDescription:
       "Counsel for arbitration, negotiated resolution, and business-focused dispute strategy in commercial real estate, owner disputes, and contract matters.",
     eyebrow: "Practice Area",
@@ -502,7 +502,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     slug: "expert-witness-real-estate-and-brokerage-matters",
     title: "Expert Witness - Real Estate and Brokerage Matters",
     shortTitle: "Expert Witness",
-    metaTitle: "Expert Witness for Real Estate and Brokerage Matters",
+    metaTitle: "Expert Witness: Real Estate & Brokerage, TN",
     metaDescription:
       "Expert witness and consulting support for real estate, brokerage, and transaction-standard issues where industry context matters.",
     eyebrow: "Attorney Support / Expert Witness",

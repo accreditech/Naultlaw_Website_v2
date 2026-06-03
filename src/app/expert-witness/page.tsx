@@ -4,9 +4,9 @@ import { type Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Expert Witness & Litigation Consulting",
+  title: "Expert Witness for Real Estate Litigation, TN",
   description:
-    "Tennessee real estate and brokerage expert witness services for plaintiff and defense counsel. Stephen Nault is an attorney and licensed managing broker available for case review, designation, written reports, and trial testimony.",
+    "Tennessee real estate and brokerage expert witness for plaintiff and defense counsel — case review, designation, written reports, and trial testimony.",
   path: "/expert-witness",
 });
 

@@ -7,7 +7,7 @@ import { createMetadata } from "@/lib/metadata";
 import { collectionPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = createMetadata({
-  title: "Practice Areas",
+  title: "Business & Real Estate Practice Areas in TN",
   description:
     "Eight areas across business law, real estate, dispute resolution, and attorney support. Tennessee real estate and business law in Gallatin and Sumner County.",
   path: "/practice-areas",

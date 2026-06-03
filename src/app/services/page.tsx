@@ -12,7 +12,7 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = createMetadata({
-  title: "Practice Areas",
+  title: "Tennessee Business & Real Estate Legal Services",
   description:
     "Tennessee practice areas — expert witness, business formation, contracts, real estate transactions, and disputes. Statewide advisory work. Call Nault Law.",
   path: "/services",

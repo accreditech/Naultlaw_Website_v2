@@ -5,7 +5,7 @@ import { IntakeForm } from "@/components/contact/intake-form";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Contact",
+  title: "Contact a Gallatin, TN Business Attorney",
   description:
     "Schedule a consultation review with Stephen Nault — Tennessee real estate and business attorney. Structured intake; response generally within one business day.",
   path: "/contact",

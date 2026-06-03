@@ -10,9 +10,9 @@ import {
 } from "@/lib/structured-data";
 
 export const metadata: Metadata = createMetadata({
-  title: "About Stephen Nault",
+  title: "About Stephen Nault, Gallatin TN Attorney",
   description:
-    "Stephen C. Nault — Tennessee attorney, licensed real estate broker, TREC course instructor, and Rule 31 listed mediator. Based in Gallatin, serving Middle Tennessee.",
+    "Stephen C. Nault — Tennessee attorney, licensed real estate broker, TREC instructor, and Rule 31 mediator in Gallatin, serving Middle Tennessee.",
   path: "/about",
 });
 
