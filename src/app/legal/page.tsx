@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 import { publicDisclosures } from "@/lib/public-disclosures";
 
 export const metadata: Metadata = createMetadata({
-  title: "Legal",
+  title: "Legal Notices, Privacy & Terms",
   description:
     "Site terms, privacy policy, attorney advertising notice, and engagement terms for The Law Office of Stephen Nault.",
   path: "/legal",

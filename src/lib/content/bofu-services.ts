@@ -72,7 +72,7 @@ export const bofuHubs: BofuHub[] = [
     id: "expert-witness",
     slug: "expert-witness",
     primaryKeyword: "Real Estate Expert Witness in Tennessee",
-    title: "Real Estate Expert Witness in Tennessee | Nault Law",
+    title: "Real Estate Expert Witness in Tennessee",
     h1: "Real Estate Expert Witness in Tennessee",
     metaDescription:
       "Real estate expert witness in Tennessee for title, contract, valuation, and standard-of-care disputes. CV and prior testimony available. Call Nault Law.",
@@ -100,7 +100,7 @@ export const bofuHubs: BofuHub[] = [
     id: "business-formation",
     slug: "business-formation",
     primaryKeyword: "Business Formation Attorney in Tennessee",
-    title: "Business Formation Attorney in Tennessee | Nault Law",
+    title: "Business Formation Attorney in Tennessee",
     h1: "Business Formation Attorney in Tennessee",
     metaDescription:
       "Business formation attorney in Tennessee handling LLCs, PLLCs, S-Corp elections, operating agreements, and buy-sell agreements. Statewide. Call Nault Law.",
@@ -134,7 +134,7 @@ export const bofuHubs: BofuHub[] = [
     id: "contract-services",
     slug: "contract-services",
     primaryKeyword: "Business Contract Attorney in Tennessee",
-    title: "Business Contract Attorney in Tennessee | Nault Law",
+    title: "Business Contract Attorney in Tennessee",
     h1: "Business Contract Attorney in Tennessee",
     metaDescription:
       "Business contract attorney in Tennessee for vendor, independent-contractor, lease, real-estate, and construction agreements. Flat-fee review. Call Nault Law.",
@@ -164,7 +164,7 @@ export const bofuHubs: BofuHub[] = [
     id: "real-estate-transactions",
     slug: "real-estate-transactions",
     primaryKeyword: "Real Estate Transactions Attorney in Tennessee",
-    title: "Real Estate Transactions Attorney in Tennessee | Nault Law",
+    title: "Real Estate Transactions Attorney in Tennessee",
     h1: "Real Estate Transactions Attorney in Tennessee",
     metaDescription:
       "Real estate transactions attorney in Tennessee for purchase agreements, commercial leases, owner financing, and joint ventures. Call Nault Law.",
@@ -198,7 +198,7 @@ export const bofuHubs: BofuHub[] = [
     id: "real-estate-disputes",
     slug: "real-estate-disputes",
     primaryKeyword: "Real Estate Disputes Attorney in Tennessee",
-    title: "Real Estate Disputes Attorney in Tennessee | Nault Law",
+    title: "Real Estate Disputes Attorney in Tennessee",
     h1: "Real Estate Disputes Attorney in Tennessee",
     metaDescription:
       "Real estate disputes attorney in Tennessee for quiet title, easements, mechanics liens, fraud, and disclosure claims. Statewide advice. Call Nault Law.",
@@ -241,7 +241,7 @@ export const bofuHubs: BofuHub[] = [
     id: "business-disputes",
     slug: "business-disputes",
     primaryKeyword: "Business Disputes Attorney in Tennessee",
-    title: "Business Disputes Attorney in Tennessee | Nault Law",
+    title: "Business Disputes Attorney in Tennessee",
     h1: "Business Disputes Attorney in Tennessee",
     metaDescription:
       "Business disputes attorney in Tennessee for partnership breakups, member buyouts, non-competes, and fiduciary-duty claims. Call Nault Law.",

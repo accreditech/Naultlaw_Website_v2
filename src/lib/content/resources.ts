@@ -24,9 +24,9 @@ export const resources: ResourceContent[] = [
     slug: "when-a-broker-complaint-turns-into-a-records-problem",
     title: "When a Broker Complaint Turns Into a Records Problem",
     category: "Brokerage Risk",
-    metaTitle: "When a Broker Complaint Turns Into a Records Problem",
+    metaTitle: "Broker Complaints and the Records Problem",
     metaDescription:
-      "A practical Tennessee-focused overview of how a broker complaint can become a records problem, especially when transaction files, trust-money records, disclosures, communications, and retention practices do not line up clearly or completely.",
+      "How a Tennessee broker complaint can become a records problem when transaction files, trust-money records, and disclosures don't line up. Learn what to check.",
     excerpt:
       "In Tennessee broker complaints, the dispute often stops being just about the allegation and starts becoming about what the transaction file, disclosures, communications, and money records can actually prove.",
     takeaways: [
@@ -93,9 +93,9 @@ export const resources: ResourceContent[] = [
     slug: "commission-disputes-that-carry-more-than-money-risk",
     title: "Commission Disputes That Carry More Than Money Risk",
     category: "Brokerage Risk",
-    metaTitle: "Commission Disputes That Carry More Than Money Risk",
+    metaTitle: "Commission Disputes: More Than Money at Risk",
     metaDescription:
-      "A practical Tennessee-focused overview of why some real-estate commission disputes are not only about unpaid compensation, but also about transaction roles, agency documents, disclosure duties, communications, authority, and regulatory risk.",
+      "Why some Tennessee real-estate commission disputes turn on agency roles, disclosure duties, and authority — not just unpaid compensation. See what's at stake.",
     excerpt:
       "Some Tennessee commission disputes are purely about compensation, but others sit inside larger fights over agency documents, disclosure, authority, communications, and transaction conduct.",
     takeaways: [
@@ -166,9 +166,9 @@ export const resources: ResourceContent[] = [
     slug: "when-a-transaction-complaint-may-also-create-civil-exposure",
     title: "When a Transaction Complaint May Also Create Civil Exposure",
     category: "Brokerage Risk",
-    metaTitle: "When a Transaction Complaint May Also Create Civil Exposure",
+    metaTitle: "Transaction Complaints and Civil Exposure",
     metaDescription:
-      "A practical Tennessee-focused overview of how the same real-estate transaction facts may trigger both regulatory review and private civil exposure, depending on the documents, the disclosures, the money flow, the communications, and the roles each party played.",
+      "How one Tennessee transaction can trigger both TREC review and private civil exposure, depending on the documents, disclosures, and money flow. Read more.",
     excerpt:
       "In Tennessee real-estate transaction disputes involving licensed conduct, the same facts can create both regulatory questions and private civil exposure, but those paths are different and do not always move together.",
     takeaways: [
@@ -242,9 +242,9 @@ export const resources: ResourceContent[] = [
     title: "Deadlock in a Closely Held Business: Decision Points Before Escalation",
     category: "Owner Disputes",
     metaTitle:
-      "Deadlock in a Closely Held Business: Decision Points Before Escalation",
+      "Closely Held Business Deadlock: What to Do",
     metaDescription:
-      "A practical Tennessee-focused overview of what deadlock can look like in a closely held LLC before open collapse, including voting paralysis, banking and records control fights, authority conflicts, and operational drift.",
+      "What deadlock looks like in a Tennessee closely held LLC before open collapse — voting paralysis, records fights, and authority conflicts. Know the signs.",
     hook: "You and your business partner can't agree on anything anymore — approvals are stalled, someone has changed the bank access, or the business is starting to drift. If the operating agreement gives you both equal votes, you may already be looking at governance deadlock, not just a disagreement.",
     excerpt:
       "In Tennessee LLC disputes, real deadlock usually shows up before open collapse through stalled approvals, bank and records control fights, conflicting authority, and pressure on day-to-day operations.",
@@ -313,9 +313,9 @@ export const resources: ResourceContent[] = [
     slug: "when-the-operating-agreement-no-longer-matches-reality",
     title: "When the Operating Agreement No Longer Matches Reality",
     category: "Owner Disputes",
-    metaTitle: "When the Operating Agreement No Longer Matches Reality",
+    metaTitle: "When the Operating Agreement No Longer Fits",
     metaDescription:
-      "A practical Tennessee-focused overview of what happens when the written operating agreement no longer matches the way an LLC is actually being run, including ownership drift, authority confusion, compensation and distribution mismatch, and informal understandings that are harder to prove later.",
+      "When an LLC's written operating agreement no longer matches how it's actually run: ownership drift, authority confusion, and distribution mismatch. Learn more.",
     excerpt:
       "Many Tennessee LLC disputes begin when the operating agreement says one thing but the business has drifted into something else. That mismatch often becomes a control, proof, and records problem before anyone files anything formal.",
     takeaways: [
@@ -383,9 +383,9 @@ export const resources: ResourceContent[] = [
     slug: "books-records-and-account-access-early-control-red-flags",
     title: "Books, Records, and Account Access: Early Control Red Flags",
     category: "Owner Disputes",
-    metaTitle: "Books, Records, and Account Access: Early Control Red Flags",
+    metaTitle: "Books & Records Access: Early Control Flags",
     metaDescription:
-      "A practical Tennessee-focused overview of how books, records, and account-access disputes can signal an early control fight in a closely held LLC and why member status, record access, and document preservation matter.",
+      "How books, records, and account-access disputes signal an early control fight in a closely held LLC, and why record access and preservation matter. See why.",
     excerpt:
       "In Tennessee LLC disputes, books-and-records problems are often treated as bookkeeping issues when they are really early control issues about status, authority, and who gets to define the company record.",
     takeaways: [
@@ -454,9 +454,9 @@ export const resources: ResourceContent[] = [
     slug: "early-mistakes-that-make-a-brokerage-complaint-worse",
     title: "Early Mistakes That Make a Brokerage Complaint Worse",
     category: "Brokerage Risk",
-    metaTitle: "Early Mistakes That Make a Brokerage Complaint Worse",
+    metaTitle: "Brokerage Complaints: Early Mistakes to Avoid",
     metaDescription:
-      "A practical Tennessee-focused overview of the early errors that can weaken or complicate a brokerage complaint, including documentation problems, unrealistic expectations, anonymous filing tradeoffs, public-record issues, and misunderstanding the complaint process.",
+      "Early mistakes that can weaken a Tennessee brokerage complaint: documentation gaps, unrealistic expectations, and misreading the process. Avoid these missteps.",
     excerpt:
       "A brokerage complaint can be weakened before anyone reaches the merits if the filing starts with poor documentation, unrealistic expectations, or a misunderstanding of what the regulatory process actually does.",
     takeaways: [
@@ -525,9 +525,9 @@ export const resources: ResourceContent[] = [
     slug: "what-to-do-when-a-commercial-lease-default-notice-arrives",
     title: "What to Do When a Commercial Lease Default Notice Arrives",
     category: "Commercial Leasing",
-    metaTitle: "What to Do When a Commercial Lease Default Notice Arrives",
+    metaTitle: "Reading a Commercial Lease Default Notice",
     metaDescription:
-      "A practical Tennessee-focused overview of how to read a commercial lease default notice, which documents matter most, and which timing, waiver, cure, and remedy questions often shape the next phase of a dispute.",
+      "How to read a commercial lease default notice — which documents matter, and how timing, cure, waiver, and remedy questions shape what comes next. Learn more.",
     hook: "You received a default notice on a commercial lease — or you sent one and the tenant hasn't responded. The dispute may be about rent, or it may be about something else in the lease. Either way, the first question is what the lease actually says, not what you assumed.",
     excerpt:
       "A commercial lease default notice can change cure rights, termination risk, guaranty exposure, possession posture, and later damages arguments. The first real question is what the lease actually says.",
@@ -598,9 +598,9 @@ export const resources: ResourceContent[] = [
     slug: "five-commercial-lease-terms-worth-slowing-down-for",
     title: "Five Commercial Lease Terms Worth Slowing Down For",
     category: "Commercial Leasing",
-    metaTitle: "Five Commercial Lease Terms Worth Slowing Down For",
+    metaTitle: "Five Commercial Lease Terms to Slow Down On",
     metaDescription:
-      "A practical guide to lease provisions that often deserve closer review in business and commercial real estate deals.",
+      "Five commercial lease provisions in Tennessee deals that deserve a closer read before you sign — and why each one can matter later on. See the list.",
     excerpt:
       "Some lease fights start because the business team moved too quickly past the exact provisions that later control leverage.",
     takeaways: [
@@ -654,9 +654,9 @@ export const resources: ResourceContent[] = [
     slug: "what-to-do-first-after-a-trec-complaint-arrives",
     title: "What to Do First After a TREC Complaint Arrives",
     category: "Brokerage Risk",
-    metaTitle: "What to Do First After a TREC Complaint Arrives",
+    metaTitle: "First Steps After a TREC Complaint",
     metaDescription:
-      "A practical first-step guide for Tennessee brokers and agents after a TREC complaint or licensing issue appears.",
+      "First steps for Tennessee brokers and agents after a TREC complaint or licensing issue appears, and how to protect your position early. Start here.",
     hook: "A TREC complaint just arrived. You don't know yet whether it's serious or dismissible. The instinct is to respond quickly and explain everything — but that's usually the wrong first move.",
     excerpt:
       "The first mistake in a licensing complaint is often responding before the record, timeline, and business risk have been organized.",
@@ -711,9 +711,9 @@ export const resources: ResourceContent[] = [
     slug: "what-the-tennessee-real-estate-commission-can-and-cannot-do",
     title: "What the Tennessee Real Estate Commission Can and Cannot Do",
     category: "Brokerage Risk",
-    metaTitle: "What the Tennessee Real Estate Commission Can and Cannot Do",
+    metaTitle: "What TREC Can and Cannot Do in Tennessee",
     metaDescription:
-      "A public-education overview of what TREC regulates, what a complaint can lead to, and what issues usually require separate civil review.",
+      "What the Tennessee Real Estate Commission regulates, what a complaint can lead to, and which issues need separate civil review. A plain-English overview.",
     hook: "You're thinking about filing a TREC complaint — or someone has filed one against you. Before you expect a specific outcome, it helps to understand what TREC can actually do and what it cannot. The two are farther apart than most people assume.",
     excerpt:
       "A TREC complaint is not the same thing as a private lawsuit. Understanding what the Commission can and cannot do helps people classify the issue more accurately.",
@@ -782,9 +782,9 @@ export const resources: ResourceContent[] = [
     slug: "owner-dispute-warning-signs-before-the-business-stalls",
     title: "Owner Dispute Warning Signs Before the Business Stalls",
     category: "Owner Disputes",
-    metaTitle: "Owner Dispute Warning Signs Before the Business Stalls",
+    metaTitle: "Owner Dispute Warning Signs to Watch",
     metaDescription:
-      "Common early warning signs in owner and operating agreement disputes, and why early analysis can protect leverage.",
+      "Common early warning signs in owner and operating-agreement disputes — and why early analysis can protect your leverage before the business stalls. Learn them.",
     excerpt:
       "Owner disputes usually give warning signs before they become full business shutdown events. The challenge is noticing them early enough to act intelligently.",
     takeaways: [
@@ -839,9 +839,9 @@ export const resources: ResourceContent[] = [
     slug: "what-investigate-and-advise-looks-like-before-suit",
     title: "What Investigate and Advise Looks Like Before Suit",
     category: "Strategic Case Assessment",
-    metaTitle: "What Investigate and Advise Looks Like Before Suit",
+    metaTitle: "What 'Investigate and Advise' Means",
     metaDescription:
-      "A practical explanation of early case assessment, strategic document review, and decision-focused pre-suit guidance for business and real estate disputes.",
+      "How early case assessment and strategic document review guide pre-suit decisions in Tennessee business and real estate disputes. See what to weigh first.",
     hook: "Something went wrong — a deal, a contract, a business relationship. You're not sure whether you have a claim worth pursuing, or what the right first move even is. This is what pre-suit case assessment is for: clarity before commitment.",
     excerpt:
       "Not every serious dispute should move straight to a demand letter or lawsuit. Sometimes the most valuable work comes first: figure out what actually matters, who is involved, and what the next move should accomplish.",

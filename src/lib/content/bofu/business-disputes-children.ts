@@ -8,7 +8,7 @@ export const businessDisputesChildren: BofuService[] = [
     slug: "business-partnership-dispute-attorney-tennessee",
     hub: "business-disputes",
     primaryKeyword: "Business Partnership Dispute Attorney in Tennessee",
-    title: "Business Partnership Dispute Attorney in TN | Nault Law",
+    title: "Business Partnership Dispute Attorney in TN",
     h1: "Business Partnership Dispute Attorney in Tennessee",
     metaDescription:
       "Business partnership dispute attorney in Tennessee for member buyouts, business divorces, and partnership breakups. Call Nault Law.",
@@ -54,7 +54,7 @@ export const businessDisputesChildren: BofuService[] = [
     slug: "non-compete-attorney-tennessee",
     hub: "business-disputes",
     primaryKeyword: "Non-Compete Attorney in Tennessee",
-    title: "Non-Compete Attorney in Tennessee | Nault Law",
+    title: "Non-Compete Attorney in Tennessee",
     h1: "Non-Compete Attorney in Tennessee",
     metaDescription:
       "Non-compete attorney in Tennessee. Enforcement and defense of non-compete, non-solicit, and confidentiality clauses. Call Nault Law.",
@@ -100,7 +100,7 @@ export const businessDisputesChildren: BofuService[] = [
     slug: "llc-member-buyout-attorney-tennessee",
     hub: "business-disputes",
     primaryKeyword: "LLC Member Buyout Attorney in Tennessee",
-    title: "LLC Member Buyout Attorney in Tennessee | Nault Law",
+    title: "LLC Member Buyout Attorney in Tennessee",
     h1: "LLC Member Buyout Attorney in Tennessee",
     metaDescription:
       "LLC member buyout attorney in Tennessee for member exit, dissociation, and forced-buyout disputes — valuation and OA enforcement. Call Nault Law.",
@@ -146,7 +146,7 @@ export const businessDisputesChildren: BofuService[] = [
     slug: "shareholder-dispute-attorney-tennessee",
     hub: "business-disputes",
     primaryKeyword: "Shareholder Dispute Attorney in Tennessee",
-    title: "Shareholder Dispute Attorney in Tennessee | Nault Law",
+    title: "Shareholder Dispute Attorney in Tennessee",
     h1: "Shareholder Dispute Attorney in Tennessee",
     metaDescription:
       "Shareholder dispute attorney in Tennessee for closely held corporations — minority oppression, books-and-records, forced buyouts. Call Nault Law.",
@@ -192,7 +192,7 @@ export const businessDisputesChildren: BofuService[] = [
     slug: "breach-of-fiduciary-duty-attorney-tennessee",
     hub: "business-disputes",
     primaryKeyword: "Breach of Fiduciary Duty Attorney in Tennessee",
-    title: "Breach of Fiduciary Duty Attorney in TN | Nault Law",
+    title: "Breach of Fiduciary Duty Attorney in TN",
     h1: "Breach of Fiduciary Duty Attorney in Tennessee",
     metaDescription:
       "Breach of fiduciary duty attorney in Tennessee for managers, members, partners, and officers in self-dealing and loyalty claims. Call Nault Law.",
@@ -238,7 +238,7 @@ export const businessDisputesChildren: BofuService[] = [
     slug: "tortious-interference-attorney-tennessee",
     hub: "business-disputes",
     primaryKeyword: "Tortious Interference Attorney in Tennessee",
-    title: "Tortious Interference Attorney in Tennessee | Nault Law",
+    title: "Tortious Interference Attorney in Tennessee",
     h1: "Tortious Interference Attorney in Tennessee",
     metaDescription:
       "Tortious interference attorney in Tennessee for businesses with claims over stolen clients, disrupted contracts, and unfair recruitment. Call Nault Law.",

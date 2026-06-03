@@ -7,9 +7,9 @@ import { createMetadata } from "@/lib/metadata";
 import { collectionPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = createMetadata({
-  title: "Articles",
+  title: "Tennessee Business & Real Estate Law Guides",
   description:
-    "Practical writing on Tennessee commercial leasing, TREC matters, real estate disputes, and the industry issues that sit underneath them.",
+    "Practical guides on Tennessee commercial leasing, TREC matters, real estate disputes, owner conflicts, and the industry issues that sit underneath them.",
   path: "/articles",
 });
 

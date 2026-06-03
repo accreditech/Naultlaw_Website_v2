@@ -8,7 +8,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "quiet-title-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Quiet Title Attorney in Tennessee",
-    title: "Quiet Title Attorney in Tennessee | Nault Law",
+    title: "Quiet Title Attorney in Tennessee",
     h1: "Quiet Title Attorney in Tennessee",
     metaDescription:
       "Quiet title attorney in Tennessee for cloud-on-title, missing-heir, and adverse-possession actions. Statewide advice. Call Nault Law.",
@@ -69,7 +69,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "easement-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Easement Attorney in Tennessee",
-    title: "Easement Attorney in Tennessee | Nault Law",
+    title: "Easement Attorney in Tennessee",
     h1: "Easement Attorney in Tennessee",
     metaDescription:
       "Easement attorney in Tennessee for access, utility, and prescriptive easement disputes. Statewide advice. Call Nault Law.",
@@ -115,7 +115,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "title-defect-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Title Defect Attorney in Tennessee",
-    title: "Title Defect Attorney in Tennessee | Nault Law",
+    title: "Title Defect Attorney in Tennessee",
     h1: "Title Defect Attorney in Tennessee",
     metaDescription:
       "Title defect attorney in Tennessee for cloud-on-title, missing instruments, and broken chain-of-title issues. Call Nault Law.",
@@ -161,7 +161,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "real-estate-fraud-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Real Estate Fraud Attorney in Tennessee",
-    title: "Real Estate Fraud Attorney in Tennessee | Nault Law",
+    title: "Real Estate Fraud Attorney in Tennessee",
     h1: "Real Estate Fraud Attorney in Tennessee",
     metaDescription:
       "Real estate fraud attorney in Tennessee for misrepresentation, wire fraud, deed fraud, and seller-disclosure claims. Call Nault Law.",
@@ -207,7 +207,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "mechanics-lien-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Mechanics Lien Attorney in Tennessee",
-    title: "Mechanics Lien Attorney in Tennessee | Nault Law",
+    title: "Mechanics Lien Attorney in Tennessee",
     h1: "Mechanics Lien Attorney in Tennessee",
     metaDescription:
       "Mechanics lien attorney in Tennessee for contractors and suppliers. Notice, filing, perfection, and enforcement under tight deadlines. Call Nault Law.",
@@ -275,7 +275,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "property-line-dispute-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Property Line Dispute Attorney in Tennessee",
-    title: "Property Line Dispute Attorney in Tennessee | Nault Law",
+    title: "Property Line Dispute Attorney in Tennessee",
     h1: "Property Line Dispute Attorney in Tennessee",
     metaDescription:
       "Property line dispute attorney in Tennessee. Boundary, encroachment, and adverse possession disputes. Statewide advice. Call Nault Law.",
@@ -321,7 +321,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "real-estate-attorney-gallatin-tn",
     hub: "real-estate-disputes",
     primaryKeyword: "Real Estate Attorney in Gallatin TN",
-    title: "Real Estate Attorney in Gallatin TN | Nault Law",
+    title: "Real Estate Attorney in Gallatin TN",
     h1: "Real Estate Attorney in Gallatin TN",
     metaDescription:
       "Real estate attorney in Gallatin TN for Sumner County contract, advisory, and dispute work. Trial in surrounding counties. Call Nault Law.",
@@ -369,7 +369,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "specific-performance-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Specific Performance Attorney in Tennessee",
-    title: "Specific Performance Attorney in Tennessee | Nault Law",
+    title: "Specific Performance Attorney in Tennessee",
     h1: "Specific Performance Attorney in Tennessee",
     metaDescription:
       "Specific performance attorney in Tennessee for breached real estate purchase contracts — forcing closing, lis pendens, and equitable remedies. Call Nault Law.",
@@ -415,7 +415,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "earnest-money-dispute-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Earnest Money Dispute Attorney in Tennessee",
-    title: "Earnest Money Dispute Attorney in Tennessee | Nault Law",
+    title: "Earnest Money Dispute Attorney in Tennessee",
     h1: "Earnest Money Dispute Attorney in Tennessee",
     metaDescription:
       "Earnest money dispute attorney in Tennessee for buyers and sellers fighting over deposit release after a deal falls through. Call Nault Law.",
@@ -461,7 +461,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "failure-to-disclose-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Failure to Disclose Attorney in Tennessee",
-    title: "Failure to Disclose Attorney in Tennessee | Nault Law",
+    title: "Failure to Disclose Attorney in Tennessee",
     h1: "Failure to Disclose Attorney in Tennessee",
     metaDescription:
       "Failure to disclose attorney in Tennessee for buyers with claims against sellers over material defects withheld at sale. Call Nault Law.",
@@ -507,7 +507,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "construction-defect-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Construction Defect Attorney in Tennessee",
-    title: "Construction Defect Attorney in Tennessee | Nault Law",
+    title: "Construction Defect Attorney in Tennessee",
     h1: "Construction Defect Attorney in Tennessee",
     metaDescription:
       "Construction defect attorney in Tennessee for owners and contractors on workmanship, design, and materials defect claims. Call Nault Law.",
@@ -554,7 +554,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "hoa-dispute-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "HOA Dispute Attorney in Tennessee",
-    title: "HOA Dispute Attorney in Tennessee | Nault Law",
+    title: "HOA Dispute Attorney in Tennessee",
     h1: "HOA Dispute Attorney in Tennessee",
     metaDescription:
       "HOA dispute attorney in Tennessee for homeowners and associations on covenant enforcement, assessments, and architectural-review disputes. Call Nault Law.",
@@ -600,7 +600,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "property-condition-disclosure-dispute-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Property Condition Disclosure Dispute Attorney in Tennessee",
-    title: "Property Condition Disclosure Attorney TN | Nault Law",
+    title: "Property Condition Disclosure Attorney TN",
     h1: "Property Condition Disclosure Dispute Attorney in Tennessee",
     metaDescription:
       "Property condition disclosure dispute attorney in Tennessee for buyers and sellers in TRPCDA failure-to-disclose claims. Call Nault Law.",
@@ -647,7 +647,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "foreclosure-excess-proceeds-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Foreclosure Excess Proceeds Attorney in Tennessee",
-    title: "Foreclosure Excess Proceeds Attorney TN | Nault Law",
+    title: "Foreclosure Excess Proceeds Attorney TN",
     h1: "Foreclosure Excess Proceeds Attorney in Tennessee",
     metaDescription:
       "Foreclosure excess proceeds attorney in Tennessee for former owners and lienholders recovering surplus funds from trustee sales. Call Nault Law.",
@@ -694,7 +694,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "landlord-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Landlord Attorney in Tennessee",
-    title: "Landlord Attorney in Tennessee | Nault Law",
+    title: "Landlord Attorney in Tennessee",
     h1: "Landlord Attorney in Tennessee",
     metaDescription:
       "Landlord attorney in Tennessee for residential and commercial landlords — lease enforcement, default, possession, deposits, and advisory work. Call Nault Law.",
@@ -740,7 +740,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "tenant-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Tenant Attorney in Tennessee",
-    title: "Tenant Attorney in Tennessee | Nault Law",
+    title: "Tenant Attorney in Tennessee",
     h1: "Tenant Attorney in Tennessee",
     metaDescription:
       "Tenant attorney in Tennessee for residential and commercial tenants — lease defense, deposit recovery, habitability, and mold claims. Call Nault Law.",
@@ -787,7 +787,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "eviction-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Eviction Attorney in Tennessee",
-    title: "Eviction Attorney in Tennessee | Nault Law",
+    title: "Eviction Attorney in Tennessee",
     h1: "Eviction Attorney in Tennessee",
     metaDescription:
       "Eviction attorney in Tennessee representing landlords statewide — detainer warrants, judgments, writs of possession. Call Nault Law.",
@@ -833,7 +833,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "eviction-defense-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Eviction Defense Attorney in Tennessee",
-    title: "Eviction Defense Attorney in Tennessee | Nault Law",
+    title: "Eviction Defense Attorney in Tennessee",
     h1: "Eviction Defense Attorney in Tennessee",
     metaDescription:
       "Eviction defense attorney in Tennessee representing tenants — detainer-warrant defense, procedural challenges, and habitability defenses. Call Nault Law.",
@@ -879,7 +879,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "mold-claim-attorney-tennessee",
     hub: "real-estate-disputes",
     primaryKeyword: "Mold Claim Attorney in Tennessee",
-    title: "Mold Claim Attorney in Tennessee | Nault Law",
+    title: "Mold Claim Attorney in Tennessee",
     h1: "Mold Claim Attorney in Tennessee",
     metaDescription:
       "Mold claim attorney in Tennessee for tenants, homeowners, and commercial occupants pursuing claims over mold and water-intrusion damage. Call Nault Law.",
@@ -926,7 +926,7 @@ export const realEstateDisputesChildren: BofuService[] = [
     slug: "eviction-attorney-sumner-county-tn",
     hub: "real-estate-disputes",
     primaryKeyword: "Eviction Attorney in Sumner County TN",
-    title: "Eviction Attorney in Sumner County TN | Nault Law",
+    title: "Eviction Attorney in Sumner County TN",
     h1: "Eviction Attorney in Sumner County TN",
     metaDescription:
       "Eviction attorney in Sumner County TN representing landlords and property managers. Detainer warrants, judgments, writs of possession. Call Nault Law.",

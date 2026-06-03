@@ -14,14 +14,14 @@ import {
 
 export const metadata: Metadata = {
   ...createMetadata({
-    title: "Home",
+    title: "Business & Real Estate Attorney in Gallatin, TN",
     description:
-      "Business, real estate, and dispute-resolution counsel for owners, investors, brokers, contractors, and real estate professionals in Sumner County and surrounding counties.",
+      "Business, real estate, and dispute-resolution counsel for owners, investors, brokers, and contractors across Middle Tennessee. Schedule a consultation.",
     path: "/",
   }),
   // Homepage shares a route segment with the root layout, so the layout's
-  // title.template doesn't auto-apply here. Set the full title directly.
-  title: "NaultLaw - Home",
+  // title.template doesn't auto-apply here. Set the full branded title directly.
+  title: "Business & Real Estate Attorney in Gallatin, TN | Nault Law",
 };
 
 const FEATURED_PA = [

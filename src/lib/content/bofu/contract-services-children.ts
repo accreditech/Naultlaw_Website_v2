@@ -5,7 +5,7 @@ export const contractServicesChildren: BofuService[] = [
     slug: "contract-review-attorney-tennessee",
     hub: "contract-services",
     primaryKeyword: "Contract Review Attorney in Tennessee",
-    title: "Contract Review Attorney in Tennessee | Nault Law",
+    title: "Contract Review Attorney in Tennessee",
     h1: "Contract Review Attorney in Tennessee",
     metaDescription:
       "Contract review attorney in Tennessee for vendor, independent-contractor, lease, and real-estate agreements. Flat-fee review available. Call Nault Law.",
@@ -53,7 +53,7 @@ export const contractServicesChildren: BofuService[] = [
     slug: "independent-contractor-agreement-attorney-tennessee",
     hub: "contract-services",
     primaryKeyword: "Independent Contractor Agreement Attorney in Tennessee",
-    title: "Independent Contractor Agreement Attorney TN | Nault Law",
+    title: "Independent Contractor Agreement Attorney TN",
     h1: "Independent Contractor Agreement Attorney in Tennessee",
     metaDescription:
       "Independent contractor agreement attorney in Tennessee for businesses hiring 1099 contractors. Drafting and review. Call Nault Law.",
@@ -101,7 +101,7 @@ export const contractServicesChildren: BofuService[] = [
     slug: "vendor-agreement-attorney-tennessee",
     hub: "contract-services",
     primaryKeyword: "Vendor Agreement Attorney in Tennessee",
-    title: "Vendor Agreement Attorney in Tennessee | Nault Law",
+    title: "Vendor Agreement Attorney in Tennessee",
     h1: "Vendor Agreement Attorney in Tennessee",
     metaDescription:
       "Vendor agreement attorney in Tennessee for small businesses negotiating supplier, SaaS, and service contracts. Call Nault Law.",
@@ -149,7 +149,7 @@ export const contractServicesChildren: BofuService[] = [
     slug: "construction-contract-attorney-tennessee",
     hub: "contract-services",
     primaryKeyword: "Construction Contract Attorney in Tennessee",
-    title: "Construction Contract Attorney in Tennessee | Nault Law",
+    title: "Construction Contract Attorney in Tennessee",
     h1: "Construction Contract Attorney in Tennessee",
     metaDescription:
       "Construction contract attorney in Tennessee. AIA, custom, and subcontract drafting and review for builders and owners. Call Nault Law.",
@@ -197,7 +197,7 @@ export const contractServicesChildren: BofuService[] = [
     slug: "commercial-lease-attorney-tennessee",
     hub: "contract-services",
     primaryKeyword: "Commercial Lease Attorney in Tennessee",
-    title: "Commercial Lease Attorney in Tennessee | Nault Law",
+    title: "Commercial Lease Attorney in Tennessee",
     h1: "Commercial Lease Attorney in Tennessee",
     metaDescription:
       "Commercial lease attorney in Tennessee. Drafting, review, renewal, and disputes for tenants and landlords. Flat-fee review available. Call Nault Law.",
@@ -245,7 +245,7 @@ export const contractServicesChildren: BofuService[] = [
     slug: "nda-attorney-tennessee",
     hub: "contract-services",
     primaryKeyword: "NDA Attorney in Tennessee",
-    title: "NDA Attorney in Tennessee | Nault Law",
+    title: "NDA Attorney in Tennessee",
     h1: "NDA Attorney in Tennessee",
     metaDescription:
       "NDA attorney in Tennessee for confidentiality agreements, mutual NDAs, and unilateral NDAs in vendor, employment, and acquisition contexts. Call Nault Law.",
@@ -293,7 +293,7 @@ export const contractServicesChildren: BofuService[] = [
     slug: "asset-purchase-agreement-attorney-tennessee",
     hub: "contract-services",
     primaryKeyword: "Asset Purchase Agreement Attorney in Tennessee",
-    title: "Asset Purchase Agreement Attorney in TN | Nault Law",
+    title: "Asset Purchase Agreement Attorney in TN",
     h1: "Asset Purchase Agreement Attorney in Tennessee",
     metaDescription:
       "Asset purchase agreement attorney in Tennessee for small business sales — APA drafting, review, and closing-stage negotiation. Call Nault Law.",
