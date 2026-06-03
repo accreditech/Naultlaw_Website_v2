@@ -135,6 +135,9 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
+            // LCP image. It sits under two heavy dark gradient overlays, so a
+            // lower quality is visually identical while cutting LCP bytes.
+            quality={60}
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
           <div
