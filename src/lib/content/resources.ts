@@ -28,7 +28,7 @@ export const resources: ResourceContent[] = [
     metaDescription:
       "How a Tennessee broker complaint can become a records problem when transaction files, trust-money records, and disclosures don't line up. Learn what to check.",
     excerpt:
-      "By the time I review a Tennessee broker complaint, the fight has usually stopped being about the allegation and started being about the file — what the transaction records, disclosures, communications, and money trail can actually prove.",
+      "In most Tennessee broker complaints I review, the fight has stopped being about the allegation and become about the file — what the transaction records, disclosures, communications, and money trail can actually prove.",
     takeaways: [
       "A broker complaint can quickly become a records problem once the review turns from allegation to proof.",
       "Transaction-file completeness, retention, accessibility, and trust-money records can materially affect how a complaint is evaluated.",
@@ -606,7 +606,7 @@ export const resources: ResourceContent[] = [
     takeaways: [
       "Default and notice mechanics shape leverage later.",
       "Transfer rights and guaranties deserve more scrutiny than many parties give them.",
-      "Operating covenants can quietly reshape the economics of a deal.",
+      "Operating covenants can gradually reshape the economics of a deal.",
     ],
     audience: [
       "Owners and investors reviewing a new lease or amendment",
