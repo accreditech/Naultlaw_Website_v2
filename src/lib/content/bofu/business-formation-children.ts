@@ -78,52 +78,27 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Operating agreement attorney in Tennessee for multi-member, single-member, and manager-managed LLCs with buy-sell terms. Call Nault Law.",
     intro:
-      "Operating agreement attorney in Tennessee drafting and revising LLC governance for single-member, multi-member, and manager-managed companies — capital, distributions, voting, transfer restrictions, and buy-sell terms tailored to the actual business.",
+      "An operating agreement is the document that decides how your LLC actually runs — who decides what, how money moves, and what happens when a member dies, divorces, or wants out. I draft them to match the real business, because a generic one only looks fine until the company is under stress.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "It only earns its fee if it matches how you run the company",
         paragraphs: [
-          "An operating agreement governs how the LLC actually runs: who decides what, how money flows, how members are admitted or removed, and what happens when one member exits, dies, or wants out. The document only earns its fee if it matches the way the business operates in practice.",
-          "Drafting addresses capital contributions and capital accounts, profit and loss allocation, voting and consent thresholds, manager authority, transfer restrictions, drag-along and tag-along rights, deadlock procedures, and buy-sell mechanics.",
+          "Most LLCs are formed with a template operating agreement nobody reads again. That holds up right until something happens — a partner wants out, a member stops contributing, a deadlock freezes a decision. At that point the document either answers the question or it does not, and a generic one usually does not.",
+          "So I draft around the parts that actually get tested: capital contributions and how they are tracked, how profit and loss get allocated, voting and consent thresholds, manager authority, transfer restrictions, and the buy-sell mechanics. The job is to write down what the owners already expect of each other, before anyone has a reason to argue about it.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "The five provisions that decide what happens under stress",
         paragraphs: [
-          "Multi-member LLCs that closed their formation with a generic template and need a real document before a partner change. Single-member LLCs whose lender or accountant has asked for one. Real-estate investment LLCs combining several owners across multiple properties.",
+          "If I had to name the clauses that matter most when a business gets tense, it is these five. First, capital-call mechanics — what happens when a member cannot or will not put in more money: dilution, a default, a forced sale, or an interest-bearing loan. Second, a real valuation method for a buyout, with an actual formula or process instead of the words 'fair market value,' which is just an appraisal fight waiting to happen. Third, what happens on a member's death, divorce, disability, or bankruptcy, including who buys and on what timeline. Fourth, a deadlock procedure for the big decisions — mediation, a buy-sell trigger, or a dissolution threshold. Fifth, transfer restrictions, so no member can sell a stake to a stranger without the others' consent.",
+          "Genericizing any of those is the most expensive shortcut owners take. Careful drafting now costs a fraction of litigating the ambiguity later.",
         ],
       },
       {
-        h2: "Common upgrades from template documents",
+        h2: "Settle the buyout math before there is a buyout",
         paragraphs: [
-          "Most online operating agreements miss the items that matter when the business is actually under stress: capital-call mechanics, valuation method for a forced buyout, what happens on a member's divorce or death, and how disputes are resolved without dragging the company into court.",
-        ],
-      },
-      {
-        h2: "Five provisions that matter under stress",
-        paragraphs: [
-          "Generic operating agreements look fine at signing and fail when the business is actually under stress. The five provisions worth getting right are: (1) capital-call mechanics, including what happens when a member cannot or will not contribute additional capital — dilution, default, forced sale, or interest-bearing loan; (2) the valuation method for a forced or voluntary buyout, with a concrete formula or process rather than vague 'fair market value' language; (3) what happens on a member's death, divorce, disability, or bankruptcy, including buyout obligations and timing; (4) deadlock procedures for major decisions, including mediation, buy-sell triggers, or judicial-dissolution thresholds; and (5) transfer restrictions that prevent a member from selling their interest to a third party without the other members' consent.",
-          "Skipping or genericizing any of these is the most expensive choice owners make. The cost of careful drafting now is a fraction of the cost of litigating ambiguity later.",
-        ],
-      },
-      {
-        h2: "Capital contributions and capital accounts",
-        paragraphs: [
-          "Operating agreement work begins with capital — what each member contributes (cash, property, services), how those contributions are valued, and how the resulting capital accounts are tracked over time. Capital accounts matter because most distribution and liquidation provisions reference them.",
-          "An LLC that distributes pro rata to ownership percentages is the simplest case; LLCs with preferred returns, waterfalls, or different economic and voting interests need careful drafting. The agreement should also address whether and how members can withdraw capital during the LLC's life — most agreements restrict this to prevent members from undermining the business by pulling funds at the wrong time.",
-        ],
-      },
-      {
-        h2: "Buy-sell triggers and valuation method",
-        paragraphs: [
-          "The buy-sell mechanics are the most-litigated piece of operating agreements when they come into play. Trigger events typically include death, disability, divorce, voluntary withdrawal, termination of employment (for owner-employees), and bankruptcy. The agreement should specify which of those events creates a buyout right, who has the right to buy (the LLC, the other members, or a designated successor), and how the buyout is valued and paid.",
-          "A common drafting failure is requiring 'fair market value' without specifying a valuation method — that often means an expensive appraisal fight when a buyout is triggered. Better drafting fixes a formula (multiple of EBITDA, book value plus a multiplier, or annually-updated agreed value) so the math is decided upfront rather than at the moment of conflict.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "First call covers the business model, ownership economics, and exit expectations. A draft typically goes back within one to two weeks; revisions follow once members have read and aligned. Flat-fee or capped pricing available for straightforward agreements.",
+          "The buy-sell piece gets litigated most once it is triggered. The agreement should say which events create a buyout right, who gets to buy — the LLC, the other members, or a named successor — and how the price is set and paid. Fixing the method upfront, whether that is a multiple of earnings, book value plus a multiplier, or an annually updated agreed value, takes the fight out of the moment it would otherwise start.",
+          "What an LLC actually needs in its operating agreement comes down to its owners, its economics, and how they really plan to run it. If you are putting one in place or replacing a template that does not fit, send the basics and I will tell you where the gaps are.",
         ],
       },
       {
@@ -147,31 +122,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "PLLC formation attorney in Tennessee for licensed professionals — doctors, dentists, CPAs, architects, and more. Statewide. Call Nault Law.",
     intro:
-      "PLLC formation attorney in Tennessee for licensed professionals — doctors, dentists, CPAs, architects, engineers, and others required by their licensing board to practice through a professional limited liability company.",
+      "If you are a licensed professional in Tennessee — a doctor, dentist, CPA, architect, engineer, and so on — your licensing board usually requires you to practice through a PLLC rather than a regular LLC. I form them with the board's rules built in, not bolted on afterward.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Why a PLLC instead of a regular LLC",
         paragraphs: [
-          "Tennessee professionals subject to licensing-board rules generally must form a PLLC rather than a standard LLC. The formation work covers articles, member eligibility under the relevant board's rules, professional-services restrictions, and the operating-agreement provisions specific to professional practice.",
-          "Licensing-board verification, name approval, and any board-specific filings are coordinated as part of the engagement.",
+          "A PLLC is the LLC variant the state requires for a number of licensed professions, and the difference is not cosmetic. Who can own it, who can practice through it, and even how the name has to read are governed by your licensing board, on top of the standard LLC rules. Form a plain LLC for a profession that needs a PLLC and you can plant a problem that surfaces at the worst time — a license renewal, an audit, or a claim.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Your board sets rules the Secretary of State does not",
         paragraphs: [
-          "Solo practitioners forming their first professional entity. Group practices reorganizing as a PLLC. Out-of-state professionals expanding into Tennessee who need a TN-domiciled professional entity.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Each licensing board has its own rules about who can be a PLLC member, who can practice, and how the entity name must read. The right structure depends on the profession, member composition, and how revenue and liability are intended to flow.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Most engagements move from intake to filed articles within one to two weeks, depending on board verification timelines. Operating agreement drafting follows. Pricing is generally a flat fee for straightforward PLLCs and capped for multi-professional engagements.",
+          "Each licensing board has its own requirements about member eligibility, professional-services restrictions, and entity naming. The right structure depends on the profession, who the members are, and how revenue and liability are meant to flow. I handle formation around those board rules — articles, member-eligibility confirmation, name approval, and the operating-agreement provisions specific to professional practice — and coordinate any board-specific filing the profession requires.",
+          "Whether you are a solo practitioner forming a first entity, a group reorganizing as a PLLC, or an out-of-state professional setting up a Tennessee-domiciled practice, the structure follows your board's rules and your facts. That is worth a short conversation before anything is filed.",
         ],
       },
       {
@@ -195,31 +158,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "S-Corp election attorney in Tennessee for existing LLCs and corporations seeking S-Corp tax treatment. Statewide. Call Nault Law.",
     intro:
-      "S-Corp election attorney in Tennessee for existing LLCs and corporations seeking S-Corp tax treatment — IRS Form 2553 filings, corresponding governance updates, and the operating-document changes that keep the election clean.",
+      "An S-Corp election is a federal tax move your CPA usually drives. My side is the legal cleanup that keeps it clean — filing IRS Form 2553, updating the operating agreement or bylaws, and getting the governance to match what the election assumes.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "A tax decision with legal cleanup attached",
         paragraphs: [
-          "S-Corp election work coordinates the legal side of a tax decision typically led by the client's CPA. The election is filed via IRS Form 2553. The corresponding legal work updates the operating agreement or bylaws, confirms reasonable-compensation structure, and locks down the governance posture the election requires.",
-          "Where appropriate, the engagement addresses TN franchise-and-excise tax interaction, payroll-startup steps, and member or shareholder distribution mechanics.",
+          "The election itself is a tax call, and it usually starts to make sense once a business earns enough that the self-employment-tax savings beat the cost of running real payroll. Once the CPA recommends it, the legal work is to file Form 2553, update the operating agreement or bylaws, confirm a defensible reasonable-compensation structure, and lock down the governance the election requires. Where it matters, that also means sorting the franchise-and-excise interaction, the payroll startup, and how distributions actually run.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "The timing is the part that bites people",
         paragraphs: [
-          "Single-member LLCs that have grown enough that their CPA has recommended an S-Corp election. Multi-member LLCs evaluating the trade-offs. Existing C-Corps converting to S-Corp status.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Federal S-Corp election does not eliminate Tennessee franchise and excise tax exposure for most entities. The legal work confirms eligibility, files Form 2553 in coordination with the CPA, and updates governance documents to reflect the new posture.",
-        ],
-      },
-      {
-        h2: "Timing",
-        paragraphs: [
-          "Form 2553 is generally due no later than two months and 15 days after the start of the tax year for which the S-Corp election is to take effect (IRC § 1362; IRS Form 2553 instructions). Late relief is commonly requested under Rev. Proc. 2013-30 with reasonable-cause language and the required shareholder and entity statements. Early planning avoids the late-relief route.",
+          "Form 2553 is generally due no later than two months and 15 days after the start of the tax year you want the election to cover (IRC § 1362, and the Form 2553 instructions). Miss it and there is a late-relief path under Rev. Proc. 2013-30 — reasonable-cause language plus the required shareholder and entity statements — but it is an avoidable detour. That is why I raise the deadline at the start of an engagement, not the end. And electing S-Corp does not get a Tennessee entity out of franchise-and-excise tax.",
+          "Whether the election is worth it, and whether your documents support it, comes down to your numbers and your structure — a question for you, your CPA, and me together.",
         ],
       },
       {
@@ -243,31 +194,20 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Series LLC attorney in Tennessee for real-estate investors and holding companies running multi-property portfolios. Call Nault Law.",
     intro:
-      "Series LLC attorney in Tennessee for real-estate investors, holding companies, and multi-asset operators — formation, series-establishment documents, operating agreements, and the per-series records that keep liability segregation defensible.",
+      "A series LLC lets you hold several assets under one parent entity while keeping each one's liability walled off from the others. For real-estate investors especially, it can do the job of separate LLCs per property — but only if it is set up and run with real discipline.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "One parent, separate liability per asset — if you run it right",
         paragraphs: [
-          "Tennessee allows series LLCs as a way to segregate the liability of distinct assets within a single parent entity. Done correctly, each series is treated as functionally separate; done sloppily, the liability shield can break down. The work covers parent formation, series-specific organizational documents, and the recordkeeping protocol per series.",
-          "For real-estate investors, this typically means one parent LLC with each property in its own series, separate bank accounts and bookkeeping, and separate operating documents per series.",
+          "Tennessee lets you use a series LLC to segregate the liability of distinct assets inside a single parent. Done correctly, each series is treated as functionally separate, so a problem in one does not reach the others. Done sloppily, the wall between them comes down, and you are left with one big entity instead of the protection you paid for. The setup is the parent formation, the organizational documents for each series, and a recordkeeping protocol that actually keeps them apart.",
+          "For a real-estate investor, that usually looks like one parent LLC with each property in its own series — each with its own bank account, its own bookkeeping, and its own operating documents.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "The segregation only holds if you respect the formalities",
         paragraphs: [
-          "Real-estate investors with multiple properties who want isolation without paying for separate LLCs per asset. Holding-company structures with multiple operating subsidiaries. Multi-fund or multi-deal sponsors needing clean segregation.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Series LLC liability segregation depends on respecting series-by-series formality — separate accounting, separate signatures, and separate documentation. Tennessee tax treatment of series can be nuanced; coordination with the CPA is part of the engagement.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Parent formation typically files within a week. Series-establishment paperwork follows per asset. Operating agreement drafting addresses both the master LLC and the per-series rules. Capped pricing is available for multi-series engagements.",
+          "The separation is not automatic. It depends on treating each series like its own company: separate accounting, separate signatures, separate paperwork. Blur those and a creditor has an argument that the series should be collapsed back together. Tennessee's tax treatment of series can also be nuanced, so I coordinate that with your CPA as part of the setup.",
+          "Whether a series LLC is the right tool, or whether separate LLCs or a holding structure fits better, depends on your assets, your lenders, and how you actually plan to operate. Lay out the properties and the ownership, and we can work out whether a series, separate LLCs, or a holding structure actually fits.",
         ],
       },
       {
@@ -291,31 +231,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Buy-sell agreement attorney in Tennessee for multi-member LLCs and partnerships planning member exits, deaths, or sales. Call Nault Law.",
     intro:
-      "Buy-sell agreement attorney in Tennessee for multi-member LLCs, corporations, and partnerships planning what happens when an owner dies, divorces, becomes disabled, or wants out — valuation method, payment terms, and trigger events written before the trigger fires.",
+      "A buy-sell agreement is what keeps an ownership change from turning into an emergency. It decides, in advance, what happens when an owner dies, divorces, becomes disabled, or simply wants out — who buys, at what price, and on what terms — so the remaining owners are not negotiating it in the middle of a crisis.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "The agreement that keeps a change in ownership from becoming a crisis",
         paragraphs: [
-          "A buy-sell agreement is the contract that prevents an ownership change from becoming an emergency. The work addresses trigger events (death, divorce, disability, voluntary exit, default), the valuation method, payment terms, life-insurance funding where appropriate, and the procedural mechanics that govern an exit.",
-          "Standalone buy-sell agreements and operating-agreement embedded provisions are both common; the right form depends on the entity type and member preferences.",
+          "Most closely held businesses run for years without one, and it works fine until the day it does not — a death, a divorce decree that puts an ex-spouse on the cap table, a partner who wants out at a price nobody can agree on. A buy-sell settles the trigger events (death, divorce, disability, voluntary exit, default), the valuation method, the payment terms, life-insurance funding where it fits, and the procedural steps that govern the exit. It can stand alone or live inside the operating agreement; which form fits depends on the entity and what the owners want.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Where the template versions fall short",
         paragraphs: [
-          "Multi-member LLCs and partnerships without an existing buy-sell. Closely held corporations with shareholders who have not addressed exit planning. Family-owned businesses where succession is approaching.",
-        ],
-      },
-      {
-        h2: "Common gaps in template agreements",
-        paragraphs: [
-          "Boilerplate buy-sells often miss the items that matter under stress: a real valuation method (not just 'fair market value' with no formula), payment terms that the surviving owners can actually fund, and trigger language that addresses divorce and disability — not just death.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "First call covers ownership, financial picture, and exit scenarios. Draft typically goes back within two weeks; revisions follow once owners have aligned. Coordination with the CPA and life-insurance professional is common.",
+          "Boilerplate buy-sells tend to miss the parts that matter under stress: a real valuation method instead of 'fair market value' with no formula behind it; payment terms the surviving owners can actually fund; and trigger language that handles divorce and disability, not only death. Those are exactly the gaps that turn a planned transition into litigation.",
+          "What your business needs depends on its owners, its finances, and the exit scenarios that are realistic for it — often a conversation that includes your CPA and your life-insurance professional. Walk me through the ownership and the picture, and we can build the agreement around the exit scenarios that are real for you.",
         ],
       },
       {
@@ -339,31 +267,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Corporation formation attorney in Tennessee for founders choosing C-Corp or S-Corp structure. Bylaws, stock, and governance. Call Nault Law.",
     intro:
-      "Corporation formation attorney in Tennessee for founders intentionally choosing a C-Corp or S-Corp structure rather than an LLC — articles of incorporation, bylaws, stock issuance, board organization, and the governance posture investors expect.",
+      "Most new businesses should be LLCs. A few should not. I form Tennessee corporations for the founders who actually need one — for outside investment, for a stock-grant compensation plan, or because the tax election calls for it — and set up the governance investors will expect to see.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "The case for a corporation over an LLC",
         paragraphs: [
-          "Corporation formation is the right choice when investors expect equity classes, when a stock-grant compensation plan is contemplated, or when the federal tax election is C-Corp. The work covers articles of incorporation, bylaws, stock issuance, organizational meeting minutes, shareholder agreements, and registered-agent setup.",
-          "Where the founders intend to elect S-Corp tax treatment, Form 2553 timing and eligibility are coordinated with the CPA at formation.",
+          "A corporation justifies its extra formality in specific situations: investors who expect equity classes and a familiar cap table, a plan to grant stock to employees, or a federal tax posture that points to C-Corp. If none of those apply, an LLC is usually simpler and cheaper. When one does apply, the corporation is worth doing right from the start rather than converting under pressure later.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Articles, stock, and the governance investors expect",
         paragraphs: [
-          "Founders who want a corporate structure for venture investment or stock-grant compensation. Family businesses moving from LLC to corporation for tax or governance reasons. Holding-company structures using a corporation at the top of the stack.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee corporations file articles with the Secretary of State and pay an annual report fee. Most are subject to franchise-and-excise tax. The choice between C-Corp and S-Corp is a tax decision led by the CPA; the legal work supports whichever election is chosen.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Articles file within a week. Bylaws, stock issuance, and organizational paperwork follow. Engagements involving multiple founders or planned investor rounds extend the timeline. Capped pricing is available for straightforward founder-only formations.",
+          "The work is the articles of incorporation, the bylaws, the initial stock issuance, organizational minutes, a shareholder agreement where there is more than one owner, and the registered agent. Tennessee corporations file with the Secretary of State, pay an annual report fee, and are generally subject to franchise-and-excise tax. If the founders intend to elect S-Corp treatment, I coordinate Form 2553 timing and eligibility with the CPA at formation, so the election is not an afterthought.",
+          "Whether a corporation or an LLC fits, and what the cap table should look like, depends on your funding plans and your founders. Give me a short picture of the business and the founders, and the right structure usually sorts itself out quickly.",
         ],
       },
       {
@@ -387,31 +303,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Foreign LLC qualification attorney in Tennessee for out-of-state LLCs registering for certificate of authority and registered agent. Call Nault Law.",
     intro:
-      "Foreign LLC qualification attorney in Tennessee for out-of-state LLCs and corporations registering to do business in TN — certificate of authority, registered-agent designation, and the operating questions a foreign entity should resolve before its first TN deal closes.",
+      "If your out-of-state LLC is going to do business in Tennessee — buy property here, open a location, run operations — it generally has to register first. I handle the certificate of authority, the Tennessee registered agent, and the tax registration that comes with it, and I will tell you honestly whether your activity even requires it.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "When an out-of-state LLC has to register — and when it might not",
         paragraphs: [
-          "When an out-of-state LLC starts doing business in Tennessee, the entity generally must apply for a certificate of authority and designate a Tennessee registered agent. The work coordinates the application, certificate-of-existence from the home state, registered-agent setup, and the franchise-and-excise tax registration that follows.",
-          "Engagements often surface secondary questions about whether the activity actually requires foreign qualification — short-term, isolated transactions sometimes do not.",
+          "Once a foreign LLC starts doing business in Tennessee, it generally must apply for a certificate of authority and name a Tennessee registered agent. But 'doing business' is not every contact with the state — a short-term, isolated transaction sometimes does not trigger the requirement. Part of the value early on is sorting out whether you actually need to qualify before paying to register for activity that does not call for it.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "What the certificate of authority takes",
         paragraphs: [
-          "Out-of-state LLCs purchasing Tennessee real estate. Multi-state operating businesses opening a Tennessee location. Investment LLCs whose limited partners or members include Tennessee residents and whose operations cross state lines.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "The certificate-of-authority application requires the home-state name (or a fictitious name if the home name is unavailable), a registered-agent address in Tennessee, and a current certificate of existence from the home state. Franchise-and-excise registration follows.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Most foreign qualifications move from intake to filed certificate within one to two weeks, depending on home-state document turnaround. Registered-agent service and franchise-and-excise registration can be coordinated within the same engagement.",
+          "The application needs your home-state name (or a fictitious name if the home name is already taken here), a Tennessee registered-agent address, and a current certificate of existence from your home state. Franchise-and-excise registration follows. I coordinate the whole sequence — the application, the home-state certificate, the registered agent, and the tax registration — so it lands in order rather than in pieces.",
+          "Whether and how to qualify depends on what you are actually doing in Tennessee and on any deadline you are working against. Tell me the planned activity and the timing, and we can sort out whether you even need to qualify.",
         ],
       },
       {
@@ -435,31 +339,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "LLC dissolution attorney in Tennessee for member-vote, deadlock, and judicial dissolution — winding up and articles of dissolution. Call Nault Law.",
     intro:
-      "LLC dissolution attorney in Tennessee for voluntary, deadlock-driven, and judicial dissolution — winding-up planning, member-distribution mechanics, articles of dissolution, and the tax and creditor steps that close the entity cleanly.",
+      "Closing an LLC is more than walking away from it. Done cleanly, dissolution ends the entity, closes its tax exposure, and protects the members from liabilities that otherwise linger. Done halfway, it leaves a zombie entity that can come back to bite the owners years later.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Closing an LLC cleanly — and why a sloppy close costs more",
         paragraphs: [
-          "Dissolution is the legal process of winding up an LLC's affairs and ending its existence. The work covers member or manager vote, notice to creditors, asset liquidation or distribution, final tax filings, and articles of dissolution with the Tennessee Secretary of State.",
-          "Where dissolution is contested — deadlock, oppression, or other grounds for judicial dissolution — the work extends into pre-suit posture and, where appropriate, court action under the Tennessee Revised LLC Act.",
+          "Dissolution is the formal process of winding up an LLC and ending its existence — the member or manager vote, notice to creditors, liquidating or distributing the assets, final tax filings, and articles of dissolution with the Tennessee Secretary of State. The reason to do it properly is concrete: an LLC that just stops filing can be administratively dissolved and can leave its members exposed to lingering liabilities and open franchise-and-excise tax. A clean close shuts all of that down.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Contested dissolutions: deadlock and oppression",
         paragraphs: [
-          "Members closing a defunct or completed LLC. Multi-member LLCs at deadlock where dissolution is the path forward. Real-estate LLCs ending after the property is sold or transferred. Members facing minority oppression who need a judicial-dissolution analysis.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee LLCs that fail to file annual reports or wind up properly can leave members exposed to administrative dissolution and lingering liabilities. A clean dissolution closes franchise-and-excise tax exposure and avoids zombie-entity problems years later.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Voluntary dissolution typically completes within four to eight weeks, depending on creditor notice and final tax timing. Contested dissolution extends with the litigation timeline. Hourly billing with retainers sized to the matter; capped pricing available for straightforward voluntary closures.",
+          "Not every dissolution is voluntary. Some come out of deadlock, where the members cannot agree and dissolution is the way out. Some involve a minority member facing oppression who needs a judicial-dissolution analysis. When it is contested, the work moves into pre-suit posture and, where it fits, a court action under the Tennessee Revised LLC Act.",
+          "Whether your situation is a routine wind-up or a contested one depends on the operating agreement, the members, and what is actually in dispute. Send the operating agreement and the reason you are closing, and the path — routine or contested — is usually clear quickly.",
         ],
       },
       {
@@ -483,31 +375,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Partnership agreement attorney in Tennessee for general partnerships and limited partnerships — capital, governance, and exit terms. Call Nault Law.",
     intro:
-      "Partnership agreement attorney in Tennessee for general partnerships, limited partnerships, and joint ventures — capital, governance, profit allocation, transfer restrictions, and the exit terms that prevent a successful partnership from ending in litigation.",
+      "Going into business with someone without a written partnership agreement does not mean you have none — Tennessee's default statute is filling in the terms for you, and the defaults rarely match what you actually intended. A short, well-drafted agreement replaces those defaults with what the partners really agreed to.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "A handshake is a partnership agreement — just a bad one",
         paragraphs: [
-          "Partnership agreement work addresses capital contributions, profit and loss allocation, partner authority and decision rights, transfer restrictions, dissociation, dissolution, and dispute-resolution. For limited partnerships, the work also covers the GP-LP relationship and protective limited-partner provisions.",
-          "Where the venture is project-specific (real estate, single-deal joint venture, time-limited partnership), the agreement is sized to the deal — exit triggers and wind-up mechanics matter more than long-horizon governance.",
+          "Without a written agreement, Tennessee's default partnership rules govern your profit splits, your authority, and what happens at exit, and those defaults are almost never what the partners had in mind. I draft the document that puts your actual deal on paper: capital contributions, profit and loss allocation, who has authority to decide what, transfer restrictions, dissociation, dissolution, and how disputes get resolved. For a limited partnership, that also means the GP-LP relationship and the protective provisions limited partners expect.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Sized to the deal, not to a template",
         paragraphs: [
-          "Partners formalizing what has been a handshake arrangement. Real-estate investors structuring a joint venture for a single deal or fund. Professionals operating as a partnership instead of an LLC.",
-        ],
-      },
-      {
-        h2: "Why a written agreement matters",
-        paragraphs: [
-          "Without a partnership agreement, Tennessee's default partnership statute fills the gaps — and the defaults rarely match what the partners actually intended on profit allocation, authority, or exit. A short, well-drafted document is consistently cheaper than later litigation over what the partners 'meant.'",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "First call covers the deal, the partners, capital, and exit expectations. Draft typically returns within one to two weeks; revisions follow alignment. Capped pricing for straightforward two- or three-partner agreements.",
+          "A project-specific venture — a single real-estate deal, a time-limited joint venture — does not need long-horizon governance; it needs clean exit triggers and wind-up mechanics. A long-running partnership needs the opposite. I size the agreement to what the partnership actually is.",
+          "Whether you are formalizing a handshake, structuring a one-deal joint venture, or operating as a partnership instead of an LLC, the right terms follow the partners and the deal. Tell me who is involved and what you are building and I will draft to fit.",
         ],
       },
       {
@@ -531,31 +411,19 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Nonprofit formation attorney in Tennessee for 501(c)(3) and other tax-exempt entities — articles, bylaws, and IRS application support. Call Nault Law.",
     intro:
-      "Nonprofit formation attorney in Tennessee for founders forming a 501(c)(3) or other tax-exempt organization — articles, bylaws, board structure, and the IRS exemption application that turns a Tennessee nonprofit corporation into a recognized tax-exempt entity.",
+      "Forming a Tennessee nonprofit is really three steps, not one: incorporate, adopt bylaws, and win federal tax-exempt status from the IRS. I handle the formation and the initial exemption application, and I am clear up front about where my work ends and specialized nonprofit counsel begins.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Forming a nonprofit is three steps, not one",
         paragraphs: [
-          "Tennessee nonprofit formation generally proceeds in three stages: incorporate as a nonprofit corporation under Tennessee law, draft bylaws and adopt them at an organizational meeting, and apply for federal tax-exempt status with the IRS (most commonly Form 1023 or 1023-EZ for 501(c)(3) recognition).",
-          "Engagements include articles of incorporation with required IRS exemption language, bylaws aligned with board-governance norms, conflicts-of-interest policy, and coordination on the federal exemption application.",
+          "The path to a working 501(c)(3) generally runs in three stages: incorporate as a Tennessee nonprofit corporation, draft and adopt bylaws at an organizational meeting, and apply to the IRS for tax-exempt recognition — usually Form 1023, or Form 1023-EZ for smaller organizations. I handle the articles of incorporation with the IRS exemption language built in, bylaws aligned with board-governance norms, a conflicts-of-interest policy, and the coordination on the federal exemption application. The Secretary of State filing happens quickly; IRS recognition runs on the IRS's clock, generally several months.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "What I handle, and where I hand off",
         paragraphs: [
-          "Founders forming a charitable, religious, educational, or scientific nonprofit. Existing unincorporated associations formalizing as a Tennessee nonprofit corporation. Boards reorganizing or recapitalizing an existing nonprofit.",
-        ],
-      },
-      {
-        h2: "Scope of representation",
-        paragraphs: [
-          "This engagement covers formation and the initial federal exemption application. Ongoing nonprofit compliance — annual filings, employment matters, and program-specific regulatory work — is generally referred to outside counsel where it falls outside the day-to-day practice.",
-        ],
-      },
-      {
-        h2: "Process and timeline",
-        paragraphs: [
-          "Articles file with the Secretary of State within a week. Bylaws and organizational documents typically follow within two weeks. IRS exemption recognition timing is governed by the IRS — generally several months.",
+          "This engagement is formation and the initial federal exemption application. Ongoing nonprofit compliance — annual filings, employment matters, program-specific regulatory work — falls outside the day-to-day practice, and I refer that to counsel who do it regularly rather than pretend it is in my lane. Saying that plainly is part of how I work.",
+          "What your nonprofit needs at formation depends on its mission, its board, and how it will be funded. The mission, the board, and the funding shape the setup, and a short description of each is enough to start.",
         ],
       },
       {
