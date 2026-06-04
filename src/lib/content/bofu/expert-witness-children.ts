@@ -10,32 +10,34 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Title expert witness in Tennessee for chain-of-title, defect, and conveyance disputes. CV and prior testimony available. Statewide. Call Nault Law.",
     intro:
-      "Title expert witness in Tennessee from an attorney and managing broker with two decades of real-estate experience, available for designation, written reports, depositions, and trial testimony in chain-of-title and defect disputes.",
+      "I serve as a title expert witness in Tennessee for counsel handling chain-of-title and title-defect disputes — designation, written reports, depositions, and trial testimony. I am a practicing attorney and an active Tennessee managing broker, so the opinions come from someone who has worked inside transactions, not only read about them.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "What I will opine on, and what I won't",
         paragraphs: [
-          "Title disputes turn on chain-of-title analysis, missing or misindexed instruments, and the practical behavior of title companies and closing professionals. Title expert witness opinions stay narrow to what the documents and the underlying transaction actually support.",
-          "Common case categories include chain-of-title and missing-instrument analysis, conveyance documents that do not match the underlying transaction, title-defect litigation among buyer, seller, and title company, and standard-of-care analysis for title work performed by other professionals.",
+          "Title disputes turn on the chain of title, on instruments that are missing or misindexed, and on how title companies and closing professionals actually behave in practice. My opinions stay narrow to what the documents and the underlying transaction support. I am not going to stretch past the record to prop up a theory — that is how an expert gets taken apart on cross, and it does not serve the client.",
+          "The case categories I take are chain-of-title and missing-instrument analysis, conveyance documents that do not match the deal that was actually struck, title-defect litigation among buyer, seller, and title company, and standard-of-care questions about title work performed by other professionals.",
         ],
       },
       {
-        h2: "When attorneys retain me",
+        h2: "When counsel brings me in",
         paragraphs: [
-          "Most retentions come from one of three triggers: a quiet-title or title-defect case has been filed and the firm needs an expert before the dispositive motion deadline; an opposing expert has produced a report and rebuttal analysis is needed; or the case is pre-designation and the firm needs a confidential read on whether industry custom and document analysis support the theory.",
-          "Pre-designation consulting work can stay confidential under work product. Designation, written reports, and testimony follow once the scope is set.",
+          "Most retentions come at one of three points. A quiet-title or title-defect case is filed and you need an expert in place before the dispositive-motion deadline. An opposing expert has served a report and you need a clear rebuttal. Or the matter is pre-designation and you want a confidential read on whether industry custom and the documents actually support the theory before you commit to it.",
+          "That early read can stay confidential as consulting work product. Designation, the written report, and testimony follow once we have set the scope. I would rather tell you a theory is thin while that is still your call than after it has been disclosed.",
         ],
       },
       {
-        h2: "Qualifications",
+        h2: "Why an attorney-broker, specifically",
         paragraphs: [
-          "Tennessee bar since 2018; admitted to the U.S. District Court for the Middle District of Tennessee. Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Rule 31 listed mediator. Two decades of hands-on commercial leasing, brokerage, and property-management experience.",
+          "What I bring that most title experts do not is the combination. I have practiced law in Tennessee since 2018 and am admitted to the U.S. District Court for the Middle District of Tennessee. I have held a Tennessee real estate license since 2012 and have been a managing broker since 2021, I have held a TREC course instructor license since 2020, and I am a Rule 31 listed mediator (Family). Behind the licenses is two decades of hands-on commercial leasing, brokerage, and property-management work — the early years as an employee inside real estate companies, then as a licensed agent from 2012.",
+          "Title cases rarely turn on pure law or pure brokerage. They turn on the seam between the two — what the instruments should have said, how the transaction was actually run, and what a competent operator does in the field. Opinions from that vantage tend to hold up better than analysis from one track alone.",
         ],
       },
       {
         h2: "How retention works",
         paragraphs: [
-          "Title expert witness retention is scoped at the front: review of the complaint, the key conveyance documents, and a short call to confirm scope. From there, written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case.",
+          "I scope it at the front: a review of the complaint and the key conveyance documents, and a short call to confirm scope and run conflicts. From there the written report, deposition support, and trial testimony come as the matter requires. Billing is hourly, with a retainer sized to the case.",
+          "Every title file is its own animal — the instruments, the recording history, and the conduct of the parties decide what the opinions can fairly say. If you are weighing whether an expert helps the case, request my CV and a conflicts check and we can talk through the fit.",
         ],
       },
       {
@@ -78,7 +80,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018; admitted to the U.S. District Court for the Middle District of Tennessee. Two decades of hands-on commercial leasing, brokerage, and property-management experience.",
+          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018; admitted to the U.S. District Court for the Middle District of Tennessee. Two decades of hands-on commercial leasing, brokerage, and property-management experience, beginning in employee roles before his 2012 agent license.",
         ],
       },
       {
@@ -127,7 +129,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee bar since 2018. Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Hands-on experience drafting and negotiating commercial purchase agreements, leases, and option deals across two decades.",
+          "Tennessee bar since 2018. Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Hands-on experience drafting and negotiating commercial purchase agreements, leases, and option deals across two decades, dating to employee roles before his 2012 agent license.",
         ],
       },
       {
@@ -157,7 +159,7 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Property valuation expert witness in Tennessee for real-estate, divorce, probate, and partition disputes. Call Nault Law.",
     intro:
-      "Property valuation expert witness in Tennessee from a managing broker with two decades of commercial real-estate experience, retained in litigation, divorce, probate, and partition matters where industry context — not formal appraisal — is what the case needs.",
+      "Property valuation expert witness in Tennessee from a managing broker with two decades of commercial real-estate experience — employee roles before licensure, then licensed from 2012 — retained in litigation, divorce, probate, and partition matters where industry context — not formal appraisal — is what the case needs.",
     sections: [
       {
         h2: "What this covers",
@@ -224,7 +226,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage, leasing, and property-management practice — current with how files actually move today.",
+          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage, leasing, and property-management practice, beginning before his 2012 agent license — and current with how files actually move today.",
         ],
       },
       {
@@ -424,7 +426,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker and managing broker. Two decades of property-management and commercial leasing experience, including oversight of multi-million-square-foot office portfolios and 120+ commercial leases in past roles. Tennessee bar since 2018.",
+          "Tennessee licensed real estate broker and managing broker. Two decades of property-management and commercial leasing experience — beginning in employee roles before his 2012 license — including oversight of multi-million-square-foot office portfolios and 120+ commercial leases in past roles. Tennessee bar since 2018.",
         ],
       },
       {
@@ -623,7 +625,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage practice across residential and commercial transactions.",
+          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage practice across residential and commercial transactions, beginning before his 2012 agent license.",
         ],
       },
       {

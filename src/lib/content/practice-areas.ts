@@ -306,9 +306,9 @@ export const practiceAreas: PracticeAreaContent[] = [
     metaDescription:
       "Counsel for owners, investors, landlords, and brokers in real estate disputes — contracts, title, liens, construction, and foreclosure or trustee sales.",
     eyebrow: "Practice Area",
-    intro: "Property disputes turn quickly from inconvenience to leverage problems.",
+    intro: "A property dispute turns from an inconvenience into a leverage problem faster than most owners expect.",
     summary:
-      "Stephen Nault handles commercial and residential real estate disputes involving purchase agreements, easements, title-related problems, possession and use conflicts, brokerage issues, construction disputes, liens, and foreclosure or trustee sales.",
+      "I handle commercial and residential real estate disputes — purchase agreements, easements, title problems, possession and use conflicts, brokerage issues, construction disputes, liens, and foreclosure or trustee sales. What ties them together is that the property is rarely just property. It is tied to money, financing, occupancy, or a deal that still has to close, and that is usually what makes the dispute urgent.",
     whoItIsFor: [
       "Investors, owners, and operators dealing with transaction fallout or property-use conflict.",
       "Brokers and property professionals pulled into a dispute surrounding a deal or ongoing management.",
@@ -322,9 +322,9 @@ export const practiceAreas: PracticeAreaContent[] = [
       "Real estate matters where the client needs both business judgment and litigation readiness.",
     ],
     whyTimingMatters:
-      "When deadlines, closings, occupancy, or lender expectations are in play, delay can eliminate options. Good early assessment helps preserve evidence, clarify the contract posture, and decide whether pressure should be applied or contained.",
+      "When a closing date, an occupancy issue, or a lender's expectations are in play, waiting can quietly remove options that were on the table a week earlier. That is why I look at timing first — to preserve the evidence and the paper trail, get clear on where the contract actually leaves each side, and decide whether the right move is to apply pressure or to contain the problem.",
     approach:
-      "The work centers on documents, timeline, leverage, and the real-world value of the property position. Some matters need negotiated cleanup. Others need more formal dispute positioning to keep the other side from dictating the terms of resolution.",
+      "I work these from the documents out — the contract, the timeline, the communications, and the real-world value of the property position — because that is what decides leverage, not how loud anyone is willing to be. Some matters just need a negotiated cleanup. Others need a firmer, more formal posture so the other side does not get to set the terms of resolution. The goal is not to escalate a dispute that does not need it; it is to put the client in the stronger position either way.",
     commonMistakes: [
       "Treating a property dispute as purely emotional rather than economic.",
       "Letting informal text messages or side deals substitute for clear written positions.",
@@ -335,21 +335,21 @@ export const practiceAreas: PracticeAreaContent[] = [
       {
         question: "Do you only handle disputes tied to commercial property?",
         answer:
-          "No — the practice covers both commercial and residential real estate disputes. The focus is matters where the property is tied to ownership structure, brokerage, leasing, construction, financing, or ongoing operations.",
+          "No. I handle both commercial and residential real estate disputes. The focus is matters where the property is tied to ownership structure, brokerage, leasing, construction, financing, or ongoing operations — where the legal question and the business question are really the same question.",
       },
       {
         question: "Can you step in after a demand letter or suit has already been filed?",
         answer:
-          "Yes. The first task is to understand deadlines, the paper trail, and the business objective so that the response strategy is grounded and timely.",
+          "Yes. When a demand letter or a suit is already out, the first thing I do is get clear on the deadlines, the paper trail, and what the client actually needs to happen — so the response is grounded and on time rather than reactive.",
       },
       {
         question: "Do you work with other professionals on the matter?",
         answer:
-          "Yes. Real estate disputes often require coordination with title professionals, surveyors, brokers, or project teams depending on the issue.",
+          "Yes. Real estate disputes often need title professionals, surveyors, brokers, or a project team in the mix, depending on the issue. Pulling them in early beats discovering a gap late.",
       },
     ],
     localServiceArea:
-      "Real estate disputes in Gallatin and the surrounding counties often involve a mix of local relationships, practical property history, and business urgency. Local context changes what a sensible resolution looks like.",
+      "In Gallatin and the surrounding counties, real estate disputes usually come with some local history — the parties know each other, the property has a past, or a project is on the clock. That context matters. It changes what a sensible resolution looks like, and it is part of why I try to understand the situation on the ground before deciding how hard to push.",
     issueTypes: [
       "Purchase agreement dispute",
       "Title or access issue",

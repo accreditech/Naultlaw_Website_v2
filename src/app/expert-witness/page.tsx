@@ -157,8 +157,9 @@ export default function ExpertWitnessPage() {
                 marginBottom: "2rem",
               }}
             >
-              Stephen Nault has over 20 years of real estate experience and is
-              an active managing broker of a real estate firm as well as a
+              Stephen Nault has over 20 years of real estate experience —
+              beginning in employee roles before his 2012 license — and is an
+              active managing broker of a real estate firm as well as a
               Tennessee Real Estate Commission Course Instructor. This
               includes commercial and residential sales, investments, and
               property management. He has managed millions of square feet of
