@@ -101,7 +101,7 @@ export function SiteHeader() {
 
           {/* Desktop nav */}
           <nav
-            className="hide-tablet"
+            className="nav-desktop"
             aria-label="Main navigation"
             style={{ display: "flex", alignItems: "center", gap: 0 }}
           >
