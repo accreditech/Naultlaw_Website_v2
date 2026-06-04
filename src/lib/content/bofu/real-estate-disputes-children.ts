@@ -413,26 +413,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Construction defect attorney in Tennessee for owners and contractors on workmanship, design, and materials defect claims. Call Nault Law.",
     intro:
-      "Construction defect attorney in Tennessee for owners and contractors on commercial-project workmanship, design, and materials-defect claims — coordinating contract analysis, technical expert evidence, and disciplined dispute strategy.",
+      "A commercial building that does not perform the way it was built to — a roof that leaks, a foundation that moves, an HVAC system that never runs right — raises two questions: whose defect is it, and has the clock already run? I handle these claims for owners and contractors, pairing the contract analysis with the technical evidence.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "The case is the contract plus the expert",
         paragraphs: [
-          "Construction defect work covers workmanship defects, design and engineering defects, and materials defects on commercial real-estate projects. The cases require contract analysis (general conditions, warranty terms, dispute-resolution clauses) integrated with technical expert evidence about cause and scope of the defect.",
-          "Common contexts include commercial roof and envelope failures, structural and foundation defects, mechanical and HVAC system performance problems, and water-intrusion damage that traces back to design or construction.",
+          "Construction-defect claims live at the intersection of two things: what the contract says — general conditions, warranty terms, notice-and-cure procedures, mandatory pre-suit dispute mechanisms — and what a technical expert can prove about the cause and scope of the defect. Neither half wins alone. The work covers workmanship, design and engineering, and materials defects on commercial projects: roof and envelope failures, structural and foundation movement, mechanical and HVAC performance problems, and water intrusion that traces back to design or construction.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "The repose clock is the trap",
         paragraphs: [
-          "Soon after the defect is observed and before warranty deadlines run. Tennessee's statutes of limitations and repose for construction claims start running from specific events, and early outreach preserves preservation-of-evidence options.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee construction-defect timing is generally three years for injury to real property (Tenn. Code Ann. § 28-3-105) and six years for contract claims (Tenn. Code Ann. § 28-3-109), plus a four-year statute of repose from substantial completion for construction or design deficiencies under Tenn. Code Ann. §§ 28-3-202 and 28-3-203. The repose period may extend to five years if the injury occurs in the fourth year.",
-          "Contract terms — notice-and-cure procedures, mandatory pre-suit dispute mechanisms, and warranty scope — heavily influence both substantive and procedural posture. The engagement is scoped to commercial real-estate projects.",
+          "Timing is where these claims die. Tennessee allows generally three years for injury to real property (Tenn. Code Ann. § 28-3-105) and six years for contract claims (Tenn. Code Ann. § 28-3-109), but the harder limit is the four-year statute of repose running from substantial completion for construction or design deficiencies (Tenn. Code Ann. §§ 28-3-202 and 28-3-203), which can stretch to five years if the injury occurs in the fourth year. Repose runs from completion regardless of when the defect shows up, so a defect found late can be barred before anyone knew it existed. That is why I date substantial completion before anything else. The work is scoped to commercial real-estate projects.",
         ],
       },
       {
@@ -460,25 +452,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "HOA dispute attorney in Tennessee for homeowners and associations on covenant enforcement, assessments, and architectural-review disputes. Call Nault Law.",
     intro:
-      "HOA dispute attorney in Tennessee for homeowners and associations in covenant enforcement, assessment, architectural-review, and selective-enforcement disputes — interpreting CC&Rs and pushing back on overreach without losing sight of the practical neighborhood relationships.",
+      "An HOA dispute is rarely really about the money — it is about who gets to decide. Whether the board is enforcing a covenant against you or you are the board trying to enforce one, the answer usually sits in the CC&Rs and in whether the association followed its own procedure. I take both sides.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "The governing documents, and whether the board followed them",
         paragraphs: [
-          "HOA dispute work covers covenant interpretation and enforcement, assessment and lien disputes, architectural and design-review disagreements, fining procedures, and selective-enforcement defenses. Both homeowner-side and association-side engagements are accepted.",
-          "Common scenarios include covenant violations alleged against a homeowner, assessment delinquency and lien proceedings, architectural-review denials, and disputes over the scope of board authority under the governing documents.",
+          "These fights turn on the recorded CC&Rs, the bylaws, and the board's procedures, plus any Tennessee planned-community or condominium statute that applies. The recurring matters are covenant violations alleged against a homeowner, assessment delinquency and lien proceedings, architectural- and design-review denials, fining procedures, and selective-enforcement defenses — the argument that a board cannot enforce against one owner a rule it ignores for others. Very often the determinative issue is not the rule itself but whether the association complied with its own process in applying it.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "Pushing back without burning down the neighborhood",
         paragraphs: [
-          "On receipt of a notice of violation, before paying a contested assessment, or when the board is preparing to take enforcement action. Early review of the CC&Rs and bylaws frames the response and preserves procedural arguments.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee HOA disputes turn on the recorded CC&Rs, bylaws, and board procedures, plus any applicable Tennessee planned-community or condominium statutes. Procedural compliance by the association is often a determinative issue.",
+          "There is a practical layer that pure litigation misses: these are your neighbors, and the board has to keep running the community afterward. So the goal is to be firm on the governing documents and the procedure without turning a covenant disagreement into a years-long feud. Reading the CC&Rs and bylaws early — on a notice of violation, before paying a contested assessment, or before the board moves to enforce — frames the response and preserves the procedural arguments that usually decide it.",
         ],
       },
       {
@@ -506,26 +491,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Property condition disclosure dispute attorney in Tennessee for buyers and sellers in TRPCDA failure-to-disclose claims. Call Nault Law.",
     intro:
-      "Property condition disclosure dispute attorney in Tennessee for buyers and sellers in claims under the Tennessee Residential Property Condition Disclosure Act — failure-to-disclose claims, exemption defenses, and disputes over what the disclosure form said and did not say.",
+      "The Tennessee Residential Property Condition Disclosure Act is the form every residential seller fills out — and the document buyers and sellers end up fighting over when a defect surfaces after closing. I handle both sides of those disputes: the buyer's claim that something known was left off, and the seller's defenses.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "What the Act requires, and the one-year clock",
         paragraphs: [
-          "Tennessee residential sales are generally governed by the Residential Property Condition Disclosure Act, which requires sellers to provide a disclosure form covering material conditions and known defects. Disputes turn on what was known, what was checked or left blank, and what the seller's actual obligation was.",
-          "The work covers buyer-side claims for non-disclosure or false disclosure, seller-side defenses (including the as-is and exempted-transaction defenses), and litigation strategy where the dispute escalates beyond pre-suit negotiation.",
+          "The Act, codified at Tenn. Code Ann. §§ 66-5-201 et seq., requires residential sellers to provide a disclosure form covering material conditions and known defects, and the disputes turn on what was known, what was checked or left blank, and what the seller's actual obligation was. There is a hard timing rule: a buyer's claim under the Act generally has to be brought within one year after the buyer receives the disclosure statement or the date of closing or occupancy, whichever comes first (Tenn. Code Ann. § 66-5-208). Where the form is alleged to have been completed falsely, common-law fraud and misrepresentation claims overlap and can run on a different clock.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "Seller defenses, and the transfers the Act never touches",
         paragraphs: [
-          "Soon after the disputed condition is discovered. Statute-of-limitations rules and contract-warranty interactions matter; early documentation preserves both the claim and the leverage.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "The Tennessee Residential Property Condition Disclosure Act, codified at Tenn. Code Ann. §§ 66-5-201 et seq., sets the framework for residential disclosure obligations and exemptions. Buyer claims under the act must generally be brought within one year after the buyer receives the disclosure statement or the date of closing or occupancy, whichever occurs first (Tenn. Code Ann. § 66-5-208).",
-          "Common-law fraud and misrepresentation claims overlap and may apply when the disclosure form is alleged to have been completed falsely. Common exemptions include foreclosure or trustee transfers, fiduciary, co-owner, family, court-order, government, and certain new-construction transfers.",
+          "On the seller side, the Act is not a strict-liability trap. The 'as-is' posture, the exempted-transaction categories, and the question of actual knowledge are all real defenses. And a number of transfers fall outside the Act entirely — foreclosure or trustee transfers, fiduciary and co-owner transfers, family transfers, court-ordered and government transfers, and certain new-construction sales. Which exemption or defense fits is fact-specific, and it is usually the first thing I sort out before anyone argues about the defect itself.",
         ],
       },
       {
@@ -553,26 +530,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Foreclosure excess proceeds attorney in Tennessee for former owners and lienholders recovering surplus funds from trustee sales. Call Nault Law.",
     intro:
-      "Foreclosure excess proceeds attorney in Tennessee for former property owners and junior lienholders recovering surplus funds from trustee sales — claim filing, competing-claim resolution, and court action when the trustee resists.",
+      "When a foreclosure sale brings in more than the debt and the costs, the leftover money — the surplus — belongs to someone, and it is usually not the trustee or the lender. I help former owners and junior lienholders find and claim that surplus before it disappears into the state's unclaimed-property system.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Finding the surplus and beating the competing claims",
         paragraphs: [
-          "When a Tennessee trustee sale brings in more than the secured debt and sale costs, the surplus — sometimes called excess proceeds or surplus funds — is held by the trustee and distributed under a priority order. The work covers identifying that a surplus exists, filing the claim with the trustee or lender, and resolving competing claims from junior lienholders, judgment creditors, the IRS, or other interest-holders.",
-          "Common case types include former-owner claims after a non-judicial trustee sale, junior-lienholder claims for the priority share of surplus, heir claims when the foreclosed owner has died, and contested-priority disputes that escalate to court when the trustee resists or interpleads the funds.",
+          "A trustee sale that clears more than the secured debt and sale costs leaves a surplus the trustee holds and pays out by priority. The work is confirming a surplus exists — they are not always announced — filing the claim, and resolving the competing claims that show up fast: junior lienholders, judgment creditors, the IRS, and heirs when the foreclosed owner has died. The common situations are former-owner claims after a non-judicial trustee sale, junior-lienholder priority claims, heir claims, and contested-priority fights that land in court when the trustee resists or interpleads the money.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "Why the timing decides where the fight happens",
         paragraphs: [
-          "Soon after the trustee sale closes — surplus funds are not always announced, and competing claimants typically move quickly. Some foreclosure surplus claims have time limits before the funds escheat or are paid out to other claimants. Early outreach preserves the claim and the leverage.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee does not have a single nonjudicial-foreclosure surplus statute. Judicial-foreclosure surplus is paid to the debtor or to the creditors entitled by priority under Tenn. Code Ann. § 21-1-803, and disputed trustee-sale surplus is commonly interpleaded into court under Tenn. R. Civ. P. 22.02.",
-          "Court-held surplus may become presumed abandoned after one year under Tenn. Code Ann. § 66-29-105, after which it transfers to the Tennessee Treasury. Unclaimed-property claims to the Treasury generally are not time-barred, but the procedure changes once funds escheat — early action keeps the case in court rather than in the unclaimed-property system.",
+          "Tennessee has no single nonjudicial-foreclosure surplus statute. Judicial-foreclosure surplus goes to the debtor or to the creditors entitled by priority under Tenn. Code Ann. § 21-1-803, and a disputed trustee-sale surplus is commonly interpleaded into court under Tenn. R. Civ. P. 22.02. Here is the part that rewards moving quickly: court-held surplus can be presumed abandoned after one year under Tenn. Code Ann. § 66-29-105 and then transfer to the Tennessee Treasury. A claim to the Treasury generally is not time-barred, but the procedure changes once the funds escheat — getting in early keeps the case in court instead of the unclaimed-property line.",
         ],
       },
       {
@@ -600,25 +569,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Landlord attorney in Tennessee for residential and commercial landlords — lease enforcement, default, possession, deposits, and advisory work. Call Nault Law.",
     intro:
-      "Landlord attorney in Tennessee for residential and commercial landlords — lease drafting, default-and-cure handling, possession, deposit accounting, and the dispute work that protects rent and asset value when a tenancy goes sideways.",
+      "Owning rental property is straightforward until a tenant stops paying, will not leave, or stops taking care of the place. I represent residential and commercial landlords across the whole tenancy — drafting the lease, enforcing it, handling possession, and squaring the deposit at the end — with the rent and the asset as the priority.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "The whole tenancy, not just the eviction",
         paragraphs: [
-          "Landlord work spans the full tenancy lifecycle: lease drafting and review, rent and CAM enforcement, default-and-cure handling, possession (eviction) when curing fails, deposit accounting and disputes, post-tenancy damages claims, and lease-amendment and renewal work.",
-          "Both residential and commercial landlords are represented. The right approach depends on lease type, the tenant's conduct, and how quickly possession or rent recovery is needed.",
+          "Most of this is lifecycle work, not just the dramatic part. It runs from lease drafting and review through rent and CAM enforcement, default-and-cure handling, possession when curing fails, deposit accounting and disputes, post-tenancy damages, and amendments and renewals. Residential and commercial both. The right move depends on the lease type, the tenant's conduct, and how fast you need possession or rent back.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "The matters that actually come up",
         paragraphs: [
-          "Residential landlords and small-portfolio owners managing single-family or small multi-family rental property. Commercial landlords with retail, office, or industrial tenants. Property managers and asset managers needing counsel on a specific tenancy or lease.",
-        ],
-      },
-      {
-        h2: "Common matters",
-        paragraphs: [
-          "Nonpayment defaults and detainer-warrant strategy. Lease-violation evictions and notice mechanics. Holdover-tenant cases after lease expiration. CAM and operating-expense disputes. Security-deposit return disputes and statutory accounting requirements. Habitability claims raised as defenses to enforcement.",
+          "In practice the recurring ones are nonpayment defaults and detainer-warrant strategy, lease-violation evictions and the notice mechanics behind them, holdover tenants after a lease ends, CAM and operating-expense disputes, security-deposit return fights and the statutory accounting that governs them, and habitability claims raised as a defense to enforcement. Handling the lease and the ledger correctly up front is what keeps most of these from becoming the hard version.",
         ],
       },
       {
@@ -646,26 +608,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Tenant attorney in Tennessee for residential and commercial tenants — lease defense, deposit recovery, habitability, and mold claims. Call Nault Law.",
     intro:
-      "Tenant attorney in Tennessee for residential and commercial tenants — lease review, defense against landlord enforcement, security-deposit recovery, habitability claims, and mold-related claims when the unit is uninhabitable.",
+      "Tenants usually reach me at the worst moment — a notice on the door, a deposit that never came back, or a unit that is no longer livable. I represent residential and commercial tenants: reviewing the lease, defending enforcement, recovering deposits, and pressing habitability and mold claims when the place is genuinely uninhabitable.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Residential and commercial tenants are not on the same footing",
         paragraphs: [
-          "Tenant-side representation covers lease review before signing, response to default or termination notices, eviction defense, security-deposit recovery, habitability claims, and mold-related claims that arise during the tenancy.",
-          "Both residential and commercial tenants are represented. Residential tenants benefit from Tennessee's habitability and security-deposit framework; commercial tenants are governed primarily by the lease itself, and the work focuses on lease language and leverage.",
+          "The two are governed differently, and that drives the whole approach. A residential tenant has Tennessee's habitability and security-deposit framework to work with; a commercial tenant is governed mostly by the lease itself, so that work is about lease language and leverage. The representation covers lease review before signing, response to a default or termination notice, eviction defense, deposit recovery, and the habitability or mold claims that come up during the tenancy.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "What URLTA actually gives a residential tenant",
         paragraphs: [
-          "Residential tenants facing eviction, deposit-withholding, or uninhabitable conditions. Commercial tenants disputing CAM charges, default notices, exclusivity, or assignment rights. Tenants of any kind who need a lease reviewed before signing or before a notice goes out.",
-        ],
-      },
-      {
-        h2: "URLTA, habitability, and repair-and-deduct",
-        paragraphs: [
-          "The Uniform Residential Landlord and Tenant Act (URLTA), codified at Tenn. Code Ann. § 66-28-101 et seq., applies in Tennessee counties with population over 75,000 (Tenn. Code Ann. § 66-28-102). URLTA counties have statutory notice, habitability, essential-services, security-deposit, and tenant-remedy rules that are not uniformly available in non-URLTA counties.",
-          "Tennessee provides a limited repair-and-deduct remedy under Tenn. Code Ann. § 66-28-502 for essential services after written notice, not a broad general repair-and-deduct right. The tenant must show the condition was not caused by the tenant or tenant-related persons. Mold and water-intrusion conditions can support habitability and damages claims when the facts and notice line up.",
+          "For residential tenants, a lot turns on geography. The Uniform Residential Landlord and Tenant Act (URLTA), codified at Tenn. Code Ann. § 66-28-101 et seq., applies only in counties over 75,000 in population (Tenn. Code Ann. § 66-28-102), and those counties carry statutory notice, habitability, essential-services, security-deposit, and tenant-remedy rules that are not uniformly available elsewhere. One common misunderstanding: Tennessee's repair-and-deduct right is narrow — limited to essential services after written notice under Tenn. Code Ann. § 66-28-502, not a broad license to withhold rent — and the tenant has to show the condition was not self-inflicted. Mold and water-intrusion problems can support habitability and damages claims when the facts and the notice line up.",
         ],
       },
       {
@@ -742,25 +696,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Eviction defense attorney in Tennessee representing tenants — detainer-warrant defense, procedural challenges, and habitability defenses. Call Nault Law.",
     intro:
-      "Eviction defense attorney in Tennessee representing tenants facing detainer-warrant actions — procedural challenges, habitability and notice defenses, payment-plan negotiation, and post-judgment options when the case has already gone against the tenant.",
+      "If a detainer warrant just landed, you have days, not weeks. I defend tenants in Tennessee eviction actions — the procedural and habitability defenses, payment-plan negotiation where that is the realistic outcome, and the post-judgment options if the case has already gone the wrong way.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Days, not weeks",
         paragraphs: [
-          "Eviction defense work runs from the moment a notice or detainer warrant arrives through trial in General Sessions Court and, in some matters, post-judgment relief. The work analyzes the notice, the lease, and the underlying facts for procedural and substantive defenses.",
-          "Common defenses include defective notice, improper service, retaliation claims, habitability and uninhabitability defenses, mold and water-intrusion conditions, payment that was made or tendered, and lease-interpretation defenses to the alleged violation.",
+          "Eviction moves faster than almost any other case — many are heard within days of filing — so the first move is getting in before the hearing, not after. The defense starts by pulling apart the notice, the lease, and the facts for both procedural and substantive defenses: a defective notice, improper service, retaliation, a habitability or uninhabitability problem (including mold and water intrusion), payment that was actually made or tendered, and lease-interpretation defenses to whatever violation is alleged. A case that looks lost on the surface sometimes turns on a notice the landlord got wrong.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "Where it is heard, and what rights travel with the lease",
         paragraphs: [
-          "Immediately on receipt of a notice or detainer warrant. Eviction timelines move quickly — many cases are heard within days of filing. Early outreach preserves defenses and procedural arguments.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee eviction cases are heard in General Sessions Court in the county where the property sits. Tenants have specific procedural rights, and depending on the lease type, statutory protections under URLTA and related provisions may apply.",
+          "These are heard in General Sessions Court in the county where the property sits, and tenants have specific procedural rights there. Depending on the lease type and the county, URLTA and related statutory protections may apply on top of the contract. The realistic goal varies — a full defense, a negotiated move-out on better terms, a payment plan, or post-judgment relief — and which one is in reach depends on the facts and how early I see them.",
         ],
       },
       {
@@ -788,26 +735,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Mold claim attorney in Tennessee for tenants, homeowners, and commercial occupants pursuing claims over mold and water-intrusion damage. Call Nault Law.",
     intro:
-      "Mold claim attorney in Tennessee for tenants in habitability disputes, homeowners with post-purchase mold discoveries, and commercial occupants whose space has become uninhabitable due to water intrusion or active mold growth.",
+      "Mold and water-intrusion cases come in three flavors, and the legal theory depends entirely on which one you are in. I handle all three — a tenant against a landlord over an uninhabitable unit, a homeowner against a seller who hid a known mold history, and a commercial occupant whose space has gone unusable.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Three fact patterns, three different theories",
         paragraphs: [
-          "Mold claim work spans three distinct fact patterns: residential tenant claims against landlords for habitability and damages; homeowner claims against sellers and agents for failure to disclose known mold or water-intrusion history; and commercial-tenant claims against landlords or prior occupants when the space becomes uninhabitable.",
-          "The cases require integration of medical or environmental evidence, contract or lease analysis, and expert testimony on cause and remediation. Successful claims pair the legal theory with the technical evidence.",
+          "The relationship sets the theory. A residential tenant's claim runs on habitability and damages against the landlord. A homeowner's claim runs on failure to disclose a known mold or water-intrusion history against the seller and agent. A commercial occupant's claim runs on the lease and on negligence against the landlord or a prior occupant. Each is a different cause of action with different proof, and getting that right at the start matters more than the mold itself.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "The theories Tennessee provides — and the evidence that carries them",
         paragraphs: [
-          "Soon after the mold or water-intrusion condition is discovered. Evidence preservation matters — air-quality testing, photographs, medical records, and notice communications all factor into the claim. Early outreach also frames notice-and-cure obligations under the lease or purchase contract.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee does not have a standalone statewide mold doctrine. Mold and water-intrusion claims are typically framed through URLTA habitability and essential-services duties (Tenn. Code Ann. §§ 66-28-304, 66-28-501, and 66-28-502), common-law negligence, contract, nuisance, or TRPCDA disclosure theories (Tenn. Code Ann. §§ 66-5-201 et seq.).",
-          "Mold claims are fact-specific and usually turn on notice, causation, habitability, disclosure, and damages evidence. The viable theory depends on the parties' relationship, the building, the condition's cause, and the medical or environmental evidence available.",
+          "Tennessee has no standalone statewide mold doctrine, so these claims get framed through existing law: URLTA habitability and essential-services duties (Tenn. Code Ann. §§ 66-28-304, 66-28-501, and 66-28-502), common-law negligence, contract, nuisance, or TRPCDA disclosure theories (Tenn. Code Ann. §§ 66-5-201 et seq.). Whichever theory fits, the case is won on evidence — notice, causation, habitability, disclosure, and damages — which is why the air-quality testing, photographs, medical records, and notice communications all get preserved early. The viable theory depends on the parties, the building, the cause, and the medical or environmental proof available.",
         ],
       },
       {
@@ -835,25 +774,18 @@ export const realEstateDisputesChildren: BofuService[] = [
     metaDescription:
       "Eviction attorney in Sumner County TN representing landlords and property managers. Detainer warrants, judgments, writs of possession. Call Nault Law.",
     intro:
-      "Eviction attorney in Sumner County TN representing landlords, property managers, and small portfolio owners — detainer warrants, judgments, writs of possession, and the procedural steps that get possession back without losing time on technicalities.",
+      "I try evictions in Sumner County General Sessions Court, which means I know the local schedule, the procedures, and how these hearings actually run here. For landlords and managers in and around Gallatin, that local footing is often the difference between a clean possession and a continuance lost to a technicality.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Local court, local rhythm",
         paragraphs: [
-          "Eviction work covers notice preparation, detainer warrant filing, hearing representation in General Sessions Court, judgment collection, and writ-of-possession execution. Both residential and commercial possession matters are handled.",
-          "Common scenarios include nonpayment evictions, lease-violation cases, holdover tenants after lease expiration, and landlord recoveries after a foreclosure or sale that triggers the right to possession.",
+          "The work itself is the standard possession arc — notice preparation, the detainer warrant, the General Sessions hearing, judgment collection, and the writ of possession that actually gets the unit back, residential or commercial. What the local angle adds is how it plays out on the ground in Sumner County: the court's scheduling, the local procedures, and the judge-by-judge expectations that shape how a hearing goes. Many of these resolve quickly when the landlord shows up prepared, and preparation is sized to the dispute.",
         ],
       },
       {
-        h2: "When to call",
+        h2: "What usually brings a landlord in",
         paragraphs: [
-          "When notice is about to go out, when a detainer hearing is scheduled, or when a tenant is contesting the action. Early review confirms the notice was sufficient and that the underlying lease and ledger support the claim.",
-        ],
-      },
-      {
-        h2: "Sumner County specifics",
-        paragraphs: [
-          "Sumner County eviction matters are typically heard in Sumner County General Sessions Court. Local procedures, scheduling, and judge-by-judge expectations matter to how a hearing actually goes. Hearing preparation is sized to the dispute — many cases resolve quickly when the landlord arrives prepared.",
+          "The common situations are nonpayment evictions, lease-violation cases, holdover tenants after a lease ends, and recovering possession after a foreclosure or sale triggers the right. I am based in Gallatin and try cases across Sumner and the surrounding counties, so the same office that advises on the lease and the pre-eviction posture is the one standing up at the hearing. If you have a tenant who will not pay or will not go, getting the notice and the ledger right is where it starts.",
         ],
       },
       {
