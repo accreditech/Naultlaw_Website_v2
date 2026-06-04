@@ -307,13 +307,13 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Agent malpractice expert witness in Tennessee for plaintiff counsel — opinions grounded in TREC rules and REALTOR standards of practice. Call Nault Law.",
     intro:
-      "Agent malpractice expert witness work in Tennessee retained by plaintiff counsel — buyers, sellers, and other consumers harmed by real estate agent, broker, or brokerage conduct. Opinions are grounded in the duties Tennessee licensees actually carry: TREC statute and rule, the National Association of REALTORS® Code of Ethics and Standards of Practice, the Tennessee REALTORS® enforcement framework that adopts it, and the brokerage custom that fills the gap between black-letter rules and how transactions are run.",
+      "Plaintiff-side agent malpractice cases almost always come down to duty and breach — did the agent or broker owe the client a duty, and does the file show they broke it? I give those opinions for plaintiff counsel, anchored in the duties Tennessee licensees actually carry: TREC statute and rule, the National Association of REALTORS® Code of Ethics and Standards of Practice that Tennessee adopts, and the brokerage custom that fills the gap between the black-letter rules and how deals are really run.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Duty, breach, and where the file shows it",
         paragraphs: [
-          "Plaintiff-side agent malpractice cases turn on duty, breach, causation, and damages — and the proof problem is almost always duty and breach. Expert opinions identify which duty the agent or broker owed (statutory under T.C.A. § 62-13, fiduciary or facilitator depending on representation status, Code-of-Ethics-based for REALTOR® licensees), where the file shows that duty was breached, and how that breach compares against what a reasonably competent Tennessee licensee would have done.",
-          "Common claim categories include misrepresentation and failure to disclose material facts, mishandled disclosures under the Tennessee Residential Property Condition Disclosure Act, agency-status confusion and undisclosed dual agency, deposit and escrow accounting failures, transaction-handling errors that cost a buyer or seller the deal, broker-supervision failures under T.C.A. § 62-13-312, and post-closing harm that traces back to specific licensee conduct.",
+          "Duty, breach, causation, damages — and the proof problem is almost always the first two. My opinions identify which duty the agent or broker owed (statutory under T.C.A. § 62-13, fiduciary or facilitator depending on representation status, Code-of-Ethics-based for REALTOR® licensees), where the file shows that duty was breached, and how the breach measures against what a reasonably competent Tennessee licensee would have done.",
+          "The recurring claims are misrepresentation and failure to disclose material facts, mishandled disclosures under the Tennessee Residential Property Condition Disclosure Act, agency-status confusion and undisclosed dual agency, deposit and escrow accounting failures, transaction-handling errors that cost a buyer or seller the deal, broker-supervision failures under T.C.A. § 62-13-312, and post-closing harm that traces back to specific licensee conduct.",
         ],
       },
       {
@@ -327,19 +327,13 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "When plaintiff counsel retains me",
         paragraphs: [
-          "Retentions typically come at one of three points. Pre-suit consulting, where counsel wants a confidential standard-of-care read before deciding whether to file — that work stays under work product. Designation after a complaint is filed, with written report, deposition, and trial testimony to follow. And rebuttal of a defense expert's report, where the question is whether the defense's framing of the standard holds up against the actual statute, Code, and custom.",
+          "Retentions land at one of three points. Pre-suit consulting, where you want a confidential standard-of-care read before deciding whether to file — that stays under work product. Designation after the complaint, with the report, deposition, and trial testimony to follow. And rebuttal of a defense expert, where the question is whether their framing of the standard survives contact with the actual statute, Code, and custom. I scope from the complaint, the brokerage file, the agency documents, the listing and purchase agreements, the disclosure forms, and the key communications, and I bill hourly — with pre-designation consulting engaged on a separate scope so the confidentiality line stays clear.",
         ],
       },
       {
         h2: "Qualifications",
         paragraphs: [
           "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC-approved course instructor since 2020, including continuing education on Code-of-Ethics and Tennessee licensee duties. REALTOR® member in good standing with current Code of Ethics training. Tennessee bar since 2018. Active brokerage and property-management practice means opinions reflect how the rules and Code are applied in current Tennessee transactions, not the version of the business from a decade ago.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Engagement begins with review of the complaint, the brokerage file, the agency documents, listing and purchase agreements, the property condition disclosure forms, and key communications between the parties and licensees. A short call follows to confirm scope. Written report, deposition support, and trial testimony follow as the matter requires. Hourly billing with retainers sized to the case; pre-designation consulting is engaged on a separate scope so confidentiality is clear.",
         ],
       },
       {
@@ -363,31 +357,24 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Landlord tenant expert witness in Tennessee for commercial and residential disputes on lease, possession, and management practice. Call Nault Law.",
     intro:
-      "Landlord tenant expert witness work in Tennessee for commercial and residential disputes — opinions on lease enforcement, possession, common-area operations, security deposits, and what a competent Tennessee landlord or property manager would have done.",
+      "Landlord-tenant cases — commercial or residential — usually turn on one question: what would a competent Tennessee owner, manager, or tenant have done here? I give that opinion, pulling together the lease language, the statutory framework where URLTA applies, and how these properties are actually operated.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Lease, statute, and operating custom",
         paragraphs: [
-          "Landlord-tenant expert work spans commercial and residential disputes where the question is what a competent Tennessee owner, manager, or tenant would have done. Opinions integrate lease language, statutory framework (URLTA where applicable), and operating custom.",
-          "Common case types include CAM and operating-expense disputes, default and cure handling, possession and eviction process, security-deposit accounting, habitability claims, exclusivity and co-tenancy disputes, and assignment or transfer fights in commercial leases.",
+          "The work spans commercial and residential disputes where the standard is what a competent party in that role would have done, and the opinion integrates the lease language, the statutory framework (URLTA where it applies), and operating custom. The case types are CAM and operating-expense disputes, default and cure handling, the possession and eviction process, security-deposit accounting, habitability claims, exclusivity and co-tenancy fights, and assignment or transfer disputes in commercial leases.",
         ],
       },
       {
-        h2: "When attorneys retain me",
+        h2: "Who retains me",
         paragraphs: [
-          "Retentions typically come from commercial-litigation firms in lease disputes, from residential plaintiff or defense counsel in habitability or possession cases, and from corporate counsel needing a pre-litigation industry read.",
+          "These come from commercial-litigation firms in lease disputes, from residential plaintiff or defense counsel in habitability or possession cases, and from corporate counsel wanting a pre-litigation industry read. I work from the lease and the file, confirm scope on a short call, and provide the report, deposition, and testimony as needed — hourly, against a case-sized retainer.",
         ],
       },
       {
         h2: "Qualifications",
         paragraphs: [
           "Tennessee licensed real estate broker and managing broker. Two decades of property-management and commercial leasing experience — beginning in employee roles before his 2012 license — including oversight of multi-million-square-foot office portfolios and 120+ commercial leases in past roles. Tennessee bar since 2018.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Initial review of the lease, the file, and a short call to confirm scope. Written report, deposition, and testimony follow as needed. Hourly billing with retainers sized to the case.",
         ],
       },
       {
@@ -411,31 +398,24 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Property management expert witness in Tennessee on trust accounting, vendor management, owner disputes, and habitability disputes. Call Nault Law.",
     intro:
-      "Property management expert witness work in Tennessee for cases that turn on how a competent manager runs the asset — trust accounting, vendor management, lease enforcement, habitability, and the line between managing property and practicing without a license.",
+      "A case about how a manager ran the asset — the trust account, the vendors, the lease enforcement, the habitability complaint — needs someone who has actually managed property, not just litigated about it. I give those opinions, including on the line between managing property and practicing brokerage without a license.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "What a competent manager would have done",
         paragraphs: [
-          "Property management expert opinions explain what a competent Tennessee manager would have done on the asset at issue. The work draws on TREC management-broker rules, trust accounting requirements, owner-agreement custom, and the operating realities of running residential or commercial portfolios.",
-          "Common case categories include owner-versus-manager disputes, manager-versus-tenant claims, trust-accounting and escrow problems, vendor-selection and oversight failures, habitability disputes, and supervision questions for affiliates working under a managing broker.",
+          "The opinion explains what a competent Tennessee manager would have done on the asset in dispute, drawing on TREC management-broker rules, trust-accounting requirements, owner-agreement custom, and the operating reality of running residential or commercial portfolios. The recurring categories are owner-versus-manager disputes, manager-versus-tenant claims, trust-accounting and escrow problems, vendor-selection and oversight failures, habitability disputes, and supervision questions for affiliates under a managing broker.",
         ],
       },
       {
-        h2: "When attorneys retain me",
+        h2: "Where these come from",
         paragraphs: [
-          "Retentions come from owner counsel pursuing or defending claims against a manager, manager-side defense counsel and E&O carriers, and tenant or landlord counsel in disputes where the management company's conduct is at issue.",
+          "Retentions come from owner counsel pursuing or defending a claim against a manager, from manager-side defense counsel and E&O carriers, and from tenant or landlord counsel when the management company's conduct is the issue. I work from the management agreement, the owner statements, and the key correspondence, scope on a short call, and deliver the report, deposition, and testimony as the matter requires.",
         ],
       },
       {
         h2: "Qualifications",
         paragraphs: [
           "Hands-on property-management experience including oversight of multi-million-square-foot office portfolios. Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Initial review of the management agreement, owner-statements, and key correspondence, plus a short call to confirm scope. Written report, deposition, and testimony follow as the matter requires.",
         ],
       },
       {
@@ -459,26 +439,18 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Real estate disclosure expert witness in Tennessee for failure-to-disclose, seller-disclosure, and material-defect cases. Call Nault Law.",
     intro:
-      "Real estate disclosure expert witness work in Tennessee for failure-to-disclose, Seller's Property Disclosure, and material-defect cases — opinions on what a competent broker or seller would have disclosed and how Tennessee disclosure law actually applies in practice.",
+      "Disclosure cases come down to three questions: what was known, what should have been disclosed, and what a competent broker or seller does when an information question comes up. I give opinions on all three, and on how Tennessee disclosure law actually plays out in practice rather than on paper.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Statutory and common-law disclosure, in practice",
         paragraphs: [
-          "Disclosure cases turn on what was known, what should have been disclosed, and what industry custom expects when a broker or seller faces an information question. The work addresses both Tennessee statutory disclosure (residential) and common-law disclosure obligations.",
-          "Common case types include Tennessee Residential Property Condition Disclosure Act (TRPCDA) disputes, agent failure-to-disclose claims, material-defect and latent-defect litigation, and broker duty-to-investigate questions before listings.",
-        ],
-      },
-      {
-        h2: "When attorneys retain me",
-        paragraphs: [
-          "Retentions come from buyer's counsel pursuing post-closing claims, seller and brokerage defense counsel, and pre-designation consulting where the firm wants a confidential read on whether the disclosure record supports the theory.",
+          "The work covers both Tennessee's statutory residential disclosure and the common-law disclosure obligations, measured against what industry custom expects. The case types are Tennessee Residential Property Condition Disclosure Act (TRPCDA) disputes, agent failure-to-disclose claims, material- and latent-defect litigation, and broker duty-to-investigate questions before a listing goes up.",
         ],
       },
       {
         h2: "Scope of opinions",
         paragraphs: [
-          "Stephen Nault may assist with Tennessee real estate disclosure issues from the perspective of an attorney, managing broker, and real-estate-practice professional, including customary form use, transaction process, and brokerage disclosure practices under the Tennessee Residential Property Condition Disclosure Act (Tenn. Code Ann. §§ 66-5-201 et seq.).",
-          "He is not offered as a state-certified appraiser, home inspector, or guarantor of any legal outcome.",
+          "I am clear about the lane: I assist with Tennessee real estate disclosure issues from the perspective of an attorney, managing broker, and real-estate-practice professional — customary form use, transaction process, and brokerage disclosure practices under the Tennessee Residential Property Condition Disclosure Act (Tenn. Code Ann. §§ 66-5-201 et seq.). I am not offered as a state-certified appraiser, a home inspector, or a guarantor of any legal outcome. Retentions come from buyer's counsel pursuing post-closing claims, from seller and brokerage defense counsel, and from pre-designation consulting on whether the disclosure record supports the theory.",
         ],
       },
       {
@@ -514,31 +486,24 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Real estate commission dispute expert witness in Tennessee on procuring cause, brokerage agreements, and entitlement claims. Call Nault Law.",
     intro:
-      "Real estate commission dispute expert witness work in Tennessee for procuring-cause analysis, brokerage-agreement interpretation, and commission-entitlement claims between brokers, between agent and broker, or between brokerage and consumer.",
+      "Commission fights are procuring-cause fights. When two brokers, an agent and a broker, or a brokerage and a consumer are arguing over who earned the commission, the answer is in the chain of events and the agreement language. I trace that chain and apply the custom that decides entitlement.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Procuring cause and the agreement language",
         paragraphs: [
-          "Commission disputes turn on procuring cause, the language of the listing or buyer-broker agreement, and how the transaction actually moved from inquiry to closing. Expert opinions trace the chain of events and apply published custom to determine entitlement.",
-          "Common case types include broker-versus-broker procuring-cause arbitrations, listing-agreement enforcement, buyer-broker agreement disputes, override and tail-period claims, and brokerage-versus-affiliate commission splits.",
+          "These turn on procuring cause, the words of the listing or buyer-broker agreement, and how the deal actually moved from first inquiry to closing. My opinion follows that sequence and applies published custom to determine who is entitled to what. The case types are broker-versus-broker procuring-cause arbitrations, listing-agreement enforcement, buyer-broker agreement disputes, override and tail-period claims, and brokerage-versus-affiliate splits.",
         ],
       },
       {
-        h2: "When attorneys retain me",
+        h2: "When a firm brings me in",
         paragraphs: [
-          "Retentions come at the dispositive-motion or arbitration-hearing stage where the firm needs a Tennessee-current expert, in rebuttal of opposing expert reports, and in pre-designation consulting before a strategy is fixed.",
+          "Retentions land at the dispositive-motion or arbitration-hearing stage where you need a Tennessee-current expert, in rebuttal of an opposing report, or in pre-designation consulting before the strategy is fixed. I work from the brokerage agreements and the transaction file, scope on a short call, and provide the report, deposition, and arbitration or trial testimony as the matter requires.",
         ],
       },
       {
         h2: "Qualifications",
         paragraphs: [
           "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Active brokerage practice keeps procuring-cause analysis grounded in how transactions are actually run today.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Initial review of the brokerage agreements, transaction file, and a short call to confirm scope. Written report, deposition, and arbitration or trial testimony follow as the matter requires.",
         ],
       },
       {
@@ -562,31 +527,24 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Consumer real estate agent dispute expert witness in Tennessee for buyers and sellers with claims against their own agent or brokerage. Call Nault Law.",
     intro:
-      "Consumer real estate agent dispute expert witness work in Tennessee for buyers and sellers with claims against their own agent, broker, or brokerage — opinions on duty, breach, and what a reasonably competent Tennessee licensee would have done.",
+      "This is the case where the agent who was supposed to be on your side is the problem. For buyers and sellers with a claim against their own agent or brokerage, I give opinions on what that agent owed the client and whether they delivered it.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "What your own agent owed you",
         paragraphs: [
-          "Consumer-side disputes look at what the agent owed the client and whether that duty was met. The work addresses agency formation, scope of representation, the disclosures and explanations a competent agent would have provided, and how the transaction was actually handled.",
-          "Common case types include buyer claims about missed inspections, undisclosed defects, deal-handling errors, dual-agency conflicts, deposit issues, and post-closing problems that trace back to agent conduct.",
+          "A consumer-side dispute looks at the agency relationship itself: how it formed, the scope of the representation, the disclosures and explanations a competent agent would have given, and how the transaction was actually handled. The recurring claims are missed inspections, undisclosed defects, deal-handling errors, dual-agency conflicts, deposit issues, and post-closing problems that trace back to the agent's conduct.",
         ],
       },
       {
-        h2: "When attorneys retain me",
+        h2: "When counsel retains me",
         paragraphs: [
-          "Retentions come from plaintiff counsel preparing the claim, mediation or arbitration filings where industry context matters, and pre-designation consulting where the firm wants a confidential read on whether the conduct breaches the standard.",
+          "Retentions come from plaintiff counsel building the claim, from mediation or arbitration filings where the industry context matters, and from pre-designation consulting on whether the conduct actually breaches the standard. I work from the brokerage agreements, the transaction file, and the key communications, scope on a short call, and deliver the report, deposition, and testimony as the matter requires.",
         ],
       },
       {
         h2: "Qualifications",
         paragraphs: [
           "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage practice across residential and commercial transactions, beginning before his 2012 agent license.",
-        ],
-      },
-      {
-        h2: "How retention works",
-        paragraphs: [
-          "Initial review of the brokerage agreements, transaction file, and key communications, plus a short call to confirm scope. Written report, deposition, and testimony follow as the matter requires.",
         ],
       },
       {
