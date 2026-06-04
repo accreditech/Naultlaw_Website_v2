@@ -282,6 +282,7 @@ button { cursor: pointer; }
   .g-2-reverse > :last-child  { order: 1; }
   .no-sticky-mobile { position: static !important; }
   .sec { padding-block: clamp(2.5rem, 6vw, 3.5rem) !important; }
+  .hide-tablet { display: none !important; }
   .featured-article-body { padding: 2rem !important; }
 }
 @media (max-width: 640px) {
@@ -351,9 +352,4 @@ button { cursor: pointer; }
 }
 
 .show-mobile { display: none; }
-/* Header nav: keep the full horizontal nav visible down to 900px; swap to the
-   hamburger only below that. (Page-grid collapse stays at 1024px above.) */
-@media (max-width: 900px) {
-  .hide-tablet { display: none !important; }
-  .show-mobile { display: flex; }
-}
+@media (max-width: 1024px) { .show-mobile { display: flex; } }
