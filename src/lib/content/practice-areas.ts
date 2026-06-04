@@ -42,7 +42,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       "That is the nature of commercial leasing. The biggest dollars are often buried in sentences that do not look expensive until it is too late. While most business owners believe they can do it all, the ones that withstand the test of time know, lessons are easier taught than learned. Expertise comes through experience, and you don't have to learn those lessons the hard way.",
     ],
     summary:
-      "Stephen Nault advises on letters of intent, lease drafting, amendments, defaults, guaranties, assignment questions, operating covenants, and exit planning for commercial properties.",
+      "I advise on letters of intent, lease drafting, amendments, defaults, guaranties, assignment questions, operating covenants, and exit planning for commercial properties.",
     whoItIsFor: [
       "Owners and investors acquiring, repositioning, or stabilizing income-producing property.",
       "Landlords and tenants negotiating retail, office, industrial, flex, and mixed-use space.",
@@ -58,7 +58,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     whyTimingMatters:
       "A lease problem usually gets more expensive once notice deadlines pass, tenant expectations harden, or a lender, buyer, or anchor tenant becomes involved. Early review often creates leverage that is lost later.",
     approach:
-      "The work starts with the economics of the property, the operational realities of the parties, and the leverage built into the documents. From there, the goal is to tighten risk, preserve optionality, and resolve the dispute or document issue without wasting momentum.",
+      "I start with the economics of the property, the operational realities of the parties, and the leverage built into the documents. From there, the goal is to tighten the risk, preserve optionality, and resolve the document issue or the dispute without wasting momentum.",
     commonMistakes: [
       "Treating a business lease like a form that can be cleaned up later.",
       "Sending default letters or informal emails without understanding waiver and notice consequences.",
@@ -83,7 +83,7 @@ export const practiceAreas: PracticeAreaContent[] = [
       },
     ],
     localServiceArea:
-      "Based in Sumner County and primarily appearing in the Sumner, Wilson, Trousdale, Robertson, Williamson, and Davidson County courts, Mr. Nault represents commercial leasing clients across the entire state of Tennessee. In lease work the goal is to keep matters out of court — careful drafting and early review are how that happens.",
+      "I am based in Sumner County and primarily appear in the Sumner, Wilson, Trousdale, Robertson, Williamson, and Davidson County courts, but I represent commercial leasing clients across Tennessee. In lease work the goal is to stay out of court in the first place — careful drafting and an early review are how that happens.",
     issueTypes: [
       "LOI or new lease review",
       "Default notice or cure dispute",
@@ -108,7 +108,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     eyebrow: "Practice Area",
     intro: "A licensing complaint needs a disciplined response, not panic and not casual oversharing.",
     summary:
-      "Stephen Nault helps brokers and agents respond to Tennessee Real Estate Commission complaints, brokerage investigations, transaction disputes, and related risk events that can affect licensing, reputation, and business continuity.",
+      "I help brokers and agents respond to Tennessee Real Estate Commission complaints, brokerage investigations, transaction disputes, and the related risk events that can hit licensing, reputation, and business continuity.",
     whoItIsFor: [
       "Principal brokers, affiliate brokers, and brokerage leaders facing a complaint, inquiry, or transaction-related allegation.",
       "Real estate professionals who need a measured written response before facts become fixed in the record.",
@@ -124,7 +124,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     whyTimingMatters:
       "Early statements can lock a licensee into positions that are difficult to explain later. Prompt review helps preserve context, identify the true issue, and respond in a way that is accurate, proportionate, and aligned with the larger business risk.",
     approach:
-      "The response work focuses on chronology, documents, brokerage structure, and the practical realities of the transaction. The goal is not performative aggression. It is a careful, credible response that protects the professional and positions the matter for the best available resolution.",
+      "I focus the response on the chronology, the documents, the brokerage structure, and the practical realities of the transaction. The goal is not performative aggression — it is a careful, credible response that protects the professional and positions the matter for the best resolution available.",
     commonMistakes: [
       "Answering the complaint informally before the record is organized.",
       "Submitting more facts than necessary, including speculation or emotional commentary.",
@@ -172,9 +172,9 @@ export const practiceAreas: PracticeAreaContent[] = [
     metaDescription:
       "Counsel for LLC members, shareholders, managers, and closely held business owners dealing with governance friction, deadlock, and control disputes.",
     eyebrow: "Practice Area",
-    intro: "Owner conflicts are rarely just legal problems. They are control, information, and continuity problems.",
+    intro: "By the time an owner conflict reaches me, it is rarely just a legal problem. It is a control problem, an information problem, and a question of whether the business survives the fight.",
     summary:
-      "Stephen Nault advises on operating agreements, governance clean-up, manager authority, buyout pressure, deadlock, fiduciary allegations, and closely held business disputes where preserving leverage matters.",
+      "I advise on operating agreements, governance clean-up, manager authority, buyout pressure, deadlock, fiduciary allegations, and the closely held business disputes where holding leverage matters.",
     whoItIsFor: [
       "LLC members and managers dealing with authority questions, accounting tension, or strategic deadlock.",
       "Businesses that need cleaner operating documents before growth, financing, or ownership changes.",
@@ -190,7 +190,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     whyTimingMatters:
       "Once records are withheld, accounts are moved, or major business decisions are made unilaterally, the dispute becomes harder and more expensive to unwind. Early intervention can protect both the company and the client's bargaining position.",
     approach:
-      "The work begins with the governing documents, ownership economics, and actual operating reality. The goal is to identify pressure points quickly, separate emotion from business risk, and decide whether the matter calls for negotiated restructuring, buyout strategy, or formal dispute action.",
+      "I start with the governing documents, the ownership economics, and the actual operating reality. The goal is to find the pressure points fast, separate emotion from business risk, and decide whether the matter calls for negotiated restructuring, a buyout strategy, or formal action.",
     commonMistakes: [
       "Using online forms that do not fit the capital structure or operational reality of the company.",
       "Waiting until access to books, accounts, or assets is already compromised.",
@@ -241,7 +241,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     eyebrow: "Practice Area",
     intro: "A useful contract should shorten disputes, not silently manufacture them.",
     summary:
-      "Stephen Nault drafts, reviews, and revises business agreements with attention to leverage, risk allocation, performance standards, dispute clauses, and what the parties will actually do after signing.",
+      "I draft, review, and revise business agreements with an eye on leverage, risk allocation, performance standards, dispute clauses, and what the parties will actually do after they sign.",
     whoItIsFor: [
       "Business owners entering material vendor, services, sales, or strategic partner agreements.",
       "Real estate operators who need contracts aligned with asset, brokerage, or project realities.",
@@ -257,7 +257,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     whyTimingMatters:
       "The best time to control dispute cost is before the agreement is signed. Once a conflict begins, vague drafting forces parties to argue over basic meaning instead of focusing on a business solution.",
     approach:
-      "The contract review process asks what the client is trying to protect, what would actually go wrong if performance slips, and how a judge, arbitrator, or business counterparty would read the paper later. That keeps the drafting commercially useful.",
+      "I read a contract by asking three things: what are you trying to protect, what actually goes wrong if performance slips, and how would a judge, an arbitrator, or a business counterparty read this paper later? Keeping those in view is what keeps the drafting commercially useful.",
     commonMistakes: [
       "Using a borrowed template from a different deal type or state.",
       "Overfocusing on price and underweighting indemnity, default, and termination mechanics.",
@@ -377,7 +377,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     intro:
       "Investigate and Advise is built for clients who need a grounded read on claims, defenses, leverage, and next-step options before deciding how hard to push.",
     summary:
-      "This structured consultation path is designed for early-stage business and real estate conflict assessment. It helps clients understand likely claims and defenses, possible parties, timing concerns, and practical resolution options before committing to litigation or another formal path.",
+      "Investigate and Advise is a structured early-stage read on a business or real estate conflict. It helps you understand the likely claims and defenses, the possible parties, the timing concerns, and the practical resolution options before you commit to litigation or any other formal path.",
     whoItIsFor: [
       "Owners, investors, brokers, contractors, and property managers who need a serious early-stage read before escalating a dispute.",
       "Clients facing a business or real estate conflict with incomplete facts, multiple players, or unclear leverage.",
@@ -393,7 +393,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     whyTimingMatters:
       "Early assessment helps clients avoid expensive drift. It can identify weak assumptions, preserve better options, and clarify whether the right move is negotiation, arbitration, litigation, or disciplined patience.",
     approach:
-      "This work is deliberately practical: gather the record, identify what actually matters, test the narrative, and build a recommended path. The point is not to overlawyer the issue. It is to help the client decide whether to negotiate, investigate further, prepare for arbitration, or position for litigation with clearer judgment.",
+      "I keep this deliberately practical: gather the record, find what actually matters, test the narrative, and build a recommended path. The point is not to overlawyer it — it is to help you decide, with clearer judgment, whether to negotiate, investigate further, prepare for arbitration, or position for litigation.",
     commonMistakes: [
       "Spending heavily before the dispute is framed correctly.",
       "Letting urgency push a client into a bad first communication or premature filing.",
@@ -443,7 +443,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     eyebrow: "Practice Area",
     intro: "Resolution strategy should match the actual leverage, forum, and business objective.",
     summary:
-      "Stephen Nault advises on arbitration clauses, demand strategy, pre-hearing positioning, negotiated resolution, and business dispute pathways where a practical resolution matters as much as a legal one.",
+      "I advise on arbitration clauses, demand strategy, pre-hearing positioning, negotiated resolution, and the business dispute pathways where a practical resolution matters as much as a legal one.",
     whoItIsFor: [
       "Businesses and owners facing contract clauses that require arbitration or another structured dispute path.",
       "Clients who want a realistic view of settlement leverage before formal proceedings consume time and capital.",
@@ -459,7 +459,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     whyTimingMatters:
       "Forum decisions, demand framing, and early positioning affect cost and leverage later. It is easier to build a smart dispute path at the front end than to recover after a poor first move.",
     approach:
-      "The strategy work looks at contract language, forum mechanics, evidence, business consequences, and leverage. Sometimes the right answer is structured negotiation. Sometimes the client needs a firmer arbitration posture with litigation-grade preparation behind it.",
+      "I look at the contract language, the forum mechanics, the evidence, the business consequences, and the leverage. Sometimes the right answer is structured negotiation; sometimes it is a firmer arbitration posture with litigation-grade preparation behind it.",
     commonMistakes: [
       "Ignoring dispute resolution clauses until the fight is already underway.",
       "Assuming arbitration is always faster, cheaper, or less risky than court.",
@@ -508,7 +508,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     eyebrow: "Attorney Support / Expert Witness",
     intro: "Some cases need industry context explained clearly, not theatrically.",
     summary:
-      "In appropriate matters, Stephen C. Nault is available to assist lawyers and parties who need industry-informed analysis in real estate and brokerage disputes. The focus is on grounded opinions, credible consulting support, and practical explanation of how the underlying business actually works.",
+      "In appropriate matters, I am available to assist lawyers and parties who need industry-informed analysis in real estate and brokerage disputes. The focus is grounded opinions, credible consulting support, and a plain explanation of how the underlying business actually works.",
     whoItIsFor: [
       "Lawyers handling real estate or brokerage disputes who need grounded industry analysis or consulting support.",
       "Referral sources evaluating whether expert involvement would sharpen case assessment, discovery strategy, or settlement leverage.",
