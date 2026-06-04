@@ -10,31 +10,18 @@ export const realEstateTransactionsChildren: BofuService[] = [
     metaDescription:
       "Real estate purchase agreement attorney in Tennessee for residential, commercial, and FSBO purchase agreements — drafting and review. Call Nault Law.",
     intro:
-      "Real estate purchase agreement attorney in Tennessee for residential PSAs, commercial PSAs, and FSBO purchase agreements — drafting and review with attention to contingencies, financing terms, and post-closing exposure.",
+      "The purchase agreement is the contract that runs a real-estate deal from offer to closing, and it decides far more than price — the contingencies, the inspection and financing rights, what happens on default, and what the seller is still on the hook for after the sale. I draft and review residential, commercial, and FSBO purchase agreements, and I am straight about the boundary: this is contract work, not closing work.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "What the purchase agreement actually controls",
         paragraphs: [
-          "Purchase-agreement work focuses on the contract that binds buyer and seller from offer through closing. The drafting and review address contingency periods, financing and inspection rights, due-diligence mechanics, default-and-cure language, assignability, and the seller-disclosure obligations that govern post-closing exposure.",
-          "Both residential and commercial purchase agreements are handled. For FSBO and investor deals where there is no real-estate agent on the contract, the engagement often starts at the offer stage and runs through the contingency-clearing period.",
+          "A purchase agreement binds buyer and seller from the offer through closing, and the work focuses on the terms that decide how the deal goes if it gets bumpy: the contingency periods, financing and inspection rights, due-diligence mechanics, default-and-cure language, assignability, and the seller-disclosure obligations that govern what a buyer can come back on after closing. I handle both residential and commercial. On FSBO and investor deals with no agent on the contract, I often come in at the offer stage and stay through the contingency-clearing period.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Contract work, not closing work",
         paragraphs: [
-          "FSBO buyers and sellers without an agent on the deal. Real-estate investors using repeat templates that need a real attorney-drafted base instead of a board form. Commercial buyers and sellers reviewing a counterparty-supplied PSA before signing.",
-        ],
-      },
-      {
-        h2: "What this is not",
-        paragraphs: [
-          "This is contract work, not closing work. The office does not act as the closing or settlement agent, does not prepare deeds for closings, does not run title searches as a closing service, and does not disburse closing funds.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee drafting for standard residential and commercial PSAs. Capped pricing for review of a counterparty's draft. Turnaround typically two to four business days; rush available when an offer deadline is in play.",
+          "That boundary is worth stating plainly. My office does not act as the closing or settlement agent, does not prepare deeds for closings, does not run title searches as a closing service, and does not disburse closing funds — that is a title company's role, and I keep the line clear. On the contract itself, most work is flat-fee for a standard PSA, capped for reviewing a counterparty's draft, and turned around in a few days, faster when an offer deadline is in play. If you have a purchase agreement in front of you and no agent walking you through it, this is the read to get before you sign.",
         ],
       },
       {
@@ -58,39 +45,25 @@ export const realEstateTransactionsChildren: BofuService[] = [
     metaDescription:
       "Owner financing attorney in Tennessee for seller-financed real estate sales — promissory notes, deeds of trust, and financing agreements. Call Nault Law.",
     intro:
-      "Owner financing attorney in Tennessee for sellers and buyers structuring seller-financed real estate sales — promissory notes, deeds of trust, and the documents that carry credit risk forward beyond closing.",
+      "When a seller carries the financing instead of sending the buyer to a bank, the paperwork is the deal. I draft and review the note, the deed of trust, and the supporting documents for seller-financed sales — and I flag the federal and Tennessee lending rules that apply to some of these transactions before they turn into a problem.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "The documents carry the credit risk forward",
         paragraphs: [
-          "Owner financing work spans seller-side and buyer-side document drafting and review for transactions where the seller is carrying the paper instead of the buyer using a bank loan. The package typically includes a promissory note, a deed of trust securing the note, and supporting documents.",
-          "Where appropriate, the engagement also addresses default and remedy provisions, prepayment terms, due-on-sale clauses, late-fee and acceleration mechanics, and the federal lending-disclosure questions (Dodd-Frank, SAFE Act) that can apply to certain seller-financed deals.",
+          "In a seller-financed sale, the seller is the bank, and the documents are what protect that position after closing. The package is usually a promissory note, a deed of trust securing the note, and supporting paperwork, with real attention to default and remedy provisions, prepayment terms, due-on-sale clauses, and late-fee and acceleration mechanics. If the buyer defaults, a Tennessee deed of trust runs through the standard nonjudicial-foreclosure process, so the note, the deed of trust, and the trustee's role at default all have to line up and be recorded correctly. Loose documents are where a seller's security comes apart.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "The lending rules most seller-financed deals never check",
         paragraphs: [
-          "Sellers carrying the paper on a real estate sale instead of requiring a bank-financed buyer. Buyers using seller financing because conventional financing is not available or not preferred. Investors with multiple seller-financed transactions who need a clean template.",
+          "Seller financing on a home is not a paperwork-free zone. Depending on the seller's status, the loan purpose, and the property type, a residential seller-financed sale can trip Tennessee's mortgage-licensing rules (Tenn. Code Ann. § 45-13-201), the high-cost home-loan rules (Tenn. Code Ann. § 45-20-101 et seq.), and the usury and home-loan interest-rate limits (Tenn. Code Ann. §§ 47-14-103, 47-14-117, and 47-15-102). I check which of those actually apply rather than assume none do.",
         ],
       },
       {
-        h2: "Tennessee specifics",
+        h2: "And the federal layer: Dodd-Frank and Reg Z",
         paragraphs: [
-          "Tennessee owner-financed transactions secured by a deed of trust follow the standard nonjudicial-foreclosure framework if the buyer defaults. Document precision matters: the note, deed of trust, and any supporting agreements need to be aligned, properly recorded, and clear on the trustee's role at default.",
-          "Beyond the deal documents, owner-financed residential sales in Tennessee should flag mortgage-licensing rules under Tenn. Code Ann. § 45-13-201, high-cost home-loan rules under Tenn. Code Ann. § 45-20-101 et seq., and usury and home-loan interest-rate limits under Tenn. Code Ann. §§ 47-14-103, 47-14-117, and 47-15-102. Whether each rule applies depends on the seller's status, loan purpose, and property type.",
-        ],
-      },
-      {
-        h2: "Federal Dodd-Frank considerations",
-        paragraphs: [
-          "Federal Dodd-Frank and Reg Z seller-financing rules apply to consumer-purpose credit secured by a dwelling, with limited exclusions for one property by a natural person, estate, or trust, and for three or fewer properties in 12 months (12 C.F.R. § 1026.36).",
-          "The seller's exemption depends on ownership, builder status, amortization, ability-to-repay, and rate-limit conditions specific to the transaction. The engagement flags which exemption (if any) applies and structures the documents accordingly.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee drafting for standard seller-financing packages (note, deed of trust, and closing instructions). Capped pricing for review of a counterparty's draft. Turnaround typically three to five business days.",
+          "On top of the state rules, federal Dodd-Frank and Reg Z seller-financing requirements apply to consumer-purpose credit secured by a dwelling — with narrow exclusions for one property sold by a natural person, estate, or trust, and for three or fewer properties in a 12-month period (12 C.F.R. § 1026.36). Whether a seller's exemption holds turns on ownership, builder status, amortization, ability-to-repay, and rate-limit conditions specific to the deal. The SAFE Act licensing question can come in too. I work out which exemption (if any) fits and structure the documents to match, because guessing wrong here is expensive.",
+          "Seller carrying paper, buyer using seller financing, or investor running these on repeat — the right structure depends on your facts and the rules they trigger, which is exactly what I check before drafting a line.",
         ],
       },
       {
@@ -114,31 +87,18 @@ export const realEstateTransactionsChildren: BofuService[] = [
     metaDescription:
       "Land contract attorney in Tennessee for installment land sales, contract-for-deed agreements, and seller-financed transfers. Call Nault Law.",
     intro:
-      "Land contract attorney in Tennessee for sellers and buyers structuring installment land sales (contract for deed) — payment schedules, default and forfeiture terms, and the title-transfer mechanics at maturity.",
+      "A land contract — contract for deed — is the seller-financing option where the seller keeps legal title until the buyer finishes paying. That single feature, retained title, is what separates it from a note-and-deed-of-trust deal, and it is where most of the legal risk lives. I draft and review these so the payment terms, the default consequences, and the title transfer at the end are all spelled out.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Retained title is the whole difference",
         paragraphs: [
-          "A land contract — sometimes called a contract for deed or installment land contract — is a sale where the seller retains legal title until the buyer completes payments. The work covers drafting the agreement, structuring payment schedules, addressing taxes and insurance during the term, and writing the default-and-forfeiture or remedy provisions.",
-          "Common scenarios include rural land sales, owner-financed residential transfers where a deed-of-trust structure is not preferred, and family transfers where the parties want a simpler payment-and-transfer arrangement than a conventional financing structure.",
+          "In a standard owner-financed sale, the buyer takes the deed at closing and a deed of trust secures the seller's note. A land contract works the other way: the seller holds legal title through the payment term and the buyer holds an equitable interest until the contract is paid off. That structure changes everything about a default — forfeiture versus a judicial foreclosure of the contract interest — and it changes who carries property taxes and insurance during the term. I draft those terms explicitly, because Tennessee courts read these contracts strictly, and an ambiguity tends to land on whoever wrote it.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Where these fit",
         paragraphs: [
-          "Sellers offering an installment-sale alternative to bank-financed buyers. Buyers without ready access to conventional financing. Family transfers using a contract-for-deed structure. Investors selling land or improved property on installment terms.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee land-contract terms drive most of the legal posture: who pays property taxes during the contract period, who carries insurance, what happens on default (forfeiture vs. judicial foreclosure of the contract interest), and how legal title transfers at completion. The drafting needs to be specific — Tennessee courts read these contracts strictly.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee drafting for straightforward land-contract agreements. Capped pricing for review of a counterparty's draft. Turnaround typically three to five business days.",
+          "Land contracts show up in rural land sales, owner-financed residential transfers where the parties do not want a deed-of-trust structure, family transfers that want something simpler than bank financing, and investor installment sales. The terms that matter — payment schedule, taxes and insurance, default and remedy, and the mechanics of transferring legal title at completion — turn on which of those you are doing and what the property is. That is worth pinning down at the start, not at the maturity date.",
         ],
       },
       {
@@ -162,31 +122,18 @@ export const realEstateTransactionsChildren: BofuService[] = [
     metaDescription:
       "Real estate joint venture attorney in Tennessee for multi-party deals, capital-partner structures, and project-specific JV agreements. Call Nault Law.",
     intro:
-      "Real estate joint venture attorney in Tennessee for multi-party deals — operator-and-capital-partner structures, project-specific JV agreements, distribution waterfalls, and exit terms drafted to fit the specific deal rather than a one-size-fits-all template.",
+      "Put an operator who has the deal next to a partner who has the money and you have a real-estate joint venture — and the JV agreement is what keeps that pairing from coming apart when the project gets hard. I structure and draft these for operators raising capital and for the partners writing the checks: entity, waterfall, control, and exit, built around the actual deal rather than a stock template.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Operator, capital, and the terms that govern the split",
         paragraphs: [
-          "Real-estate joint venture work designs and drafts the legal structure for a multi-party deal — typically an operator (with the deal expertise) paired with capital partners (with the money). The engagement covers entity formation, JV operating agreement, capital contribution mechanics, distribution waterfall, control rights, and exit terms.",
-          "Common deal types include single-asset acquisition JVs, ground-up development JVs, value-add reposition JVs, and multi-property fund-style structures with multiple investors.",
+          "Most of these pair an operator who brings the expertise with capital partners who bring the funding. The structure is the entity formation, the JV operating agreement, the capital-contribution mechanics, the distribution waterfall, the control rights, and the exit terms. The provisions that actually get tested are operator authority and decision rights, capital-call mechanics and what happens on a missed call, the waterfall itself — preferred return, catch-up, promote, and clawback — major-decision approval thresholds, exit and forced-sale triggers, and removal-for-cause. Each of those is a place a good deal goes bad if the document is vague.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "Built for the deal, on either side of the table",
         paragraphs: [
-          "Real-estate operators raising capital from individual or institutional partners on a deal-by-deal basis. Capital partners reviewing a JV agreement sent by an operator. Family offices and investment groups structuring co-investment arrangements.",
-        ],
-      },
-      {
-        h2: "Common issues addressed",
-        paragraphs: [
-          "Operator authority and decision rights. Capital-call mechanics and consequences for missed calls. Distribution waterfall — preferred return, catch-up, promote, and clawback. Major-decision approval thresholds. Exit triggers and forced-sale rights. Removal-for-cause and replacement provisions.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Hourly billing with a sized retainer for new-deal JV drafting. Capped pricing available for review of a counterparty's JV agreement. Turnaround scales with deal complexity and counterparty responsiveness.",
+          "A single-asset acquisition, a ground-up development, a value-add reposition, and a multi-property fund-style structure are not the same deal and should not share one agreement. I draft new-deal JVs, and I also review the agreement an operator hands a capital partner — the review is often where a partner learns what the promote and the control terms really mean. Operator or investor, the agreement should reflect the economics and the risk you actually agreed to, not the ones the template assumed.",
         ],
       },
       {
@@ -210,32 +157,19 @@ export const realEstateTransactionsChildren: BofuService[] = [
     metaDescription:
       "Assignment of contract attorney in Tennessee for real-estate wholesalers, investors, and parties assigning purchase agreements. Call Nault Law.",
     intro:
-      "Assignment of contract attorney in Tennessee for real-estate wholesalers, investors, and parties transferring purchase-agreement rights — assignment-fee structuring, anti-assignment-clause analysis, and clean transfer documents.",
+      "Assigning a contract is how a wholesaler gets paid: you put a property under contract, then sell your position in that contract to another buyer for a fee. The legal work is making the transfer clean and keeping the deal on the right side of Tennessee's brokerage-licensing rules — which is where this gets sharper than people expect.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "Clean transfer, clear fee",
         paragraphs: [
-          "Assignment-of-contract work covers the legal mechanics of transferring a buyer's rights under a purchase agreement to a third party for a fee. The work includes reviewing the original contract for assignability, drafting the assignment agreement, and structuring the assignment-fee payment so the original seller, the assignor, and the assignee all understand who pays whom and when.",
-          "Where the original contract has an anti-assignment clause or requires seller consent, the engagement addresses the practical path — consent negotiation, contract restructuring, or alternative deal structures.",
+          "Done right, the mechanics are straightforward: review the original purchase agreement for assignability, draft the assignment agreement, and structure the assignment fee so the seller, the assignor, and the assignee all know who pays whom and when. Where the original contract has an anti-assignment clause or needs seller consent, the work is the practical path around it — consent, restructuring, or a different deal structure.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "The licensing line wholesalers cross without meaning to",
         paragraphs: [
-          "Real-estate wholesalers running an assignment-based investment model. Investors assigning a contract because deal terms have changed. Buyers selling their position to a third party at a profit before closing.",
-        ],
-      },
-      {
-        h2: "Tennessee specifics",
-        paragraphs: [
-          "Tennessee real-estate purchase contracts are generally assignable absent contract language to the contrary. The Tennessee legislature now regulates wholesaling-disclosure obligations, and marketing another's real estate for compensation can still trigger unlicensed-brokerage risk under Tenn. Code Ann. §§ 62-13-102, 62-13-110, and 66-4-401–403; see also Tenn. Comp. R. & Regs. 1260-02-.12.",
-          "The safer approach is to disclose the assignment intent in writing and to market only the contract or equitable interest — not the underlying real property — unless the assignor is properly licensed. The engagement keeps the assignor's role clear and flags the licensing question before the assignment closes.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee drafting for standard assignment-of-contract agreements. Capped pricing for review of an existing draft. Turnaround typically two to three business days; rush available when a closing date is in play.",
+          "Tennessee purchase contracts are generally assignable unless the contract says otherwise. The trap is what you market. Marketing someone else's real property for compensation can trigger unlicensed-brokerage risk under Tenn. Code Ann. §§ 62-13-102, 62-13-110, and 66-4-401–403 (see also Tenn. Comp. R. & Regs. 1260-02-.12), and the legislature now regulates wholesaling-disclosure obligations as well. The safer posture is to disclose the assignment intent in writing and to market only the contract or your equitable interest — not the underlying property — unless you are licensed. I keep the assignor's role clear and flag the licensing question before the assignment closes, because that is the part that turns a profit into a problem.",
+          "Whether you run an assignment-based model or you are assigning a single contract because the deal changed, the documents and the disclosure posture decide whether it holds up. Get those right and a clean assignment stays clean.",
         ],
       },
       {
@@ -259,37 +193,24 @@ export const realEstateTransactionsChildren: BofuService[] = [
     metaDescription:
       "1031 exchange attorney in Tennessee for investors deferring gain — PSA cooperation language, qualified-intermediary coordination, and TN deeds. Call Nault Law.",
     intro:
-      "1031 exchange attorney in Tennessee for real estate investors deferring capital gain on the sale of investment property — drafting the cooperation language in the purchase agreement, coordinating with the qualified intermediary, tracking the 45-day identification and 180-day exchange deadlines, and making sure the Tennessee deed and transfer-tax mechanics line up with the exchange.",
+      "A 1031 exchange lets a real-estate investor roll the gain from one investment property into the next without paying federal tax on it now — but only if the contract language, the qualified intermediary, and the deadlines are exact. I handle the Tennessee transactional side: the cooperation language in the purchase agreements, the QI coordination, the 45-day and 180-day deadline tracking, and the deed work that has to reflect the exchange.",
     sections: [
       {
-        h2: "What this covers",
+        h2: "The transactional pieces that make or break the deferral",
         paragraphs: [
-          "Section 1031 of the Internal Revenue Code lets investors defer capital gain on the sale of real property held for productive use or investment, provided the sale and replacement-property acquisition are structured as a like-kind exchange. The legal work focuses on the transactional pieces that make or break the deferral: cooperation and assignment language in both the relinquished-property and replacement-property purchase agreements, coordination with the qualified intermediary on assignment of contract rights, attention to the 45-day identification window and the 180-day exchange period, and clean Tennessee deed preparation that reflects the QI's role in the transaction.",
-          "Forward exchanges, reverse exchanges using an exchange accommodation titleholder, and improvement exchanges are all within scope. The work also includes review of the QI's exchange agreement and any LLC structures used to hold replacement property.",
+          "Section 1031 of the Internal Revenue Code lets an investor defer capital gain on the sale of real property held for investment or productive use, as long as the sale and the replacement purchase are structured as a like-kind exchange. The deferral lives or dies on the transactional details: cooperation and assignment language in both the relinquished-property and replacement-property purchase agreements, coordination with the qualified intermediary on assigning the contract rights, the hard 45-day identification window and 180-day exchange period, and clean Tennessee deeds that reflect the QI's role in the chain. Forward exchanges, reverse exchanges using an exchange accommodation titleholder, and improvement exchanges are all in scope, as is reviewing the QI's exchange agreement and any LLC used to hold the replacement property.",
         ],
       },
       {
-        h2: "Who this is for",
+        h2: "What Tennessee does and does not add",
         paragraphs: [
-          "Tennessee real estate investors selling a rental, commercial, or land-investment property and rolling the proceeds into replacement property. Out-of-state investors acquiring Tennessee replacement property as part of an exchange. Operators using LLC or tenancy-in-common structures to hold exchange property. CPAs and qualified intermediaries who need Tennessee transactional counsel to handle the documents and deed work.",
+          "Tennessee has no state income tax on capital gains, so a § 1031 exchange here is about federal deferral only — there is no parallel state deferral or recapture analysis like an investor would face in California. What Tennessee does have is a deed-transfer fee under T.C.A. § 67-4-409 and recording mechanics that have to track the QI's role so the deed reflects the actual chain of conveyance. Reverse and improvement exchanges using an EAT need particular care in how the parking entity holds and conveys title under Tennessee law.",
         ],
       },
       {
-        h2: "Tennessee specifics",
+        h2: "What this is not, and what it costs",
         paragraphs: [
-          "Tennessee has no state income tax on capital gains, so a § 1031 exchange addresses federal deferral only — there is no parallel state-level deferral or recapture analysis like there is in California. What Tennessee does have is a deed-transfer fee at T.C.A. § 67-4-409 and recording mechanics that need to track the QI's role accurately so the deed reflects the actual chain of conveyance. Reverse and improvement exchanges using an EAT also require careful attention to how the parking entity holds and conveys title under Tennessee law.",
-        ],
-      },
-      {
-        h2: "What this is not",
-        paragraphs: [
-          "The office does not act as the qualified intermediary, does not provide tax advice on whether a particular exchange qualifies, and does not opine on basis or recapture calculations. CPA or tax counsel coordination is required on the tax-treatment questions. The role is transactional Tennessee real estate counsel: contracts, deeds, QI coordination, and deadline tracking.",
-        ],
-      },
-      {
-        h2: "Process and pricing",
-        paragraphs: [
-          "Flat-fee or capped pricing for standard forward-exchange document packages (PSA cooperation language, QI agreement review, replacement-property PSA, closing-stage deed coordination). Hourly billing with sized retainer for reverse and improvement exchanges, multi-property exchanges, and any matter involving LLC or TIC structuring at the replacement-property stage.",
+          "I am not the qualified intermediary, I do not give tax advice on whether a given exchange qualifies, and I do not opine on basis or recapture math — that is your CPA's or tax counsel's call, and the exchange genuinely needs them. My role is the Tennessee transactional side: the contracts, the deeds, the QI coordination, and the deadline tracking. Pricing is flat-fee or capped for a standard forward-exchange package and hourly for reverse, improvement, multi-property, or LLC/TIC-structured matters. If you have a relinquished-property sale coming up, the time to line up the language and the qualified intermediary is before it closes, not after.",
         ],
       },
       {
