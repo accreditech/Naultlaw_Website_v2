@@ -29,7 +29,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Why an attorney-broker, specifically",
         paragraphs: [
-          "What I bring that most title experts do not is the combination. I have practiced law in Tennessee since 2018 and am admitted to the U.S. District Court for the Middle District of Tennessee. I have held a Tennessee real estate license since 2012 and have been a managing broker since 2021, I have held a TREC course instructor license since 2020, and I am a Rule 31 listed mediator (Family). Behind the licenses is two decades of hands-on commercial leasing, brokerage, and property-management work.",
+          "What I bring that most title experts do not is the combination. I have practiced law in Tennessee since 2018 and am admitted to the U.S. District Court for the Middle District of Tennessee. I have held a Tennessee real estate license since 2012 and have been a managing broker since 2021, I have held a TREC course instructor license since 2020, and I am a Rule 31 listed mediator (Family). Behind the licenses is two decades of hands-on commercial leasing, brokerage, and property-management work — the early years as an employee inside real estate companies, then as a licensed agent from 2012.",
           "Title cases rarely turn on pure law or pure brokerage. They turn on the seam between the two — what the instruments should have said, how the transaction was actually run, and what a competent operator does in the field. Opinions from that vantage tend to hold up better than analysis from one track alone.",
         ],
       },
@@ -80,7 +80,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018; admitted to the U.S. District Court for the Middle District of Tennessee. Two decades of hands-on commercial leasing, brokerage, and property-management experience.",
+          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018; admitted to the U.S. District Court for the Middle District of Tennessee. Two decades of hands-on commercial leasing, brokerage, and property-management experience, beginning in employee roles before his 2012 agent license.",
         ],
       },
       {
@@ -129,7 +129,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee bar since 2018. Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Hands-on experience drafting and negotiating commercial purchase agreements, leases, and option deals across two decades.",
+          "Tennessee bar since 2018. Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Hands-on experience drafting and negotiating commercial purchase agreements, leases, and option deals across two decades, dating to employee roles before his 2012 agent license.",
         ],
       },
       {
@@ -159,7 +159,7 @@ export const expertWitnessChildren: BofuService[] = [
     metaDescription:
       "Property valuation expert witness in Tennessee for real-estate, divorce, probate, and partition disputes. Call Nault Law.",
     intro:
-      "Property valuation expert witness in Tennessee from a managing broker with two decades of commercial real-estate experience, retained in litigation, divorce, probate, and partition matters where industry context — not formal appraisal — is what the case needs.",
+      "Property valuation expert witness in Tennessee from a managing broker with two decades of commercial real-estate experience — employee roles before licensure, then licensed from 2012 — retained in litigation, divorce, probate, and partition matters where industry context — not formal appraisal — is what the case needs.",
     sections: [
       {
         h2: "What this covers",
@@ -226,7 +226,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage, leasing, and property-management practice — current with how files actually move today.",
+          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage, leasing, and property-management practice, beginning before his 2012 agent license — and current with how files actually move today.",
         ],
       },
       {
@@ -426,7 +426,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker and managing broker. Two decades of property-management and commercial leasing experience, including oversight of multi-million-square-foot office portfolios and 120+ commercial leases in past roles. Tennessee bar since 2018.",
+          "Tennessee licensed real estate broker and managing broker. Two decades of property-management and commercial leasing experience — beginning in employee roles before his 2012 license — including oversight of multi-million-square-foot office portfolios and 120+ commercial leases in past roles. Tennessee bar since 2018.",
         ],
       },
       {
@@ -625,7 +625,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "Qualifications",
         paragraphs: [
-          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage practice across residential and commercial transactions.",
+          "Tennessee licensed real estate broker since 2012; managing broker since 2021. TREC course instructor license since 2020. Tennessee bar since 2018. Two decades of brokerage practice across residential and commercial transactions, beginning before his 2012 agent license.",
         ],
       },
       {

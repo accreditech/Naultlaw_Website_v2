@@ -104,3 +104,12 @@ The live /about timeline entry "2023 — Rule 31 Listed Mediator — Completed t
 > **2025 — Rule 31 Listed Mediator (Family)** — Listed by the Tennessee AOC as a Rule 31 Family Mediator, serving Sumner and surrounding counties.
 
 Also scan the rest of the site for any other "civil mediator" / "general civil" mediation claims and correct them the same way. Do not reference the planned crossover. This is an RPC 7.1 advertising-accuracy fix — it ships with the pilot PR regardless of voice calibration.
+
+---
+
+## 7. Calibration notes (post-pilot, 2026-05-31)
+Pilot voice is **approved as calibrated.** Two refinements carry forward into every future batch:
+
+1. **Signature constructions are seasoning, not structure.** "I would rather… than…", "in plain terms", "the practical issue is", and similar tells are capped at **once per page** *and* must be **varied across pages**. Reaching for the same construction on page after page is the new scaffold tell — it reads as templated even when each individual page is clean. Vary the phrasing; do not let a signature move become a default.
+
+2. **Experience / tenure claims: accurate and anchored.** Steve's full timeline is: real-estate-company **employee** (pre-2012; ~two decades of total experience to date), **licensed agent 2012**, **Tennessee bar 2018**, **TREC instructor 2020**, **managing broker 2021**, **Rule 31 Family mediator 2025**. "Two decades" is correct and must **not** be rounded down — anchor it so the math is visible and cross-examination-proof (e.g., "two decades… the early years as an employee inside real estate companies, then licensed as an agent from 2012"). Anchor every "two decades"/"20 years" claim where context allows, especially on expert-witness pages.

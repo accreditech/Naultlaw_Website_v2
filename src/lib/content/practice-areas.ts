@@ -345,11 +345,11 @@ export const practiceAreas: PracticeAreaContent[] = [
       {
         question: "Do you work with other professionals on the matter?",
         answer:
-          "Yes. Real estate disputes often need title professionals, surveyors, brokers, or a project team in the mix, depending on the issue. I would rather coordinate that early than discover a gap late.",
+          "Yes. Real estate disputes often need title professionals, surveyors, brokers, or a project team in the mix, depending on the issue. Pulling them in early beats discovering a gap late.",
       },
     ],
     localServiceArea:
-      "In Gallatin and the surrounding counties, real estate disputes usually come with some local history — the parties know each other, the property has a past, or a project is on the clock. That context matters. It changes what a sensible resolution looks like, and it is part of why I would rather understand the situation on the ground before deciding how hard to push.",
+      "In Gallatin and the surrounding counties, real estate disputes usually come with some local history — the parties know each other, the property has a past, or a project is on the clock. That context matters. It changes what a sensible resolution looks like, and it is part of why I try to understand the situation on the ground before deciding how hard to push.",
     issueTypes: [
       "Purchase agreement dispute",
       "Title or access issue",

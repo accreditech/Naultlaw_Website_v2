@@ -16,7 +16,7 @@ export const businessFormationChildren: BofuService[] = [
         h2: "What forming an LLC actually buys you",
         paragraphs: [
           "Filing articles of organization with the Tennessee Secretary of State creates the entity. By itself, that is not much protection. The liability shield people form an LLC for depends on running the company like a real company — a separate bank account, a registered agent that actually receives service, and an operating agreement that lines up with how decisions get made and money moves.",
-          "So the work I do is the entity-choice call, the articles and registered-agent setup, EIN coordination, and the operating agreement — plus the franchise-and-excise tax baseline every new Tennessee owner should understand before the first year closes. I would rather you spend a little more at formation than pay to untangle a thin LLC later.",
+          "So the work I do is the entity-choice call, the articles and registered-agent setup, EIN coordination, and the operating agreement — plus the franchise-and-excise tax baseline every new Tennessee owner should understand before the first year closes. Spending a bit more at formation is cheaper than untangling a thin LLC later.",
         ],
       },
       {
@@ -30,7 +30,7 @@ export const businessFormationChildren: BofuService[] = [
       {
         h2: "The Tennessee franchise-and-excise tax most owners don't see coming",
         paragraphs: [
-          "Tennessee taxes most LLCs in a way a lot of new owners are not expecting. Franchise tax is generally measured under Tenn. Code Ann. § 67-4-2106, and excise tax is imposed under Tenn. Code Ann. § 67-4-2007. In plain terms: the state taxes the entity on a net-worth measure and on its net earnings, separate from anything owed on the owner's personal return.",
+          "Tennessee taxes most LLCs in a way a lot of new owners are not expecting. Franchise tax is generally measured under Tenn. Code Ann. § 67-4-2106, and excise tax is imposed under Tenn. Code Ann. § 67-4-2007. Put simply: the state taxes the entity on a net-worth measure and on its net earnings, separate from anything owed on the owner's personal return.",
           "There are real exemptions — FONCE (the family-owned non-corporate entity exemption), the obligated-member exemption, nonprofit treatment, and others — and whether one fits depends on who owns the LLC, what it holds, and how it earns. This is one of the first things I look at, because the right entity and tax posture is hard to bolt on after the fact. I coordinate the tax-election side with your CPA; the legal side makes sure the documents match the plan.",
         ],
       },
