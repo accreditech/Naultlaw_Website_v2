@@ -353,3 +353,8 @@ button { cursor: pointer; }
 
 .show-mobile { display: none; }
 @media (max-width: 1024px) { .show-mobile { display: flex; } }
+/* Header nav links stay visible down to 820px (the right-side phone pill +
+   Schedule button hide at <=1024px, freeing the room). Between 820 and 1024 the
+   hamburger is also shown and carries phone/Schedule. Below 820, nav collapses
+   fully to the hamburger. */
+@media (max-width: 920px) { .nav-desktop { display: none !important; } }
