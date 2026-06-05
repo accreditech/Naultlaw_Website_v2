@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generate-content-mtimes.mjs",
+    "prebuild": "node scripts/generate-content-mtimes.mjs && node scripts/validate-inline-links.mjs",
     "build": "next build",
     "generate:content-mtimes": "node scripts/generate-content-mtimes.mjs",
+    "validate:inline-links": "node scripts/validate-inline-links.mjs",
+    "test:unit": "node --test scripts/*.test.mjs",
     "start": "next start",
     "smoke": "node scripts/smoke-check.mjs",
     "qa": "node scripts/qa-check.mjs",
