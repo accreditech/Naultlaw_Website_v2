@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ActionLink } from "@/components/site/action-link";
 import { BofuInlineIntakeForm } from "@/components/sections/bofu-inline-intake";
+import { renderInlineLinks } from "@/components/site/inline-rich-text";
 import type { BofuService } from "@/lib/content/bofu-services";
 import { getPracticeArea } from "@/lib/content/practice-areas";
 import {
@@ -40,7 +41,7 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
               <h1 className="font-heading text-3xl tracking-tight text-foreground sm:text-4xl">
                 {service.h1}
               </h1>
-              <p className="editorial-pull">{service.intro}</p>
+              <p className="editorial-pull">{renderInlineLinks(service.intro)}</p>
               {parentPa && (
                 <p className="text-sm leading-7 text-muted-foreground">
                   This page covers a focused service. For the broader editorial
@@ -68,7 +69,7 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
                       key={i}
                       className="text-base leading-7 text-foreground/85"
                     >
-                      {paragraph}
+                      {renderInlineLinks(paragraph)}
                     </p>
                   ))}
                 </div>

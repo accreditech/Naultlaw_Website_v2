@@ -78,7 +78,7 @@ export const businessFormationChildren: BofuService[] = [
     metaDescription:
       "Operating agreement attorney in Tennessee for multi-member, single-member, and manager-managed LLCs with buy-sell terms. Call Nault Law.",
     intro:
-      "An operating agreement is the document that decides how your LLC actually runs — who decides what, how money moves, and what happens when a member dies, divorces, or wants out. I draft them to match the real business, because a generic one only looks fine until the company is under stress.",
+      "An operating agreement is the document that decides how your LLC actually runs — who decides what, how money moves, and what happens when a member dies, divorces, or wants out. I draft them to match the real business, because a generic one only [looks fine until the company is under stress](/articles/when-the-operating-agreement-no-longer-matches-reality).",
     sections: [
       {
         h2: "It only earns its fee if it matches how you run the company",

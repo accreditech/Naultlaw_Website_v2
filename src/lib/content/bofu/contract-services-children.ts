@@ -154,7 +154,7 @@ export const contractServicesChildren: BofuService[] = [
     metaDescription:
       "Commercial lease attorney in Tennessee. Drafting, review, renewal, and disputes for tenants and landlords. Flat-fee review available. Call Nault Law.",
     intro:
-      "A commercial lease reads like a formality at signing. It becomes the most important document you have the day a CAM reconciliation lands wrong or a default notice shows up. I draft, review, renew, and dispute leases for tenants and landlords alike, focused on the terms that decide the real money.",
+      "A commercial lease reads like a formality at signing. It becomes the most important document you have the day a CAM reconciliation lands wrong or [a default notice shows up](/articles/what-to-do-when-a-commercial-lease-default-notice-arrives). I draft, review, renew, and dispute leases for tenants and landlords alike, focused on the terms that decide the real money.",
     sections: [
       {
         h2: "The terms that decide the real economics",

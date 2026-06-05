@@ -230,7 +230,7 @@ export const expertWitnessChildren: BofuService[] = [
       {
         h2: "How TREC actually evaluates licensee conduct",
         paragraphs: [
-          "My opinions explain how the Tennessee Real Estate Commission weighs licensee conduct, what a supervising broker is reasonably expected to catch, and how the published TREC rules and the way they are taught apply to the file in front of you. The settings are civil litigation tied to a TREC complaint, disciplinary matters where an outside expert opinion strengthens the response, and rebuttal of opposing opinions on supervision, advertising, disclosure, or transaction handling.",
+          "My opinions explain [how the Tennessee Real Estate Commission weighs licensee conduct](/articles/what-the-tennessee-real-estate-commission-can-and-cannot-do), what a supervising broker is reasonably expected to catch, and how the published TREC rules and the way they are taught apply to the file in front of you. The settings are civil litigation tied to a TREC complaint, disciplinary matters where an outside expert opinion strengthens the response, and rebuttal of opposing opinions on supervision, advertising, disclosure, or transaction handling.",
         ],
       },
       {
