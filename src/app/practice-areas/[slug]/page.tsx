@@ -8,6 +8,7 @@ import { ActionLink } from "@/components/site/action-link";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { DisclosurePanel } from "@/components/site/disclosure-panel";
 import { StructuredDataScript } from "@/components/site/structured-data-script";
+import { renderInlineLinks } from "@/components/site/inline-rich-text";
 import { practiceAreas, getPracticeArea } from "@/lib/content/practice-areas";
 import { resources } from "@/lib/content/resources";
 import { siteImages, pageImages } from "@/lib/content/images";
@@ -91,13 +92,13 @@ export default async function PracticeAreaPage({ params }: Props) {
             {/* ── LEFT COLUMN ─────────────────────────────── */}
             <div className="flex flex-col gap-10">
               {/* Intro pull */}
-              <p className="editorial-pull">{area.intro}</p>
+              <p className="editorial-pull">{renderInlineLinks(area.intro)}</p>
 
               {/* Optional narrative paragraphs */}
               {area.narrative && area.narrative.length > 0 && (
                 <div className="flex flex-col gap-5 text-base leading-7 text-foreground/85">
                   {area.narrative.map((para, i) => (
-                    <p key={i}>{para}</p>
+                    <p key={i}>{renderInlineLinks(para)}</p>
                   ))}
                 </div>
               )}
@@ -142,7 +143,7 @@ export default async function PracticeAreaPage({ params }: Props) {
                   How I approach it
                 </h2>
                 <p className="mt-3 text-base leading-8 text-foreground">
-                  {area.approach}
+                  {renderInlineLinks(area.approach)}
                 </p>
               </div>
 
@@ -240,7 +241,7 @@ export default async function PracticeAreaPage({ params }: Props) {
               <div className="surface-card p-6">
                 <p className="eyebrow text-muted-foreground">Why Timing Matters</p>
                 <p className="mt-3 text-sm leading-7 text-foreground">
-                  {area.whyTimingMatters}
+                  {renderInlineLinks(area.whyTimingMatters)}
                 </p>
               </div>
 

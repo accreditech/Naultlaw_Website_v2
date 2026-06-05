@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ActionLink } from "@/components/site/action-link";
 import { BofuInlineIntakeForm } from "@/components/sections/bofu-inline-intake";
+import { renderInlineLinks } from "@/components/site/inline-rich-text";
 import type { BofuHub, BofuService } from "@/lib/content/bofu-services";
 import { siteConfig } from "@/lib/site-config";
 
@@ -40,7 +41,7 @@ export function BofuHubSection({ hub, children }: Props) {
                 What this covers
               </h2>
               <p className="mt-4 text-base leading-7 text-foreground/85">
-                {hub.whatThisCovers}
+                {renderInlineLinks(hub.whatThisCovers)}
               </p>
             </div>
           )}
@@ -48,7 +49,7 @@ export function BofuHubSection({ hub, children }: Props) {
           {hub.narrative && hub.narrative.length > 0 && (
             <div className="flex flex-col gap-5 text-base leading-7 text-foreground/85">
               {hub.narrative.map((para, i) => (
-                <p key={i}>{para}</p>
+                <p key={i}>{renderInlineLinks(para)}</p>
               ))}
             </div>
           )}
@@ -81,7 +82,7 @@ export function BofuHubSection({ hub, children }: Props) {
           <div>
             <h2 className="font-heading text-2xl text-foreground">When to call</h2>
             <p className="mt-4 text-base leading-7 text-foreground/85">
-              {hub.whenToCall}
+              {renderInlineLinks(hub.whenToCall)}
             </p>
             {hub.isLitigation && (
               <p className="mt-3 text-sm leading-6 text-muted-foreground">

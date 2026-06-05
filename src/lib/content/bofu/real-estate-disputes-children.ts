@@ -346,7 +346,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Why the escrow holder is stuck — and how interpleader breaks it",
         paragraphs: [
-          "In Tennessee the deposit usually sits with a brokerage or a title company, and brokerage trust-accounting rules plus the contract language set the conditions for release. When both sides claim it and neither will sign off, the escrow holder often cannot pay anyone and turns to interpleader — handing the money to the court and letting the parties fight it out there. Seeing that coming shapes how I push for a resolution before it gets that far, because the deposit is frequently the only thing standing between the parties and being done.",
+          "In Tennessee the deposit usually sits with a brokerage or a title company, and [brokerage trust-accounting rules](/articles/when-a-broker-complaint-turns-into-a-records-problem) plus the contract language set the conditions for release. When both sides claim it and neither will sign off, the escrow holder often cannot pay anyone and turns to interpleader — handing the money to the court and letting the parties fight it out there. Seeing that coming shapes how I push for a resolution before it gets that far, because the deposit is frequently the only thing standing between the parties and being done.",
         ],
       },
       {

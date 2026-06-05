@@ -106,7 +106,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     metaDescription:
       "Counsel for brokers and agents responding to TREC complaints, disciplinary questions, brokerage disputes, and risk-sensitive licensing issues.",
     eyebrow: "Practice Area",
-    intro: "A licensing complaint needs a disciplined response, not panic and not casual oversharing.",
+    intro: "[A licensing complaint](/articles/what-the-tennessee-real-estate-commission-can-and-cannot-do) needs a disciplined response, not panic and not casual oversharing.",
     summary:
       "I help brokers and agents respond to Tennessee Real Estate Commission complaints, brokerage investigations, transaction disputes, and the related risk events that can hit licensing, reputation, and business continuity.",
     whoItIsFor: [
@@ -124,7 +124,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     whyTimingMatters:
       "Early statements can lock a licensee into positions that are difficult to explain later. Prompt review helps preserve context, identify the true issue, and respond in a way that is accurate, proportionate, and aligned with the larger business risk.",
     approach:
-      "I focus the response on the chronology, the documents, the brokerage structure, and the practical realities of the transaction. The goal is not performative aggression — it is a careful, credible response that protects the professional and positions the matter for the best resolution available.",
+      "I focus the response on [the chronology, the documents, the brokerage structure](/articles/what-to-do-first-after-a-trec-complaint-arrives), and the practical realities of the transaction. The goal is not performative aggression — it is a careful, credible response that protects the professional and positions the matter for the best resolution available.",
     commonMistakes: [
       "Answering the complaint informally before the record is organized.",
       "Submitting more facts than necessary, including speculation or emotional commentary.",
@@ -172,7 +172,7 @@ export const practiceAreas: PracticeAreaContent[] = [
     metaDescription:
       "Counsel for LLC members, shareholders, managers, and closely held business owners dealing with governance friction, deadlock, and control disputes.",
     eyebrow: "Practice Area",
-    intro: "By the time an owner conflict reaches me, it is rarely just a legal problem. It is a control problem, an information problem, and a question of whether the business survives the fight.",
+    intro: "By the time an owner conflict reaches me, it is rarely just a legal problem. It is [a control problem, an information problem](/articles/owner-dispute-warning-signs-before-the-business-stalls), and a question of whether the business survives the fight.",
     summary:
       "I advise on operating agreements, governance clean-up, manager authority, buyout pressure, deadlock, fiduciary allegations, and the closely held business disputes where holding leverage matters.",
     whoItIsFor: [
