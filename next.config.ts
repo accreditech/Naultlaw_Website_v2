@@ -50,6 +50,17 @@ const nextConfig: NextConfig = {
         destination: "/legal#attorney-advertising",
         permanent: true,
       },
+      // The standalone "Who I Help" audiences page was removed in the
+      // prototype-design port (its positioning folded into the homepage and
+      // practice-area pages). The header nav still links /who-i-help, so the
+      // URL is actively requested and was crawlable — 301 it to the
+      // practice-areas hub, the closest surviving content surface, rather
+      // than letting it 404.
+      {
+        source: "/who-i-help",
+        destination: "/practice-areas",
+        permanent: true,
+      },
       // BOFU page consolidated into the more search-aligned PSA page.
       // /real-estate-contract-attorney-tennessee was cannibalizing
       // /real-estate-purchase-agreement-attorney-tennessee per the SEO audit;
