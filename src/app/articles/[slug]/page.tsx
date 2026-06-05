@@ -7,6 +7,7 @@ import { ActionLink } from "@/components/site/action-link";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { DisclosurePanel } from "@/components/site/disclosure-panel";
 import { StructuredDataScript } from "@/components/site/structured-data-script";
+import { renderInlineLinks } from "@/components/site/inline-rich-text";
 import { resources } from "@/lib/content/resources";
 import { practiceAreas } from "@/lib/content/practice-areas";
 import { publicDisclosures } from "@/lib/public-disclosures";
@@ -89,7 +90,7 @@ export default async function ArticlePage({ params }: Props) {
               <div className="editorial-stack">
                 {article.body.map((paragraph, i) => (
                   <p key={i} className="text-base leading-8 text-foreground">
-                    {paragraph}
+                    {renderInlineLinks(paragraph)}
                   </p>
                 ))}
               </div>
