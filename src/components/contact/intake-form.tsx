@@ -70,8 +70,10 @@ function inputStyle(hasError: boolean): React.CSSProperties {
     borderRadius: 6,
     background: hasError ? "#fcefe9" : "var(--white)",
     color: "var(--fg)",
-    outline: "none",
-    boxShadow: hasError ? "0 0 0 4px rgba(180, 70, 47, 0.12)" : "none",
+    // No `outline: none` here — the global :focus-visible rule in globals.css
+    // must reach these fields (WCAG 2.4.7). The onFocus gold border below is
+    // complementary, not the sole indicator.
+    boxShadow: hasError ? "0 0 0 4px rgba(180, 70, 47, 0.12)" : undefined,
     scrollMarginTop: 100,
     transition: "background .2s, border-color .2s, box-shadow .2s",
   };

@@ -60,11 +60,7 @@ const APPROACH = [
 const MEMBERSHIPS = [
   {
     h: "Tennessee Bar Association",
-    d: "Real Estate Law Section; Business Law Section.",
-  },
-  {
-    h: "Sumner County Bar Association",
-    d: "Active member, Middle Tennessee bench-bar programs.",
+    d: "Real Estate Law Section; Business Law Section; Young Lawyers Division.",
   },
   {
     h: "Tennessee REALTORS®",

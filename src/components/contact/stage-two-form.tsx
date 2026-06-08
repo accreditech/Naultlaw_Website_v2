@@ -47,7 +47,7 @@ const inputStyle: React.CSSProperties = {
   borderRadius: 6,
   background: "var(--white)",
   color: "var(--fg)",
-  outline: "none",
+  // No `outline: none` — let the global :focus-visible indicator apply.
 };
 
 function selectStyle(hasValue: boolean): React.CSSProperties {

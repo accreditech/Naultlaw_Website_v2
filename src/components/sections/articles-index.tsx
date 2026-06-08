@@ -119,7 +119,6 @@ export function ArticlesIndex({ articles, categories }: Props) {
                   border: "1px solid rgba(255,255,255,.18)",
                   background: "rgba(255,255,255,.06)",
                   color: "var(--white)",
-                  outline: "none",
                 }}
               />
             </div>

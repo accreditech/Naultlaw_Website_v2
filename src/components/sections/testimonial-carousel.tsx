@@ -282,6 +282,10 @@ export function TestimonialCarousel({ testimonials }: Props) {
                 <div
                   key={t.name + i}
                   aria-hidden={!isActive}
+                  // Inactive slides stay in the DOM (stacked for the crossfade)
+                  // but `inert` removes them from tab order + the a11y tree, so
+                  // focus never lands on the hidden "Read more" buttons.
+                  inert={!isActive}
                   style={{
                     position: isActive ? "relative" : "absolute",
                     opacity: isActive ? 1 : 0,
@@ -323,7 +327,11 @@ export function TestimonialCarousel({ testimonials }: Props) {
                             fontWeight: 600,
                             letterSpacing: ".04em",
                             textTransform: "uppercase",
-                            padding: 0,
+                            // Vertical padding lifts the hit area to ~38px tall
+                            // (WCAG 2.5.8); negative margin cancels its effect on
+                            // line flow so the visible text size is unchanged.
+                            padding: "8px 0",
+                            margin: "-8px 0",
                             textDecoration: "underline",
                             textUnderlineOffset: 3,
                           }}
@@ -350,7 +358,11 @@ export function TestimonialCarousel({ testimonials }: Props) {
                             fontWeight: 600,
                             letterSpacing: ".04em",
                             textTransform: "uppercase",
-                            padding: 0,
+                            // Vertical padding lifts the hit area to ~38px tall
+                            // (WCAG 2.5.8); negative margin cancels its effect on
+                            // line flow so the visible text size is unchanged.
+                            padding: "8px 0",
+                            margin: "-8px 0",
                             textDecoration: "underline",
                             textUnderlineOffset: 3,
                           }}
