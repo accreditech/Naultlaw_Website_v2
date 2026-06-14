@@ -111,7 +111,7 @@ export default function ContactPage() {
               ),
               l: "Call the Office",
               v: PHONE_DISPLAY,
-              sub: "Monday–Friday, 9–5 CT",
+              sub: "I take calls directly. Call anytime — if I miss you, I return messages the same business day.",
               href: PHONE_HREF,
             },
             {
@@ -265,7 +265,7 @@ export default function ContactPage() {
                 { l: "Office", v: "121 S. Hickory Ave\nGallatin, TN 37066" },
                 {
                   l: "Hours",
-                  v: "Monday–Friday\nConsultations by appointment",
+                  v: "Phone answered directly\nOffice visits by appointment",
                 },
                 {
                   l: "Service Area",

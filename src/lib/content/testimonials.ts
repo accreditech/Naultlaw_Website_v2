@@ -147,3 +147,23 @@ export const homepageTestimonials: readonly HomepageTestimonial[] = [
       "He was incredibly well informed, tactfully smart, and gives absolute attention to your case. I can't say enough about him.",
   },
 ] as const;
+
+/**
+ * Display-only aggregate derived from the testimonial data above. This is a
+ * trust cue for the UI — NOT structured data. Do not emit Review or
+ * AggregateRating JSON-LD from these values; self-serving review schema is
+ * intentionally absent from this site.
+ */
+export const testimonialStats = (() => {
+  const total = homepageTestimonials.length;
+  const googleCount = homepageTestimonials.filter(
+    (t) => t.source === "Google",
+  ).length;
+  const yelpCount = homepageTestimonials.filter(
+    (t) => t.source === "Yelp",
+  ).length;
+  const sum = homepageTestimonials.reduce((acc, t) => acc + t.rating, 0);
+  // One-decimal average, e.g. 5.0.
+  const averageLabel = (sum / total).toFixed(1);
+  return { total, googleCount, yelpCount, averageLabel } as const;
+})();
