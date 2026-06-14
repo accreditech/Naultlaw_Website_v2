@@ -3,7 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { StructuredDataScript } from "@/components/site/structured-data-script";
 import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
-import { homepageTestimonials } from "@/lib/content/testimonials";
+import {
+  homepageTestimonials,
+  testimonialStats,
+} from "@/lib/content/testimonials";
 import { createMetadata } from "@/lib/metadata";
 import {
   localBusinessSchema,
@@ -246,6 +249,40 @@ export default function HomePage() {
                   Call the Office
                 </a>
               </div>
+              {/* Display-only trust cue. Counts + average derived from the
+                  testimonial data; NOT review/aggregate-rating schema. */}
+              <Link
+                href="#reviews"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  marginTop: "1.25rem",
+                  textDecoration: "none",
+                  color: "rgba(255,255,255,.85)",
+                  fontSize: ".85rem",
+                  fontWeight: 500,
+                }}
+              >
+                <span
+                  role="img"
+                  aria-label={`Rated ${testimonialStats.averageLabel} out of 5 stars`}
+                  style={{
+                    color: "var(--accent)",
+                    fontSize: "1rem",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  {"★".repeat(Math.round(Number(testimonialStats.averageLabel)))}
+                  {"☆".repeat(
+                    5 - Math.round(Number(testimonialStats.averageLabel)),
+                  )}
+                </span>
+                <span>
+                  {testimonialStats.averageLabel} · {testimonialStats.total}{" "}
+                  client reviews
+                </span>
+              </Link>
             </div>
 
             {/* Headshot card */}
@@ -346,9 +383,11 @@ export default function HomePage() {
 
         {/* ── TESTIMONIALS ─────────────────────────────────── */}
         <section
+          id="reviews"
           className="sec"
           style={{
             background: "var(--primary)",
+            scrollMarginTop: "90px",
             // Slightly tighter than the global .sec padding so the dark
             // testimonial block doesn't dominate the page.
             paddingBlock: "clamp(3rem, 5vw, 4.5rem)",

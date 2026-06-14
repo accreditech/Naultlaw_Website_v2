@@ -218,7 +218,7 @@ export function SiteFooter() {
                 lineHeight: 1.75,
               }}
             >
-              Monday–Friday
+              Phone answered directly
               <br />
               By appointment
               <br />

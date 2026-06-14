@@ -131,7 +131,7 @@ export const siteConfig = {
 };
 
 export const officeHours = [
-  "Monday through Friday",
-  "Consultations by appointment",
+  "Phone answered directly",
+  "Office visits by appointment",
   "Initial intake reviewed within one business day",
 ];
