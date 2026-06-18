@@ -35,6 +35,7 @@ import {
   urgencyOptions,
   valueAtStakeOptions,
 } from "@/lib/intake";
+import { formatUsPhone, isValidUsPhone } from "@/lib/phone.mjs";
 import { siteConfig } from "@/lib/site-config";
 import { readVisitorContextForSubmit } from "@/lib/visitor-tracking";
 
@@ -49,15 +50,6 @@ const REQUIRED_LABELS: Record<string, string> = {
   phone: "Phone",
   acknowledgment: "Confirmation checkbox",
 };
-
-/** Auto-format a digit-string into US phone format. */
-function formatPhone(raw: string): string {
-  const digits = raw.replace(/\D/g, "").slice(0, 10);
-  if (digits.length === 0) return "";
-  if (digits.length < 4) return `(${digits}`;
-  if (digits.length < 7) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
-  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
-}
 
 function inputStyle(hasError: boolean): React.CSSProperties {
   return {
@@ -163,8 +155,8 @@ export function IntakeForm() {
     }
     if (!formData.phone.replace(/\D/g, "").trim()) {
       localErrors.phone = "Please enter your phone number.";
-    } else if (formData.phone.replace(/\D/g, "").length < 10) {
-      localErrors.phone = "Please enter a 10-digit phone number.";
+    } else if (!isValidUsPhone(formData.phone)) {
+      localErrors.phone = "Please enter a valid 10-digit US phone number.";
     }
     if (!formData.acknowledgment) {
       localErrors.acknowledgment =
@@ -484,11 +476,11 @@ export function IntakeForm() {
               required
               aria-required="true"
               aria-invalid={Boolean(errors.phone)}
-              autoComplete="tel"
+              autoComplete="tel-national"
               inputMode="tel"
               placeholder="(615) 555-0100"
               value={formData.phone}
-              onChange={(e) => update("phone", formatPhone(e.target.value))}
+              onChange={(e) => update("phone", formatUsPhone(e.target.value))}
               style={inputStyle(Boolean(errors.phone))}
               onFocus={(e) => (e.target.style.borderColor = ACCENT_FOCUS)}
               onBlur={(e) =>
