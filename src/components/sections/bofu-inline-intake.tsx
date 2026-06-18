@@ -8,6 +8,7 @@ import {
   urgencyOptions,
   valueAtStakeOptions,
 } from "@/lib/intake";
+import { formatUsPhone, isValidUsPhone } from "@/lib/phone.mjs";
 import { readVisitorContextForSubmit } from "@/lib/visitor-tracking";
 
 /**
@@ -101,8 +102,8 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
     }
     if (!formData.phone.replace(/\D/g, "").trim()) {
       localErrors.phone = "Please enter your phone number.";
-    } else if (formData.phone.replace(/\D/g, "").length < 10) {
-      localErrors.phone = "Please enter a 10-digit phone number.";
+    } else if (!isValidUsPhone(formData.phone)) {
+      localErrors.phone = "Please enter a valid 10-digit US phone number.";
     }
     if (!formData.acknowledgment) {
       localErrors.acknowledgment =
@@ -252,11 +253,11 @@ export function BofuInlineIntakeForm({ refSlug, heading, intro }: Props) {
             <input
               id={`bofu-phone-${refSlug}`}
               type="tel"
-              autoComplete="tel"
+              autoComplete="tel-national"
               inputMode="tel"
               required
               value={formData.phone}
-              onChange={(e) => update("phone", e.target.value)}
+              onChange={(e) => update("phone", formatUsPhone(e.target.value))}
               aria-invalid={Boolean(errors.phone)}
               className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
             />

@@ -20,6 +20,7 @@
 import { z } from "zod";
 
 import { practiceAreas } from "@/lib/content/practice-areas";
+import { formatUsPhone, isValidUsPhone } from "@/lib/phone.mjs";
 import { siteConfig } from "@/lib/site-config";
 
 const countyValues = siteConfig.counties as unknown as [string, ...string[]];
@@ -103,12 +104,16 @@ export const stageOneIntakeSchema = z
     /* Required PII -------------------------------------------------- */
     name: z.string().trim().min(2).max(180),
     email: z.email().trim().max(255).transform((v) => v.toLowerCase()),
+    // US-only. Validate as a NANP number (dropping any leading "+1"), then
+    // store the canonical national format. See src/lib/phone.mjs for why the
+    // "+1" must be stripped before counting digits (iPhone autofill bug).
     phone: z
       .string()
       .trim()
-      .min(10)
       .max(40)
-      .regex(/^[0-9+().\-\s]+$/, "Enter a valid phone number."),
+      .regex(/^[0-9+().\-\s]+$/, "Enter a valid phone number.")
+      .refine(isValidUsPhone, "Enter a valid 10-digit US phone number.")
+      .transform(formatUsPhone),
 
     /* Optional intake fields --------------------------------------- */
     companyName: optionalText(180),
