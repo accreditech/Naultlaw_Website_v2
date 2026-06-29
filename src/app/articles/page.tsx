@@ -14,6 +14,7 @@ export const metadata: Metadata = createMetadata({
 });
 
 const READ_TIMES: Record<string, string> = {
+  "partition-actions-tennessee-heirs-property-act": "6 min",
   "raising-private-investor-money-through-an-llc": "10 min",
   "when-a-broker-complaint-turns-into-a-records-problem": "9 min",
   "commission-disputes-that-carry-more-than-money-risk": "8 min",
@@ -31,6 +32,7 @@ const READ_TIMES: Record<string, string> = {
 };
 
 const DATE_LABELS: Record<string, string> = {
+  "partition-actions-tennessee-heirs-property-act": "June 2026",
   "raising-private-investor-money-through-an-llc": "June 2026",
   "when-a-broker-complaint-turns-into-a-records-problem": "April 2026",
   "commission-disputes-that-carry-more-than-money-risk": "April 2026",

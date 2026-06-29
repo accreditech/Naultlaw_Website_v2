@@ -134,6 +134,7 @@ export const pageImages = {
   // Resources — per-slug image override (used by the new article cards).
   // Mix of with-people / without-people imagery picked to fit each piece.
   articleSlugs: {
+    "partition-actions-tennessee-heirs-property-act": "/images/suburban_blvd.jpg",
     "when-a-broker-complaint-turns-into-a-records-problem": "/images/realtorreview.jpg",
     "commission-disputes-that-carry-more-than-money-risk": "/images/bizconflict.jpg",
     "when-a-transaction-complaint-may-also-create-civil-exposure": "/images/contractreviewguy.jpg",

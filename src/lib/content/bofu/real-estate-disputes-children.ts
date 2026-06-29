@@ -18,7 +18,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "What a quiet title action actually does",
         paragraphs: [
-          "A quiet title suit asks the court to declare the rightful owner and strip the competing claims off the record. The work is the chain-of-title diligence, naming every proper defendant — including missing or unknown heirs — and getting a final order specific enough that a title underwriter will accept it on the next sale or refinance. The usual triggers are long-vacant property with broken probate history, tax-sale parcels with lingering pre-sale interests, old recorded mortgages or judgments that were never released, and adverse-possession claims that turn long-running use into title.",
+          "A quiet title suit asks the court to declare the rightful owner and strip the competing claims off the record. The work is the chain-of-title diligence, naming every proper defendant — including [missing or unknown heirs](/articles/partition-actions-tennessee-heirs-property-act) — and getting a final order specific enough that a title underwriter will accept it on the next sale or refinance. The usual triggers are long-vacant property with broken probate history, tax-sale parcels with lingering pre-sale interests, old recorded mortgages or judgments that were never released, and adverse-possession claims that turn long-running use into title.",
         ],
       },
       {
@@ -97,7 +97,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "The cleanest path depends on the defect",
         paragraphs: [
-          "Not every cloud needs a court action. Depending on the defect and how fast it has to clear, the fix might be a corrective deed, a release, a ratification, a negotiated resolution with whoever holds the contested interest, or a quiet title action when nothing else will do. I diagnose the specific record problem first and then choose the route, because the fastest and cheapest path is rarely the same one twice. The common defects are unreleased deeds of trust, old judgment liens, missing probate or trust instruments, scrivener's errors, and tax-sale-history tangles.",
+          "Not every cloud needs a court action. Depending on the defect and how fast it has to clear, the fix might be a corrective deed, a release, a ratification, a negotiated resolution with whoever holds the contested interest, or a quiet title action when nothing else will do. I diagnose the specific record problem first and then choose the route, because the fastest and cheapest path is rarely the same one twice. The common defects are unreleased deeds of trust, old judgment liens, [missing probate or trust instruments](/articles/partition-actions-tennessee-heirs-property-act), scrivener's errors, and tax-sale-history tangles.",
         ],
       },
       {
