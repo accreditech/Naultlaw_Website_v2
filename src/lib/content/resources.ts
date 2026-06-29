@@ -126,6 +126,86 @@ export const resources: ResourceContent[] = [
     ],
   },
   {
+    slug: "partition-actions-tennessee-heirs-property-act",
+    title:
+      "Partition Actions in Tennessee — and What the Heirs Property Act Changed",
+    category: "Real Estate Disputes",
+    metaTitle: "Partition Actions in Tennessee & the Heirs Property Act",
+    metaDescription:
+      "What a partition action is in Tennessee, partition in kind vs. by sale, and how the 2022 Uniform Partition of Heirs Property Act protects families who co-own inherited land.",
+    excerpt:
+      "If you own property with someone else and can no longer agree on what to do with it, either of you can force the issue through a partition action. Here is how partition works in Tennessee — and the significant change the legislature made in 2022 for inherited family land.",
+    hook: "If you own property with someone else and you can no longer agree on what to do with it, here's the uncomfortable truth: either of you can force the issue. The tool for that is a partition action, and you don't need the other owner's permission to use it. That's worth understanding before you're on the receiving end of one — or before you reach for it yourself.",
+    takeaways: [
+      "Any co-owner can force a partition — dividing the property or selling it — without the other owners' consent.",
+      "Tennessee courts prefer partition in kind, but can order the entire property sold when it cannot be fairly divided.",
+      "The 2022 Uniform Partition of Heirs Property Act adds an appraisal, a family buyout right, and open-market sale protections for inherited co-owned land.",
+    ],
+    audience: [
+      "Tennessee co-owners of real estate — siblings, heirs, investors, and unmarried partners holding title as tenants in common",
+      "Families who inherited land together and are facing pressure to sell or a partition filing",
+      "Referral sources looking for a plain-English Tennessee partition and heirs-property framework",
+    ],
+    whyItMatters:
+      "A partition action is a unilateral remedy any co-owner can invoke, and a forced sale can cost a family land held for generations. Tennessee's 2022 Uniform Partition of Heirs Property Act changed the analysis for inherited tenancy-in-common land by adding valuation, buyout, and sale-method protections.",
+    actionSteps: [
+      "Determine how title is actually held and whether the property qualifies as heirs property under Tenn. Code Ann. § 29-27-302.",
+      "If a partition notice has arrived, calendar the buyout-election window and get a value determination early.",
+      "Weigh a negotiated buyout or division against litigation before filing, because filing hands the outcome to the court.",
+      "Put a written co-ownership or partition agreement in place before a dispute starts whenever property is bought or inherited together.",
+    ],
+    commonMistakes: [
+      "Assuming a co-owner needs everyone's consent to force a partition.",
+      "Believing co-ownership means each person owns a defined physical side of the property.",
+      "Overlooking whether inherited land qualifies as heirs property and triggers the 2022 Act's protections.",
+      "Filing a partition action without weighing that the court can order the entire property sold.",
+    ],
+    faqs: [
+      {
+        question:
+          "Can one co-owner force the sale of jointly owned property in Tennessee?",
+        answer:
+          "Yes. Any tenant in common can file a partition action, and no co-owner can be forced to remain in the co-ownership indefinitely. The court will either divide the property or order it sold.",
+      },
+      {
+        question:
+          "What is the difference between partition in kind and partition by sale?",
+        answer:
+          "Partition in kind physically divides the land among the owners; partition by sale orders the whole property sold and splits the proceeds. Tennessee law prefers division in kind where it is practical.",
+      },
+      {
+        question: "What does the Uniform Partition of Heirs Property Act do?",
+        answer:
+          "For qualifying inherited tenancy-in-common land, it requires the court to set fair market value (usually by appraisal), gives the remaining owners a right to buy out the owner seeking a sale, leans toward keeping the land, and requires a commercially reasonable open-market sale if a sale is unavoidable. It applies to partition actions filed on or after July 1, 2022.",
+      },
+    ],
+    body: [
+      "I handle these on the real estate side. Because I'm also a licensed broker, I tend to look at a partition less like a lawsuit and more like a property problem: what the land is actually worth, how it would really sell, and whether there's a way to keep it in the family without a fire sale. Here's how it works in Tennessee, and the significant change the legislature made in 2022 for inherited family land.",
+      "Most people picture co-ownership as each person owning a piece — you own this half, I own that half. That is not how it works. When two people own property as tenants in common, each one owns an undivided interest in the whole thing. Nobody owns a defined \"side.\" You both have the right to use and possess all of it, all of the time.",
+      "That sounds fine until the two owners disagree. Then the arrangement shows what it really is: each co-owner has a unilateral legal remedy the others cannot simply ignore. Either of you can walk into court at any moment and ask a judge to break the co-ownership apart — and because nobody can be forced to stay a co-owner forever, the court will do something about it. That is a partition action.",
+      "A partition resolves one of two ways.",
+      "Partition in kind means the court physically divides the land — you get this acreage, the other owner gets that. The law actually prefers this where it is practical, because everyone walks away still owning real estate. It works for land that can be split without wrecking its value.",
+      "Partition by sale means the court orders the whole property sold and splits the money. Tennessee allows this (Tenn. Code Ann. § 29-27-201) when the property cannot practically be divided, or when selling it would be manifestly for the advantage of the parties — picture a single house on a small lot that cannot be sawed in half. The more owners involved, and the harder the land is to divide cleanly, the more likely a sale becomes.",
+      "Here is the part that matters: in a sale, the court can order the entire property sold — including the part you would never want to lose. That is why litigation is the option that cuts both ways. It is the one tool the other owner cannot ignore, but the moment you file it, you hand the outcome to a judge. The law does not always give everyone what they want, and the result is final.",
+      "For generations, partition by sale was the quiet danger for [families who inherited land without a will](/services/quiet-title-attorney-tennessee) or a clear agreement. Property passes to a group of heirs as tenants in common. One heir wants out — or worse, an outside investor buys a small fractional interest from a single heir and then files for partition by sale. The land cannot be neatly divided, so the court orders it sold, often at a courthouse-steps auction for far less than it is worth. Families who had held land for generations watched it go to a speculator for a fraction of its value. That is the problem the legislature set out to fix.",
+      "Tennessee adopted the Uniform Partition of Heirs Property Act, codified at Tenn. Code Ann. §§ 29-27-301 to -313. The Act applies to partition actions filed on or after July 1, 2022. When property qualifies as \"heirs property\" — generally, tenancy-in-common real estate with no binding written partition agreement, where at least one cotenant acquired title from a relative and the statute's family-ownership threshold is met (the precise definition is in Tenn. Code Ann. § 29-27-302) — the Act adds protections to the ordinary partition rules:",
+      "A real value gets set first. Before anything sells, the court determines fair market value, usually by ordering an appraisal — not a quick auction number.",
+      "The other owners get the right to buy out the one who wants to sell. If a co-owner asks for a sale, the remaining owners can purchase that owner's share at the appraised value. In plain terms: the family can keep the land by paying the departing owner fairly, instead of losing all of it. The remaining owners generally have a 45-day window — or another period set by the court — after notice is sent to claim that right.",
+      "If the buyout doesn't resolve it, the law still leans toward keeping the land. Where a buyout does not happen, the court must divide the property in kind unless doing so would cause great prejudice to the cotenants as a group — weighing factors the statute spells out, such as how long the land has been in the family and what a division would cost each owner. The thumb is on the scale toward keeping real estate in owners' hands.",
+      "If a sale is unavoidable, the court chooses the method. The court must use the sale method that is most economically advantageous and in the best interest of the cotenants as a group — which may be an open-market sale, sealed bids, or an auction. If the court orders an open-market sale, the property is marketed by a special commissioner or a Tennessee-licensed broker in a commercially reasonable manner, at a price no lower than the court's value determination. This is the protection that most directly guards against the below-value forced sales of the past.",
+      "Notice that two of those four protections — the appraisal and the sale method — are valuation and marketing questions as much as legal ones. Is the appraised number right? How would this property really sell, and to whom? Does an open-market listing beat an auction in this particular case? Those are the questions I have spent two decades answering as a broker, and in a heirs-property partition they often decide whether a family keeps its land or just keeps its value.",
+      "Co-ownership without a written agreement is the root of nearly every one of these fights. If you are buying or inheriting property with other people, the time to set the terms is before there is a dispute — not after a dispute has already started.",
+      "If you have received a partition notice, or someone is pressuring you to sell inherited land, whether the property counts as \"heirs property\" under the 2022 Act can change your options dramatically. Get that determination early.",
+      "And know what litigation really costs: not just money and time, but control. The negotiated version of almost every partition is the one where you still hold the steering wheel.",
+      "The law here is general, and your situation is specific — the property, the ownership history, the other owners, and whether the Act applies all change the analysis. If you are [facing a partition](/services/real-estate-disputes), or you co-own property and want to head one off, reach out and we will figure out where you actually stand.",
+      "This article is general educational information about Tennessee law, not legal advice, and reading it does not create an attorney-client relationship. Please don't send confidential details through the website. Laws change and every situation is different — get advice specific to your facts.",
+    ],
+    relatedServices: [
+      { slug: "quiet-title-attorney-tennessee", label: "Quiet Title Attorney in Tennessee" },
+      { slug: "title-defect-attorney-tennessee", label: "Title Defect Attorney in Tennessee" },
+    ],
+  },
+  {
     slug: "when-a-broker-complaint-turns-into-a-records-problem",
     title: "When a Broker Complaint Turns Into a Records Problem",
     category: "Brokerage Risk",

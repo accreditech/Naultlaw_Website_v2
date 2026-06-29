@@ -30,6 +30,7 @@ const CATEGORY_PRACTICE_SLUGS: Record<string, string[]> = {
   ],
   "Commercial Leasing": ["commercial-leasing"],
   "Strategic Case Assessment": ["strategic-case-assessment"],
+  "Real Estate Disputes": ["real-estate-disputes"],
 };
 
 type Props = { params: Promise<{ slug: string }> };
