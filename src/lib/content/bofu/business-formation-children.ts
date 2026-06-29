@@ -24,7 +24,7 @@ export const businessFormationChildren: BofuService[] = [
         paragraphs: [
           "The simplest case is one owner. A single-member LLC passes its profit and loss straight through to your personal return — usually a Schedule C — and most solo founders, consultants, and small real-estate investors belong here.",
           "Add a second owner and the structure changes in ways that matter. Capital contributions get tracked per member, distributions follow the operating agreement rather than raw ownership percentages, and the tax filing moves to a partnership return on Form 1065. A manager-managed LLC is a third option, where the members appoint a manager instead of running things day to day — common when one person operates the business and the others are passive money.",
-          "The practical issue is not the form; it is who owns the company and how they expect to be treated. Bringing in a co-founder, a passive investor, or a family member changes both the legal structure and the tax filing, and those terms are far cheaper to settle before the money or the property goes in than after.",
+          "The practical issue is not the form; it is who owns the company and how they expect to be treated. Bringing in a co-founder, a passive investor, or a family member changes both the legal structure and the tax filing, and those terms are far cheaper to settle before the money or the property goes in than after. And where the new money is genuinely passive, [bringing in investors can be a securities offering](/articles/raising-private-investor-money-through-an-llc) that needs its own structure and filings.",
         ],
       },
       {
@@ -84,7 +84,7 @@ export const businessFormationChildren: BofuService[] = [
         h2: "It only earns its fee if it matches how you run the company",
         paragraphs: [
           "Most LLCs are formed with a template operating agreement nobody reads again. That holds up right until something happens — a partner wants out, a member stops contributing, a deadlock freezes a decision. At that point the document either answers the question or it does not, and a generic one usually does not.",
-          "So I draft around the parts that actually get tested: capital contributions and how they are tracked, how profit and loss get allocated, voting and consent thresholds, manager authority, transfer restrictions, and the buy-sell mechanics. The job is to write down what the owners already expect of each other, before anyone has a reason to argue about it.",
+          "So I draft around the parts that actually get tested: capital contributions and how they are tracked, how profit and loss get allocated, voting and consent thresholds, manager authority, transfer restrictions, and the buy-sell mechanics. The job is to write down what the owners already expect of each other, before anyone has a reason to argue about it. When some of that capital comes from [passive investors rather than the founders](/articles/raising-private-investor-money-through-an-llc), the operating agreement carries even more weight.",
         ],
       },
       {

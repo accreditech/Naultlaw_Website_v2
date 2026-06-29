@@ -24,6 +24,10 @@ const CATEGORY_PRACTICE_SLUGS: Record<string, string[]> = {
     "expert-witness-real-estate-and-brokerage-matters",
   ],
   "Owner Disputes": ["operating-agreements-and-owner-disputes"],
+  "Business Formation": [
+    "operating-agreements-and-owner-disputes",
+    "operating-agreement-attorney-tennessee",
+  ],
   "Commercial Leasing": ["commercial-leasing"],
   "Strategic Case Assessment": ["strategic-case-assessment"],
 };
@@ -86,13 +90,23 @@ export default async function ArticlePage({ params }: Props) {
                 <p className="editorial-pull mb-8">{article.hook}</p>
               )}
 
-              {/* Body paragraphs */}
+              {/* Body — a "## " prefix marks a section heading; everything
+                  else renders as a paragraph with inline contextual links. */}
               <div className="editorial-stack">
-                {article.body.map((paragraph, i) => (
-                  <p key={i} className="text-base leading-8 text-foreground">
-                    {renderInlineLinks(paragraph)}
-                  </p>
-                ))}
+                {article.body.map((paragraph, i) =>
+                  paragraph.startsWith("## ") ? (
+                    <h2
+                      key={i}
+                      className="mt-4 font-heading text-2xl text-foreground"
+                    >
+                      {paragraph.slice(3)}
+                    </h2>
+                  ) : (
+                    <p key={i} className="text-base leading-8 text-foreground">
+                      {renderInlineLinks(paragraph)}
+                    </p>
+                  ),
+                )}
               </div>
 
               {/* Inline CTA */}

@@ -21,6 +21,111 @@ export type ResourceContent = {
 
 export const resources: ResourceContent[] = [
   {
+    slug: "raising-private-investor-money-through-an-llc",
+    title: "Raising Private Investor Money Through an LLC",
+    category: "Business Formation",
+    metaTitle: "Raising Private Investor Money Through an LLC",
+    metaDescription:
+      "How closely held Tennessee businesses can raise private investor capital through an LLC — securities basics, Reg D exemptions, PPMs, and the documents that protect founders and investors.",
+    excerpt:
+      "Selling a stake in your LLC to passive investors is usually a securities transaction, even in a small company. Here's the plain-language version of what that means — exemptions, filings, and the documents that protect both founders and investors.",
+    hook: "You've found someone willing to put money into your business. Before you take the check, it's worth knowing that selling a share of an LLC to a passive investor is usually a securities transaction — and doing it carefully is what keeps a good raise from becoming an expensive problem.",
+    takeaways: [
+      "When passive investors fund a business they won't run, the LLC interests are usually securities under federal and state law.",
+      "Most private raises fit a Regulation D exemption — often Rule 506(b) — as long as the offering stays relationship-based and isn't publicly advertised.",
+      "General solicitation can cost you the exemption you were counting on, so choose your exemption before you market the opportunity.",
+      "Federal compliance doesn't satisfy state blue-sky law — Form D and state notice filings are separate obligations.",
+      "A PPM, subscription agreement, and a matching operating agreement are the documents that protect both founders and investors.",
+    ],
+    audience: [
+      "Tennessee founders and closely held business owners considering raising capital from private investors",
+      "LLC operators weighing whether to bring in passive investors and how to structure the entity for it",
+      "Owners who want to understand securities-law basics before accepting investor funds or advertising an opportunity",
+    ],
+    whyItMatters:
+      "When passive investors fund a business expecting the founders to run it, the LLC interests are usually securities — and the difference between a clean raise and a costly one comes down to choosing the right exemption, making the required federal and state filings, and papering the offering before any money changes hands.",
+    actionSteps: [
+      "Decide whether your investors are passive before assuming a raise is informal — passivity is what pulls securities law in.",
+      "Choose your exemption (commonly Rule 506(b) or 506(c)) before you market the opportunity or talk it up publicly.",
+      "Plan for both federal Form D and state blue-sky notice filings in every state where an investor lives.",
+      "Have the PPM, subscription agreement, and a matching operating agreement prepared before accepting funds.",
+    ],
+    commonMistakes: [
+      "Treating the raise as casual — money in, nothing documented — until something goes wrong.",
+      "Assuming a 'friends and family' exemption exists. It doesn't.",
+      "Advertising the opportunity before choosing an exemption, which can count as general solicitation.",
+      "Skipping Form D or state blue-sky filings.",
+      "Commingling investor money with personal or operating funds.",
+      "Using a structure that doesn't match the investors you actually have.",
+    ],
+    faqs: [
+      {
+        question: "Is a membership interest in a small LLC really a 'security'?",
+        answer:
+          "Often, yes. If investors contribute money expecting profit primarily from your efforts rather than their own, the interest usually meets the test for a security — regardless of whether you call it a membership unit or an LLC interest.",
+      },
+      {
+        question: "Is there a 'friends and family' exemption?",
+        answer:
+          "No. Raising from people you know may make a Rule 506(b) offering practical because it stays relationship-based, but there is no special exemption that erases the securities rules simply because the investors are friends or family.",
+      },
+      {
+        question: "Do I have to file anything if I use a Regulation D exemption?",
+        answer:
+          "Generally yes. Most Reg D raises require a Form D filing with the SEC within 15 days of the first sale, and you may also owe state 'blue sky' notice filings in each state where an investor lives.",
+      },
+      {
+        question: "Can I post about my investment opportunity online?",
+        answer:
+          "Be careful. Public marketing can count as general solicitation, which may eliminate a Rule 506(b) exemption. Rule 506(c) permits advertising but requires verifying that every investor is accredited.",
+      },
+    ],
+    body: [
+      "Most closely held businesses eventually reach a point where they need more capital to grow. Sometimes that comes from a bank. Other times, the owners look to private investors — friends, family, business associates, or outside money.",
+      "In most owners' minds, the process feels simple: sell a percentage of the company and take the check. Legally, it is usually more complicated than that. When passive investors put money into a business expecting the founders to run it and generate a profit, the ownership interests being sold are often securities under both federal and state law — even in a small, [privately held LLC](/services/llc-formation-attorney-tennessee).",
+      "That does not mean you can't raise private money. People do it every day. The issue is never whether you can take on investors — it's whether you do it in a way that holds up later. Most problems in this area don't come from bad intent. They come from treating the raise casually: money moving without documentation, promises made over coffee, ownership rights left vague, or a business that never realized it had stepped into securities territory at all.",
+      "Here are the major concepts to understand before you take a dollar of outside money.",
+      "## Why an LLC interest can be a 'security'",
+      "A lot of owners assume securities laws only apply to public companies and the stock market. They don't. An ownership interest in a private LLC can be a security too.",
+      "The question usually isn't what you call the interest — it's what the investor is actually doing. If someone contributes money, expects profit, and relies primarily on your efforts rather than running the business themselves, securities laws are likely in play. Three founders actively running a company together may just be partners. Ten outside investors writing checks and waiting for returns looks like a securities offering. The more passive the investor, the more disclosure and compliance matter — because securities laws exist mainly to protect passive investors who lack control and inside information.",
+      "## Private versus public: the most important line you can cross",
+      "One of the biggest distinctions in securities law is between a private offering and a public solicitation.",
+      "Relationship-based private raising — money from friends, family, business associates, prior investors, or long-standing relationships — is often the simplest and safest path. Many of these offerings rely on a Regulation D exemption, usually Rule 506(b), which works where there's no general advertising and the offering stays relationship-based.",
+      "General solicitation changes everything. The moment you publicly market the opportunity — social posts, a website offering investment, a podcast discussing returns, blast emails, public investor events — you may lose the exemption you were counting on. Businesses that want to advertise often move to Rule 506(c), which permits general solicitation but adds requirements, including verifying that investors are accredited. The practical warning: be very careful about casually talking up an investment opportunity online before you've decided which exemption you're using.",
+      "## Accredited versus non-accredited investors",
+      "Securities law draws a line between accredited and non-accredited investors, and it affects which exemptions you can use and what you must disclose.",
+      "Accredited investors meet certain SEC financial thresholds — generally net worth over $1 million (excluding a primary residence), or income of roughly $200,000 individually or $300,000 jointly over the last two years. The premise is they can evaluate and absorb the risk.",
+      "Non-accredited investors are everyone else. They're not barred from investing, but offerings that include them generally require more formal written disclosures, and Rule 506(b) caps you at 35 of them. Many small businesses choose to limit a raise to accredited investors simply because it streamlines compliance and lowers the risk of a misstep.",
+      "## Federal and state law both apply",
+      "This one gets overlooked constantly: complying with federal law does not satisfy state law. Both apply at once.",
+      "Federally, most private raises rely on a Regulation D exemption, and when you use one you generally must file a Form D with the SEC within 15 days of the first sale. At the state level, each state has its own 'blue sky' laws. Even with a federal exemption, you may still need to make a notice filing (and pay a fee) in every state where an investor lives. A single out-of-state investor can pull that state's regime into the picture. Skipping these filings creates separate state-level problems regardless of federal compliance.",
+      "## Structure matters: member-managed versus manager-managed",
+      "How the LLC is organized internally affects both operations and the securities analysis. In a member-managed LLC, every member has a hand in management — good for a couple of active owners. In a manager-managed LLC, authority sits with designated managers and the other members are passive investors who contribute capital and share in profits but don't run things.",
+      "From a securities standpoint, a manager-managed LLC more clearly fits the profile of an investment: passive investors relying on a manager's efforts. When you're raising outside capital, it's often the cleaner choice — because it reflects the economic reality and sets clear expectations between operator and investors.",
+      "## The documents that actually protect everyone",
+      "Once you decide to raise capital, the question shifts from whether securities laws apply to how you comply. Three documents do most of the work.",
+      "The Private Placement Memorandum (PPM) is essentially a private prospectus. It describes the business, the offering terms, the use of proceeds, the management team, the risk factors, the financials, and investor rights. It does two things: it gives investors what they need to decide, and it protects you by creating a clear written record of exactly what was disclosed.",
+      "The subscription agreement is the contract by which an investor formally commits, represents their accredited status, and confirms they received and reviewed the offering documents and understand the risks.",
+      "The operating agreement is the internal constitution of the LLC: management, voting, how profits and losses are allocated, when distributions happen, how members exit, and what happens on a sale or dissolution. For a manager-managed LLC raising outside money, [the operating agreement](/services/operating-agreement-attorney-tennessee) is one of the most important documents in the whole structure.",
+      "## The mistakes I see most",
+      "A few patterns show up again and again. The most common is treating the raise as casual — money in, business launched, nothing documented — until something goes wrong and the missing disclosures and filings become a serious problem.",
+      "Close behind is assuming there's a 'friends and family' exemption. There isn't. Knowing your investors may make a 506(b) offering practical, but it doesn't erase the rules. Others advertise before choosing an exemption, not realizing a single post or podcast can count as general solicitation and cost them the exemption they assumed they had. Skipping Form D or blue-sky filings is another — these aren't optional, and missing them can jeopardize the exemption. Commingling investor money with personal or operating funds is a recurring problem too; once investors are in, the money belongs to the company and should be accounted for separately. And finally, using the wrong structure for the investors you actually have — the structure on paper should match the economic reality, or it invites exactly the kind of [owner disputes](/practice-areas/operating-agreements-and-owner-disputes) the documents were supposed to prevent.",
+      "## After the money is in",
+      "Closing the raise isn't the finish line. You'll have ongoing obligations: using proceeds consistent with what you disclosed, keeping investors reasonably informed, issuing accurate K-1s on time, and maintaining clean books, cap tables, and records — because if a dispute surfaces years later, the strength of those records often decides it. In many ways, raising the money is the easy part; administering the investor relationship over years is the longer project.",
+      "## The bottom line",
+      "When other people give you money for a share of profits in a business they aren't running, securities laws are almost always in play — and calling it an 'LLC interest' or a 'membership unit' doesn't change that. The substance of the deal is what matters.",
+      "None of this should scare you off. Most private raises, done thoughtfully, fit comfortably within well-established exemptions and need only modest compliance work. The companies that get into real trouble are the ones that moved informally — raising money before they understood the rules, advertising before choosing an exemption, or skipping the documents because the investors were friends.",
+      "Where I fit: I help Tennessee business owners with [the entity and governance side](/services/business-formation) of a raise — choosing and structuring the LLC, drafting the operating agreement, preparing subscription documents, and coordinating with securities counsel and your CPA on the offering itself and its filings. Every raise turns on its own facts. If you're thinking about taking on private investors, reach out and we can work through your specific situation.",
+      "Educational disclaimer: This article is general educational information, not legal, tax, or investment advice, and reading it does not create an attorney-client relationship. Please don't send confidential details through the website. Securities offerings are highly fact-specific and laws change — get advice specific to your situation before accepting investor funds, advertising an opportunity, or issuing ownership interests.",
+      "Next step: the Founder Planning Worksheet is a set of questions to think through before you accept money or make promises. To request a copy, [reach out through the contact form](/contact) and the office will send it over.",
+    ],
+    relatedServices: [
+      { slug: "llc-formation-attorney-tennessee", label: "LLC Formation" },
+      { slug: "operating-agreement-attorney-tennessee", label: "Operating Agreement" },
+      { slug: "buy-sell-agreement-attorney-tennessee", label: "Buy-Sell Agreement" },
+    ],
+  },
+  {
     slug: "when-a-broker-complaint-turns-into-a-records-problem",
     title: "When a Broker Complaint Turns Into a Records Problem",
     category: "Brokerage Risk",
