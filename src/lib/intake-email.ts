@@ -30,9 +30,13 @@ const FROM = "Nault Law Intake <noreply@naultlaw.com>";
 const BCC = "admin@naultlaw.com";
 
 export type EmailResult =
-  | { status: "sent"; id: string }
-  | { status: "skipped"; reason: string }
-  | { status: "failed"; error: string };
+  | { status: "sent"; id: string; recipient: string }
+  | { status: "skipped"; reason: string; recipient?: string }
+  | { status: "failed"; error: string; recipient?: string };
+
+/** Hard cap on how long we'll wait for Resend before giving up, so the
+ * awaited send can never stall the intake response indefinitely. */
+const SEND_TIMEOUT_MS = 8000;
 
 function shortLeadId(id: string) {
   return id.split("-")[0] ?? id.slice(0, 8);
@@ -230,6 +234,8 @@ export async function sendIntakeEmail({
     };
   }
 
+  const recipient = intake.email;
+
   // Look up prior leads by the SAME hashed IP to surface a "repeat visitor"
   // signal in the BCC body. Never exposes the actual IP.
   const prior = await findPriorLeadsByIpHash({
@@ -252,9 +258,9 @@ export async function sendIntakeEmail({
 
   try {
     const resend = new Resend(apiKey);
-    const { data, error } = await resend.emails.send({
+    const send = resend.emails.send({
       from: FROM,
-      to: intake.email,
+      to: recipient,
       bcc: BCC,
       subject,
       html,
@@ -264,19 +270,28 @@ export async function sendIntakeEmail({
         "X-NaultLaw-Form": "stage-one-intake",
       },
     });
+    const timeout = new Promise<never>((_, reject) =>
+      setTimeout(
+        () => reject(new Error(`Resend send timed out after ${SEND_TIMEOUT_MS}ms.`)),
+        SEND_TIMEOUT_MS
+      )
+    );
+    const { data, error } = await Promise.race([send, timeout]);
     if (error) {
       return {
         status: "failed",
+        recipient,
         error:
           typeof error === "string"
             ? error
             : (error as { message?: string }).message ?? "Unknown Resend error.",
       };
     }
-    return { status: "sent", id: data?.id ?? "unknown" };
+    return { status: "sent", id: data?.id ?? "unknown", recipient };
   } catch (e) {
     return {
       status: "failed",
+      recipient,
       error: e instanceof Error ? e.message : "Unknown Resend exception.",
     };
   }

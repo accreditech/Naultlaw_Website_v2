@@ -9,6 +9,7 @@ import {
   createLeadRecord,
   hashValue,
   logIntakeFailure,
+  persistEmailDeliveryResult,
   syncLeadAndPersist,
 } from "@/lib/intake-server";
 import { sendIntakeEmail } from "@/lib/intake-email";
@@ -111,47 +112,16 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // Saving the lead is the ONLY hard prerequisite — we need a leadId. If this
+  // throws we can't proceed, so it (and only it) returns a 500.
+  let leadId: string;
   try {
-    const leadId = await createLeadRecord({
+    leadId = await createLeadRecord({
       input: parsed.data,
       ipHash,
       userAgent,
       spamSignals,
     });
-
-    const crmResult = await syncLeadAndPersist({
-      leadId,
-      input: parsed.data,
-    });
-
-    // Send the client-confirmation + admin-BCC email. We do NOT block the
-    // response on this — if Resend is slow or down, the lead is already
-    // saved to DB and CRM. Email is best-effort; failures are logged.
-    sendIntakeEmail({ leadId, intake: parsed.data, ipHash })
-      .then((result) => {
-        if (result.status === "failed") {
-          console.error("intake email failed", { leadId, error: result.error });
-        }
-      })
-      .catch((e) => {
-        console.error("intake email threw", { leadId, error: String(e) });
-      });
-
-    const queryParams: Record<string, string> = { lead: leadId };
-    if (parsed.data.practiceArea) {
-      queryParams.practice = parsed.data.practiceArea;
-    }
-    const query = new URLSearchParams(queryParams);
-
-    return NextResponse.json(
-      {
-        ok: true,
-        leadId,
-        crmStatus: crmResult.status,
-        redirectUrl: `/contact/stage-two?${query.toString()}`,
-      },
-      { status: 201 }
-    );
   } catch (error) {
     await logIntakeFailure({
       route: "stage-one",
@@ -172,4 +142,79 @@ export async function POST(request: NextRequest) {
       { status: 500 }
     );
   }
+
+  // From here the lead is saved. CRM sync and the notification email are
+  // INDEPENDENT best-effort actions — each runs in its own try/catch so a
+  // failure in one can never skip the other, and neither can fail the 201.
+  // Both persist their own outcome so nothing fails silently.
+
+  let crmStatus = "failed";
+  try {
+    const crmResult = await syncLeadAndPersist({ leadId, input: parsed.data });
+    crmStatus = crmResult.status;
+  } catch (error) {
+    console.error("intake CRM sync threw", {
+      leadId,
+      error: error instanceof Error ? error.message : String(error),
+    });
+  }
+
+  // Awaited (not fire-and-forget): a floating promise here would be dropped
+  // when the serverless function freezes after the response is sent. We wait
+  // for the send, record the outcome durably, and shout on any non-"sent".
+  let emailStatus = "failed";
+  try {
+    const emailResult = await sendIntakeEmail({
+      leadId,
+      intake: parsed.data,
+      ipHash,
+    });
+    emailStatus = emailResult.status;
+    await persistEmailDeliveryResult({
+      leadId,
+      result: emailResult,
+      stage: "stage-one",
+    });
+    if (emailResult.status !== "sent") {
+      console.error("intake notification email did not send", {
+        leadId,
+        status: emailResult.status,
+        detail:
+          emailResult.status === "failed"
+            ? emailResult.error
+            : emailResult.reason,
+      });
+    }
+  } catch (error) {
+    console.error("intake email threw", {
+      leadId,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    await persistEmailDeliveryResult({
+      leadId,
+      result: {
+        status: "failed",
+        error: error instanceof Error ? error.message : String(error),
+        recipient: parsed.data.email,
+      },
+      stage: "stage-one",
+    });
+  }
+
+  const queryParams: Record<string, string> = { lead: leadId };
+  if (parsed.data.practiceArea) {
+    queryParams.practice = parsed.data.practiceArea;
+  }
+  const query = new URLSearchParams(queryParams);
+
+  return NextResponse.json(
+    {
+      ok: true,
+      leadId,
+      crmStatus,
+      emailStatus,
+      redirectUrl: `/contact/stage-two?${query.toString()}`,
+    },
+    { status: 201 }
+  );
 }

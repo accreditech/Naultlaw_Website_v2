@@ -18,8 +18,10 @@ import { db, schema } from "@/lib/db";
 import {
   hashValue,
   logIntakeFailure,
+  persistEmailDeliveryResult,
   syncLeadAndPersist,
 } from "@/lib/intake-server";
+import { sendIntakeEmail } from "@/lib/intake-email";
 import { checkLeadRateLimit } from "@/lib/rate-limit";
 import type { StageOneIntakeInput } from "@/lib/intake";
 
@@ -184,6 +186,50 @@ export async function POST(request: NextRequest) {
       input: merged,
       source: { form: "stage-two", intakeStage: "stage-two" },
     });
+
+    // Safety net: Stage One is where the notification email is supposed to
+    // fire. If it never succeeded for this lead (e.g. it was dropped), send
+    // it now with the fuller Stage-Two context so the firm is never left
+    // unnotified about a real inquiry. If Stage One already delivered, we do
+    // NOT re-send — a second confirmation would just be noise.
+    if (existing.emailStatus !== "sent") {
+      try {
+        const emailResult = await sendIntakeEmail({
+          leadId: parsed.data.leadId,
+          intake: merged,
+          ipHash,
+        });
+        await persistEmailDeliveryResult({
+          leadId: parsed.data.leadId,
+          result: emailResult,
+          stage: "stage-two",
+        });
+        if (emailResult.status !== "sent") {
+          console.error("stage-two catch-up email did not send", {
+            leadId: parsed.data.leadId,
+            status: emailResult.status,
+            detail:
+              emailResult.status === "failed"
+                ? emailResult.error
+                : emailResult.reason,
+          });
+        }
+      } catch (e) {
+        console.error("stage-two catch-up email threw", {
+          leadId: parsed.data.leadId,
+          error: e instanceof Error ? e.message : String(e),
+        });
+        await persistEmailDeliveryResult({
+          leadId: parsed.data.leadId,
+          result: {
+            status: "failed",
+            error: e instanceof Error ? e.message : String(e),
+            recipient: existing.email,
+          },
+          stage: "stage-two",
+        });
+      }
+    }
 
     return NextResponse.json({ ok: true }, { status: 200 });
   } catch (error) {
