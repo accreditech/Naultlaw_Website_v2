@@ -98,6 +98,12 @@ export const leads = pgTable(
     crmSyncStatus: varchar("crm_sync_status", { length: 40 })
       .notNull()
       .default("pending"),
+    // Notification-email delivery status for this lead. Mirrors crmSyncStatus.
+    // "pending" until the first send attempt, then one of "sent" | "failed" |
+    // "skipped". Stage-Two uses this to re-send if Stage-One never delivered.
+    emailStatus: varchar("email_status", { length: 40 })
+      .notNull()
+      .default("pending"),
     // Required PII (the simplified intake collects these and only these)
     name: varchar("name", { length: 180 }).notNull(),
     email: varchar("email", { length: 255 }).notNull(),
@@ -176,6 +182,34 @@ export const crmSyncLogs = pgTable(
   },
   (table) => ({
     leadIndex: index("crm_sync_logs_lead_idx").on(table.leadId),
+  })
+);
+
+export const emailDeliveryLogs = pgTable(
+  "email_delivery_logs",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    leadId: uuid("lead_id")
+      .notNull()
+      .references(() => leads.id, { onDelete: "cascade" }),
+    // "sent" | "failed" | "skipped"
+    status: varchar("status", { length: 40 }).notNull(),
+    // Which intake stage triggered the send ("stage-one" | "stage-two").
+    stage: varchar("stage", { length: 40 }).notNull().default("stage-one"),
+    provider: varchar("provider", { length: 40 }).notNull().default("resend"),
+    // Provider message id on success (Resend email id).
+    providerMessageId: varchar("provider_message_id", { length: 128 }),
+    recipient: varchar("recipient", { length: 255 }),
+    errorMessage: text("error_message"),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (table) => ({
+    leadIndex: index("email_delivery_logs_lead_idx").on(table.leadId),
+    createdAtIndex: index("email_delivery_logs_created_at_idx").on(
+      table.createdAt
+    ),
   })
 );
 

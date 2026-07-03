@@ -6,6 +6,7 @@ import { eq } from "drizzle-orm";
 
 import { syncLeadToCrm, type CrmSyncResult } from "@/lib/crm";
 import { db, schema } from "@/lib/db";
+import type { EmailResult } from "@/lib/intake-email";
 import type { StageOneIntakeInput } from "@/lib/intake";
 
 export function hashValue(value: string) {
@@ -157,6 +158,58 @@ export async function persistCrmSyncResult(
       leadId,
       status: result.status,
       error: error instanceof Error ? error.message : "Unknown persistence error.",
+    });
+  }
+}
+
+/**
+ * Record the outcome of a notification-email attempt: append a durable row to
+ * email_delivery_logs and update leads.emailStatus. Never throws — a logging
+ * failure must not take down the intake response. Returns nothing; callers
+ * decide how to react to the EmailResult itself.
+ */
+export async function persistEmailDeliveryResult({
+  leadId,
+  result,
+  stage,
+}: {
+  leadId: string;
+  result: EmailResult;
+  stage: "stage-one" | "stage-two";
+}) {
+  if (!db) {
+    return;
+  }
+
+  try {
+    await db.insert(schema.emailDeliveryLogs).values({
+      leadId,
+      status: result.status,
+      stage,
+      provider: "resend",
+      providerMessageId: result.status === "sent" ? result.id : null,
+      recipient: result.recipient ?? null,
+      errorMessage:
+        result.status === "failed"
+          ? result.error
+          : result.status === "skipped"
+            ? result.reason
+            : null,
+    });
+
+    await db
+      .update(schema.leads)
+      .set({
+        emailStatus: result.status,
+        updatedAt: new Date(),
+      })
+      .where(eq(schema.leads.id, leadId));
+  } catch (error) {
+    console.error("Email delivery persistence failure", {
+      leadId,
+      status: result.status,
+      error:
+        error instanceof Error ? error.message : "Unknown persistence error.",
     });
   }
 }
