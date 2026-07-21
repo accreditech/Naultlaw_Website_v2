@@ -806,4 +806,113 @@ export const realEstateDisputesChildren: BofuService[] = [
     isLitigation: true,
     primaryCtaLabel: "Schedule a Consultation",
   },
+  {
+    slug: "can-a-sibling-force-sale-of-inherited-property-tennessee",
+    hub: "real-estate-disputes",
+    primaryKeyword:
+      "can a sibling force the sale of inherited property (Tennessee)",
+    title: "Can a Sibling Force the Sale of Inherited Property in TN?",
+    h1: "Can a Sibling Force the Sale of Inherited Property in Tennessee?",
+    metaDescription:
+      "One sibling can usually force a Tennessee partition action, and a sale may follow. Learn how heirs-property buyouts, appraisals, and accountings work.",
+    intro:
+      "Usually. A sibling who owns an undivided interest in inherited Tennessee real estate can generally file a partition action without the other owners' consent. That does not automatically guarantee a sale. The court may physically divide the property when a fair division is practical, but a court-ordered sale is often the likely result for a single-family home or other property that cannot be fairly divided.",
+    sections: [
+      {
+        h2: "How co-ownership creates the problem",
+        paragraphs: [
+          "That distinction surprises a lot of families. You do not need everyone to agree to bring the case, and no co-owner can simply veto the proceeding. But forcing a partition is not the same as forcing a sale — the sale only happens if the property can't be split fairly, and Tennessee law actually starts with a preference for dividing property rather than selling it. Knowing where the real leverage sits — and where the heirs-property protections kick in — is the difference between losing the family place and keeping it.",
+          "When someone dies without a will, or leaves real estate to more than one child, the heirs usually take title as tenants in common. Each owns an undivided share of the whole property — not a specific room or acre, but a percentage of everything. That works fine until the owners disagree about whether to sell, who pays the taxes, or who gets to live there. One holdout can freeze everyone else.",
+          "Tennessee's answer is that no one has to stay in a co-ownership they no longer want. Every co-tenant has the right to seek partition under Title 29, Chapter 27 of the Tennessee Code. A partition action asks a Tennessee court — often the chancery court — to divide the property or order a sale and distribute the proceeds. Chancery is a common forum for these cases, but it isn't the only one: county, circuit, and chancery courts all have jurisdiction over partition.",
+        ],
+      },
+      {
+        h2: "Partition in kind vs. partition by sale",
+        paragraphs: [
+          "There are two ways a court can partition property, and Tennessee law prefers the first.",
+          "Partition in kind means physically dividing it — drawing new lines so each owner walks away with a separate piece. Courts favor this when it's practical, because it lets everyone keep a stake. It works for a large tract of farmland or raw acreage that can be split without destroying its value.",
+          "Partition by sale means the court orders the whole property sold and divides the proceeds by ownership share. This is not automatic. The co-owner asking for a sale generally has to show that the property can't be physically divided, or that a sale would be manifestly advantageous to the owners — and Tennessee courts have described that as a demanding burden. For a single-family house the burden is often met, simply because you can't cut a home into separately titled pieces without ruining it. So while a sale is the common outcome for a residence, it is a result the court reaches after applying a standard, not a right the filing sibling holds automatically.",
+          "The takeaway worth repeating: a sibling can force partition; a sale may result when the property cannot be fairly divided.",
+        ],
+      },
+      {
+        h2: "Tennessee's Heirs Property Act changes the math",
+        paragraphs: [
+          "Here's the part most out-of-state articles get wrong. In 2022, Tennessee adopted the Uniform Partition of Heirs Property Act (Tenn. Code Ann. §§ 29-27-301 et seq.), which applies to partition actions filed on or after July 1, 2022. When it applies, it adds protections that make it much harder for one co-owner to steamroll the others.",
+          "But the Act only applies to qualifying \"heirs property,\" and the test is narrower than \"someone inherited it.\" Generally, all of the following must be true:",
+          "- The property is held as a tenancy in common.",
+          "- No agreement binding all the co-owners governs partition.",
+          "- At least one co-owner acquired title from a relative.",
+          "- One of the Act's 20% family-ownership thresholds is met — 20% of the interests are held by related co-owners, 20% is held by someone who got title from a relative, or 20% of the co-owners are relatives.",
+          "Many properties inherited jointly by siblings qualify, especially when siblings took equal shares from a parent. But not every inherited property does, so the first question in one of these cases is always whether the Act applies at all.",
+          "When it does apply, before any forced sale the court will:",
+          "1. Ordinarily determine the property's value through an independent appraisal. In most cases the court orders a disinterested, Tennessee-licensed appraiser, and the parties can object before value is finalized. There are exceptions — if all co-owners agree on value or a valuation method, the court uses it, and if an appraisal would cost more than it's worth, the court can set value after a hearing instead.",
+          "2. Offer the other co-owners a statutory buyout opportunity. A co-owner who did not ask for the sale may elect to buy out the co-owners who did. The price is based on the court-determined fair market value of the entire property multiplied by the selling co-owner's fractional share — not a separately discounted appraisal of the minority interest. The election period generally runs 45 days after notice, with a court-set payment deadline of at least 60 days after that.",
+          "3. Decide whether dividing the property would cause \"great prejudice\" before any sale. If no one buys out the departing co-owner, the court next weighs whether partition in kind would seriously harm the owners as a group — looking at physical divisibility, comparative value, how long the property has been in the family, sentimental attachment, existing lawful use, and who has maintained it. Only if the court declines to divide in kind does the case move to a sale. And if qualifying heirs property is sold, an open-market sale is generally required — not a courthouse-steps auction — unless sealed bids or an auction would clearly net more for everyone.",
+          "The practical effect: the Act slows a forced sale down and gives the co-owners who want to keep the property a structured, priced-out path to do it. It doesn't guarantee you keep the house, but it stops one sibling from forcing an auction on their own terms.",
+        ],
+      },
+      {
+        h2: "What you can do if a sibling wants to sell",
+        paragraphs: [
+          "If you're trying to hold onto the property, you have options, and the earlier you use them the better:",
+          "- Buy out your sibling. The cleanest solution is usually to pay the departing sibling for their share — funded by a cash-out refinance, a loan against the property, or a payment plan. If the property is qualifying heirs property, the Act may give you a formal buyout election at the court-determined value.",
+          "- Negotiate before anyone files. Litigation is slow and expensive. A mediated buyout, or an agreement on who keeps the property and how the others are paid, almost always beats a court-ordered sale.",
+          "- Sort out the accounting. Money that one owner put in — or took out — gets weighed in the case, and it can shift the final numbers meaningfully.",
+          "On that last point, two things are widely misunderstood:",
+          "Living in the house rent-free. A sibling's sole occupancy does not automatically create a rent charge. Every co-owner has an equal right to occupy the whole property. But rent or an occupancy offset may be appropriate if that sibling excluded the other owners, denied their ownership rights, agreed to pay rent, or received more than their share of income from the property.",
+          "Credits for expenses. A co-owner who paid more than their share of taxes, mortgage obligations, insurance, or necessary maintenance may seek contribution or an equitable adjustment. Improvements may also be considered, though the credit is generally tied to the value added rather than simply the amount spent. Ordinary personal effort managing the property usually isn't compensable without an agreement.",
+        ],
+      },
+      {
+        h2: "The bottom line",
+        paragraphs: [
+          "In Tennessee, one sibling can generally force a partition action over inherited property, and the others can't simply veto it — but forcing partition is not the same as forcing a sale. A sale follows only when the property can't be fairly divided, which is common for a single-family home. If the property is qualifying heirs property, the Act gives the co-owners who want to keep it a court-valued buyout opportunity, and the accounting rules can move real money between the parties. These cases turn on details — who paid what, who lived where, whether the Act applies, when the notices went out — and the moves you make early matter.",
+          "If you're facing a partition dispute over inherited property in Tennessee, contact Nault Law to talk through where you stand before the case gets away from you.",
+        ],
+      },
+      {
+        h2: "Service area",
+        paragraphs: [TRIAL_COUNTIES_SENTENCE],
+      },
+      {
+        h2: "How to start",
+        paragraphs: [
+          "Use the form below to schedule a consultation. Do not include confidential details in the form. The office will respond with instructions for sending case documents securely.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "Can one sibling force the sale of inherited property in Tennessee?",
+        answer:
+          "A sibling can usually force a partition action without the others' consent, and no co-owner can veto it. A sale is not automatic, though — the court can instead divide the property when a fair division is practical. For a single-family home that can't be split, a court-ordered sale is often the result. If the property is qualifying heirs property, the other co-owners may also have a statutory right to buy the selling sibling out first.",
+      },
+      {
+        question: "Do all heirs have to agree to sell inherited property?",
+        answer:
+          "No. A voluntary sale requires everyone to sign, but a single co-owner can bring a partition action without the others' consent. That forces the court process — it does not by itself guarantee a sale.",
+      },
+      {
+        question: "How can I stop my sibling from selling the family home?",
+        answer:
+          "The most reliable route is usually to buy out their share — and if the property is qualifying heirs property, the Act may give you a formal buyout election at the court-determined value. Negotiation, mediation, and a full accounting of taxes, repairs, and occupancy can also change the outcome or the numbers. There is no simple veto once a partition action is filed.",
+      },
+      {
+        question: "How long does a partition action take in Tennessee?",
+        answer:
+          "It varies widely. A contested partition commonly takes many months and may take more than a year, depending on the parties, title issues, unknown heirs, valuation disputes, and the court's docket — and the Heirs Property Act adds its own notice, election, and payment periods before any sale. A negotiated buyout usually resolves faster and costs less.",
+      },
+      {
+        question: "What is the Tennessee Heirs Property Act?",
+        answer:
+          "It's a 2022 law (Tenn. Code Ann. §§ 29-27-301 et seq.) that adds protections when qualifying inherited property held by tenants in common goes into a partition action filed on or after July 1, 2022. In qualifying cases it requires the court to value the property (usually by appraisal), gives the remaining co-owners a statutory opportunity to buy out the co-owner who wants to sell, and favors an open-market sale over an auction if a sale becomes necessary.",
+      },
+    ],
+    audience: "Siblings and co-owners of inherited Tennessee property",
+    serviceArea: "Statewide advice; trial counties only for litigation",
+    isLitigation: true,
+    primaryCtaLabel: "Schedule a Consultation",
+  },
 ];

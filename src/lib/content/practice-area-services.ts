@@ -47,6 +47,8 @@ export const serviceParentPracticeArea: Record<string, string> = {
 
   // Real estate disputes
   "quiet-title-attorney-tennessee": "real-estate-disputes",
+  "can-a-sibling-force-sale-of-inherited-property-tennessee":
+    "real-estate-disputes",
   "easement-attorney-tennessee": "real-estate-disputes",
   "title-defect-attorney-tennessee": "real-estate-disputes",
   "real-estate-fraud-attorney-tennessee": "real-estate-disputes",
