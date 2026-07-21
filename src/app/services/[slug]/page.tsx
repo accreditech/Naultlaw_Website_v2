@@ -16,6 +16,7 @@ import {
   bofuHubSchema,
   bofuServiceSchema,
   breadcrumbSchema,
+  faqPageSchema,
 } from "@/lib/structured-data";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -89,6 +90,11 @@ export default async function ServicesSlugPage({ params }: Props) {
       <>
         <StructuredDataScript data={bofuServiceSchema(svc)} />
         <StructuredDataScript data={breadcrumbSchema(crumbs)} />
+        {svc.faqs && svc.faqs.length > 0 && (
+          <StructuredDataScript
+            data={faqPageSchema(`/services/${svc.slug}`, svc.faqs)}
+          />
+        )}
         <Breadcrumbs items={crumbs} />
         <main className="fade-in">
           <BofuServiceSection

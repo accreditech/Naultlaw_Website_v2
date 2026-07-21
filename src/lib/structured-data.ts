@@ -327,6 +327,35 @@ export function bofuServiceSchema(service: BofuService) {
   };
 }
 
+/**
+ * FAQPage markup for a page that answers discrete questions.
+ *
+ * Note: Google restricted FAQ rich results to authoritative government and
+ * health sites in 2023, so this will not produce FAQ rich snippets for this
+ * site. It is still valid, machine-readable markup that helps search engines
+ * and AI answer engines parse the Q&A, which is why it is emitted here.
+ * Only call this where real question/answer content exists on the page —
+ * schema must match visible content.
+ */
+export function faqPageSchema(
+  path: string,
+  faqs: { question: string; answer: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${absoluteUrl(path)}#faq`,
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
 export function articleSchema(resource: ResourceContent) {
   return {
     "@context": "https://schema.org",

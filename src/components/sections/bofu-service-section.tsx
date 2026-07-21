@@ -25,6 +25,40 @@ type Props = {
   hubSlug: string;
 };
 
+/**
+ * A section paragraph is normally rendered as a <p>. Two opt-in prefixes turn
+ * a paragraph into a list item instead — "- " for a bullet and "1. " (any
+ * digits) for a numbered step — and consecutive items of the same kind
+ * collapse into one list. Content that uses neither prefix is unaffected,
+ * which is every page authored before this convention existed.
+ */
+type Block =
+  | { kind: "p"; text: string }
+  | { kind: "ul"; items: string[] }
+  | { kind: "ol"; items: string[] };
+
+function toBlocks(paragraphs: string[]): Block[] {
+  const blocks: Block[] = [];
+
+  for (const paragraph of paragraphs) {
+    const bullet = /^- ([\s\S]*)$/.exec(paragraph);
+    const ordered = /^\d+\. ([\s\S]*)$/.exec(paragraph);
+    const last = blocks[blocks.length - 1];
+
+    if (bullet) {
+      if (last?.kind === "ul") last.items.push(bullet[1]);
+      else blocks.push({ kind: "ul", items: [bullet[1]] });
+    } else if (ordered) {
+      if (last?.kind === "ol") last.items.push(ordered[1]);
+      else blocks.push({ kind: "ol", items: [ordered[1]] });
+    } else {
+      blocks.push({ kind: "p", text: paragraph });
+    }
+  }
+
+  return blocks;
+}
+
 export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
   const parentPaSlug = serviceParentPracticeArea[service.slug];
   const parentPa = parentPaSlug ? getPracticeArea(parentPaSlug) : undefined;
@@ -64,17 +98,60 @@ export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
               <div key={section.h2}>
                 <h2 className="font-heading text-2xl text-foreground">{section.h2}</h2>
                 <div className="mt-4 flex flex-col gap-4">
-                  {section.paragraphs.map((paragraph, i) => (
-                    <p
-                      key={i}
-                      className="text-base leading-7 text-foreground/85"
-                    >
-                      {renderInlineLinks(paragraph)}
-                    </p>
-                  ))}
+                  {toBlocks(section.paragraphs).map((block, i) => {
+                    if (block.kind === "ul") {
+                      return (
+                        <ul
+                          key={i}
+                          className="flex list-disc flex-col gap-2 pl-5 text-base leading-7 text-foreground/85"
+                        >
+                          {block.items.map((item, j) => (
+                            <li key={j}>{renderInlineLinks(item)}</li>
+                          ))}
+                        </ul>
+                      );
+                    }
+                    if (block.kind === "ol") {
+                      return (
+                        <ol
+                          key={i}
+                          className="flex list-decimal flex-col gap-2 pl-5 text-base leading-7 text-foreground/85"
+                        >
+                          {block.items.map((item, j) => (
+                            <li key={j}>{renderInlineLinks(item)}</li>
+                          ))}
+                        </ol>
+                      );
+                    }
+                    return (
+                      <p key={i} className="text-base leading-7 text-foreground/85">
+                        {renderInlineLinks(block.text)}
+                      </p>
+                    );
+                  })}
                 </div>
               </div>
             ))}
+
+            {service.faqs && service.faqs.length > 0 && (
+              <div>
+                <h2 className="font-heading text-2xl text-foreground">
+                  Frequently asked questions
+                </h2>
+                <div className="mt-4 flex flex-col gap-6">
+                  {service.faqs.map((faq) => (
+                    <div key={faq.question}>
+                      <h3 className="text-base font-semibold leading-7 text-foreground">
+                        {faq.question}
+                      </h3>
+                      <p className="mt-2 text-base leading-7 text-foreground/85">
+                        {renderInlineLinks(faq.answer)}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {relatedServices.length > 0 && (
               <div>

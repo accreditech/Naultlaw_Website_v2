@@ -64,6 +64,10 @@ export type BofuService = {
   isLitigation: boolean;
   primaryCtaLabel: string;
   secondaryCtaLabel?: string;
+  /** Optional Q&A block rendered after the body and emitted as FAQPage
+      structured data. Only set it where the page genuinely answers discrete
+      questions — a thin or padded FAQ is worse than none. */
+  faqs?: { question: string; answer: string }[];
   needsSteveReview?: string[];
 };
 
@@ -243,6 +247,7 @@ export const bofuHubs: BofuHub[] = [
       "eviction-defense-attorney-tennessee",
       "mold-claim-attorney-tennessee",
       "eviction-attorney-sumner-county-tn",
+      "can-a-sibling-force-sale-of-inherited-property-tennessee",
     ],
     isLitigation: true,
   },
