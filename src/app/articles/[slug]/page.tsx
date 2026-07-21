@@ -9,6 +9,7 @@ import { DisclosurePanel } from "@/components/site/disclosure-panel";
 import { StructuredDataScript } from "@/components/site/structured-data-script";
 import { renderInlineLinks } from "@/components/site/inline-rich-text";
 import { resources } from "@/lib/content/resources";
+import { toBlocks } from "@/lib/content/prose-blocks";
 import { practiceAreas } from "@/lib/content/practice-areas";
 import { publicDisclosures } from "@/lib/public-disclosures";
 import { siteConfig } from "@/lib/site-config";
@@ -16,6 +17,7 @@ import { createMetadata } from "@/lib/metadata";
 import {
   articleSchema,
   breadcrumbSchema,
+  faqPageSchema,
 } from "@/lib/structured-data";
 
 const CATEGORY_PRACTICE_SLUGS: Record<string, string[]> = {
@@ -72,6 +74,11 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <StructuredDataScript data={articleSchema(article)} />
       <StructuredDataScript data={breadcrumbSchema(crumbs)} />
+      {article.faqs.length > 0 && (
+        <StructuredDataScript
+          data={faqPageSchema(`/articles/${article.slug}`, article.faqs)}
+        />
+      )}
 
       <Breadcrumbs items={crumbs} />
 
@@ -94,20 +101,40 @@ export default async function ArticlePage({ params }: Props) {
               {/* Body — a "## " prefix marks a section heading; everything
                   else renders as a paragraph with inline contextual links. */}
               <div className="editorial-stack">
-                {article.body.map((paragraph, i) =>
-                  paragraph.startsWith("## ") ? (
-                    <h2
-                      key={i}
-                      className="mt-4 font-heading text-2xl text-foreground"
-                    >
-                      {paragraph.slice(3)}
-                    </h2>
-                  ) : (
+                {toBlocks(article.body).map((block, i) => {
+                  if (block.kind === "p" && block.text.startsWith("## ")) {
+                    return (
+                      <h2
+                        key={i}
+                        className="mt-4 font-heading text-2xl text-foreground"
+                      >
+                        {block.text.slice(3)}
+                      </h2>
+                    );
+                  }
+
+                  if (block.kind === "ul" || block.kind === "ol") {
+                    const List = block.kind === "ul" ? "ul" : "ol";
+                    return (
+                      <List
+                        key={i}
+                        className={`flex flex-col gap-2 pl-5 text-base leading-8 text-foreground ${
+                          block.kind === "ul" ? "list-disc" : "list-decimal"
+                        }`}
+                      >
+                        {block.items.map((item, j) => (
+                          <li key={j}>{renderInlineLinks(item)}</li>
+                        ))}
+                      </List>
+                    );
+                  }
+
+                  return (
                     <p key={i} className="text-base leading-8 text-foreground">
-                      {renderInlineLinks(paragraph)}
+                      {renderInlineLinks(block.text)}
                     </p>
-                  ),
-                )}
+                  );
+                })}
               </div>
 
               {/* Inline CTA */}
