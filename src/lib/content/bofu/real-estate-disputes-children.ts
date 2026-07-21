@@ -227,7 +227,7 @@ export const realEstateDisputesChildren: BofuService[] = [
       {
         h2: "Why these are often better mediated than tried",
         paragraphs: [
-          "When the parties are going to stay neighbors, a mediated boundary resolution usually beats a fully litigated one — the relationship survives, and the cost does not swallow the strip of land in dispute. Tennessee's adverse-possession and boundary-by-acquiescence standards are fact-specific, so the surveyor evidence, the deed history, and the timeline of use all carry weight. Getting in early, before positions set at the property line, keeps the negotiated options open.",
+          "When the parties are going to stay neighbors, a mediated boundary resolution usually beats a fully litigated one — the relationship survives, and the cost does not swallow the strip of land in dispute. [Tennessee's adverse-possession and boundary-by-acquiescence standards](/articles/property-line-disputes-with-a-neighbor-tennessee) are fact-specific, so the surveyor evidence, the deed history, and the timeline of use all carry weight. Getting in early, before positions set at the property line, keeps the negotiated options open.",
         ],
       },
       {

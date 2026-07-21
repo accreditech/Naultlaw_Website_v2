@@ -3,6 +3,7 @@ import { ActionLink } from "@/components/site/action-link";
 import { BofuInlineIntakeForm } from "@/components/sections/bofu-inline-intake";
 import { renderInlineLinks } from "@/components/site/inline-rich-text";
 import type { BofuService } from "@/lib/content/bofu-services";
+import { toBlocks } from "@/lib/content/prose-blocks";
 import { getPracticeArea } from "@/lib/content/practice-areas";
 import {
   getRelatedServices,
@@ -25,39 +26,8 @@ type Props = {
   hubSlug: string;
 };
 
-/**
- * A section paragraph is normally rendered as a <p>. Two opt-in prefixes turn
- * a paragraph into a list item instead — "- " for a bullet and "1. " (any
- * digits) for a numbered step — and consecutive items of the same kind
- * collapse into one list. Content that uses neither prefix is unaffected,
- * which is every page authored before this convention existed.
- */
-type Block =
-  | { kind: "p"; text: string }
-  | { kind: "ul"; items: string[] }
-  | { kind: "ol"; items: string[] };
-
-function toBlocks(paragraphs: string[]): Block[] {
-  const blocks: Block[] = [];
-
-  for (const paragraph of paragraphs) {
-    const bullet = /^- ([\s\S]*)$/.exec(paragraph);
-    const ordered = /^\d+\. ([\s\S]*)$/.exec(paragraph);
-    const last = blocks[blocks.length - 1];
-
-    if (bullet) {
-      if (last?.kind === "ul") last.items.push(bullet[1]);
-      else blocks.push({ kind: "ul", items: [bullet[1]] });
-    } else if (ordered) {
-      if (last?.kind === "ol") last.items.push(ordered[1]);
-      else blocks.push({ kind: "ol", items: [ordered[1]] });
-    } else {
-      blocks.push({ kind: "p", text: paragraph });
-    }
-  }
-
-  return blocks;
-}
+// Prose-list convention (the "- " / "1. " prefixes) lives in
+// @/lib/content/prose-blocks so articles and service pages share one parser.
 
 export function BofuServiceSection({ service, hubTitle, hubSlug }: Props) {
   const parentPaSlug = serviceParentPracticeArea[service.slug];
