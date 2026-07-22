@@ -134,7 +134,7 @@ export default function HomePage() {
         >
           <Image
             src="/images/naultlawoffice.jpg"
-            alt=""
+            alt="The Law Office of Stephen Nault, 121 S. Hickory Ave, Gallatin"
             fill
             priority
             sizes="100vw"
@@ -338,7 +338,7 @@ export default function HomePage() {
                     fontWeight: 600,
                     textTransform: "uppercase",
                     letterSpacing: ".14em",
-                    color: "var(--accent)",
+                    color: "var(--accent-readable)",
                   }}
                 >
                   Attorney

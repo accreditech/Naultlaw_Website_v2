@@ -69,7 +69,7 @@ export default function ServicesIndexPage() {
                 work, and both lead to the same intake. The{" "}
                 <Link
                   href="/practice-areas"
-                  className="text-accent underline-offset-4 hover:underline"
+                  className="text-accent-readable underline-offset-4 hover:underline"
                 >
                   Practice Areas overview
                 </Link>{" "}
@@ -93,7 +93,7 @@ export default function ServicesIndexPage() {
                 The same intake form appears on every focused-issue page and at{" "}
                 <Link
                   href="/contact"
-                  className="text-accent underline-offset-4 hover:underline"
+                  className="text-accent-readable underline-offset-4 hover:underline"
                 >
                   /contact
                 </Link>
@@ -127,7 +127,7 @@ export default function ServicesIndexPage() {
                     <p className="text-sm leading-6 text-muted-foreground">
                       {hub.metaDescription}
                     </p>
-                    <p className="mt-auto pt-2 text-sm font-semibold text-accent">
+                    <p className="mt-auto pt-2 text-sm font-semibold text-accent-readable">
                       Browse →
                     </p>
                   </Link>

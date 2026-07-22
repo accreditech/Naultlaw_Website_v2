@@ -35,6 +35,7 @@
   --color-primary:            var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-accent:             var(--accent);
+  --color-accent-readable:    var(--accent-readable);
   --color-muted:              var(--muted);
   --color-muted-foreground:   var(--muted-foreground);
   --color-border:             var(--border);
@@ -76,6 +77,18 @@ h1, h2, h3, h4 {
 
 img { display: block; max-width: 100%; }
 button { cursor: pointer; }
+
+/* ── Visible focus indicator (WCAG 2.4.7) ───────────────────────────────────
+   Keyboard focus draws a 2px navy outline (brand --primary) with a 2px offset.
+   A 2px white halo sits just inside that outline so the indicator stays visible
+   on dark navy surfaces (hero, testimonials, footer) where a navy-on-navy
+   outline would disappear. Both colors are brand tokens. :focus-visible (not
+   :focus) keeps mouse clicks ring-free. */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--white);
+}
 
 /* ── Layout utilities (prototype-compatible) ────────────────────────────── */
 .shell {
