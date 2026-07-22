@@ -18,6 +18,8 @@ import {
   articleSchema,
   breadcrumbSchema,
   faqPageSchema,
+  localBusinessSchema,
+  organizationSchema,
 } from "@/lib/structured-data";
 
 const CATEGORY_PRACTICE_SLUGS: Record<string, string[]> = {
@@ -74,6 +76,12 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <StructuredDataScript data={articleSchema(article)} />
       <StructuredDataScript data={breadcrumbSchema(crumbs)} />
+      {/* The Article node references the firm Organization (publisher) and
+          the LegalService (provider) by @id. Emit both node definitions here
+          so those references resolve on the article page itself rather than
+          pointing at entities only defined on the homepage. */}
+      <StructuredDataScript data={organizationSchema()} />
+      <StructuredDataScript data={localBusinessSchema()} />
       {article.faqs.length > 0 && (
         <StructuredDataScript
           data={faqPageSchema(`/articles/${article.slug}`, article.faqs)}
