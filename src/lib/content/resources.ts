@@ -21,21 +21,23 @@ export type ResourceContent = {
 
 export const resources: ResourceContent[] = [
   {
+    // URL slug intentionally keeps the plural "disputes" — it is live and
+    // externally linked; only the title/H1 moved to the singular.
     slug: "property-line-disputes-with-a-neighbor-tennessee",
-    title: "Property Line Disputes With a Neighbor in Tennessee",
+    title: "Property Line Dispute With a Neighbor in Tennessee",
     category: "Real Estate Disputes",
     metaTitle:
-      "Property Line Disputes With a Neighbor in Tennessee: What to Do",
+      "Property Line Dispute With a Neighbor in Tennessee: What to Do",
     metaDescription:
-      "Fence, shed, or driveway over the line? Here's how Tennessee property line and boundary disputes work — surveys, adverse possession, and your real options.",
+      "Fence, shed, or driveway over the line? Here's how Tennessee property line and boundary disputes work — surveys, adverse possession, easements, and your options.",
     excerpt:
-      "A neighbor's fence or shed over the line does not quietly transfer your land in Tennessee — but boundaries are decided by surveys, deeds, and long-standing conduct, not by who is more certain they are right. Here's how these disputes work, what adverse possession actually requires, and the options for resolving one.",
+      "A neighbor's fence or shed over the line does not quietly transfer your land in Tennessee — and a long-used driveway can raise an easement question even when ownership isn't in play. Here's how boundary disputes actually work: surveys, Tennessee's several adverse-possession rules, prescriptive easements, and the options for resolving one.",
     takeaways: [
-      "Get a current survey before you raise the boundary with your neighbor — it anchors every option that follows.",
-      "An encroachment does not automatically take your land; adverse possession requires demanding elements proven for the full statutory period.",
-      "With color of title a claim can arise in as little as seven years; without it, Tennessee's common-law period is twenty years.",
-      "Most boundary disputes are better resolved on paper — a recorded boundary line agreement, a quitclaim, or a written license — than in court.",
-      "Doing nothing can help the other side: adverse possession and boundary by acquiescence both reward the passage of time.",
+      "Get a current survey before you raise the boundary with your neighbor — it is the professional opinion everything else builds on.",
+      "An encroachment does not automatically take your land; adverse possession must be proven on demanding elements for the full statutory period.",
+      "Tennessee has several adverse-possession rules — some vest ownership, others only bar the owner's recovery — so \"seven years with a deed, twenty without\" is too simple.",
+      "A long-used driveway or path can support a prescriptive easement claim even when ownership is not in dispute.",
+      "Most boundary disputes are better resolved on paper — a recorded boundary line agreement, a deed, or a written encroachment agreement — than in court.",
     ],
     audience: [
       "Tennessee homeowners who discovered a neighbor's fence, shed, or driveway across their property line",
@@ -43,31 +45,38 @@ export const resources: ResourceContent[] = [
       "Buyers, sellers, and owners whose sale or refinance survey turned up an encroachment",
     ],
     whyItMatters:
-      "Boundaries are decided by surveys, deeds, and years of conduct rather than by who is more certain they are right — and because adverse possession and boundary by acquiescence both reward the passage of time, an encroachment left unaddressed can quietly strengthen the other side's position.",
+      "Boundaries are decided by surveys, deeds, and long-standing conduct rather than by who is more certain they are right — and because longstanding use can support an adverse-possession, acquiescence, or prescriptive-easement claim, how early you establish the facts and how carefully you document them can decide the outcome.",
     actionSteps: [
       "Order a current survey from a licensed Tennessee surveyor before raising the issue with your neighbor.",
       "Hold off on discussing the boundary until you know where the line actually runs — early statements can become evidence about permission and timing.",
-      "Put anything boundary-related in writing, even with a friendly neighbor.",
-      "Choose the resolution that fits the facts: a recorded boundary line agreement, a quitclaim deed, a written license or easement, or a quiet title action.",
+      "Document any permitted use in writing, stating clearly whether it is temporary and revocable or a continuing right.",
+      "Choose the resolution that fits the facts: a recorded boundary line agreement, a deed for a transferred strip, a written license or easement, or a quiet title action.",
     ],
     commonMistakes: [
       "Talking to the neighbor about the boundary before knowing where the line is.",
       "Assuming a long-standing fence has already transferred the land.",
+      "Treating \"seven years with a deed, twenty without\" as the whole rule.",
       "Relying on an old deed description or an existing fence instead of a current survey.",
-      "Letting an encroachment sit unaddressed while the clock runs.",
-      "Removing a neighbor's fence yourself instead of resolving it by agreement or court order.",
+      "Removing a neighbor's fence before the boundary and the parties' rights are confirmed.",
+      "Granting permission by casual text or email, in wording that gives away more than intended.",
     ],
     faqs: [
       {
-        question: "My neighbor's fence is on my property. Can I just remove it?",
+        question: "My neighbor's fence is on my property. Can I remove it?",
         answer:
-          "Usually not on your own. Even when a survey shows the fence is over the line, self-help can expose you to liability, and the neighbor may claim a right to the strip. The better path is to confirm the boundary with a survey, then resolve it through a written agreement or, if needed, a court order for removal.",
+          "Do not remove or damage the fence until the boundary and the parties' rights have been confirmed. A survey may show an apparent encroachment, but the neighbor could dispute the survey, assert ownership or an easement, or claim the fence is shared. Premature removal can create additional property-damage, trespass, or injunction issues. The safer course is written notice, followed by an agreement or a court order if the dispute can't be resolved.",
       },
       {
         question:
           "How long does someone have to use my land to claim it in Tennessee?",
         answer:
-          "It depends. With color of title — a recorded document that appears to convey the land — a claim can arise in as little as seven years under Tennessee's statutes. Without color of title, the common-law adverse possession period is twenty years. In both cases the use must be actual, open, exclusive, continuous, and without the owner's permission for the entire period.",
+          "Tennessee does not have a single answer. Seven years of qualifying adverse possession under a properly recorded assurance of title can vest ownership. A different seven-year statute may bar the owner from recovering the area actually possessed without necessarily giving the possessor record title. Twenty years of qualifying common-law adverse possession can vest ownership without color of title. The result depends on the nature of the possession, the documents involved, and the remedy being asserted.",
+      },
+      {
+        question:
+          "Can a neighbor gain the right to use my driveway without owning it?",
+        answer:
+          "Possibly. A neighbor who has used a driveway or access path openly and continuously for twenty years may claim a prescriptive easement — a right to keep using it — even without claiming ownership of the land. Permission generally defeats that kind of claim, which is why documenting any allowed use early is important.",
       },
       {
         question: "Should I talk to my neighbor before calling a lawyer?",
@@ -75,14 +84,9 @@ export const resources: ResourceContent[] = [
           "It's usually better to understand the facts first. What you say in an early conversation can become evidence about whether permission was given and when the encroachment started. A current survey and a short conversation with a property attorney first will put you on much firmer ground.",
       },
       {
-        question: "What court handles boundary disputes in Tennessee?",
-        answer:
-          "Boundary and quiet title cases are generally filed in chancery or circuit court in the county where the property is located. Many disputes, though, are resolved by a recorded boundary line agreement without a full lawsuit.",
-      },
-      {
         question: "Do I really need a survey?",
         answer:
-          "In almost every case, yes. The survey is the document that anchors any negotiation, agreement, or lawsuit. Deed descriptions and old fences are often imprecise, and a current survey by a licensed Tennessee surveyor is what establishes where the line actually runs.",
+          "In almost every case, yes. A current survey provides critical evidence of where the record boundary lies, although a court may also have to consider deeds, monuments, competing surveys, agreements, and long-standing conduct. Deed descriptions and old fences are often imprecise, and a survey by a licensed Tennessee surveyor is what establishes the professional opinion everything else builds on.",
       },
     ],
     body: [
@@ -92,27 +96,32 @@ export const resources: ResourceContent[] = [
       "Boundary problems tend to surface at predictable moments: a new survey ordered for a sale or refinance turns up an encroachment; a neighbor puts in a fence, pours a driveway, or builds an addition; a longtime informal line gets questioned when one property changes hands; or an old, imprecise legal description finally gets tested. Sometimes the structure has been there for decades and nobody looked closely until now.",
       "The common thread is uncertainty about the true boundary — often made worse by decades-old deeds, outdated surveys, and casual arrangements between prior owners that were never written down.",
       "## First move: get a current survey",
-      "The survey is the document that anchors everything that follows — negotiation, a boundary agreement, or a lawsuit. A licensed Tennessee surveyor locates the boundary from the recorded deeds and physical markers and tells you whether an encroachment exists and by how much. Until you have that, you're arguing about a line nobody has actually measured.",
-      "Get the survey before you confront the neighbor. If you raise it first and turn out to be wrong, you've started a conflict for nothing; if you're right, the survey is what gives the conversation weight.",
+      "A current survey is usually the most important starting point for everything that follows — negotiation, a boundary agreement, or a lawsuit. A licensed Tennessee surveyor reviews the deeds, monuments, prior surveys, and physical evidence and gives a professional opinion about the record boundary and any apparent encroachment.",
+      "A survey is powerful evidence, but it is not the final word. If a dispute ends up in court, a judge can also weigh competing surveys, the calls in the deeds, physical monuments, and how the owners have historically treated the line. Still, until you have a survey, you're arguing about a boundary nobody has actually measured — so get it before you confront the neighbor. If you raise it first and turn out to be wrong, you've started a conflict for nothing; if you're right, the survey is what gives the conversation weight.",
       "## An encroachment does not automatically take your land",
-      "A lot of homeowners assume that if a neighbor's fence has sat on their property \"long enough,\" the land is simply lost. That's not how it works in Tennessee. A neighbor who wants to claim your land through adverse possession has to prove a demanding set of elements, and for the full statutory period: possession that is actual, open and obvious, exclusive, continuous, and hostile to your ownership (meaning without your permission).",
-      "The time period depends on the facts:",
-      "- With color of title — a recorded deed or document that appears to convey the disputed strip to the neighbor — Tennessee's statutes (Tennessee Code Annotated Title 28, Chapter 2) can allow a claim in as little as seven years, and generally require that assurance of title to have been recorded for the full period.",
-      "- Without color of title, Tennessee's common-law adverse possession period is twenty years.",
-      "And the distinctions matter: some of these statutes vest actual title in the possessor, while others only bar the owner from ejecting them — a different and lesser result. Which one applies, and whether a claim succeeds at all, depends heavily on the specific facts. Adverse possession is provable in Tennessee, but it is hard to establish and easy to overstate.",
-      "Tennessee also recognizes related boundary doctrines — such as boundary by acquiescence, where a line both sides have long treated and respected as the boundary can be recognized as the legal line even if it differs from the paper description. Like adverse possession, it turns on years of conduct and clear proof.",
+      "A lot of homeowners assume that if a neighbor's fence has sat on their property \"long enough,\" the land is simply lost. That's not how it works in Tennessee. A neighbor who wants to claim your land through adverse possession has to prove a demanding set of elements, and for the full statutory period: possession that is actual, open and obvious, exclusive, continuous, and hostile or adverse to the owner — meaning held under a claim of right inconsistent with the owner's rights, rather than through the owner's permission.",
+      "The timing and the legal effect are not a simple binary. Tennessee has several adverse-possession rules, and they don't all do the same thing:",
+      "- Seven years of qualifying adverse possession under a properly recorded assurance of title can vest ownership under Tennessee Code Annotated § 28-2-101.",
+      "- Separately, seven years of actual adverse possession may, in some circumstances, bar the record owner from recovering the occupied area under § 28-2-103 even without color of title — but that statute is generally defensive and does not itself create record title.",
+      "- Twenty years of qualifying common-law adverse possession can vest title without color of title.",
+      "That distinction — between rules that transfer ownership and rules that merely block the owner's recovery — is one the Tennessee Supreme Court has drawn expressly, and it's exactly why \"seven years with a deed, twenty without\" is too simple. Which rule applies, and whether a claim succeeds at all, depends heavily on the specific facts. Adverse possession is provable in Tennessee, but it is hard to establish and easy to overstate.",
+      "## A driveway dispute may involve an easement instead of ownership",
+      "Adverse possession is not the only risk created by longstanding use. A neighbor who has openly and continuously used a driveway, path, or access point for twenty years may claim a [prescriptive easement](/services/easement-attorney-tennessee) even if they do not claim ownership of the land itself. A prescriptive easement gives a legal right to continue a particular use, rather than title to the ground. Permission generally defeats the adversity such a claim requires — which is another reason any agreed use should be documented clearly and early.",
+      "## Boundaries fixed by long recognition",
+      "Tennessee also recognizes related boundary doctrines — such as boundary by acquiescence, where adjoining owners who mutually recognize and treat a definite line as the boundary over many years may have that line recognized as the legal boundary, even if it differs from the paper description. It ordinarily requires more than an old fence or mere silence: there generally must be evidence that both sides knew of and accepted a definite line, often against a backdrop of uncertainty or dispute about where the boundary ran.",
       "## Ways to resolve a boundary dispute",
       "Most of these are better solved on paper than in a courtroom. Depending on the facts, the tools generally include:",
-      "- A boundary line agreement. If both owners agree on where the line is (or agree to fix it), a written, recorded agreement settles it going forward. This is usually the cleanest and cheapest outcome.",
-      "- A quitclaim deed. If a small strip belongs to one owner but sits on the other's side of a fence, a quitclaim can transfer that strip so the deed matches reality.",
-      "- A written license or easement. If you're willing to let a neighbor's driveway or structure stay without giving up ownership, a short written license or an [easement](/services/easement-attorney-tennessee) can permit the use on your terms — and, importantly, on the record that the use is by permission.",
-      "- A [quiet title](/services/quiet-title-attorney-tennessee) or declaratory judgment action. When negotiation fails, a lawsuit can ask a court to declare the true boundary and clear competing claims. In Tennessee these are generally filed in chancery or circuit court in the county where the property sits.",
+      "- A boundary line agreement. A properly drafted and recorded boundary line agreement can resolve an uncertain or disputed line going forward. This is often the cleanest and cheapest outcome. If the arrangement actually transfers land rather than just resolving uncertainty, deeds, a survey-based description, lender participation, or local approval may also be needed.",
+      "- A deed for a transferred strip. If the owners agree that a disputed strip should change hands, a deed — often a quitclaim deed with a survey-based legal description — can align the recorded ownership with the agreed result. A quitclaim conveys only whatever interest the grantor actually has, so it doesn't by itself guarantee clean title; the survey description and drafting matter.",
+      "- A written license, encroachment agreement, or easement. If you're willing to permit a neighbor's driveway or structure to stay, the agreement should spell out whether the permission is temporary and revocable or creates a continuing property right that burdens the land. Clearly documenting that the use is permitted also helps keep it from later being treated as hostile.",
+      "- A [quiet title](/services/quiet-title-attorney-tennessee) or declaratory judgment action. When negotiation fails, a lawsuit can ask a court to declare the true boundary and clear competing claims. These cases are commonly filed in the chancery court — and, depending on the claims, sometimes the circuit court — in the county where the property is located.",
       "- Ejectment or an injunction. In the right case, a court can order an encroaching structure removed or an occupant off the disputed strip.",
       "Which path fits depends on how much land is at stake, how long the encroachment has existed, what the survey and deeds show, and whether you want the neighbor's use gone or just documented.",
       "## Why the order of operations matters",
-      "Two mistakes make these cases harder than they need to be. The first is talking to the neighbor before you know the facts — early statements can later be used as evidence about permission, timing, and what each side understood. The second is doing nothing. Adverse possession and acquiescence both reward the passage of time, so letting an encroachment sit unaddressed can, in the wrong circumstances, strengthen the other side's position. Putting anything boundary-related in writing — even with a friendly neighbor — protects you.",
+      "Two mistakes make these cases harder than they need to be. The first is talking to the neighbor before you know the facts — early statements can later be used as evidence about permission, timing, and what each side understood. The second is doing nothing. Longstanding conduct can strengthen an adverse-possession or acquiescence claim, but time alone does not move a boundary — acquiescence ordinarily requires evidence that adjoining owners mutually recognized and treated a definite line as the boundary. Even so, letting an apparent encroachment sit unaddressed can, in the wrong circumstances, work against you.",
+      "How you document things matters just as much as whether you do. A carefully drafted written objection, temporary license, encroachment agreement, or boundary agreement can help protect your position. Casual texts, emails, or informal promises can do the opposite — admitting uncertainty, granting more than you intended, or acknowledging the neighbor's claimed line — so the wording matters.",
       "## The bottom line",
-      "In Tennessee, a neighbor's fence or shed over the line does not quietly transfer your land; a claim to your property has to clear a high bar, over years, on specific facts. But boundaries are decided by surveys, deeds, and long-standing conduct — not by who's more certain they're right — so the winning move is to establish the facts early with a current survey, keep everything in writing, and choose the resolution that fits before time and silence work against you.",
+      "In Tennessee, a neighbor's fence or shed over the line does not quietly transfer your land; a claim to your property has to clear a high bar, over years, on specific facts — and a long-used driveway may raise an easement question even when ownership isn't in play. Boundaries are decided by surveys, deeds, and long-standing conduct, not by who's more certain they're right, so the winning move is to establish the facts early with a current survey, document things carefully, and choose the resolution that fits before time and silence work against you.",
       "If you're dealing with a [property line or boundary dispute](/services/property-line-dispute-attorney-tennessee) in Middle Tennessee, contact Nault Law to sort out where the line is and what your options are before it escalates.",
       "This article is general information about Tennessee law, not legal advice, and does not create an attorney-client relationship. For advice about a specific situation, consult a Tennessee attorney.",
     ],
